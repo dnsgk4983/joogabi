@@ -111,3 +111,35 @@
     }
     }
     })());
+    $(function(){
+        var actBtn = $(".check-1 .own > ul > li");
+        actBtn.find("p").click(function(){
+            actBtn.removeClass("active");
+            $(this).parent().addClass("active");
+        });
+        var actBtn2 = $(".check-2 .own > ul > li");
+        actBtn2.find("p").click(function(){
+            actBtn2.removeClass("active");
+            $(this).parent().addClass("active");
+        });
+        var actBtn3 = $(".check-3 .own > ul > li");
+        actBtn3.find("p").click(function(){
+            actBtn3.removeClass("active");
+            $(this).parent().addClass("active");
+        });
+        var actBtn4 = $(".check-4 .own > ul > li");
+        actBtn4.find("p").click(function(){
+            actBtn4.removeClass("active");
+            $(this).parent().addClass("active");
+        });
+        var actBtn5 = $(".check-5 .own > ul > li");
+        actBtn5.find("p").click(function(){
+            actBtn5.removeClass("active");
+            $(this).parent().addClass("active");
+        });
+        var actBtn6 = $(".check-6 .own > ul > li");
+        actBtn6.find("p").click(function(){
+            actBtn6.removeClass("active");
+            $(this).parent().addClass("active");
+        });
+    });

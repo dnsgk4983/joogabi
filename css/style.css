@@ -192,6 +192,63 @@
       margin-left: 28px;
       color: #bbbbbb;
   }
+
+  /* 신규 등록 단가표 */
+  .unit-price{
+      width: 553px;
+      height: 295px;
+      background: #fff;
+      margin-top: 18px;
+  }
+  .price-title{
+      width: 499px;
+      display: flex;
+      justify-content: space-between;
+      margin: 37px 0 27px 27px;
+  }
+  .price-title h3{
+      font-size: 18px;
+      font-weight: 600;
+      display: flex;
+  }
+  .price-title-line{
+      width: 4px;
+      height: 16px;
+      background: #3e5bc7;
+      margin-right: 3px;
+  }
+  .unit-price-more a{
+    color: #cbcfd5;
+  }
+  .unit-price-more img{
+      margin-left: 7px;
+  }
+
+  .unit-price>ul>li a{
+      display: flex;
+  }
+  .certified{
+      width: 27px;
+      height: 16px;
+      line-height: 16px;
+      text-align: center;
+      background: #3e5bc7;
+  }
+  .certified p{
+      font-size: 12px;
+      color: #fff;
+  }
+  .export{
+      width: 27px;
+      height: 16px;
+      line-height: 16px;
+      text-align: center;
+      background: #70768c;
+  }
+  .export p{
+      font-size: 12px;
+      color: #fff;
+  }
 /* 섹션 끝 */
 
 

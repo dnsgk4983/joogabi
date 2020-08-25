@@ -31,18 +31,22 @@
       min-width: 280px;
       max-width: 600px;
       margin: 0 auto;
-      padding: 0 20px;
+      padding: 0 11px 0 10px;
   }
   .back-icon{
+      margin-left: 3px;
       margin-top: 25px;
   }
   /* 계약서 작성 제목부분 */
   .contact-title{
-      margin-top: 31px;
+      margin-top: 30px;
   }
   .contact-title h3{
       font-size: 21px;
       font-weight: 800;
+  }
+  .contact-title h3:first-child{
+      margin-bottom: 10px;
   }
   .contact-how{
       margin: 29px 0;
@@ -64,7 +68,7 @@
       background: #f7f7f9;
       border: none;
       border-radius: 3px;
-      padding: 0 20px;
+      padding: 0 11px 0 10px;
       margin-bottom: 13px;
   }
   .contact-item input::placeholder{
@@ -124,7 +128,7 @@
       min-width: 280px;
       max-width: 600px;
       margin: 0 auto;
-      padding: 0 20px;
+      padding: 0 11px 0 10px;
     margin-top: 26px;
 }
 .contact-check input{
@@ -133,7 +137,7 @@
     background: #f7f7f9;
     border: none;
     border-radius: 3px;
-    padding: 0 20px;
+    padding: 0 11px 0 10px;
     margin-bottom: 13px;
 }
 .contact-check input::placeholder{
@@ -152,6 +156,9 @@
     .own{
         display: flex;
         margin: 21px 0 24px 33px;
+    }
+    .own ul{
+        display: flex;
     }
     .own .check-yes{
         cursor: pointer;
@@ -219,7 +226,7 @@
         min-width: 280px;
         max-width: 600px;
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 0 11px 0 10px;
     }
     .sign-title{
         margin-top: 23px;
@@ -230,7 +237,7 @@
         background: #f7f7f9;
         border: none;
         border-radius: 3px;
-        padding: 0 20px;
+        padding: 0 11px 0 10px;
         margin-bottom: 13px;
     }
     .sign-wrap input::placeholder{
@@ -247,15 +254,20 @@
         justify-content: space-between;
         align-items: center;
     }
+    .canvas-wrap{
+        width: 231px;
+        height: 88px;
+    }
     #canvas{
         background: #f7f7f9;
-        
         border-radius: 3px;
     }
     .sign-input{
-        margin-top: 8px;
+        display: flex;
+        justify-content: space-between;
     }
     .sign-input p{
+        margin-top: 18px;
         margin-bottom: 21px;
     }
   /* sign end */
