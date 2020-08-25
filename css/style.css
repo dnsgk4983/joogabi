@@ -1,0 +1,21 @@
+@import url('normalize.css');
+@import url('reset.css');
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../css/fonts/notokr-regular.eot');
+    src: url('../css/fonts/notokr-regular.eot?#iefix') format('embedded-opentype'),
+    url('../css/fonts/notokr-regular.woff') format('woff'),
+    url('../css/fonts/notokr-regular.woff2') format('woff2');
+  }
+  html{
+      width: 100%;
+  }
+  body{
+      font-family: 'Noto Sans KR';
+      font-size: 16px;
+  }
+  #header p{
+      font-weight: 600;
+  }
