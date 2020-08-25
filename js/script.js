@@ -1,3 +1,15 @@
+$(function(){
+    $('.menu li:not(:nth-child(6))').mouseover(function(){
+        $(this).css('background','#3f5bc8');
+        $(this).children().css("color","#fff");
+    });
+    $('.menu li:not(:nth-child(6))').mouseleave(function(){
+        $(this).css('background','#ffffff');
+        $(this).children().css("color",'#000');
+    });
+});
+
+
 am4core.ready(function() {
 
     // Themes begin
@@ -94,3 +106,4 @@ am4core.ready(function() {
     
     
 }); // end am4core.ready()
+
