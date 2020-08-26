@@ -146,6 +146,8 @@
       width: 714px;
       height: 275px;
       background: #fff;
+      box-sizing: border-box;
+      border: 1px solid #dde1e9;
       margin-top: 18px;
   }
 
@@ -199,6 +201,8 @@
       width: 553px;
       height: 275px;
       background: #fff;
+      box-sizing: border-box;
+      border: 1px solid #dde1e9;
       margin-top: 18px;
   }
   .price-title{
@@ -219,10 +223,12 @@
       margin-right: 3px;
   }
   .unit-price-more a{
+    font-size: 12px;
+    font-weight: 600;
     color: #cbcfd5;
   }
   .unit-price-more img{
-      margin-top: 1px;
+      vertical-align: -3px;
       margin-left: 7px;
   }
   .unit-price > ul {
@@ -311,25 +317,364 @@
   .notice-section{
       width: 1278px;
       margin: 0 auto;
+      margin: 11px auto;
+      display: flex;
+      justify-content: space-between;
   }
   .notice{
+      position: relative;
       width: 634px;
       height: 63px;
       overflow: hidden;
       background: #fff;
+      border: 1px solid #dde1e9;
+      box-sizing: border-box;
   }
   .rolling{
       position: relative;
-      width: 572px;
+      width: 506px;
       height: auto;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      word-break: break-all;
       padding: 0 26px 0 36px;
   }
   .rolling li{
+      position: relative;
       width: 100%;
-      height: 63px;
-      line-height: 63px;
+      height: 61px;
+      line-height: 61px;
+  }
+  .rolling > li > a {
+      color: #000;
+      font-weight: 600;
+  }
+  .rolling > li > a span{
+      color: #939393;
+  }
+  .rolling > li > a > p{
+      width: 506px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   /* 공지사항 끝 */
+  
+  /* 공지사항 버튼 */
+  .arrow{
+      position: absolute;
+      width: 64px;
+      height: 61px;
+      top: 0;
+      right: 0;
+      border-left: 1px solid #c6cad1;
+  }
+  .up-arrow{
+      width: 64px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      border-bottom: 1px solid #c6cad1;
+      cursor: pointer;
+  }
+  .down-arrow{
+      width: 64px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      cursor: pointer;
+  }
+  /* 공지사항 버튼 끝 */
+
+  /* 실시간 인기 모델 시작 */
+  .hot-models{
+      width: 634px;
+      height: 63px;
+      background: #fff;
+      box-sizing: border-box;
+      border: 1px solid #dde1e9;
+      display: flex;
+  }
+  .hot-models-title{
+      width: 170px;
+      height: 63px;
+      line-height: 63px;
+      border-right: 1px solid #c6cad1;
+      text-align: center;
+  }
+  .hot-models-title h3{
+      color: #939393;
+      font-size: 14px;
+  }
+  .model-list > ul{
+    display: flex;
+    margin-left: 14px;
+  }
+  .model-list > ul > li { 
+      line-height: 63px;
+      margin-right: 10px;
+  }
+
+  .model-list > ul > li > a {
+      color: #3e5bc7;
+      font-weight: 400;
+      font-size: 14px;
+  }
+  /* 실시간 인기 모델 끝 */
+
+  /* 주요모델 단가현황 시작 */
+.model-condition{
+    width: 1278px;
+    height: 285px;
+    margin: 0 auto;
+    display: flex;
+    background: #fff;
+    box-sizing: border-box;
+    border: 1px solid #c6cad1;
+}
+.condition-wrap{
+    width: 419px;
+    height: 285px;
+}
+.condition-title{
+    display: flex;
+    margin-top: 33px;
+    margin-left: 37px;
+}
+.condition-title .condition-line{
+    width: 4px;
+    height: 16px;
+    background: #3e5bc7;
+    margin-right: 4px;
+    margin-top: 2px;
+}
+.condition-title h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.condition-pagination > ul{
+    display: flex;
+    margin-left: 95px;
+    margin-top: 3px;
+}
+.condition-pagination > ul > li {
+    cursor: pointer;
+}
+.bullet{
+    width: 11px;
+    height: 11px;
+    background: #dee1e4;
+    border-radius: 100px;
+    margin-right: 9px;
+}
+.condition-pagination .bullet.active{
+    background: #3e5bc7;
+}
+
+.condition-conts{
+    display: flex;
+}
+.model-img{
+    margin-left: 63px;
+    margin-top: 43px;
+}
+.model-info{
+    margin-top: 124px;
+    margin-left: 40px;
+}
+.model-name{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.model-info p{
+    font-size: 12px;
+    color: #939393;
+    margin-bottom: 10px;
+}
+.model-info img{
+    margin-right: 5px;
+}
+/* 주요모델 단가현황 끝 */
+
+/* 그래프영역 */
+.model-graph-wrap{
+    width: 859px;
+    height: 285px;
+    box-sizing: border-box;
+    border-left: 1px solid #dde1e9;
+    padding: 0 27px 0 44px;
+}
+.chart-title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 34px;
+}
+.chart-title h3{
+    font-weight: 600;
+    font-size: 18px;
+}
+.chart-title .chart-more a{
+    font-size: 12px;
+    font-weight: 600;
+    color: #c6cad1;
+}
+.chart-more img{
+    vertical-align: -3px;
+    margin-left: 6px;
+}
+#chartdiv{
+    margin-top: 45px;
+    width: 788px;
+    height: 172px;
+}
+/* 그래프영역 끝 */
+
+/* 배너영역 */
+.main-banner{
+    width: 1278px;
+    height: 591px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+}
+/* 배너영역 끝 */
+
+/* 하단 섹션 시작 */
+
+.section-wrap{
+    width: 1278px;
+    height: auto;
+    margin: 0 auto;
+}
+.section-title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 51px;
+    margin-bottom: 34px;
+}
+.section-title-wrap{
+    display: flex;
+}
+.section-line{
+    width: 4px;
+    height: 16px;
+    background: #3e5bc7;
+    margin-right: 3px;
+}
+.section-title h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+.section-title h3>span{
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 8px;
+    color: #939393;
+    vertical-align: 3px;
+}
+.section-more{
+    /* margin-right: 27px; */
+}
+.section-more a{
+    font-size: 12px;
+    color: #c6cad1;
+}
+.section-more span{
+    margin-left: 6px;
+}
+.section-more img{
+    vertical-align: -3px;
+}
+
+.new-company a{
+    color: #000;
+}
+
+.new-company > ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-company > ul > li {
+    width: 240px;
+    height: 247px;
+    box-sizing: border-box;
+    border: 1px solid #c7cbcf;
+}
+
+.new-company-info{
+    position: relative;
+    height: 170px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #c7cbcf;
+    overflow: hidden;
+}
+.new-company-info.certification::after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 80px;
+    height: auto;
+    background: red;
+    content: "인증";
+    text-align: center;
+    color: #fff;
+    left: -24px;
+    top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    transform: rotate(-45deg);
+}
+.new-company-info h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 22px;
+}
+
+.new-company .blue{
+    padding-top: 27px;
+    color: #3e5bc7;
+    margin-bottom: 6px;
+}
+
+.company-info-line{
+    width: 23px;
+    height: 2px;
+    background: #939393;
+    margin-top: 30px;
+    margin-left: 22px;
+    margin-bottom: 6px;
+}
+.company-text{
+    margin-left: 20px;
+    margin-right: 16px;
+    font-size: 12px;
+    color: #939393;
+}
+.new-company-name{
+    height: 77px;
+    margin-left: 22px;
+    margin-top: 11px;
+}
+.new-company-name h3{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 4px 0;
+}
+.new-company-area{
+    color: #939393;
+    font-size: 12px;
+}
+.company-name-wrap{
+    display: flex;
+}
+.company-name-wrap .diller{
+    margin-left: 2px;
+}
 /* 섹션 끝 */
 
 

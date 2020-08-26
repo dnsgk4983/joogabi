@@ -26,12 +26,34 @@ $(document).ready(function(){
     noticeRollingOff = setInterval(noticeRolling,5000);
     $('.rolling').append($('.rolling li').first().clone());
 
-    $(".rolling_stop").click(function(){
-        clearInterval(noticeRollingOff);
+    // $(".rolling_stop").click(function(){
+    //     clearInterval(noticeRollingOff);
+    // }); // 롤링 멈추는 소스
+    // $(".rolling_start").click(function(){
+    //     noticeRollingOff = setInterval(noticeRolling, 1000);
+    // }); // 롤링 재시작 소스
+
+    $('.rolling_up').click(function(){
+        move += height ;
+        $('.rolling').animate({"top":-move},function(){
+            if (move >= max){
+                $(this).css("top",0);
+                move = 0;
+            }
+        });
     });
-    $(".rolling_start").click(function(){
-        noticeRollingOff = setInterval(noticeRolling, 1000);
-    });
+    $('.rolling_down').click(function(){
+        move -= height;
+        $('.rolling').animate({"top":move},function(){
+            if ( move == max ){
+                $(this).css("top",0);
+                move = 0;
+            }
+        });
+    })
+    // $('.rolling_down').click(function(){
+        // $('.rolling').animate({"top":+move},0);
+    // });
 });
 
 
@@ -44,38 +66,17 @@ am4core.ready(function() {
     var chart = am4core.create("chartdiv", am4charts.XYChart);
     
     var data = [];
-    var open = 100;
-    var close = 120;
+    var open = 30;
+    var close = 100;
     
-    var names = ["Raina",
-    "Demarcus",
-    "Carlo",
-    "Jacinda",
-    "Richie",
-    "Antony",
-    "Amada",
-    "Idalia",
-    "Janella",
-    "Marla",
-    "Curtis",
-    "Shellie",
-    "Meggan",
-    "Nathanael",
-    "Jannette",
-    "Tyrell",
-    "Sheena",
-    "Maranda",
-    "Briana",
-    "Rosa",
-    "Rosanne",
-    "Herman",
-    "Wayne",
-    "Shamika",
-    "Suk",
-    "Clair",
-    "Olivia",
-    "Hans",
-    "Glennie",
+    var names = ["2019-11",
+    "12",
+    "2020-01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06"
     ];
     
     for (var i = 0; i < names.length; i++) {
@@ -91,10 +92,10 @@ am4core.ready(function() {
     categoryAxis.renderer.minGridDistance = 15;
     categoryAxis.renderer.grid.template.location = 0.5;
     categoryAxis.renderer.grid.template.strokeDasharray = "1,3";
-    categoryAxis.renderer.labels.template.rotation = -90;
-    categoryAxis.renderer.labels.template.horizontalCenter = "left";
-    categoryAxis.renderer.labels.template.location = 0.5;
-    categoryAxis.renderer.inside = true;
+    categoryAxis.renderer.labels.template.rotation = 0; // 그래프 이름 가로정렬
+    categoryAxis.renderer.labels.template.horizontalCenter = "center";
+    categoryAxis.renderer.labels.template.location = 0.55;
+    // categoryAxis.renderer.inside = true;
     
     categoryAxis.renderer.labels.template.adapter.add("dx", function(dx, target) {
         return -target.maxRight / 2;
@@ -109,7 +110,7 @@ am4core.ready(function() {
     series.dataFields.categoryX = "category";
     series.dataFields.openValueY = "open";
     series.dataFields.valueY = "close";
-    series.tooltipText = "open: {openValueY.value} close: {valueY.value}";
+    series.tooltipText = "상한: {openValueY.value} 하한: {valueY.value}";
     series.sequencedInterpolation = true;
     series.fillOpacity = 0;
     series.strokeOpacity = 1;
@@ -126,8 +127,8 @@ am4core.ready(function() {
     
     chart.cursor = new am4charts.XYCursor();
     
-    chart.scrollbarX = new am4core.Scrollbar();
-    chart.scrollbarY = new am4core.Scrollbar();
+    // chart.scrollbarX = new am4core.Scrollbar();
+    // chart.scrollbarY = new am4core.Scrollbar();
     
     
 }); // end am4core.ready()
