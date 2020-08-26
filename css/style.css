@@ -9,9 +9,6 @@
     url('../css/fonts/notokr-regular.woff') format('woff'),
     url('../css/fonts/notokr-regular.woff2') format('woff2');
   }
-  html{
-      width: 100%;
-  }
   body{
       font-family: 'Noto Sans KR';
       font-size: 16px;
@@ -27,7 +24,7 @@
   /* 헤더 시작 */
   #header{
       box-sizing: border-box;
-      border-bottom: 1px solid #000;
+      border-bottom: 1px solid #3e5bc7;
   }
   .header-wrap{
       padding-bottom: 10px;
@@ -77,18 +74,19 @@
 
   /* 메뉴 시작 */
   .menu-wrap{
-    box-sizing: border-box;
-    border-bottom: 1px solid #3e5bc7;
+    width: 1278px;
+    margin: 0 auto;
   }
   .menu{
-      width: 1278px;
-      height: 54px;
-      line-height: 54px;
-      margin: 0 auto;
+      
   }
   .menu > ul {
-      display: flex;
-      justify-content: flex-end;
+    width: 1278px;
+    height: 54px;
+    line-height: 54px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
   }
   .menu > ul > li:not(:nth-child(6)) {
       width: 128px;
@@ -129,8 +127,9 @@
 
 /* 섹션 시작 */
   .main-wrapper{
-      width: 100%;
       height: 796px;
+      overflow:hidden;
+      position: relative;
       background: #e9ecef;
   }
   .main-section{
@@ -342,7 +341,6 @@
   }
   .rolling li{
       position: relative;
-      width: 100%;
       height: 61px;
       line-height: 61px;
   }
@@ -431,6 +429,7 @@
     margin: 0 auto;
     display: flex;
     background: #fff;
+    overflow: hidden;
     box-sizing: border-box;
     border: 1px solid #c6cad1;
 }
@@ -460,23 +459,40 @@
     margin-left: 95px;
     margin-top: 3px;
 }
-.condition-pagination > ul > li {
-    cursor: pointer;
-}
+
 .bullet{
     width: 11px;
     height: 11px;
     background: #dee1e4;
+    cursor: pointer;
     border-radius: 100px;
     margin-right: 9px;
 }
-.condition-pagination .bullet.active{
+.condition-pagination .bullet.on{
     background: #3e5bc7;
 }
 
 .condition-conts{
     display: flex;
 }
+
+.iphone-XS{
+    display: none;
+}
+.galaxy-note-s20{
+    display: none;
+}
+.galaxy-s9{
+    display: none;
+}
+.galaxy-s10{
+    display: none;
+}
+.iphone-SE{
+    display: none;
+}
+
+
 .model-img{
     margin-left: 63px;
     margin-top: 43px;
@@ -526,7 +542,16 @@
     vertical-align: -3px;
     margin-left: 6px;
 }
-#chartdiv{
+#iphone-11pro-chart{
+    margin-top: 45px;
+    width: 788px;
+    height: 172px;
+}
+
+.iphone-XS-wrap, .galaxy-note-S20-wrap, .galaxy-S9-wrap, .galaxy-S10-wrap, .iphone-SE-wrap{
+    display: none;
+}
+#iphone-XS-chart, #galaxy-note-S20-chart, #galaxy-S9-chart, #galaxy-S10-chart, #iphone-SE-chart{
     margin-top: 45px;
     width: 788px;
     height: 172px;
@@ -597,6 +622,10 @@
 .new-company > ul {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
+}
+.new-company > ul:last-child {
+    margin-bottom: 50px;
 }
 
 .new-company > ul > li {
@@ -683,7 +712,6 @@
   /* footer */
 
   footer{
-      width: 100%;
       height: 243px;
       background: #f7f7f7;
   }
@@ -691,9 +719,10 @@
       width: 1278px;
       margin: 0 auto;
       display: flex;
+      justify-content: center;
   }
   .foot-logo{
-      margin-top: 154px;
+      margin-top: 144px;
   }
   .foot-down img{
       vertical-align: middle;
@@ -704,7 +733,7 @@
       color: #818181;
 }
 .foot-conts{
-    margin-top: 116px;
+    margin-top: 106px;
     margin-left: 47px;
 }
 .foot-down{
@@ -752,3 +781,39 @@
     font-weight: 600;
     color: #000;
 }
+
+
+/* widget */
+.widget{
+    position: absolute;
+    left: 443px;;
+    top: 18px;
+    width: 177px;
+    height: 243px;
+}
+/* swiper */
+.swiper-container {
+    width: 177px;
+    height: 243px;
+
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
