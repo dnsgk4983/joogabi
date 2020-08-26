@@ -104,7 +104,7 @@ jQuery(function($)
         $('.condition-conts').fadeOut();
         $('.iphone-11pro-max').fadeIn();
         $('.chart-wrap').fadeOut();
-        $('.ipone-11pro-wrap').fadeIn();
+        $('.iphone-11pro-wrap').fadeIn();
     });
     $('.condition-pagination li:nth-child(2)').click(function(){
         $('.condition-conts').fadeOut();

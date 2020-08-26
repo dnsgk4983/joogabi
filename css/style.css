@@ -442,6 +442,7 @@ section{
 .condition-wrap{
     width: 419px;
     height: 285px;
+    overflow: hidden;
 }
 .condition-title{
     display: flex;
@@ -529,6 +530,7 @@ section{
     box-sizing: border-box;
     border-left: 1px solid #dde1e9;
     padding: 0 27px 0 44px;
+    overflow: hidden;
 }
 .chart-title{
     display: flex;
@@ -567,7 +569,6 @@ section{
 /* 배너영역 */
 .main-banner{
     width: 1278px;
-    height: 591px;
     margin: 15px auto;
     display: flex;
     justify-content: space-between;
@@ -643,6 +644,7 @@ section{
 
 .new-company-info{
     position: relative;
+    overflow: hidden;
     height: 170px;
     box-sizing: border-box;
     border-bottom: 1px solid #c7cbcf;
