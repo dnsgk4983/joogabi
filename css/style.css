@@ -16,6 +16,7 @@
       width: 100%;
       font-family: 'Noto Sans KR';
       font-size: 16px;
+      overflow-x: hidden;
   }
 
   a{
@@ -24,7 +25,12 @@
   li{
       list-style: none;
   }
-
+  button{
+      cursor: pointer;
+  }
+  button:focus{
+      outline: none;
+  }
   /* 헤더 시작 */
   #header{
       width: 100%;
@@ -49,7 +55,21 @@
   }
   .user{
       display: flex;
+      align-items: center;
       margin-right: 12px;
+  }
+  .user-name p{
+      font-size: 13px;
+  }
+  .user-name span{
+      font-weight: 600;
+      color: #3e5bc7;
+  }
+  .user-line{
+      width: 1px;
+      height: 21px;
+      margin: 0 10px;
+      background: #c6cad1;
   }
   .login{
       width: 54px;
@@ -63,6 +83,19 @@
   .login p{
       font-size: 13px;
       color: #fff;
+  }
+  .logout{
+      width: 54px;
+      height: 22px;
+      background: #aeaeae;
+      border-radius: 3px;
+      line-height: 22px;
+      text-align: center;
+      margin-left: 9px;
+  }
+  .logout p{
+      color: #fff;
+      font-size: 13px;
   }
   .register{
       width: 54px;
@@ -133,6 +166,7 @@
 /* 섹션 시작 */
 section{
     width: 100%;
+    max-width: 100%;
 }
   .main-wrapper{
       height: 796px;
@@ -143,6 +177,7 @@ section{
       width: 1278px;
       height: 293px;
       display: flex;
+      position: relative;
       justify-content: space-between;
       margin: 0 auto;
   }
@@ -569,7 +604,7 @@ section{
 /* 배너영역 */
 .main-banner{
     width: 1278px;
-    margin: 15px auto;
+    margin: 16px auto;
     display: flex;
     justify-content: space-between;
 }
@@ -716,7 +751,7 @@ section{
 
 
 
-  /* footer */
+  /* 푸터 */
 
   footer{
       height: 243px;
@@ -790,10 +825,10 @@ section{
 }
 
 
-/* widget */
+/* 위젯 */
 .widget{
     position: absolute;
-    left: 443px;;
+    left: -190px;
     top: 18px;
     width: 177px;
     height: 243px;
@@ -810,7 +845,7 @@ section{
     font-size: 18px;
     background: #fff;
 
-    /* Center slide text vertically */
+/* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -824,3 +859,176 @@ section{
     -webkit-align-items: center;
     align-items: center;
   }
+
+
+
+
+
+  /* 로그인페이지 */
+.login-section{
+    height: 363px;
+}
+.login-wrapper{
+    width: 866px;
+    height: 363px;
+    background: #fff;
+    margin: 18px 0 11px;
+    display: flex;
+}
+.login-banner{
+    margin: 12px 32px 11px 13px;
+}
+.login-item{
+    margin-top: 37px;
+}
+.login-title{
+    display: flex;
+}
+.login-title h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* 로그인 입력 창 */
+.login-input{
+    margin-top: 39px;
+}
+.login-input input{
+    width: 370px;
+    height: 45px;
+    padding-left: 36px;
+    border: 1px solid #dbdbdb;
+}
+.login-input input::placeholder{
+    font-size: 14.5px;
+    color: #878787;
+}
+.input-id{
+    background: url('../images/login-page/ico_id.png')no-repeat;
+    background-position: 10px center;
+}
+.input-password{
+    background: url('../images/login-page/ico_password.png')no-repeat;
+    background-position: 11px center;
+    margin-top: 10px;
+}
+/* 로그인 체크박스 */
+.login-check{
+    display: flex;
+    margin-top: 11px;
+    margin-bottom: 36px;
+}
+.login-check p{
+    font-size: 14px;
+    color: #878787;
+}
+.login-check input{
+    border: 1px solid #878787;
+    margin-right: 6px;
+}
+.id-check{
+    display: flex;
+}
+.maintain-check{
+    display: flex;
+    margin-left: 25px;
+}
+.login-button{
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    background: #3e5bc7;
+}
+.forgot-button{
+    margin-top: 7px;
+    background: #fff;
+    font-size: 14.5px;
+    border: 1px solid #878787;
+}
+
+/* 로그인 버튼 */
+.login-btn button{
+    width: 410px;
+    height: 39px;
+    line-height: 39px;
+}
+.no-user-wrap{
+    padding: 0 32px;
+}
+/* 회원가입 영역 */
+.no-user-wrapper{
+    width: 401px;
+    height: 363px;
+    background: #fff;
+    margin: 18px 0 11px;
+}
+
+.no-user-title{
+    margin-top: 36px;
+    margin-bottom: 39px;
+}
+.no-user-title h3{
+    font-size: 18px;
+    color: #303030;
+    font-weight: 600;
+}
+.no-user-sub p{
+    font-size: 14.5px;
+    letter-spacing: -1px;
+    color: #878787;
+}
+.no-user-item{
+    margin-top: 80px;
+    display: flex;
+}
+.no-user-line{
+    width: 1px;
+    height: 81px;
+    background: #dde1e9;
+    margin: 0 30px;
+}
+.no-user-line2{
+    margin: 0 26px;
+}
+.no-user-share{
+    margin-top: 7px;
+    margin-left: 6px;
+}
+.no-user-share img{
+    margin-left: 18px;
+    margin-bottom: 9px;
+}
+.no-user-update{
+    margin-top: 7px;
+}
+.no-user-update img{
+    margin-left: 24px;
+    margin-bottom: 12px;
+}
+.no-user-event{
+    margin-top: 7px;
+    margin-left: -4px;
+}
+.no-user-event img{
+    margin-left: 17px;
+    margin-bottom: 11px;
+}
+.no-user-item p{
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: -1px;
+    color: #aeaeae;
+    text-align: center;
+}
+.no-user-register button{
+    width: 336px;
+    height: 39px;
+    background: #3e5bc7;
+    color: #fff;
+    border: none;
+    margin-top: 23px;
+}
+.no-user-register button img{
+    margin-right: 7px;
+    vertical-align: -1px;
+}
