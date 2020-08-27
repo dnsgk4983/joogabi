@@ -865,13 +865,18 @@ section{
 
 
   /* 로그인페이지 */
+.login-page-wrapper{
+    height: 597px;
+}
 .login-section{
-    height: 363px;
+    height: 381px;
 }
 .login-wrapper{
-    width: 866px;
+    width: 876px;
     height: 363px;
     background: #fff;
+    border: 1px solid #dde1e9;
+    box-sizing: border-box;
     margin: 18px 0 11px;
     display: flex;
 }
@@ -910,6 +915,11 @@ section{
 .input-password{
     background: url('../images/login-page/ico_password.png')no-repeat;
     background-position: 11px center;
+    margin-top: 10px;
+}
+.input-phone{
+    background: url('../images/find-page/ico_phone.png')no-repeat;
+    background-position: 13px center;
     margin-top: 10px;
 }
 /* 로그인 체크박스 */
@@ -957,9 +967,11 @@ section{
 }
 /* 회원가입 영역 */
 .no-user-wrapper{
-    width: 401px;
+    width: 391px;
     height: 363px;
     background: #fff;
+    border: 1px solid #dde1e9;
+    box-sizing: border-box;
     margin: 18px 0 11px;
 }
 
@@ -995,7 +1007,7 @@ section{
     margin-left: 6px;
 }
 .no-user-share img{
-    margin-left: 18px;
+    margin-left: 14px;
     margin-bottom: 9px;
 }
 .no-user-update{
@@ -1010,7 +1022,7 @@ section{
     margin-left: -4px;
 }
 .no-user-event img{
-    margin-left: 17px;
+    margin-left: 14px;
     margin-bottom: 11px;
 }
 .no-user-item p{
@@ -1031,4 +1043,375 @@ section{
 .no-user-register button img{
     margin-right: 7px;
     vertical-align: -1px;
+}
+
+/* 로그인페이지 질문 */
+.questions-wrap{
+    width: 1278px;
+    height: 68px;
+    margin: 11px auto 13px;
+    background: #fff;
+    border: 1px solid #dde1e9;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.question-title{
+    width: 172px;
+    height: 68px;
+    line-height: 68px;
+    border-right: 1px solid #c6cad1;
+    box-sizing: border-box;
+}
+.question-title p{
+    font-size: 14px;
+    color: #939393;
+}
+.customer-service{
+    width: 347px;
+    height: 68px;
+    line-height: 68px;
+    border-right: 1px solid #c6cad1;
+    box-sizing: border-box;
+}
+.customer-service p{
+    font-size: 14.5px;
+    color: #000;
+}
+.customer-service img{
+    margin-right: 7px;
+}
+.customer-service span{
+    font-weight: 600;
+    margin-left: 13px;
+}
+.kakao-plus{
+    width: 346px;
+    height: 68px;
+    line-height: 68px;
+    border-right: 1px solid #c6cad1;
+    box-sizing: border-box;
+}
+.kakao-plus p{
+    font-size: 14.5px;
+    color: #000;
+}
+.kakao-plus img{
+    margin-right: 8px;
+}
+.kakao-plus span{
+    margin-left: 15px;
+    font-weight: 600;
+}
+.service-time{
+    width: 413px;
+    height: 68px;
+    line-height: 68px;
+}
+.service-time p{
+    font-size: 14px;
+    color: #878787;
+}
+
+
+/* find 페이지 */
+.find-page-wrapper{
+    height: 625px;
+}
+.find-section{
+    width: 1278px;
+    height: 407px;
+    margin: 0 auto;
+}
+.find-wrapper{
+    width: 1278px;
+    height: 389px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #dde1e9;
+    box-sizing: border-box;
+    margin-top: 18px;
+    display: flex;
+}
+.find-banner{
+    margin: 15px 0 14px 14px;
+}
+.find-item{
+    margin-top: 37px;
+    margin-left: 36px;
+}
+.find-title{
+    display: flex;
+}
+.find-title p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #303030;
+}
+.find-sub{
+    margin-top: 38px;
+}
+.find-sub p{
+    color: #878787;
+    font-size: 14.5px;
+}
+.find-sub p:last-child{
+    margin-top: 5px;
+}
+.find-input-wrap{
+    display: flex;
+    margin-top: 35px;
+}
+.find-input-wrap input{
+    width: 308px;
+    height: 45px;
+}
+.find-input-wrap p{
+    font-size: 14.5;
+    color: #000;
+    font-weight: 600;
+    margin-bottom:12px;
+}
+.find-input-wrap input{
+    padding-left: 36px;
+    border: 1px solid #dbdbdb;
+}
+.find-line{
+    width: 1px;
+    height: 194px;
+    background: #dde1e9;
+    margin: 0 36px;
+}
+
+.find-id{
+    width: 350px;
+}
+
+.find-id button,
+.find-password button{
+    font-size: 18px;
+    color: #fff;
+    background: #3e5bc7;
+    width: 350px;
+    height: 39px;
+    line-height: 39px;
+    border: none;
+    margin-top: 31px;
+}
+.find-password button{
+    margin-top: 90px;
+}
+
+/* register page */
+.register-page-wrapper{
+    height: 934px;
+}
+.register-section{
+    height: 411px;
+}
+.register-wrap{
+    width: 1278px;
+    height: 381px;
+    padding: 37px 28px 43px 30px;
+    border: 1px solid #dde1e9;
+    box-sizing: border-box;
+    background: #fff;
+    margin-top: 18px;
+}
+.register-title{
+    display: flex;
+    margin-bottom: 28px;
+}
+.register-title h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+.register-step-wrap{
+    width: 1221px;
+    height: 96px;
+    line-height: 96px;
+    margin: 0 auto;
+    background: #f4f5f7;
+}
+.register-step-wrap>ul{
+    width: 946px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.step{
+    display: flex;
+    line-height: 18px;
+    margin-top: 30px;
+}
+.next-step{
+
+}
+.step-img{
+    margin-top: 7px;
+    margin-right: 20px;
+}
+.step-item p{
+    color: #878787;
+    font-size: 12.5px;
+    font-weight: 600;
+}
+.step-item h3{
+    color: #878787;
+    font-size: 20.5px;
+    font-weight: 600;
+}
+.step.active p{
+    color: #000;
+}
+.step.active h3{
+    color: #000
+}
+
+/* register-info */
+.register-info-wrap{
+    width: 1278px;
+    height: 494px;
+    margin: 0 auto;
+    border: 1px solid #dde1e9;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 45px 27px 55px 30px;
+}
+.register-sub{
+    margin-top: 29px;
+}
+.register-sub p{
+    font-size: 14.5px;
+    color: #878787;
+}
+.register-input{
+    display: flex;
+}
+.register-input input{
+    width: 367px;
+    height: 45px;
+    padding-left: 36px;
+    border: 1px solid #dbdbdb;
+}
+.register-user input{
+    background: url('../images/register-page/ico_user.png')no-repeat;
+    background-position: 10px center;
+}
+.register-input h3{
+    font-size: 14.5px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 58px;
+    margin-bottom: 12px;
+}
+
+.register-nickname{
+    margin-left: 19px;
+}
+.register-nickname input{
+    background: url('../images/register-page/ico_company.png')no-repeat;
+    background-position: 10px center;
+}
+
+
+.register-password h3{
+    font-size: 14.5px;
+    font-weight: 600;
+    color: #000;
+}
+.register-password span{
+    font-size: 12.5px;
+    color: #878787;
+    margin-left: 12px;
+}
+
+.register-password input{
+    width: 407px;
+    height: 45px;
+    padding-left: 36px;
+    margin-top: 12px;
+    background: url('../images/register-page/ico_password.png')no-repeat;
+    background-position: 10px center;
+    border: 1px solid #dbdbdb;
+}
+.register-password input:last-child{
+    margin-left: 19px;
+}
+
+.register-phone{
+    margin-top: 43px;
+}
+.register-phone h3{
+    font-size: 14.5px;
+    font-weight: 600;
+    color: #000;
+}
+.register-phone-input{
+    display: flex;
+}
+.register-phone-wrap{
+    margin-top: 12px;
+    display: flex;
+}
+.register-phone-wrap:last-child{
+    margin-left: 19px;
+}
+.register-phone-wrap input{
+    width: 407px;
+    height: 45px;
+    padding-left: 36px;
+    background: url('../images/register-page/ico_phone.png')no-repeat;
+    background-position: 10px center;
+    border: 1px solid #dbdbdb;
+}
+.register-phone-wrap button{
+    width: 68px;
+    height: 49px;
+    line-height: 49px;
+    background: #878787;
+    color: #fff;
+    text-align: center;
+    border: none;
+}
+
+.register-line{
+    width: 1220px;
+    height: 1px;
+    background: #dde1e9;
+    margin: 31px 0 35px;
+}
+
+.register-others h3{
+    font-size: 14.5px;
+    font-weight: 600;
+    color: #000;
+}
+.register-others select{
+    width: 283px;
+    height: 45px;
+    border: 1px solid #dbdbdb;
+    padding-left: 11px;
+    color: #878787;
+}
+.register-select-area{
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-next-btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+.register-next-btn button{
+    width: 350px;
+    height: 39px;
+    background: #3e5bc7;
+    line-height: 39px;
+    text-align: center;
+    border: 0;
+    color: #fff;
 }
