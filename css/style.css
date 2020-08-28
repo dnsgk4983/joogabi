@@ -15,10 +15,9 @@
   body{
       width: 100%;
       font-family: 'Noto Sans KR';
-      font-size: 16px;
+      font-size: 14px;
       overflow-x: hidden;
   }
-
   a{
       text-decoration: none;
   }
@@ -31,6 +30,8 @@
   button:focus{
       outline: none;
   }
+  
+
   /* 헤더 시작 */
   #header{
       width: 100%;
@@ -128,6 +129,7 @@
   }
   .menu > ul > li:not(:nth-child(6)) {
       width: 128px;
+      height: 53.5px;
       text-align: center;
       box-sizing: border-box;
       border-right: 1px solid #d7dbe3;
@@ -140,11 +142,19 @@
     box-sizing: border-box;
     border-right: 1px solid #d7dbe3;
   }
+  .menu > ul > li.active{
+      background: #3e5bc7 !important;
+  }
+
+  .menu > ul > li.active > a{
+      color: #fff !important;
+  }
+  
   .menu > ul > li > a {
       font-size: 17px;
       font-weight: 600;
       color: #303030;
-  }
+    }
 
   .menu-btn{
       margin: 20px 16px 0;
@@ -1209,7 +1219,7 @@ section{
 
 
 
-/* register agree page */
+/* 회원가입 첫 페이지 */
 .register-agree-wrapper{
     height: 693px;
 }
@@ -1534,7 +1544,7 @@ section{
 .success-info-box{
     display: flex;
 }
-.success-info-box>div{
+.success-info-box > div{
     width: 525px;
     height: 45px;
     line-height: 45px;
@@ -1596,4 +1606,502 @@ section{
     border: none;
     color: #fff;
     font-size: 18px;
+}
+
+
+
+/* 트랜드페이지 */
+.trend-wrapper{
+    height: 1100px;
+}
+.trend-section{
+    height: 311px;
+    padding-top: 18px;
+    margin-bottom: 14px;
+}
+.trend-top-wrap{
+    width: 1278px;
+    height: 311px;
+    background: #fff;
+    border: 1px solid #dde1e9;
+    box-sizing: border-box;
+    
+}
+.trend-day-select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 23px;
+}
+.trend-day-select i{
+    font-size: 25px;
+    color: #999999;
+}
+.trend-day-title{
+    margin: 0 76px;
+}
+.trend-day-title p{
+    font-size: 18px;
+    color: #303030;
+}
+.trend-line{
+    width: 1220px;
+    height: 1px;
+    margin: 0 auto;
+    background: #dde1e9;
+    margin-top: 18px;
+    margin-bottom: 29px;
+}
+.trend-search{
+    display: flex;
+}
+.trend-search-input{
+    margin-left: 37px;
+}
+.trend-search-input-wrap input{
+    width: 458px;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid #939393;
+    box-sizing: border-box;
+    background: url('../images/trend-page/ico_saerch.png')no-repeat;
+    background-position: 0 center;
+    padding-left: 26px;
+}
+.trend-search-line{
+    width: 458px;
+    height: 1px;
+    background: #939393;
+    margin: 6px 0 17px;
+}
+.trend-search-checkbox{
+    display: flex;
+    margin-top: 19px;
+}
+.trend-search-checkbox input{
+    vertical-align: -1px;
+    margin-right: 6px;
+}
+.trend-search-deduction{
+    margin-left: 17px;
+}
+
+.trend-conts{
+    width: 696px;
+    margin-left: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+.trend-item{
+    width: 168px;
+    height: 73px;
+    text-align: center;
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+    padding-top: 19px;
+}
+.trend-item img{
+    vertical-align: -2px;
+    margin-right: 4px;
+}
+.trend-item > p{
+    font-size: 12px;
+    color: #878787;
+    margin-bottom: 11px;
+}
+.trend-item > b{
+    font-weight: 600;
+    color: #303030;
+}
+
+.trend-obj{
+    margin-left: 36px;
+}
+.trend-obj-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 260px;
+    height: 78px;
+    background: #f4f5f7;
+    padding-left: 11px;
+}
+
+.trend-obj-info{
+    margin-left: 13px;
+}
+.trend-obj-item i{
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    color: #939393;
+    font-size: 21px;
+}
+.trend-obj-info b{
+    font-size: 13px;
+    font-weight: 600;
+    color: #303030;
+}
+.trend-obj-info p{
+    font-size: 13px;
+    margin-top: 4px;
+    color: #939393;
+}
+
+.trend-tab-section{
+    width: 1278px;
+    height: auto;
+    margin: 0 auto;
+}
+.trend-tabs > ul {
+    display: flex;
+    margin-left: 9px;
+}
+.trend-tabs > ul > li {
+    padding: 8px 5px;
+    margin-left: 4px;
+    border-radius: 3px;
+    background: #acacac;
+}
+.trend-tabs > ul > li > a{
+    color: #fff;
+    font-size: 12px;
+}
+
+.trend-tabs > ul > li > a > i {
+    color: #717171;
+}
+
+.trend-chart-section{
+    width: 1278px;
+    height: 605px;
+    padding-bottom: 14px;
+    background: #fff;
+    border: 1px solid #dde1e9;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 44px;
+}
+.trend-chart-title{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 36px;
+    margin-top: 41px;
+}
+.trend-chart-title > p{
+    color: #303030;
+    font-size: 13px;
+}
+.trend-chart-check{
+    display: flex;
+}
+.trend-chart-check input{
+    vertical-align: -1px;
+    margin-right: 7px;
+}
+.trend-chart-check span{
+    color: #878787;
+}
+.trend-chart-normal span{
+    color: #7d58ff;
+}
+.trend-chart-auto{
+    margin-left: 48px;
+}
+.trend-chart-month{
+    margin-left: 38px;
+} 
+
+.trend-chart-sub{
+    padding-left: 36px;
+}
+.trend-chart-sub > p{
+    color: #939393;
+    font-size: 13px;
+    margin-bottom: 31px;
+}
+.chart-area{
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+}
+#chartdiv{
+    width: 1200px;
+    height: 500px;
+}
+
+/* 트랜드 게시판 탭 영역 */
+.trend-board-tab > ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 49px;
+    margin-bottom: 48px;
+}
+.trend-board-tab > ul > li{
+    width: 175px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    border: 1px solid #939393;
+    border-right: none;
+    box-sizing: border-box;
+}
+.trend-board-tab > ul > li:last-child{
+    border-right: 1px solid #939393;
+}
+.trend-board-tab > ul > li > a{
+    color: #939393;
+    font-size: 13px;
+}
+.trend-board-tab > ul >li.active {
+    border: 1px solid #3e5bc7;
+    background: #3e5bc7;
+}
+.trend-board-tab > ul > li.active a{
+    color: #fff;
+}
+/* 트랜드 게시판 탭 영역 끝 */
+
+/* 트랜드 게시판 영역 */
+.trend-board-wrap{
+    width: 1203px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.trend-board-table table{
+    border: 1px solid #dde1e9;
+    text-align: center;
+}
+.trend-board-table tr{
+    height: 39px;
+    line-height: 39px;
+}
+.trend-board-table tr:not(:first-child){
+    border-top: 1px solid #dde1e9;
+}
+.trend-board-table th{
+    color: #303030;
+    font-weight: 600;
+}
+.trend-board-table td{
+    color: #939393;
+    cursor: pointer;
+}
+
+.trend-board-count > ul {
+    display: flex;
+    width: 226px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 105px;
+}
+.trend-board-count > ul > li > a{
+    color: #939393;
+}
+.trend-board-count > ul > li.on > a{
+    font-weight: 600;
+    color: #303030;
+}
+.trend-board-count > ul > a > i{
+    color: #939393;
+}
+/* 트랜드 게시판 영역 끝 */
+
+/* 단가표 게시판 영역 */
+.unit-wrapper{
+    height: 399px;
+}
+.unit-section{
+    height: 399px;
+    padding-top: 18px;
+}
+/* 단가표 지역 선택 영역 */
+.unit-area-section{
+    width: 1278px;
+    height: 360px;
+    background: #fff;
+    border: 1px solid #dde1e9;
+    box-sizing: border-box;
+}
+.unit-area-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 23px;
+}
+.unit-day-title{
+    margin: 0 75px;
+}
+.unit-day-title p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.unit-area-title i{
+    font-size: 25px;
+    color: #999999;
+}
+/* 단가표 지역 선택 영역 끝 */
+.unit-line{
+    width: 1220px;
+    height: 1px;
+    background: #dde1e9;
+    margin: 0 auto;
+    margin-top: 18px;
+    margin-bottom: 33px;
+}
+/* 단가표 지역 검색 창 영역 */
+.unit-area-search{
+    margin-left: 36px;
+}
+.unit-area-search input{
+    width: 526px;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid #939393;
+    background: url('../images/trend-page/ico_saerch.png')no-repeat;
+    background-position: 0 center;
+    padding-left: 24px;
+}
+.unit-area-search p{
+    margin-top: 16px;
+    color: #878787;
+}
+/* 단가표 지역 검색 창 끝 */
+/* 단가표 지역 탭 시작 */
+.unit-area-tab{
+    margin-top: 33px;
+}
+.unit-area-tab > ul {
+    width: 1206px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.unit-area-tab > ul > li {
+    width: 134px;
+    height: 69px;
+    line-height: 69px;
+    text-align: center;
+    border: 1px solid #939393;
+    border-right: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.unit-area-tab > ul > li:last-child {
+    border-right: 1px solid #939393;
+}
+.unit-area-tab a{
+    color: #000000;
+}
+.unit-area-tab > ul > li.active {
+    background: #3e5bc7;
+    border-color: #3e5bc7;
+}
+.unit-area-tab > ul > li.active > a{
+    color: #fff;
+}
+.unit-area-tab > ul:last-child > li {
+    border-top: none;
+}
+/* 단가표 지역 탭 끝 */
+
+/* 단가표 영역 */
+.unit-table-wrap{
+    width: 1190px;
+    height: 1356px;
+    margin: 0 auto;
+}
+.unit-table-title{
+    margin-top: 53px;
+    margin-bottom: 22px;
+}
+.unit-table-title p{
+    font-size: 14px;
+    color: #000000;
+    font-weight: 600;
+}
+.unit-table-title span{
+    color: #364aba;
+    font-weight: 800;
+}
+.unit-table{
+    display: flex;
+    justify-content: space-between;
+}
+.unit-table:not(:first-child){
+    margin-top:14px;
+}
+.unit-table-item{
+    width: 226px;
+    height: 160px;
+    border: 1px solid #c7cbcf;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 0 0 3px rgba(0,0,0, .2);
+}
+.unit-table-recommend{
+    position: absolute;
+    top: 9px;
+    right: 9px;
+}
+.unit-table-info{
+    padding-left: 21px;
+    padding-top: 22px;
+}
+.unit-table-marker{
+    display: flex;
+}
+.unit-table-company{
+    margin-top: 4px;
+}
+.unit-table-company p{
+    color: #939393;
+    font-size: 14.5;
+    font-weight: 600;
+}
+.unit-table-area{
+    margin-top: 5px;
+}
+.unit-table-area p{
+    color: #939393;
+    font-size: 12px;
+}
+.unit-table-number{
+    margin-top: 10px;
+}
+.unit-table-number p{
+    color: #939393;
+    font-size: 12px;
+}
+.unit-table-conts{
+    margin-top: 22px;
+    border-top: 1px solid #c7cbcf;
+    display: flex;
+    justify-content: space-between;
+}
+.unit-view-table{
+    width: 113px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    border-right: 1px solid #c7cbcf;
+}
+.unit-view-table a{
+    color: #000;
+    font-size: 14.5px;
+    font-weight: 600;
+}
+.unit-company-info{
+    width: 113px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+}
+.unit-company-info a{
+    color: #000;
+    font-size: 14.5px;
+    font-weight: 600;
 }

@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+
+    <title>중가비</title>
+
+
+    <!-- ==== swiper.css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- ==== fontawesome.css -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- ==== style.css ==== -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 메인 헤더 시작 -->
+    <header id="header">
+        <div class="header-wrap">
+            <div class="gnb">
+                <!-- 로고 -->
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="로고"></a>
+                </div>
+                <!-- 로고끝 -->
+                <!-- 로그인 / 회원가입 -->
+                <div class="user">
+                    <div class="user-name">
+                        <p>안녕하세요! <span>joongabi_korea</span>님</p>
+                    </div>
+                    <div class="logout">
+                        <a href="index.html"><p>로그아웃</p></a>
+                    </div>
+                    <div class="user-line"></div>
+                    <div class="user-icon">
+                        <a href="#"><img src="images/ico_user.png" alt="유저아이콘"></a>
+                    </div>
+                </div>
+                <!-- 로그인 / 회원가입 끝 -->
+            </div>
+        </div>
+        <!-- 메뉴 -->
+        <div class="menu-wrap">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">가격비교</a>
+                    </li>
+                    <li class="active">
+                        <a href="trend.html">트랜드</a>
+                    </li>
+                    <li>
+                        <a href="#">단가표게시판</a>
+                    </li>
+                    <li>
+                        <a href="#">업체리스트</a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="menu-btn">
+                                <div class="menu-line"></div>
+                                <div class="menu-line"></div>
+                                <div class="menu-line"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        <!-- 메뉴 끝 -->
+    </header>
+    <!-- 메인 헤더 끝 -->
+
+    <!-- 메인 섹션 시작 -->
+    <section>
+        <div class="main-wrapper trend-wrapper">
+            <div class="main-section trend-section">
+                <div class="widget">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                        </div>
+                        <!-- Add Pagination -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="trend-top-wrap">
+                    <div class="trend-day-select">
+                        <a href="#"><i class="fa fa-chevron-circle-left"></i></a>
+                        <div class="trend-day-title">
+                            <p>2020년 7월 31일(금)</p>
+                        </div>
+                        <a href="#"><i class="fa fa-chevron-circle-right"></i></a>
+                    </div>
+                    <div class="trend-line"></div>
+                    <div class="trend-search">
+                        <div class="trend-search-input">
+                            <div class="trend-search-input-wrap">
+                                <input type="text" placeholder="갤럭시 노트 10">
+                            </div>
+                            <div class="trend-search-checkbox">
+                                <div class="trend-search-decept">
+                                    <input type="checkbox">최고 / 최저가 제외
+                                </div>
+                                <div class="trend-search-deduction">
+                                    <input type="checkbox">차감 제외
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trend-conts">
+                            <div class="trend-item">
+                                <p><img src="images/trend-page/ico_day.png" alt="출시일자">출시일자</p>
+                                <b>2019년 4월 10일</b>
+                            </div>
+                            <div class="trend-item">
+                                <p><img src="images/trend-page/ico_pay.png" alt="출시금액">출시금액</p>
+                                <b>569,000 원</b>
+                            </div>
+                            <div class="trend-item">
+                                <p><img src="images/trend-page/ico_avg.png" alt="현재금액(업체평균)">현재금액(업체평균)</p>
+                                <b>254,000 원</b>
+                            </div>
+                            <div class="trend-item">
+                                <p><img src="images/trend-page/ico_remaining.png" alt="잔존율">잔존율</p>
+                                <b>3.5 %</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trend-line"></div>
+                    <div class="trend-obj">
+                        <div class="trend-obj-wrap">
+                            <div class="trend-obj-item trend-samsung">
+                                <i class="fa fa-times-circle"></i>
+                                <div class="trend-img">
+                                    <img src="images/trend-page/samsung_logo.png" alt="samsung">
+                                </div>
+                                <div class="trend-obj-info">
+                                    <b>삼성 갤럭시 노트 10</b>
+                                    <p>SAMS1M-N976N</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="trend-tab-section">
+                <div class="trend-tabs">
+                    <ul>
+                        <li>
+                            <a href="#">갤럭시 노트 10 32G<i class="fa fa-times"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">갤럭시 노트 10 64G<i class="fa fa-times"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">갤럭시 노트 10 128G<i class="fa fa-times"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">갤럭시 노트 10 256G<i class="fa fa-times"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="trend-chart-section">
+                <div class="trend-chart-title">
+                    <p>삼성 갤럭시 노트 10</p>
+                    <div class="trend-chart-check">
+                        <div class="trend-chart-normal">
+                            <input type="checkbox"><span>일반거래가격</span>
+                        </div>
+                        <div class="trend-chart-auto">
+                            <input type="checkbox"><span>자동확대 잠금</span>
+                        </div>
+                        <div class="trend-chart-month">
+                            <input type="checkbox"><span>3개월 단위보기</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trend-chart-sub">
+                    <p>SAMSUNG SM-N976N</p>
+                </div>
+                <div class="chart-area">
+                    <div id="chartdiv"></div>
+                </div>
+            </div>
+        </div>
+        <div class="trend-board-wrap">
+            <div class="trend-board-tab">
+                <ul>
+                    <li>
+                        <a href="#tab1">갤럭시 노트 10 32G</a>
+                    </li>
+                    <li class="active">
+                        <a href="#tab2">갤럭시 노트 10 64G</a>
+                    </li>
+                    <li>
+                        <a href="#tab3">갤럭시 노트 10 128G</a>
+                    </li>
+                    <li>
+                        <a href="#tab4">갤럭시 노트 10 256G</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="trend-board-table">
+                <table width="100%">
+                    <tr>
+                        <th>작성일</th>
+                        <th>모델명</th>
+                        <th>평균매입가(단위 : 원)</th>
+                        <th>잔존율(단위 : %)</th>
+                    </tr>
+                    <tr>
+                        <td>2020-01-14 16:00</td>
+                        <td>갤럭시 노트 S10 64G</td>
+                        <td>655,3450</td>
+                        <td>65</td>
+                    </tr>
+                    <tr>
+                        <td>2020-01-14 16:00</td>
+                        <td>갤럭시 노트 S10 64G</td>
+                        <td>655,3450</td>
+                        <td>65</td>
+                    </tr>
+                    <tr>
+                        <td>2020-01-14 16:00</td>
+                        <td>갤럭시 노트 S10 64G</td>
+                        <td>655,3450</td>
+                        <td>65</td>
+                    </tr>
+                    <tr>
+                        <td>2020-01-14 16:00</td>
+                        <td>갤럭시 노트 S10 64G</td>
+                        <td>655,3450</td>
+                        <td>65</td>
+                    </tr>
+                    <tr>
+                        <td>2020-01-14 16:00</td>
+                        <td>갤럭시 노트 S10 64G</td>
+                        <td>655,3450</td>
+                        <td>65</td>
+                    </tr>
+                    <tr>
+                        <td>2020-01-14 16:00</td>
+                        <td>갤럭시 노트 S10 64G</td>
+                        <td>655,3450</td>
+                        <td>65</td>
+                    </tr>
+                    <tr>
+                        <td>2020-01-14 16:00</td>
+                        <td>갤럭시 노트 S10 64G</td>
+                        <td>655,3450</td>
+                        <td>65</td>
+                    </tr>
+                    <tr>
+                        <td>2020-01-14 16:00</td>
+                        <td>갤럭시 노트 S10 64G</td>
+                        <td>655,3450</td>
+                        <td>65</td>
+                    </tr>
+                    <tr>
+                        <td>2020-01-14 16:00</td>
+                        <td>갤럭시 노트 S10 64G</td>
+                        <td>655,3450</td>
+                        <td>65</td>
+                    </tr>
+                    <tr>
+                        <td>2020-01-14 16:00</td>
+                        <td>갤럭시 노트 S10 64G</td>
+                        <td>655,3450</td>
+                        <td>65</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="trend-board-count">
+                <ul>
+                    <li>
+                        <a href="#">1</a>
+                    </li>
+                    <li class="on">
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">6</a>
+                    </li>
+                    <li>
+                        <a href="#">7</a>
+                    </li>
+                    <li>
+                        <a href="#">8</a>
+                    </li>
+                    <a href="#"><i class="fa fa-chevron-right"></i></a>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- 메인 푸터 시작 -->
+    <footer>
+        <div class="foot-wrap">
+            <!-- 푸터 로고 -->
+            <div class="foot-logo">
+                <a href="#">
+                    <img src="images/upstairs.png" alt="footer-logo">
+                </a>
+            </div>
+            <!-- 푸터 다운로드 영역 -->
+            <div class="foot-conts">
+                <div class="foot-down">
+                    <div class="foot-pc-manager">
+                        <a href="#">
+                            <p><span><img src="images/ico_down.png" alt="download"></span>중가비 PC매니저 다운로드</p>
+                        </a>
+                    </div>
+                    <div class="foot-line"></div>
+                    <div class="foot-mobile-manager">
+                        <a href="#">
+                            <p><span><img src="images/ico_down.png" alt="download"></span>중가비 모바일 매니저 다운로드</p>
+                        </a>
+                    </div>
+                    <div class="foot-line"></div>
+                    <div class="foot-phone-gabi">
+                        <a href="#">
+                            <p><span><img src="images/ico_down.png" alt="download"></span>폰가비 앱 다운로드</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- 푸터 법인명 등 정보 -->
+                <div class="foot-info">
+                    <div class="foot-info-first">
+                        <p>법인명 : 주식회사 업스테어스</p>
+                        <div class="foot-info-line"></div>
+                        <p>사업자등록번호 : 139-87-01176</p>
+                        <div class="foot-info-line"></div>
+                        <p>대표자 : 장영석</p>
+                        <div class="foot-info-line"></div>
+                        <p>서울시 용산구 한강대로 54길 25, 4층(한강로 1가, 신승빌딩)</p>
+                    </div>
+                    <div class="foot-info-seconds">
+                            <a href="#">회사소개</a>
+                            <div class="foot-info-line"></div>
+                            <a href="#">개인정보취급방침</a>
+                            <div class="foot-info-line"></div>
+                            <a href="#">이용정책</a>
+                            <div class="foot-info-line"></div>
+                            <a href="#">이메일무단수집거부</a>
+                    </div>
+                    <!-- 푸터 카피라이트 -->
+                    <div class="foot-copyright">
+                        <p>Copyright © 2020 Upstairs.Inc All Rights Reserved.</p>
+                    </div>
+                </div>
+                <!-- 푸터 법인명 등 정보 끝 -->
+            </div>
+        </div>
+    </footer>
+    <!-- 메인 푸터 끝 -->
+
+    
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="js/chart.js"></script>
+    <script src='js/script.js'></script>
+    
+
+    <script type="text/javascript">
+        var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        }
+    });
+    </script>
+    
+</body>
+</html>
