@@ -21,16 +21,16 @@
             <div class="gnb">
                 <!-- 로고 -->
                 <div class="logo">
-                    <a href="#"><img src="images/logo.png" alt="로고"></a>
+                    <a href="index.html"><img src="images/logo.png" alt="로고"></a>
                 </div>
                 <!-- 로고끝 -->
                 <!-- 로그인 / 회원가입 -->
                 <div class="user">
                     <div class="login">
-                        <a href="#"><p>로그인</p></a>
+                        <a href="login-page.html"><p>로그인</p></a>
                     </div>
                     <div class="register">
-                        <a href="#"><p>회원가입</p></a>
+                        <a href="register.html"><p>회원가입</p></a>
                     </div>
                 </div>
                 <!-- 로그인 / 회원가입 끝 -->
@@ -74,8 +74,8 @@
 
     <!-- 메인 섹션 시작 -->
     <section>
-        <div class="main-wrapper register-page-wrapper">
-            <div class="main-section register-section">
+        <div class="main-wrapper register-agree-wrapper">
+            <div class="main-section register-agree-section">
                 <div class="widget">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
@@ -96,7 +96,7 @@
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
-                <div class="register-wrap">
+                <div class="register-agree-wrap">
                     <div class="register-title">
                         <div class="price-title-line"></div>
                         <h3>중가비 회원가입</h3>
@@ -138,69 +138,61 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="register-sub">
-                        <p>중가비 회원가입하고 다양한 혜택을 누리세요! 정보 입력 시 원활한 서비스를 위해 꼼꼼하게 입력 부탁 드립니다!</p>
-                    </div>
-                    <div class="register-input">
-                        <div class="register-user">
-                            <h3>회원아이디</h3>
-                            <input type="text" placeholder="회원 아이디를 입력해 주세요">
+                    <div class="agree-info-wrap">
+                        <div class="agree-info">
+                            <div class="agree-title">
+                                <h3>서비스 이용약관</h3>
+                            </div>
+                            <div class="agree-sub">
+                                <p>
+                                    제 1조 (목적)<br>
+                                    본 약관은 업스테어스 (이하 "회사")가 운영하는 "서비스"를 이용함 에 있어<br>
+                                    "회사"와 회원간의 이용 조건 및 제반 절차, 권리, 의무 및 책임사항, 기타 필요<br>
+                                    한 사항을 규정함을 목적으로 한다.<br>
+                                    제 2조 (용어의 정의)<br>
+                                    이 약관에서 사용하는 용어의 정의는 아래와 같다.<br>
+                                    ① "사이트"라 함은 회사가 서비스를 "회원"에게 제공하기 위하여<br>
+                                    아래와 같은 사항을 별도로 규정
+                                </p>
+                            </div>
+                            <div class="agree-checkbox">
+                                <input type="checkbox"><span>서비스 이용약관에 동의 합니다</span>
+                            </div>
                         </div>
-                        <div class="register-nickname">
-                            <h3>회사명(닉네임)</h3>
-                            <input type="text" placeholder="회사명을 입력해 주세요">
+                        <div class="agree-info">
+                            <div class="agree-title">
+                                <h3>개인정보처리방침</h3>
+                            </div>
+                            <div class="agree-sub">
+                                <p>
+                                    제 1조 (목적)<br>
+                                    본 약관은 업스테어스 (이하 "회사")가 운영하는 "서비스"를 이용함 에 있어<br>
+                                    "회사"와 회원간의 이용 조건 및 제반 절차, 권리, 의무 및 책임사항, 기타 필요<br>
+                                    한 사항을 규정함을 목적으로 한다.<br>
+                                    제 2조 (용어의 정의)<br>
+                                    이 약관에서 사용하는 용어의 정의는 아래와 같다.<br>
+                                    ① "사이트"라 함은 회사가 서비스를 "회원"에게 제공하기 위하여<br>
+                                    아래와 같은 사항을 별도로 규정
+                                </p>
+                            </div>
+                            <div class="agree-checkbox">
+                                <input type="checkbox"><span>개인정보처리방침에 동의 합니다</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="register-info-wrap">
-                <div class="register-password">
-                    <h3>비밀번호<span>*6~16자의 영문 대소문, 숫자, 특수기호만 사용가능(공백입력 불가)</span></h3>
-                    <input type="text" placeholder="비밀번호를 입력해 주세요">
-                    <input type="text" placeholder="비밀번호를 다시 입력해 주세요(재확인)">
-                </div>
-                <div class="register-phone">
-                    <h3>휴대전화</h3>
-                    <div class="register-phone-input">
-                        <div class="register-phone-wrap">
-                            <input type="text" placeholder="휴대폰번호를 입력해 주세요">
-                            <button type="button">발송</button>
+                    <div class="agree-line"></div>
+                    <div class="agree-check-wrap">
+                        <div class="agree-check-select">
+                            <input type="checkbox"><span>[선택]마케팅 정보 수신에 동의</span>
                         </div>
-                        <div class="register-phone-wrap">
-                            <input type="text" placeholder="인증번호를 입력해 주세요">
-                            <button type="button">인증</button>
+                        <div class="agree-check-all">
+                            <input type="checkbox"><span>서비스 이용약관과 개인정보처리방침에 모두 동의 합니다</span>
                         </div>
                     </div>
-                </div>
-                <div class="register-line"></div>
-                <div class="register-others">
-                    <h3>기타정보 선택</h3>
-                    <div class="register-select-area">
-                        <select>
-                            <option value="구분1">회원구분 선택</option>
-                            <option value="구분2">성인</option>
-                            <option value="구분3">청소년</option>
-                        </select>
-                        <select>
-                            <option value="구분1">선호지역 선택</option>
-                            <option value="구분2">서울</option>
-                            <option value="구분3">인천/경기</option>
-                        </select>
-                        <seleCT>
-                            <option value="구분1">가입경로 선택</option>
-                            <option value="구분2">SNS</option>
-                            <option value="구분3">친구 · 지인의 추천</option>
-                        </seleCT>
-                        <select>
-                            <option value="구분1">사용목적 선택</option>
-                            <option value="구분2">중고폰 매매</option>
-                            <option value="구분3">딜러 신청</option>
-                        </select>
+                    <div class="register-next-btn">
+                        <div class="null"></div>
+                        <button type="button">다음</button>
                     </div>
-                </div>
-                <div class="register-next-btn">
-                    <div class="null"></div>
-                    <button type="button">다음</button>
                 </div>
             </div>
         </div>
@@ -272,9 +264,6 @@
     
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
-    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
-    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
     <script src='js/script.js'></script>
 
     <script type="text/javascript">
