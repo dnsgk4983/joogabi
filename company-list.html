@@ -1,0 +1,885 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+
+    <title>중가비</title>
+
+
+    <!-- ==== swiper.css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- ==== fontawesome.css -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- ==== style.css ==== -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 메인 헤더 시작 -->
+    <header id="header">
+        <div class="header-wrap">
+            <div class="gnb">
+                <!-- 로고 -->
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="로고"></a>
+                </div>
+                <!-- 로고끝 -->
+                <!-- 로그인 / 회원가입 -->
+                <div class="user">
+                    <div class="user-name">
+                        <p>안녕하세요! <span>joongabi_korea</span>님</p>
+                    </div>
+                    <div class="logout">
+                        <a href="index.html"><p>로그아웃</p></a>
+                    </div>
+                    <div class="user-line"></div>
+                    <div class="user-icon">
+                        <a href="#"><img src="images/ico_user.png" alt="유저아이콘"></a>
+                    </div>
+                </div>
+                <!-- 로그인 / 회원가입 끝 -->
+            </div>
+        </div>
+        <!-- 메뉴 -->
+        <div class="menu-wrap">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">가격비교</a>
+                    </li>
+                    <li>
+                        <a href="trend.html">트랜드</a>
+                    </li>
+                    <li>
+                        <a href="#">단가표게시판</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">업체리스트</a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="menu-btn">
+                                <div class="menu-line"></div>
+                                <div class="menu-line"></div>
+                                <div class="menu-line"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        <!-- 메뉴 끝 -->
+    </header>
+    <!-- 메인 헤더 끝 -->
+
+    <!-- 메인 섹션 시작 -->
+    <section>
+        <div class="main-wrapper company-wrapper">
+            <div class="main-section company-section">
+                <div class="widget">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                        </div>
+                        <!-- Add Pagination -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="company-list-section">
+                    <div class="unit-area-select">
+                        <div class="unit-area-title">
+                            <a href="#"><i class="fa fa-chevron-circle-left"></i></a>
+                            <div class="unit-day-title">
+                                <p>2020년 7월 31일(금)</p>
+                            </div>
+                            <a href="#"><i class="fa fa-chevron-circle-right"></i></a>
+                        </div>
+                        <div class="unit-line"></div>
+                    </div>
+                    <div class="unit-area-search">
+                        <input type="text" placeholder="업체명을 입력해 주세요">
+                        <p>찾으시는 업체 정보를 모르실 경우, 상단 업체리스트에서 세부설정을 이용하여 조회할 수 있습니다</p>
+                    </div>
+                    <div class="company-selecter">
+                        <input type="checkbox"><span>전체업체</span>
+                        <input type="checkbox"><span>인증업체</span>
+                        <input type="checkbox"><span>딜러회원</span>
+                        <input type="checkbox"><span>대리점/판매점</span>
+                        <input type="checkbox"><span>수출업체</span>
+                    </div>
+                    <div class="unit-area-tab">
+                        <ul>
+                            <li class="active">
+                                
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+                                        <path class="st0" d="M30.81,22.6c-0.13,0.03-0.26,0.22-0.36,0.3c-0.19,0.17-0.43,0.44-0.69,0.27c-0.33-0.22-0.08-0.59-0.02-0.86  c0.07-0.3,0.11-0.64,0.13-0.94c0.04-0.71,0.09-1.4,0.13-2.11c0.03-0.69,0.02-1.45-0.16-2.13c-0.03-0.1-0.05-0.2-0.07-0.31  c0-0.01,0-0.02-0.01-0.04c-0.14-0.69-0.19-1.44-0.43-2.09l0,0c-0.01-0.04-0.03-0.08-0.04-0.12c-0.12-0.29-0.34-0.54-0.45-0.83  c-0.15-0.38-0.3-0.71-0.48-1.08c-0.27-0.53-0.43-1.07-0.74-1.58c-0.42-0.69-0.95-1.26-1.48-1.86c-0.31-0.36-0.57-0.77-0.87-1.14  c-0.64-0.8-0.9-1.84-1.25-2.78c-0.18-0.49-0.37-0.99-0.59-1.46c-0.05-0.11-0.11-0.22-0.17-0.34c-0.3,0.15-0.54,0.37-0.71,0.76  c-0.18,0.42-0.34,0.83-0.68,1.14c-0.54,0.5-1.4,0.37-2.06,0.28c-1.19-0.17-2.28,0-3.46,0.03c-0.68,0.01-1.03,0.41-1.56,0.73  c-0.01,0-0.02,0.01-0.02,0.01c-0.14,0.08-0.33,0.13-0.49,0.14c-0.47,0.03-1,0.96-0.42,1.03c0.11,0.01,0.17,0.11,0.12,0.22  C13.79,8.28,13.43,8.42,13,8.55c-0.22,0.07-0.43,0.38-0.13,0.48c0.04,0.01,0.07,0.03,0.1,0.06c0.08,0.05,0.07,0.12,0.07,0.21  c0.01,0.29-0.41,0.71-0.66,0.82c-0.49,0.22-0.62-0.58-1.16-0.52c-0.03,0.44-0.77,0.79-0.39,1.31c0.02,0.03,0.05,0.06,0.07,0.08  c0.01,0.01,0.02,0.01,0.02,0.02c0.02,0.02,0.04,0.03,0.06,0.05c0.01,0.01,0.02,0.01,0.02,0.02c0.03,0.02,0.05,0.03,0.08,0.05  c0,0,0,0,0,0c0.31,0.16,0.72,0.16,1,0.37l0,0c0.11,0.08,0.2,0.19,0.25,0.36c0.08,0.26,0.06,0.59,0.04,0.87  c-0.01,0.23-0.02,0.37-0.13,0.48h0c-0.02,0.02-0.04,0.04-0.06,0.05c-0.01,0.01-0.02,0.01-0.03,0.02c-0.01,0.01-0.02,0.01-0.03,0.02  c-0.03,0.01-0.05,0.03-0.08,0.04c-0.19,0.09-0.51,0.11-0.61,0.3c-0.09,0.18-0.13,0.37,0.02,0.49c0.04,0.04,0.07,0.05,0.1,0.1  c0.03,0.05,0.06,0.09,0.09,0.13c0.08,0.09,0.16,0.1,0.27,0.11c0.11,0.01,0.22,0,0.33,0.02c0.16,0.04,0.26,0.18,0.37,0.3  c0.08,0.09,0.12,0.21,0.18,0.32c0.08,0.13,0.18,0.24,0.28,0.36c0.05,0.05,0.1,0.11,0.14,0.18c0,0,0,0,0,0  c0.03,0.04,0.06,0.09,0.08,0.13c0.03,0.08,0.06,0.17,0.05,0.26c-0.01,0.08-0.08,0.1-0.15,0.09c-0.02,0-0.04,0-0.05-0.01  c-0.07-0.01-0.13-0.05-0.2-0.08c-0.11-0.06-0.22-0.1-0.33-0.15c-0.14-0.07-0.29-0.12-0.42-0.21c-0.2-0.13-0.44-0.28-0.69-0.25  c-0.29,0.03-0.45,0.33-0.69,0.48c-0.14,0.09-0.32,0.2-0.24,0.37c0.07,0.15,0.27,0.21,0.29,0.4c0.03,0.27-0.27,0.4-0.49,0.46  c-0.11,0.03-0.25,0.09-0.37,0.1c-0.17,0.02-0.3-0.05-0.47,0.04C9.36,17.38,9.04,17.63,9,17.88c-0.06,0.43,0.5,0.46,0.78,0.55  c0.3,0.1,0.56,0.28,0.85,0.39c0.18,0.07,0.41,0.13,0.56,0.26c0.42,0.37,0.17,1.05,0.25,1.52c0.04,0.25,0.31,0.35,0.39,0.59  c0.15,0.45-0.28,0.94,0.01,1.38c0.14,0.22,0.4,0.34,0.49,0.61c0.01,0.04,0.02,0.07,0.02,0.1c0,0.01,0,0.02,0,0.03  c0,0.02,0,0.04,0,0.05c0,0.01,0,0.02,0,0.03c0,0.01,0,0.03-0.01,0.04c0,0.01-0.01,0.02-0.01,0.02c-0.01,0.01-0.01,0.03-0.02,0.04  c0,0.01-0.01,0.01-0.01,0.02c-0.01,0.01-0.02,0.03-0.03,0.04c0,0,0,0-0.01,0.01c-0.04,0.05-0.09,0.1-0.15,0.17  c0,0-0.01,0.01-0.01,0.01c0,0,0,0,0,0c-0.18,0.21-0.16,0.32,0.05,0.52c0.08,0.08,0.16,0.12,0.23,0.23c0.06,0.12-0.03,0.14,0.1,0.23  c0.21,0.13,0.47-0.12,0.48,0.23c0.01,0.29-0.27,0.36-0.48,0.43c-0.3,0.11-0.47,0.14-0.59,0.43c-0.06,0.13-0.09,0.26-0.17,0.38  c-0.07,0.11-0.24,0.21-0.27,0.34c-0.09,0.36,0.38,0.27,0.6,0.33c0.46,0.14-0.05,0.42-0.27,0.52c-0.38,0.18-0.51,0.3-0.67,0.7  c0,0.01-0.01,0.02-0.01,0.02c0,0,0,0.01,0,0.01c-0.17,0.41-0.38,0.7-0.61,1.08c-0.27,0.43-0.12,0.64,0.18,0.99  c0.72,0.87-0.58,1.62-0.19,2.56c0.06,0.15,0.23,0.47,0.11,0.61c-0.11,0.13-0.34,0.06-0.46,0.23c-0.15,0.22-0.06,0.44,0.12,0.59  c0.09,0.08,0.19,0.12,0.24,0.23c0.04,0.08,0.01,0.2,0.06,0.27c0.22,0.38,0.76,0.2,0.81,0.75c0.03,0.27-0.02,0.72,0.18,0.94  c0.3,0.33,0.67-0.09,0.85-0.31c0.19-0.24,0.49-0.4,0.66-0.64c0.13-0.17,0.05-0.43,0.17-0.59c0.16-0.23,0.29-0.14,0.33,0.07  c0.05,0.27-0.13,1.04,0.43,0.72c0.6-0.35,0.7-0.83,0.96-1.39c0.14-0.3,0.41-0.37,0.68-0.5c0.22-0.1,0.58-0.43,0.85-0.33  c0.2,0.07,0.21,0.42-0.02,0.51c-0.09,0.03-0.25-0.05-0.34,0c-0.15,0.09-0.27,0.43-0.41,0.57c-0.12,0.14-0.46,0.37-0.3,0.58  c0.15,0.21,0.45,0.06,0.63,0.04c0.31-0.03,0.34,0.25,0.51,0.43c0.25,0.26,0.4-0.13,0.63-0.31c0.28-0.22,0-0.55,0.38-0.62  c0.12-0.02,0.31,0.02,0.39-0.09c0.08-0.11-0.04-0.4-0.11-0.49c-0.21-0.28-0.71-0.33-0.71-0.75c0-0.31,0.4-0.55,0.67-0.61  c0.34-0.07,0.54,0.23,0.59,0.55c0.05,0.28-0.29,0.46-0.12,0.78c0.22,0.42,0.52-0.27,0.62-0.43c0.07-0.11,0.18-0.2,0.31-0.25  c0.13-0.04,0.24,0.04,0.33-0.06c0.06-0.06,0.05-0.25,0.06-0.33c0.01-0.14,0.09-0.46-0.04-0.56c-0.14-0.11-0.45,0.11-0.63,0.07  c-0.36-0.08-0.21-0.34,0.04-0.45c0.04-0.02,0.08-0.03,0.12-0.05c0.01,0,0.02-0.01,0.03-0.01c0.09-0.04,0.19-0.07,0.29-0.11  c0.01,0,0.02-0.01,0.02-0.01c0.05-0.02,0.1-0.03,0.15-0.04c0,0,0,0,0,0h0c0.03-0.01,0.07-0.02,0.1-0.02c0,0,0.01,0,0.01,0  c0.04-0.01,0.07-0.01,0.1-0.01c0.22-0.02,0.33,0.06,0.55-0.05c0.31-0.15,0.64-0.56,0.99-0.27c0.19,0.15,0.1,0.52,0.27,0.62  c0.18,0.1,0.51-0.1,0.71-0.08c0.24,0.03,0.39,0.2,0.64,0.2c0.27,0.01,0.61-0.03,0.75-0.3c0.1-0.19,0.03-0.46,0.08-0.67  c0.07-0.3,0.15-0.31,0.38-0.43c0.16-0.08,0.33-0.3,0.54-0.18c0.13,0.08,0.34,0.49,0.48,0.08c0.07-0.22-0.28-0.44-0.02-0.58  c0.29-0.16,0.69,0.35,0.9,0.48c0.07,0.04,0.13,0.07,0.19,0.09c0,0,0.01,0,0.01,0c0.03,0.01,0.06,0.02,0.08,0.02c0,0,0.01,0,0.02,0  c0.03,0.01,0.05,0.01,0.08,0.01h0c0.01,0,0.01,0,0.02,0c0.06,0,0.12,0,0.18-0.02c0.01,0,0.01-0.01,0.02-0.01  c0.02-0.01,0.04-0.01,0.07-0.02c0.03-0.01,0.06-0.03,0.09-0.04c0.22-0.13,0.34-0.26,0.62-0.22c0.29,0.04,0.39,0.19,0.63-0.05  c0.2-0.19,0.23-0.48,0.44-0.66c0.16-0.14,0.4-0.14,0.54-0.3c0.2-0.23,0.09-0.58,0.21-0.84c0-0.01,0.01-0.02,0.02-0.03c0,0,0,0,0,0  c0,0,0,0,0,0c0.08-0.15,0.23-0.23,0.37-0.34c0,0,0,0,0,0c0.02-0.02,0.04-0.04,0.06-0.06c0.17-0.17,0.29-0.35,0.39-0.57  c0.03-0.07,0.06-0.13,0.09-0.2c0.01-0.02,0.02-0.04,0.02-0.06c0.02-0.05,0.04-0.11,0.05-0.16c0.01-0.02,0.01-0.04,0.02-0.05  c0.02-0.06,0.03-0.13,0.04-0.19c0.01-0.04,0.02-0.07,0.02-0.11c0-0.03,0.01-0.06,0.01-0.09c0.02-0.16,0.04-0.31,0.05-0.47  c0,0,0,0,0,0c0.01-0.1,0.01-0.2,0.01-0.31c0-0.01,0-0.01,0-0.02c0-0.1,0-0.21-0.01-0.31c-0.03-0.61,0.2-1.01,0.35-1.59  c0.07-0.27,0.16-0.54,0.22-0.81C30.94,23,31.15,22.52,30.81,22.6z"/>
+                                        </svg>전체
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">서울</a>
+                            </li>
+                            <li>
+                                <a href="#">경기</a>
+                            </li>
+                            <li>
+                                <a href="#">인천</a>
+                            </li>
+                            <li>
+                                <a href="#">대전</a>
+                            </li>
+                            <li>
+                                <a href="#">대구</a>
+                            </li>
+                            <li>
+                                <a href="#">부산</a>
+                            </li>
+                            <li>
+                                <a href="#">광주</a>
+                            </li>
+                            <li>
+                                <a href="#">울산</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">세종</a>
+                            </li>
+                            <li>
+                                <a href="#">강원</a>
+                            </li>
+                            <li>
+                                <a href="#">충북</a>
+                            </li>
+                            <li>
+                                <a href="#">충남</a>
+                            </li>
+                            <li>
+                                <a href="#">전북</a>
+                            </li>
+                            <li>
+                                <a href="#">전남</a>
+                            </li>
+                            <li>
+                                <a href="#">경북</a>
+                            </li>
+                            <li>
+                                <a href="#">경남</a>
+                            </li>
+                            <li>
+                                <a href="#">제주</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="company-list-wrap">
+            <div class="company-list">
+                <div class="company-list-title">
+                    <p>조건에 맞는 중가비 등록업체는 <span>221</span> 건 입니다.</p>
+                </div>
+                <div class="company-list-item-wrap">
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>전국 최고가 매입중</p>
+                                <p>초고속 업무처리!</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>갤럭시, LG, 아이폰SE2 내수 저가폰 가개통 박스폰 대량으로 판매 가능 일단 묻지말고 연락해 주세요!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="deputy">
+                                    <p>대리/판매</p>
+                                </div>
+                            </div>
+                            <h3>코스타커뮤니케이션</h3>
+                            <p>전국/서울</p>
+                        </div>
+                    </div>
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>항상 빠른 매입 시세 반영!</p>
+                                <p>일반 매입 전문업체!</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>삼성, 엘지, 애플 모든 기종 포함! 전부다 매입 가능합니다!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="certified">
+                                    <p>인증</p>
+                                </div>
+                                <div class="diller">
+                                    <p>딜러</p>
+                                </div>
+                            </div>
+                            <h3>희망C&K</h3>
+                            <p>인천</p>
+                        </div>
+                    </div>
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>모든매입</p>
+                                <p>처리곤란한 모든 폰 매입!</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>메이저 기종외 핸드폰, 직구폰 전부 매입 가능합니다!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="diller">
+                                    <p>딜러</p>
+                                </div>
+                            </div>
+                            <h3>KOSO통신</h3>
+                            <p>전국/서울</p>
+                        </div>
+                    </div>
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>전국에서 제일 유명한!</p>
+                                <p>액정매입 전문점</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>깨진액정, 멍든액정 기종 불문 모두 매입 가능 하며, 당일 사진만 확인하고 바로 입금도 가능 합니다!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="deputy">
+                                    <p>대리/판매</p>
+                                </div>
+                            </div>
+                            <h3>라부다 텔레컴</h3>
+                            <p>전남</p>
+                        </div>
+                    </div>
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>액정 매입은 우리가!</p>
+                                <p>24시간 봇 상담도 가능!</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>액정매입 이제 눈탱이 그만 당하세요! 정해진 가격에 후려치기 없이 깨끗한 거래가 저희 업체의 사명 입니다!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="diller">
+                                    <p>딜러</p>
+                                </div>
+                            </div>
+                            <h3>RICHO COMS</h3>
+                            <p>전국/서울</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- 2번째 줄 -->
+                <div class="company-list-item-wrap">
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>전국 최고가 매입중</p>
+                                <p>초고속 업무처리!</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>갤럭시, LG, 아이폰SE2 내수 저가폰 가개통 박스폰 대량으로 판매 가능 일단 묻지말고 연락해 주세요!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="deputy">
+                                    <p>대리/판매</p>
+                                </div>
+                            </div>
+                            <h3>코스타커뮤니케이션</h3>
+                            <p>전국/서울</p>
+                        </div>
+                    </div>
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>항상 빠른 매입 시세 반영!</p>
+                                <p>일반 매입 전문업체!</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>삼성, 엘지, 애플 모든 기종 포함! 전부다 매입 가능합니다!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="certified">
+                                    <p>인증</p>
+                                </div>
+                                <div class="diller">
+                                    <p>딜러</p>
+                                </div>
+                            </div>
+                            <h3>희망C&K</h3>
+                            <p>인천</p>
+                        </div>
+                    </div>
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>모든매입</p>
+                                <p>처리곤란한 모든 폰 매입!</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>메이저 기종외 핸드폰, 직구폰 전부 매입 가능합니다!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="diller">
+                                    <p>딜러</p>
+                                </div>
+                            </div>
+                            <h3>KOSO통신</h3>
+                            <p>전국/서울</p>
+                        </div>
+                    </div>
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>전국에서 제일 유명한!</p>
+                                <p>액정매입 전문점</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>깨진액정, 멍든액정 기종 불문 모두 매입 가능 하며, 당일 사진만 확인하고 바로 입금도 가능 합니다!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="deputy">
+                                    <p>대리/판매</p>
+                                </div>
+                            </div>
+                            <h3>라부다 텔레컴</h3>
+                            <p>전남</p>
+                        </div>
+                    </div>
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>액정 매입은 우리가!</p>
+                                <p>24시간 봇 상담도 가능!</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>액정매입 이제 눈탱이 그만 당하세요! 정해진 가격에 후려치기 없이 깨끗한 거래가 저희 업체의 사명 입니다!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="diller">
+                                    <p>딜러</p>
+                                </div>
+                            </div>
+                            <h3>RICHO COMS</h3>
+                            <p>전국/서울</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- 3번째 줄 -->
+                <div class="company-list-item-wrap">
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>전국 최고가 매입중</p>
+                                <p>초고속 업무처리!</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>갤럭시, LG, 아이폰SE2 내수 저가폰 가개통 박스폰 대량으로 판매 가능 일단 묻지말고 연락해 주세요!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="deputy">
+                                    <p>대리/판매</p>
+                                </div>
+                            </div>
+                            <h3>코스타커뮤니케이션</h3>
+                            <p>전국/서울</p>
+                        </div>
+                    </div>
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>항상 빠른 매입 시세 반영!</p>
+                                <p>일반 매입 전문업체!</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>삼성, 엘지, 애플 모든 기종 포함! 전부다 매입 가능합니다!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="certified">
+                                    <p>인증</p>
+                                </div>
+                                <div class="diller">
+                                    <p>딜러</p>
+                                </div>
+                            </div>
+                            <h3>희망C&K</h3>
+                            <p>인천</p>
+                        </div>
+                    </div>
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>모든매입</p>
+                                <p>처리곤란한 모든 폰 매입!</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>메이저 기종외 핸드폰, 직구폰 전부 매입 가능합니다!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="diller">
+                                    <p>딜러</p>
+                                </div>
+                            </div>
+                            <h3>KOSO통신</h3>
+                            <p>전국/서울</p>
+                        </div>
+                    </div>
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>전국에서 제일 유명한!</p>
+                                <p>액정매입 전문점</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>깨진액정, 멍든액정 기종 불문 모두 매입 가능 하며, 당일 사진만 확인하고 바로 입금도 가능 합니다!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="deputy">
+                                    <p>대리/판매</p>
+                                </div>
+                            </div>
+                            <h3>라부다 텔레컴</h3>
+                            <p>전남</p>
+                        </div>
+                    </div>
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>액정 매입은 우리가!</p>
+                                <p>24시간 봇 상담도 가능!</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>액정매입 이제 눈탱이 그만 당하세요! 정해진 가격에 후려치기 없이 깨끗한 거래가 저희 업체의 사명 입니다!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="diller">
+                                    <p>딜러</p>
+                                </div>
+                            </div>
+                            <h3>RICHO COMS</h3>
+                            <p>전국/서울</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- 4번째 줄 -->
+                <div class="company-list-item-wrap">
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>전국 최고가 매입중</p>
+                                <p>초고속 업무처리!</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>갤럭시, LG, 아이폰SE2 내수 저가폰 가개통 박스폰 대량으로 판매 가능 일단 묻지말고 연락해 주세요!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="deputy">
+                                    <p>대리/판매</p>
+                                </div>
+                            </div>
+                            <h3>코스타커뮤니케이션</h3>
+                            <p>전국/서울</p>
+                        </div>
+                    </div>
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>항상 빠른 매입 시세 반영!</p>
+                                <p>일반 매입 전문업체!</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>삼성, 엘지, 애플 모든 기종 포함! 전부다 매입 가능합니다!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="certified">
+                                    <p>인증</p>
+                                </div>
+                                <div class="diller">
+                                    <p>딜러</p>
+                                </div>
+                            </div>
+                            <h3>희망C&K</h3>
+                            <p>인천</p>
+                        </div>
+                    </div>
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>모든매입</p>
+                                <p>처리곤란한 모든 폰 매입!</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>메이저 기종외 핸드폰, 직구폰 전부 매입 가능합니다!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="diller">
+                                    <p>딜러</p>
+                                </div>
+                            </div>
+                            <h3>KOSO통신</h3>
+                            <p>전국/서울</p>
+                        </div>
+                    </div>
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>전국에서 제일 유명한!</p>
+                                <p>액정매입 전문점</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>깨진액정, 멍든액정 기종 불문 모두 매입 가능 하며, 당일 사진만 확인하고 바로 입금도 가능 합니다!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="deputy">
+                                    <p>대리/판매</p>
+                                </div>
+                            </div>
+                            <h3>라부다 텔레컴</h3>
+                            <p>전남</p>
+                        </div>
+                    </div>
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>액정 매입은 우리가!</p>
+                                <p>24시간 봇 상담도 가능!</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>액정매입 이제 눈탱이 그만 당하세요! 정해진 가격에 후려치기 없이 깨끗한 거래가 저희 업체의 사명 입니다!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="diller">
+                                    <p>딜러</p>
+                                </div>
+                            </div>
+                            <h3>RICHO COMS</h3>
+                            <p>전국/서울</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- 5번째 줄 -->
+                <div class="company-list-item-wrap">
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>전국 최고가 매입중</p>
+                                <p>초고속 업무처리!</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>갤럭시, LG, 아이폰SE2 내수 저가폰 가개통 박스폰 대량으로 판매 가능 일단 묻지말고 연락해 주세요!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="deputy">
+                                    <p>대리/판매</p>
+                                </div>
+                            </div>
+                            <h3>코스타커뮤니케이션</h3>
+                            <p>전국/서울</p>
+                        </div>
+                    </div>
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>항상 빠른 매입 시세 반영!</p>
+                                <p>일반 매입 전문업체!</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>삼성, 엘지, 애플 모든 기종 포함! 전부다 매입 가능합니다!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="certified">
+                                    <p>인증</p>
+                                </div>
+                                <div class="diller">
+                                    <p>딜러</p>
+                                </div>
+                            </div>
+                            <h3>희망C&K</h3>
+                            <p>인천</p>
+                        </div>
+                    </div>
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>모든매입</p>
+                                <p>처리곤란한 모든 폰 매입!</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>메이저 기종외 핸드폰, 직구폰 전부 매입 가능합니다!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="diller">
+                                    <p>딜러</p>
+                                </div>
+                            </div>
+                            <h3>KOSO통신</h3>
+                            <p>전국/서울</p>
+                        </div>
+                    </div>
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>전국에서 제일 유명한!</p>
+                                <p>액정매입 전문점</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>깨진액정, 멍든액정 기종 불문 모두 매입 가능 하며, 당일 사진만 확인하고 바로 입금도 가능 합니다!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="deputy">
+                                    <p>대리/판매</p>
+                                </div>
+                            </div>
+                            <h3>라부다 텔레컴</h3>
+                            <p>전남</p>
+                        </div>
+                    </div>
+                    <div class="company-list-item">
+                        <div class="company-info-wrap">
+                            <div class="company-info">
+                                <p>액정 매입은 우리가!</p>
+                                <p>24시간 봇 상담도 가능!</p>
+                            </div>
+                            <div class="company-list-line"></div>
+                            <div class="company-sub">
+                                <p>액정매입 이제 눈탱이 그만 당하세요! 정해진 가격에 후려치기 없이 깨끗한 거래가 저희 업체의 사명 입니다!</p>
+                            </div>
+                        </div>
+                        <div class="company-list-mark">
+                            <div class="company-list-mark-wrap">
+                                <div class="diller">
+                                    <p>딜러</p>
+                                </div>
+                            </div>
+                            <h3>RICHO COMS</h3>
+                            <p>전국/서울</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+            <!-- 페이지 번호 -->
+            <div class="page-num">
+                <div class="prev-btn">
+                    <i class="fa fa-angle-left"></i>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">1</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">6</a>
+                    </li>
+                    <li>
+                        <a href="#">7</a>
+                    </li>
+                    <li>
+                        <a href="#">8</a>
+                    </li>
+                </ul>
+                <div class="next-btn">
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+                
+
+    </section>
+
+
+
+    <!-- 메인 푸터 시작 -->
+    <footer>
+        <div class="foot-wrap">
+            <!-- 푸터 로고 -->
+            <div class="foot-logo">
+                <a href="#">
+                    <img src="images/upstairs.png" alt="footer-logo">
+                </a>
+            </div>
+            <!-- 푸터 다운로드 영역 -->
+            <div class="foot-conts">
+                <div class="foot-down">
+                    <div class="foot-pc-manager">
+                        <a href="#">
+                            <p><span><img src="images/ico_down.png" alt="download"></span>중가비 PC매니저 다운로드</p>
+                        </a>
+                    </div>
+                    <div class="foot-line"></div>
+                    <div class="foot-mobile-manager">
+                        <a href="#">
+                            <p><span><img src="images/ico_down.png" alt="download"></span>중가비 모바일 매니저 다운로드</p>
+                        </a>
+                    </div>
+                    <div class="foot-line"></div>
+                    <div class="foot-phone-gabi">
+                        <a href="#">
+                            <p><span><img src="images/ico_down.png" alt="download"></span>폰가비 앱 다운로드</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- 푸터 법인명 등 정보 -->
+                <div class="foot-info">
+                    <div class="foot-info-first">
+                        <p>법인명 : 주식회사 업스테어스</p>
+                        <div class="foot-info-line"></div>
+                        <p>사업자등록번호 : 139-87-01176</p>
+                        <div class="foot-info-line"></div>
+                        <p>대표자 : 장영석</p>
+                        <div class="foot-info-line"></div>
+                        <p>서울시 용산구 한강대로 54길 25, 4층(한강로 1가, 신승빌딩)</p>
+                    </div>
+                    <div class="foot-info-seconds">
+                            <a href="#">회사소개</a>
+                            <div class="foot-info-line"></div>
+                            <a href="#">개인정보취급방침</a>
+                            <div class="foot-info-line"></div>
+                            <a href="#">이용정책</a>
+                            <div class="foot-info-line"></div>
+                            <a href="#">이메일무단수집거부</a>
+                    </div>
+                    <!-- 푸터 카피라이트 -->
+                    <div class="foot-copyright">
+                        <p>Copyright © 2020 Upstairs.Inc All Rights Reserved.</p>
+                    </div>
+                </div>
+                <!-- 푸터 법인명 등 정보 끝 -->
+            </div>
+        </div>
+    </footer>
+    <!-- 메인 푸터 끝 -->
+
+    
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src='js/script.js'></script>
+    
+
+    <script type="text/javascript">
+        var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        }
+    });
+    </script>
+    
+</body>
+</html>
