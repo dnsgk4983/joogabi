@@ -2455,3 +2455,549 @@ section{
 .compare-chart-item > ul > li:last-child{
     border-right: none;
 }
+
+
+/* 가격비교 두번째 페이지 */
+.compare-2-wrapper{
+    height: 510px;
+}
+.compare-2-section{
+    height: 510px;
+}
+.pay-compare-2-section{
+    height: 438px;
+}
+.compare-line{
+
+    margin-top:41px;
+    margin-bottom: 33px;
+}
+.compare-detail-search{
+    margin-left: 36px;
+}
+.detail-search-title{
+    font-size: 14.5px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.compare-detail-search select{
+    width: 283px;
+    height: 45px;
+    border: 1px solid #dbdbdb;
+    color: #878787;
+    padding-left: 11px;
+}
+.compare-detail-search button{
+    width: 68px;
+    height: 45px;
+    background: #878787;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    border: none;
+}
+.detail-area-wrap{
+    display: flex;
+    margin-bottom: 14px;
+}
+.detail-wrap{
+    display: flex;
+}
+.detail-wrap select{
+    margin-right: 5px;
+}
+.detail-wrap .last-select{
+    margin-right: 0;
+}
+.detail-input{
+    margin-top: 18px;
+}
+.detail-input input{
+    width: 526px;
+    height: 31px;
+    background: url('../images/trend-page/ico_saerch.png')no-repeat;
+    background-position: 0 center;
+    border: none;
+    border-bottom: 1px solid #878787;
+    padding-left: 24px;
+}
+.detail-input input::placeholder{
+    color: #878787;
+}
+.detail-check-wrap{
+    margin-top: 18px;
+}
+.detail-check-wrap input{
+    margin-right: 6px;
+    vertical-align: -1px;
+}
+
+.detail-check-wrap span{
+    margin-right: 37px;
+    color: #878787;
+}
+.detail-check-wrap span:nth-child(4){
+    margin-right: 41px;
+}
+/* 가격비교 페이지 끝 */
+
+/* 업체정보페이지 */
+.company-info-wrapper{
+    height: 257px;
+}
+.company-info-section{
+    height: 257px;
+}
+.info-section{
+    width: 1278px;
+    height: 217px;
+    background: #fff;
+    border: 1px solid #dde1e9;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+.info-title{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 27px;
+}
+.info-line{
+    width: 1220px;
+    height: 1px;
+    background: #dde1e9;
+    margin: 0 auto;
+    margin: 23px auto 33px;
+}
+.company-info-item-1{
+    display: flex;
+    justify-content: center;
+}
+
+.company-info-item-2{
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+.company-time{
+    display: flex;
+}
+.company-time > p {
+    font-size: 14.5px;
+    font-weight: 600;
+    width: 64px;
+}
+.company-address{
+    display: flex;
+    margin-left: 48px;
+}
+.company-address > p {
+    font-size: 14.5px;
+    font-weight: 600;
+    width: 64px;
+}
+.company-tell{
+    display: flex;
+}
+.company-tell > p{
+    font-size: 14.5px;
+    font-weight: 600;
+    width: 64px;
+}
+.company-talk{
+    display: flex;
+    margin-left: 48px;
+}
+.company-talk > p {
+    font-size: 14.5px;
+    font-weight: 600;
+    width: 64px;
+}
+.company-info-item-wrap{
+    display: flex;
+    width: 417px;
+    position: relative;
+}
+.company-info-item-wrap > p {
+    color: #939393;
+}
+.company-info-item-wrap::after{
+    position: absolute;
+    content: "";
+    width: 417px;
+    height: 1px;
+    bottom: -6px;
+    background: #878787;
+}
+.company-info-item-wrap img{
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+.info-explain-section{
+    width: 1278px;
+    height: 398px;
+    margin: 0 auto;
+}
+.explain-tabs > ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 49px;
+    margin-bottom: 48px;
+}
+.explain-tabs > ul > li {
+    width: 175px;
+    height: 39px;
+    line-height: 39px;
+    border: 1px solid #939393;
+    border-right: none;
+    text-align: center;
+}
+.explain-tabs > ul > li:last-child{
+    border-right: 1px solid #939393;
+}
+.explain-tabs > ul > li img{
+    vertical-align: -1px;
+    margin-left: 3px;
+}
+.explain-tabs > ul > li > a{
+    color: #939393;
+    font-size: 13px;
+}
+.explain-tabs > ul > li.active{
+    background: #3e5bc7;
+    border: 1px solid #3e5bc7;
+}
+.explain-tabs > ul > li.active a{
+    color: #fff;
+}
+.explain-item{
+    width: 1203px;
+    height: 208px;
+    border: 1px solid #dde1e9;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 21px;
+    line-height: 20px;
+}
+.explain-item p:last-child{
+    margin-top: 30px;
+}
+/* 업체정보 2번 페이지 테이블 영역*/
+.info-price-table-section{
+    width: 1278px;
+    height: 740px;
+    margin: 0 auto;
+}
+.info-price-table table{
+    width: 1278px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #dde1e9;
+    box-sizing: border-box;
+}
+
+.info-price-table table tr {
+    border-bottom: 1px solid #dde1e9;
+    box-sizing: border-box;
+}
+.info-price-table table tr > th {
+    height: 39px;
+    line-height: 39px;
+    font-weight: 600;
+}
+.info-price-table table tr > td {
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    color: #939393;
+    cursor: pointer;
+}
+.info-price-table table tr > th:nth-child(3),
+.info-price-table table tr > td:nth-child(3){
+    text-align: left;
+}
+.page-num-wrap{
+    width: 1278px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 63px 0 105px;
+}
+.page-num-wrap .page-num{
+    padding: 0;
+}
+.back-menu-btn button{
+    width: 146px;
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    background: #bfbfbf;
+    border: none;
+}
+/* 업체정보 3번 페이지 */
+.info-event-table-section{
+    height: 690px;
+}
+/* 업체정보 4번 페이지 */
+.info-map-section{
+    height: 616px;
+}
+.company-info-map-area{
+    width: 1278px;
+    height: 417px;
+    margin: 0 auto;
+}
+.company-info-map-area img{
+    width: 100%;
+}
+
+/* 게시판페이지 */
+.board-section{
+    width: 1278px;
+    height: 740px;
+    margin: 0 auto;
+}
+.board-tabs > ul {
+    display: flex;
+    justify-content: center;
+    margin: 61px 0;
+}
+.board-tabs > ul > li {
+    width: 175px;
+    height: 39px;
+    border: 1px solid #939393;
+    box-sizing: border-box;
+    line-height: 39px;
+    text-align: center;
+    border-right: none;
+}
+.board-tabs > ul > li:last-child{
+    border-right: 1px solid #939393;
+}
+.board-tabs > ul > li > a{
+    color: #939393;
+    font-size: 13px;
+}
+.board-tabs > ul > li.active {
+    background: #3e5bc7;
+}
+.board-tabs > ul > li.active a {
+    color: #fff;
+}
+.board-section table img{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+/* 자유게시판 영역 */
+.free-wrtie-section{
+    width: 100%;
+    height: 763px;
+    margin: 0 auto;
+}
+.write-wrapper{
+    width: 100%;
+    height: 615px;
+    background: #f9fafb;
+}
+.write-wrap{
+    width: 1094px;
+    height: 615px;
+    margin: 0 auto;
+}
+.writer{
+    padding-top: 24px;
+    display: flex;
+}
+.writer > p{
+    font-weight: 600;
+}
+.write-line{
+    width: 1094px;
+    height: 1px;
+    background: #bababa;
+    margin: 17px auto 29px;
+}
+.write-title p{
+    font-size: 14.5px;
+    font-weight: 600;
+}
+.write-title input{
+    width: 1094px;
+    height: 45px;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    padding-left: 10px;
+    margin: 12px 0 32px;
+}
+.write-title input::placeholder{
+    color: #878787;
+    font-size: 14.5px;
+}
+.write-item p{
+    font-weight: 600;
+}
+.write-item textarea{
+    width: 1094px;
+    height: 214px;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-top: 15px;
+    margin: 12px 0 32px;
+}
+.write-item textarea::placeholder{
+    color: #878787;
+    font-size: 14.5px;
+}
+.write-bottom-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.write-bottom-wrap > .write-add-file > p {
+    font-size: 14.5px;
+    margin-bottom: 14px;
+}
+.write-add-file img{
+    vertical-align: middle;
+    margin-right: 7px;
+}
+.write-add-file a{
+    color: #494949;
+}
+.file-2, .file-3{
+    margin-top: 17px;
+}
+.file-3{
+    position: relative;
+}
+.file-3::after{
+    position: absolute;
+    content: "";
+    width: 311px;
+    height: 1px;
+    background: #bababa;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+}
+.file-3 a{
+    color: #bfbfbf;
+}
+.write-add-file button{
+    width: 33px;
+    height: 19px;
+    line-height: 19px;
+    background: #bfbfbf;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: -1px;
+    text-align: center;
+}
+.write-add-file span{
+    color: #939393;
+}
+.write-button-wrap button{
+    width: 79px;
+    height: 27px;
+    line-height: 24px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+}
+.write-button-wrap button:first-child{
+    background: #3e5bc7;
+}
+.write-button-wrap button:last-child{
+    background: #bfbfbf;
+    margin-left: 10px;
+}
+
+/* 정보수정 페이지 */
+.revice-info-section{
+    height: 741px;
+}
+.revice-info-wrapper{
+    height: 741px;
+}
+.revice-wrap{
+    width: 1094px;
+    height: auto;
+    margin: 0 auto;
+}
+.revice-wrap > p{
+    font-size: 14.5px;
+    font-weight: 600;
+    padding-top: 47px;
+}
+.revice-wrap > div {
+    margin-left: 10px;
+}
+.revice-wrap input{
+    margin-bottom: 15px;
+}
+.revice-id{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+.revice-id p{
+    width: 178px;
+    color: #878787;
+    font-size: 14.5px;
+}
+.revice-id input{
+    width: 450px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    padding-left: 14px;
+}
+.revice-id input::placeholder{
+    color: #000;
+    font-weight: 600;
+}
+.revice-name{
+    display: flex;
+    align-items: center;
+}
+.revice-name p{
+    width: 178px;
+    color: #878787;
+    font-size: 14.5px;
+}
+.revice-name input{
+    width: 450px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    padding-left: 14px;
+}
+.revice-password{
+    display: flex;
+}
+.revice-password p{
+    width: 178px;
+    color: #878787;
+    font-size: 14.5px;
+}
+.revice-num{
+    display: flex;
+}
+.revice-num p{
+    width: 178px;
+    color: #878787;
+    font-size: 14.5px;
+}
