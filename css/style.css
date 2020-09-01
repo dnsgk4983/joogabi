@@ -1865,7 +1865,7 @@ section{
 
 /* 트랜드 게시판 영역 */
 .trend-board-wrap{
-    width: 1203px;
+    width: 1278px;
     height: auto;
     margin: 0 auto;
 }
@@ -1994,18 +1994,15 @@ section{
     border-right: none;
     box-sizing: border-box;
     cursor: pointer;
+    color: #000000;
 }
 .unit-area-tab > ul > li:last-child {
     border-right: 1px solid #939393;
 }
-.unit-area-tab a{
-    color: #000000;
-}
+
 .unit-area-tab > ul > li.active {
     background: #3e5bc7;
     border-color: #3e5bc7;
-}
-.unit-area-tab > ul > li.active > a{
     color: #fff;
 }
 .unit-area-tab > ul:last-child > li {
@@ -2320,6 +2317,9 @@ section{
     margin-left: 8px;
     margin-top: 10px;
 }
+.compare-close img{
+    margin-left: 11px;
+}
 /* 가격비교 선택된 영역 */
 .compare-selected{
     display: flex;
@@ -2625,6 +2625,8 @@ section{
 .company-info-item-wrap::after{
     position: absolute;
     content: "";
+    left: 0;
+    right: 0;
     width: 417px;
     height: 1px;
     bottom: -6px;
@@ -2674,7 +2676,7 @@ section{
     color: #fff;
 }
 .explain-item{
-    width: 1203px;
+    width: 1278px;
     height: 208px;
     border: 1px solid #dde1e9;
     box-sizing: border-box;
@@ -2992,6 +2994,14 @@ section{
     width: 178px;
     color: #878787;
     font-size: 14.5px;
+}
+.revice-password input{
+    width: 450px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    padding-left: 14px;
 }
 .revice-num{
     display: flex;
