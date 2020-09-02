@@ -2933,7 +2933,7 @@ section{
     height: 741px;
 }
 .revice-wrap{
-    width: 1094px;
+    width: 1278px;
     height: auto;
     margin: 0 auto;
 }
@@ -2951,7 +2951,7 @@ section{
 .revice-id{
     margin-top: 25px;
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 .revice-id p{
     width: 178px;
@@ -2972,7 +2972,7 @@ section{
 }
 .revice-name{
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 .revice-name p{
     width: 178px;
@@ -2987,8 +2987,13 @@ section{
     box-sizing: border-box;
     padding-left: 14px;
 }
+.revice-name input::placeholder{
+    color: #000;
+    font-weight: 600;
+}
 .revice-password{
     display: flex;
+    align-items: baseline;
 }
 .revice-password p{
     width: 178px;
@@ -3003,11 +3008,70 @@ section{
     box-sizing: border-box;
     padding-left: 14px;
 }
+.revice-password input:last-child{
+    margin-left: 6px;
+}
 .revice-num{
     display: flex;
+    align-items: baseline;
 }
 .revice-num p{
     width: 178px;
     color: #878787;
     font-size: 14.5px;
+}
+.revice-num input{
+    width: 382px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    padding-left: 14px;
+}
+.revice-num-wrap input::placeholder{
+    color: #000;
+    font-weight: 600;
+}
+.revice-num button:first-child{
+    margin-right: 6px;
+}
+.revice-num button{
+    width: 68px;
+    height: 45px;
+    background: #878787;
+    border: none;
+    color: #fff;
+}
+.revice-line{
+    width: 1278px;
+    height: 1px;
+    background: #bababa;
+    margin: 33px auto 34px;
+}
+.revice-others{
+    width: 1278px;
+    height: auto;
+    margin: 0 auto;
+}
+.revice-others > p{
+    font-size: 14.5px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.revice-user{
+    display: flex;
+    align-items: baseline;
+}
+.revice-user p{
+    width: 178px;
+    font-size: 14.5px;
+    color: #878787;
+}
+.revice-user select{
+    width: 450px;
+    height: 45px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    padding-left: 14px;
 }
