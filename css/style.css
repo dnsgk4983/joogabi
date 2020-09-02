@@ -2651,7 +2651,7 @@ section{
     text-align: left;
 }
 .page-num-wrap{
-    width: 1278px;
+    width: 1203px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -3327,8 +3327,60 @@ section{
     border: none;
 }
 /* 게시판 관리 페이지 */
+.board-manage-section{
+    height: 1500px;
+}
 .board-manager-wrap{
     padding-top: 49px;
+}
+.manage-container{
+    width: 215px;
+    height: 215px;
+    border: 1px solid #d0d0d0;
+    box-sizing: border-box;
+    position: relative;
+}
+.board-manage-wrap{
+    width: 1203px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 58px;
+}
+.manage-item{
+    display: flex;
+    justify-content: space-between;
+}
+.board-manage-wrap > .manage-item{
+    margin-bottom: 34px;
+}
+.manage-item-0{
+    margin-bottom: 0 !important;
+}
+.manage-item-wrap input{
+    position: absolute;
+    left: 7px;
+    top: 8px;
+}
+.manage-title{
+    margin: 16px 0 10px;
+}
+.manage-title p, .manage-upload p{
+    font-size: 14px;
+    color: #696969;
+}
+.board-num-wrap{
+    padding: 61px 0 134px;
+}
+.board-num-wrap button{
+    width: 146px;
+    height: 32px;
+    border: none;
+    color: #fff;
+    background: #bfbfbf;
+    border-radius: 3px;
+}
+.board-write-button button{
+    background: #3e5bc7;
 }
 
 /* 푸터 */
