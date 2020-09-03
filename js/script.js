@@ -151,7 +151,9 @@ jQuery(function($)
         $('.chart-wrap').fadeOut();
         $('.iphone-SE-wrap').fadeIn();
     });
-    
+
+
+      $( "#accordion" ).accordion();
 
 
 

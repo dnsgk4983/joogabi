@@ -9,6 +9,12 @@
     url('../css/fonts/notokr-regular.woff') format('woff'),
     url('../css/fonts/notokr-regular.woff2') format('woff2');
   }
+  *{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+  }
   html{
       width: 100%;
   }
@@ -2376,7 +2382,7 @@ section{
     box-sizing: border-box;
 }
 .compare-chart-item > ul > li {
-    width: 168px;
+    width: 199px;
     border-right: 1px solid #c7cbcf;
     padding: 0 14px 0 17px;
 }
@@ -3333,43 +3339,36 @@ section{
 .board-manager-wrap{
     padding-top: 49px;
 }
-.manage-container{
-    width: 215px;
-    height: 215px;
-    border: 1px solid #d0d0d0;
-    box-sizing: border-box;
-    position: relative;
-}
-.board-manage-wrap{
+.manage-item-wrap{
     width: 1203px;
     height: auto;
     margin: 0 auto;
-    margin-top: 58px;
 }
-.manage-item{
+#accordion {
     display: flex;
     justify-content: space-between;
 }
-.board-manage-wrap > .manage-item{
-    margin-bottom: 34px;
+.accordion-sub{
+    display: block;
 }
-.manage-item-0{
-    margin-bottom: 0 !important;
+#accordion > h3{
+    width: 215px;
+    height: 215px;
+    position: relative;
+    border: 1px solid #d0d0d0;
+    box-sizing: border-box;
+    display: block;
+    padding-top: 8px;
+    padding-left: 7px;
 }
-.manage-item-wrap input{
-    position: absolute;
-    left: 7px;
-    top: 8px;
+.manage-list-wrap{
+    background: #f9fafb;
 }
-.manage-title{
-    margin: 16px 0 10px;
-}
-.manage-title p, .manage-upload p{
-    font-size: 14px;
-    color: #696969;
-}
+
 .board-num-wrap{
-    padding: 61px 0 134px;
+    width: 1203px;
+    height: auto;
+    margin: 0 auto;
 }
 .board-num-wrap button{
     width: 146px;
@@ -3382,6 +3381,322 @@ section{
 .board-write-button button{
     background: #3e5bc7;
 }
+
+/* 정보수정 단가표 글작성 페이지 */
+.board-manage-write-section{
+    height: 1188px;
+}
+.manage-write-item-wrap{
+    width: 1094px;
+    height: auto;
+    margin: 0 auto;
+}
+.manage-write-title{
+    margin-top: 58px;
+}
+.manage-write-title > p {
+    font-weight: 600;
+    font-size: 14.5px;
+    margin-bottom: 12px;
+}
+.manage-write-title > input{
+    width: 1094px;
+    height: 45px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+.manage-write-title > input::placeholder{
+    color: #878787;
+    font-size: 14.5px;
+}
+.manage-write-text{
+    margin-top: 43px;
+}
+.manage-write-text > p {
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 14.5px;
+}
+.manage-write-text > textarea{
+    width: 1094px;
+    height: 175px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    padding: 15px 0 0 10px;
+}
+.manage-write-text > textarea::placeholder{
+    font-size: 14.5px;
+    color: #878787;
+}
+.manage-write-line{
+    width: 1094px;
+    height: 1px;
+    background: #918b8b;
+    margin: 44px 0 45px;
+}
+.write-attach > p {
+    font-size: 14.5px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+.write-attach-wrap{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.write-attach-wrap::afteR{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    background: #bababa;
+    width: 348px;
+    height: 1px;
+}
+.write-attach-wrap img{
+    margin-right: 8px;
+}
+.write-attach-item > p{
+    color: #bfbfbf;
+    margin-right: 31px;
+}
+.write-attach-item{
+    display: flex;
+}
+.write-attach-wrap button{
+    width: 36px;
+    height: 19px;
+    border: none;
+    background: #bababa;
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.write-attach-cont-wrap{
+    margin-top: 45px;
+    display: flex;
+}
+.write-attach-cont {
+    margin-right: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.write-attach-cont p{
+    font-size: 12px;
+    color: #494949;
+    margin-top: 7px;
+    
+}
+.write-attach-cont > p > img{
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+.write-manage-btn{
+    margin-top: 34px;
+}
+.write-manage-btn button{
+    width: 79px;
+    height: 27px;
+    color: #ffffff;
+    background : #bfbfbf;
+    font-size: 14.5px;
+    border: none;
+}
+.write-manage-btn button:first-child{
+    background: #3e5bc7;
+}
+
+
+
+/* 회사정보 수정 페이지 */
+.revice-company-section{
+    height: 1402px;
+}
+.revice-company-wrap{
+    width: 1094px;
+    height: auto;
+    margin: 0 auto;
+}
+.revice-company-info{
+    margin-top: 58px;
+    margin-bottom: 25px;
+}
+.revice-company-info p{
+    font-size: 14.5px;
+    font-weight: 600;
+}
+.revice-company-info-wrap,
+.revice-company-intro-wrap{
+    margin-left: 10px;
+}
+.revice-company-info-wrap > div > p {
+    width: 177px;
+    font-size: 14.5px;
+    color: #878787;
+    font-weight: 600;
+}
+.revice-company-name{
+    display: flex;
+    align-items: baseline;
+}
+.cp-name{
+    width: 450px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+.cp-name > p{
+    font-size: 14.5px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+.revice-company-area{
+    display: flex;
+    align-items: baseline;
+}
+.cp-area{
+    width: 450px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+.cp-area > p {
+    font-size: 14.5px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+.revice-company-phone{
+    display: flex;
+    align-items: baseline;
+}
+.cp-phone{
+    width: 450px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+.cp-phone p{
+    font-size: 14.5px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+.revice-company-phone > input{
+    width: 450px;
+    height: 45px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    padding-left: 15px;
+    margin-left: 6px;
+}
+.revice-company-phone > input::placeholder{
+    font-size: 14.5px;
+    color: #878787;
+    font-weight: 600;
+}
+.revice-company-talk{
+    display: flex;
+    align-items: baseline;
+}
+.cp-talk{
+    width: 450px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+}
+.cp-talk > p {
+    margin-left: 15px;
+    font-size: 14.5px;
+    font-weight: 600;
+}
+
+.revice-company-line{
+    width: 1094px;
+    height: 1px;
+    background: #bababa;
+    margin: 33px auto;
+}
+.revice-company-intro > p{
+    font-size: 14.5px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.cp-intro-title{
+    display: flex;
+    align-items: baseline;
+}
+.revice-company-intro-wrap p{
+    width: 175px;
+    font-size: 14.5px;
+    color: #878787;
+    font-weight: 600;
+}
+.revice-company-intro-wrap input{
+    width: 450px;
+    height: 45px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+.revice-company-intro-wrap input::placeholder{
+    font-size: 14.5px;
+    color: #878787;
+    font-weight: 400;
+   
+}
+.cp-intro-title > input {
+    margin-bottom: 15px;
+}
+
+.cp-intro-item{
+    display: flex;
+    align-items: baseline;
+}
+.revice-company-guide > p {
+    font-size: 14.5px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.revice-company-guide > input {
+    width: 1085px;
+    height: 282px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+.cp-guide-btn button{
+    width: 79px;
+    height: 27px;
+    line-height: 24px;
+    border: none;
+    color: #fff;
+    margin-top: 34px;
+    background: #bfbfbf;
+    border-radius: 3px;
+}
+.cp-guide-btn button:first-child{
+    background: #3e5bc7;
+    margin-right: 10px;
+}
+
+/* 내가추가한업체 페이지 */
+.revice-added-company-section{
+    height: 1673px;
+}
+
 
 /* 푸터 */
 

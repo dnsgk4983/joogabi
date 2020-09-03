@@ -80,7 +80,7 @@
     <!-- 메인 섹션 시작 -->
     <section>
         
-        <div class="free-write-section board-manage-section">
+        <div class="free-write-section board-manage-write-section">
             <div class="revice-info-wrap board-manager-wrap">
                 <div class="revice-info">
                     <p>안녕하세요!</p>
@@ -142,71 +142,58 @@
                 </div>
             </div>
             <div class="withdrawal-line"></div>
-            <div class="board-manage-wrap">
-                <div class="manage-item">
-                    <div class="manage-item-wrap">
-                        <div id="accordion">
-                            <h3>
-                                <input type="checkbox">
-                            </h3>
-                            <div class="accordion-sub">
-                                <p>asdsad</p>
-                            </div>
-                            <h3>section2</h3>
-                            <div>
-                                <p>sadasdsa</p>
-                            </div>
-                            <h3>section3</h3>
-                            <div>
-                                <p>asdsadsa</p>
-                            </div>
+            <div class="manage-write-item-wrap">
+                <div class="manage-write-title">
+                    <p>제목</p>
+                    <input type="text" placeholder="제목을 입력해 주세요">
+                </div>
+                <div class="manage-write-text">
+                    <p>내용</p>
+                    <textarea placeholder="내용을 입력해 주세요"></textarea>
+                </div>
+                <div class="manage-write-line"></div>
+                <div class="write-attach">
+                    <p>첨부파일</p>
+                    <div class="write-attach-wrap">
+                        <div class="write-attach-item">
+                            <img src="images/board/ico_file.png" alt="첨부파일 아이콘">
+                            <p>첨부파일은 최대 3mb 이내로 등록해 주세요</p>
                         </div>
+                        <input type="file" id="file" name="file" style="display: none;">
+                        <button type="button" onclick="onclick=document.all.file.click()">등록</button>
                     </div>
                 </div>
-                
-                <div class="page-num-wrap board-num-wrap">
-                    <div class="board-page-button">
-                        <button type="button">전체선택</button>
-                        <button type="button">삭제하기</button>
+                <div class="write-attach-cont-wrap">
+                    <div class="write-attach-cont">
+                        <img src="images/board/attach.png" alt="첨부파일 이미지">
+                        <p>
+                            <img src="images/board/ico_file.png" alt="첨부파일 아이콘">20200114k_1.jpg
+                        </p>
                     </div>
-                    <div class="page-num">
-                        <div class="prev-btn">
-                            <i class="fa fa-angle-left"></i>
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="#">1</a>
-                            </li>
-                            <li class="active">
-                                <a href="#">2</a>
-                            </li>
-                            <li>
-                                <a href="#">3</a>
-                            </li>
-                            <li>
-                                <a href="#">4</a>
-                            </li>
-                            <li>
-                                <a href="#">5</a>
-                            </li>
-                            <li>
-                                <a href="#">6</a>
-                            </li>
-                            <li>
-                                <a href="#">7</a>
-                            </li>
-                            <li>
-                                <a href="#">8</a>
-                            </li>
-                        </ul>
-                        <div class="next-btn">
-                            <i class="fa fa-angle-right"></i>
-                        </div>
+                    <div class="write-attach-cont">
+                        <img src="images/board/attach.png" alt="첨부파일 이미지">
+                        <p>
+                            <img src="images/board/ico_file.png" alt="첨부파일 아이콘">20200114k_1.jpg
+                        </p>
                     </div>
-                    <div class="board-write-button">
-                        <button type="button" onclick="location.href='board-manage-write.html'">글쓰기</button>
+                    <div class="write-attach-cont">
+                        <img src="images/board/attach.png" alt="첨부파일 이미지">
+                        <p>
+                            <img src="images/board/ico_file.png" alt="첨부파일 아이콘">20200114k_1.jpg
+                        </p>
+                    </div>
+                    <div class="write-attach-cont">
+                        <img src="images/board/attach.png" alt="첨부파일 이미지">
+                        <p>
+                            <img src="images/board/ico_file.png" alt="첨부파일 아이콘">20200114k_1.jpg
+                        </p>
                     </div>
                 </div>
+                <div class="write-manage-btn">
+                    <button type="button">게시</button>
+                    <button type="button" onclick="location.href='board-manage.html'">목록으로</button>
+                </div>
+            </div>
             </div>
         </div>
                 
