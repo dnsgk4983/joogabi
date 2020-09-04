@@ -80,8 +80,8 @@
     <!-- 메인 섹션 시작 -->
     <section>
         
-        <div class="free-write-section inquire-section">
-            <div class="revice-info-wrap">
+        <div class="free-write-section board-manage-section">
+            <div class="revice-info-wrap board-manager-wrap">
                 <div class="revice-info">
                     <p>안녕하세요!</p>
                     <div class="revice-user-info">
@@ -106,10 +106,10 @@
                                 <p>회원정보 수정</p>
                             </a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="board-manage.html">
                                 <div class="image-wrap">
-                                    <img src="images/revice/ico_unit.png" alt="단가표 관리">
+                                    <img src="images/revice/ico_unit_b.png" alt="단가표 관리">
                                 </div>
                                 <p>단가표 관리</p>
                             </a>
@@ -130,10 +130,10 @@
                                 <p>내가 추가한 업체</p>
                             </a>
                         </li>
-                        <li class="active">
-                            <a href="revice-inquire-board.html">
+                        <li>
+                            <a href="revice-inquire.html">
                                 <div class="image-wrap">
-                                    <img src="images/revice/ico_chat_b.png" alt="문의하기">
+                                    <img src="images/revice/ico_chat.png" alt="문의하기">
                                 </div>
                                 <p>문의하기</p>
                             </a>
@@ -142,51 +142,83 @@
                 </div>
             </div>
             <div class="withdrawal-line"></div>
-            <div class="inquire-wrap">
-                <div class="inquire-user">
-                    <div class="diller">
-                        <p>딜러</p>
+            <div class="board-manage-wrap">
+                <div class="manage-item">
+                    <div class="manage-item-wrap">
+                        <ul class="tab">
+                            <li data-tab="tab1"><a href="#">
+                                <input id="t1" type="checkbox">
+                            </a></li>
+                            <li data-tab="tab2"><a href="#"></a></li>
+                            <li data-tab="tab3"><a href="#"></a></li>
+                            <li data-tab="tab4"><a href="#"></a></li>
+                            <li data-tab="tab5"><a href="#"></a></li>
+                        </ul>
+                        <div id="tab1" class="tabcontent">
+                            <p>2002년 7월(월말) 단가표 입니다</p>
+                            <p>2020-01-14 16:00</p>
+                        </div>
+                        <div id="tab2" class="tabcontent">
+                            <p>ccc</p>
+                            <p>ddd</p>
+                        </div>
+                        <div id="tab3" class="tabcontent">
+                            <p>eee</p>
+                            <p>fff</p>
+                        </div>
+                        <div id="tab4" class="tabcontent">
+                            <p>ggg</p>
+                            <p>hhh</p>
+                        </div>
+                        <div id="tab5" class="tabcontent">
+                            <p>iii</p>
+                            <p>jjj</p>
+                        </div>
+
                     </div>
-                    <p>코나컴퍼니</p>
                 </div>
-                <div class="inquire-line"></div>
-                <div class="inquire-title">
-                    <p>제목</p>
-                    <div class="inquire-title-wrap">
-                        <select>
-                            <option value="1" selected>문의유형 선택</option>
-                            <option value="2">서비스관련</option>
-                            <option value="3">고객관련</option>
-                        </select>
-                        <input type="text" placeholder="제목을 입력해 주세요">
+                
+                <div class="page-num-wrap board-num-wrap">
+                    <div class="board-page-button">
+                        <button type="button">전체선택</button>
+                        <button type="button">삭제하기</button>
                     </div>
-                </div>
-                <div class="inquire-conts">
-                    <p>내용</p>
-                    <textarea placeholder="내용을 입력해 주세요"></textarea>
-                </div>
-                <div class="inquire-attach">
-                    <div class="inquire-attach-wrap">
-                        <p>첨부파일</p>
-                        <div class="inquire-btn-wrap">
-                            <button type="button">게시</button>
-                            <button type="button" onclick="location.href='revice-inquire-board.html'">목록으로</button>
+                    <div class="page-num">
+                        <div class="prev-btn">
+                            <i class="fa fa-angle-left"></i>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">1</a>
+                            </li>
+                            <li class="active">
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                            <li>
+                                <a href="#">4</a>
+                            </li>
+                            <li>
+                                <a href="#">5</a>
+                            </li>
+                            <li>
+                                <a href="#">6</a>
+                            </li>
+                            <li>
+                                <a href="#">7</a>
+                            </li>
+                            <li>
+                                <a href="#">8</a>
+                            </li>
+                        </ul>
+                        <div class="next-btn">
+                            <i class="fa fa-angle-right"></i>
                         </div>
                     </div>
-                    <div class="inquire-attach-item">
-                        <img src="images/board/ico_file.png" alt="파일첨부 아이콘">
-                        <p>handol_sys_costsheet.ppt <span>[542kb]</span></p>
-                        <button type="button">삭제</button>
-                    </div>
-                    <div class="inquire-attach-item">
-                        <img src="images/board/ico_file.png" alt="파일첨부 아이콘">
-                        <p>bust_crack.ppt <span>[232kb]</span></p>
-                        <button type="button">삭제</button>
-                    </div>
-                    <div class="inquire-attach-item inquire-attach-area">
-                        <img src="images/board/ico_file.png" alt="파일첨부 아이콘">
-                        <a href="#">첨부파일은 최대 3mb이내로 등록해 주세요</a>
-                        <button type="button">삭제</button>
+                    <div class="board-write-button">
+                        <button type="button" onclick="location.href='board-manage-write.html'">글쓰기</button>
                     </div>
                 </div>
             </div>
@@ -271,12 +303,12 @@
                 $('.revice-tabs > ul > li:nth-child(1) img').attr("src","images/revice/ico_user.png");
             });
             
-            $('.revice-tabs > ul > li:nth-child(2)').mouseover(function(){
-                $('.revice-tabs > ul > li:nth-child(2) img').attr("src","images/revice/ico_unit_b.png")
-            });
-            $('.revice-tabs > ul > li:nth-child(2)').mouseleave(function(){
-                $('.revice-tabs > ul > li:nth-child(2) img').attr("src","images/revice/ico_unit.png");
-            });
+            // $('.revice-tabs > ul > li:nth-child(2)').mouseover(function(){
+            //     $('.revice-tabs > ul > li:nth-child(2) img').attr("src","images/revice/ico_unit_b.png")
+            // });
+            // $('.revice-tabs > ul > li:nth-child(2)').mouseleave(function(){
+            //     $('.revice-tabs > ul > li:nth-child(2) img').attr("src","images/revice/ico_unit.png");
+            // });
             
             $('.revice-tabs > ul > li:nth-child(3)').mouseover(function(){
                 $('.revice-tabs > ul > li:nth-child(3) img').attr("src","images/revice/ico_company_b.png")
@@ -292,12 +324,12 @@
                 $('.revice-tabs > ul > li:nth-child(4) img').attr("src","images/revice/ico_added.png");
             });
             
-            // $('.revice-tabs > ul > li:nth-child(5)').mouseover(function(){
-            //     $('.revice-tabs > ul > li:nth-child(5) img').attr("src","images/revice/ico_chat_b.png")
-            // });
-            // $('.revice-tabs > ul > li:nth-child(5)').mouseleave(function(){
-            //     $('.revice-tabs > ul > li:nth-child(5) img').attr("src","images/revice/ico_chat.png");
-            // });
+            $('.revice-tabs > ul > li:nth-child(5)').mouseover(function(){
+                $('.revice-tabs > ul > li:nth-child(5) img').attr("src","images/revice/ico_chat_b.png")
+            });
+            $('.revice-tabs > ul > li:nth-child(5)').mouseleave(function(){
+                $('.revice-tabs > ul > li:nth-child(5) img').attr("src","images/revice/ico_chat.png");
+            });
         })
     </script>
     

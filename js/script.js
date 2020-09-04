@@ -153,8 +153,54 @@ jQuery(function($)
     });
 
 
-      $( "#accordion" ).accordion();
+    // 마이페이지 단가표 관리 영역
+    $(function(){
+      $('ul.tab li').on('click',function(){
+        var activeTab = $(this).attr('data-tab');
+        $('ul.tab li').removeClass('current');
+        $('ul.tab-2 li').removeClass('current');
+        $('ul.tab-3 li').removeClass('current');
+        $('.tabcontent').removeClass('current');
+        $(this).addClass('current');
+        $('#' + activeTab).addClass('current');
+
+      });
+      $('ul.tab-2 li').on('click',function(){
+        var activeTab = $(this).attr('data-tab');
+        $('ul.tab li').removeClass('current');
+        $('ul.tab-2 li').removeClass('current');
+        $('ul.tab-3 li').removeClass('current');
+        $('.tabcontent').removeClass('current');
+        $(this).addClass('current');
+        $('#' + activeTab).addClass('current');
+
+      });
+      $('ul.tab-3 li').on('click',function(){
+        var activeTab = $(this).attr('data-tab');
+        $('ul.tab li').removeClass('current');
+        $('ul.tab-2 li').removeClass('current');
+        $('ul.tab-3 li').removeClass('current');
+        $('.tabcontent').removeClass('current');
+        $(this).addClass('current');
+        $('#' + activeTab).addClass('current');
+    });
 
 
 
+    
+  });
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
 // 차트 영역
