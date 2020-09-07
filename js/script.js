@@ -23,6 +23,12 @@ $(function(){
       boardCounter.removeClass('on');
       $(this).addClass('on');
     });
+    // 단가표게시판
+    var unitCount = $('.unit-area-tab > ul > li');
+    unitCount.click(function(){
+      unitCount.removeClass('active');
+      $(this).addClass('active');
+    });
 });
 
 // 공지사항 롤링 애니메이션
@@ -155,7 +161,10 @@ jQuery(function($)
 
     // 마이페이지 단가표 관리 영역
     $(function(){
-      $('ul.tab li').on('click',function(){
+      $('ul.tab li').on('click',function(e){
+        var cb = $(this).find(":checkbox")[0];
+        if(e.target != cb) cb.checked = !cb.checked;
+        $(this).toggleClass("current",cb.checked);
         var activeTab = $(this).attr('data-tab');
         $('ul.tab li').removeClass('current');
         $('ul.tab-2 li').removeClass('current');
@@ -165,18 +174,23 @@ jQuery(function($)
         $('#' + activeTab).addClass('current');
 
       });
-      $('ul.tab-2 li').on('click',function(){
+      $('ul.tab-2 li').on('click',function(e){
         var activeTab = $(this).attr('data-tab');
+        var cb = $(this).find(":checkbox")[0];
+        if(e.target != cb) cb.checked = !cb.checked;
+        $(this).toggleClass("current",cb.checked);
         $('ul.tab li').removeClass('current');
         $('ul.tab-2 li').removeClass('current');
         $('ul.tab-3 li').removeClass('current');
         $('.tabcontent').removeClass('current');
         $(this).addClass('current');
         $('#' + activeTab).addClass('current');
-
       });
-      $('ul.tab-3 li').on('click',function(){
+      $('ul.tab-3 li').on('click',function(e){
         var activeTab = $(this).attr('data-tab');
+        var cb = $(this).find(":checkbox")[0];
+        if(e.target != cb) cb.checked = !cb.checked;
+        $(this).toggleClass("current",cb.checked);
         $('ul.tab li').removeClass('current');
         $('ul.tab-2 li').removeClass('current');
         $('ul.tab-3 li').removeClass('current');
@@ -204,3 +218,32 @@ jQuery(function($)
     });
   }
 // 차트 영역
+
+
+$(function() {
+  var Accordion = function(el, multiple) {
+      this.el = el || {};
+      this.multiple = multiple || false;
+
+      var links = this.el.find('.article-title');
+      links.on('click', {
+          el: this.el,
+          multiple: this.multiple
+      }, this.dropdown)
+  }
+
+  Accordion.prototype.dropdown = function(e) {
+      var $el = e.data.el;
+      $this = $(this),
+          $next = $this.next();
+      // 게시판 내려오는 속도 조절
+      $next.slideToggle(0);
+      $this.parent().toggleClass('open');
+
+      if (!e.data.multiple) {
+        // 게시판 올라가는 속도 조절
+          $el.find('.accordion-content').not($next).slideUp(0).parent().removeClass('open');
+      };
+  }
+  var accordion = new Accordion($('.accordion-container'), false);
+});

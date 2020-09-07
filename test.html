@@ -54,7 +54,7 @@
                     <li>
                         <a href="unit-price.html">단가표게시판</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="company-list.html">업체리스트</a>
                     </li>
                     <li>
@@ -79,110 +79,180 @@
 
     <!-- 메인 섹션 시작 -->
     <section>
-        
-        <div class="free-write-section board-manage-section">
-            <div class="revice-info-wrap board-manager-wrap">
-                <div class="revice-info">
-                    <p>안녕하세요!</p>
-                    <div class="revice-user-info">
-                        <div class="revice-user-info-wrap">
-                            <p>한국 GMC 모바일 컴퍼니</p>
-                            <div class="diller">
-                                <p>딜러</p>
+        <div class="main-wrapper company-info-wrapper">
+            <div class="main-section company-info-section">
+                <div class="info-section">
+                    <p class="info-title">한국 GMC 모바일 컴퍼니</p>
+                    <div class="info-line"></div>
+                    <div class="company-info-item-1">
+                        <div class="company-time">
+                            <p>영업시간</p>
+                            <div class="company-info-item-wrap">
+                                <img src="images/company-info/ico_clock.png" alt="영업시간">
+                                <p>오전 10:00 ~ 오후 20:20</p>
                             </div>
-                            <p>회원님</p>
                         </div>
-                        <p>2020년 4월 20일 13:00 가입</p>
+                        <div class="company-address">
+                            <p>소재지</p>
+                            <div class="company-info-item-wrap">
+                                <img src="images/company-info/ico_point.png" alt="소재지">
+                                <p>서울시 금천구 가산 디지털 1로 168 우림라이온스빌 C동 203호</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="revice-tabs-line"></div>
-                <div class="revice-tabs">
-                    <ul>
-                        <li>
-                            <a href="revice-info.html">
-                                <div class="image-wrap">
-                                    <img src="images/revice/ico_user.png" alt="유저아이콘">
-                                </div>
-                                <p>회원정보 수정</p>
-                            </a>
-                        </li>
-                        <li class="active">
-                            <a href="board-manage.html">
-                                <div class="image-wrap">
-                                    <img src="images/revice/ico_unit_b.png" alt="단가표 관리">
-                                </div>
-                                <p>단가표 관리</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="revice-company-info.html">
-                                <div class="image-wrap">
-                                    <img src="images/revice/ico_company.png" alt="회사정보 수정">
-                                </div>    
-                                <p>회사정보 수정</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="revice-added-company.html">
-                                <div class="image-wrap">
-                                    <img src="images/revice/ico_added.png" alt="내가 추가한 업체">
-                                </div>
-                                <p>내가 추가한 업체</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="revice-inquire.html">
-                                <div class="image-wrap">
-                                    <img src="images/revice/ico_chat.png" alt="문의하기">
-                                </div>
-                                <p>문의하기</p>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="company-info-item-2">
+                        <div class="company-tell">
+                            <p>연락처</p>
+                            <div class="company-info-item-wrap">
+                                <img src="images/company-info/ico_tell.png" alt="연락처">
+                                <p>070-4195-0335</p>
+                            </div>
+                        </div>
+                        <div class="company-talk">
+                            <p>카카오톡</p>
+                            <div class="company-info-item-wrap">
+                                <img src="images/company-info/ico_talk.png" alt="카카오톡">
+                                <p>korea_comgmc</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="withdrawal-line"></div>
-            <div class="board-manage-wrap">
-                <div class="manage-item">
-                    <div class="manage-item-wrap">
-                        <ul class="tab">
-                            <li data-tab="tab1"><a href="#">
-                                <input id="t1" type="checkbox">
-                            </a></li>
-                            <li data-tab="tab2"><a href="#"></a></li>
-                            <li data-tab="tab3"><a href="#"></a></li>
-                            <li data-tab="tab4"><a href="#"></a></li>
-                            <li data-tab="tab5"><a href="#"></a></li>
-                        </ul>
-                        <div id="tab1" class="tabcontent">
-                            <p>2002년 7월(월말) 단가표 입니다</p>
-                            <p>2020-01-14 16:00</p>
-                        </div>
-                        <div id="tab2" class="tabcontent">
-                            <p>ccc</p>
-                            <p>ddd</p>
-                        </div>
-                        <div id="tab3" class="tabcontent">
-                            <p>eee</p>
-                            <p>fff</p>
-                        </div>
-                        <div id="tab4" class="tabcontent">
-                            <p>ggg</p>
-                            <p>hhh</p>
-                        </div>
-                        <div id="tab5" class="tabcontent">
-                            <p>iii</p>
-                            <p>jjj</p>
-                        </div>
-
+        </div>
+        <div class="info-price-table-section">
+            <div class="explain-tabs">
+                <ul>
+                    <li>
+                        <a href="company-info.html">업체정보</a>
+                    </li>
+                    <li class="active">
+                        <a href="company-info-price.html">단가표<span><img src="images/company-info/ico_new.png" alt="new"></span></a>
+                    </li>
+                    <li>
+                        <a href="company-info-event.html">이벤트<span><img src="images/company-info/ico_new.png" alt="new"></span></a>
+                    </li>
+                    <li>
+                        <a href="company-info-map.html">지도안내</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info-price-table" id="content">
+                <div class="price-tab">
+                    <div class="price-num">
+                        <p>순번</p>
+                    </div>
+                    <div class="price-upload">
+                        <p>업로드 일자</p>
+                    </div>
+                    <div class="price-unit-price">
+                        <p>단가표</p>
+                    </div>
+                    <div class="price-view">
+                        <p>조회수</p>
+                    </div>
+                    <div class="price-writer">
+                        <p>작성자</p>
                     </div>
                 </div>
-                
-                <div class="page-num-wrap board-num-wrap">
-                    <div class="board-page-button">
-                        <button type="button">전체선택</button>
-                        <button type="button">삭제하기</button>
-                    </div>
+                <div id="accordion" class="accordion-container success">
+                    <article class="content-entry">
+                        <div class="article-title">
+                            <div class="price-num">
+                                <p>019</p>
+                            </div>
+                            <div class="price-upload">
+                                <p>2020-01-14 16:00</p>
+                            </div>
+                            <div class="price-unit-price">
+                                <p>2020년 7월(월말) 단가표 입니다</p>
+                            </div>
+                            <div class="price-view">
+                                <p>625</p>
+                            </div>
+                            <div class="price-writer">
+                                <p>한국 GMC-1</p>
+                            </div>
+                        </div>
+                        <div class="panel-wrap accordion-content">
+                            <div class="panel-conts">
+                                <div class="panel-conts-wrap">
+                                    <p>아이폰 11 256G 도 등록 부탁드립니다!</p>
+                                    <p>분실조회 충전도 300,000정도 함께 부탁드립니다! <코나컴퍼니>로 입금완료!</p>
+                                </div>
+                                <button type="button">삭제하기</button>
+                            </div>
+                            <div class="panel-line"></div>
+                            <div class="panel-attach">
+                                <div class="attach-item-1">
+                                    <a href="#"><img src="images/board/ico_file.png" alt="첨부파일 아이콘">handol_sys_costsheet.ppt<span>[542kb]</span></a>
+                                </div>
+                                <div class="attach-item-2">
+                                    <a href="#"><img src="images/board/ico_file.png" alt="첨부파일 아이콘">bust_crack.ppt<span>[232kb]</span></a>
+                                </div>
+                            </div>
+                            <div class="panel-line"></div>
+                            <div class="panel-admin">
+                                <div class="admin">
+                                    <p>관리자</p>
+                                </div>
+                                <p>중가비</p>
+                                <p>2020-01-15 12:23   요청하신 단말기<아이폰11 256G>등록 및 분실조회 충전해 드렸습니다 감사합니다!</p>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+                <!-- 1depth -->
+                <div id="accordion" class="accordion-container success">
+                    <article class="content-entry">
+                        <div class="article-title">
+                            <div class="price-num">
+                                <p>019</p>
+                            </div>
+                            <div class="price-upload">
+                                <p>2020-01-14 16:00</p>
+                            </div>
+                            <div class="price-unit-price">
+                                <p>2020년 7월(월말) 단가표 입니다</p>
+                            </div>
+                            <div class="price-view">
+                                <p>625</p>
+                            </div>
+                            <div class="price-writer">
+                                <p>한국 GMC-1</p>
+                            </div>
+                        </div>
+                        <div class="panel-wrap accordion-content">
+                            <div class="panel-conts">
+                                <div class="panel-conts-wrap">
+                                    <p>아이폰 11 256G 도 등록 부탁드립니다!</p>
+                                    <p>분실조회 충전도 300,000정도 함께 부탁드립니다! <코나컴퍼니>로 입금완료!</p>
+                                </div>
+                                <button type="button">삭제하기</button>
+                            </div>
+                            <div class="panel-line"></div>
+                            <div class="panel-attach">
+                                <div class="attach-item-1">
+                                    <a href="#"><img src="images/board/ico_file.png" alt="첨부파일 아이콘">handol_sys_costsheet.ppt<span>[542kb]</span></a>
+                                </div>
+                                <div class="attach-item-2">
+                                    <a href="#"><img src="images/board/ico_file.png" alt="첨부파일 아이콘">bust_crack.ppt<span>[232kb]</span></a>
+                                </div>
+                            </div>
+                            <div class="panel-line"></div>
+                            <div class="panel-admin">
+                                <div class="admin">
+                                    <p>관리자</p>
+                                </div>
+                                <p>중가비</p>
+                                <p>2020-01-15 12:23   요청하신 단말기<아이폰11 256G>등록 및 분실조회 충전해 드렸습니다 감사합니다!</p>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+                <div class="page-num-wrap">
+                    <div class="page-num-null"></div>
                     <div class="page-num">
                         <div class="prev-btn">
                             <i class="fa fa-angle-left"></i>
@@ -217,8 +287,8 @@
                             <i class="fa fa-angle-right"></i>
                         </div>
                     </div>
-                    <div class="board-write-button">
-                        <button type="button" onclick="location.href='board-manage-write.html'">글쓰기</button>
+                    <div class="back-menu-btn">
+                        <button type="button">목록으로</button>
                     </div>
                 </div>
             </div>
@@ -288,49 +358,11 @@
             </div>
         </div>
     </footer>
-    <!-- 메인 푸터 끝 --> 
+    <!-- 메인 푸터 끝 -->
 
     
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/jquery-ui.js"></script>
     <script src='js/script.js'></script>
-    <script type="text/javascript">
-        $(function(){
-            $('.revice-tabs > ul > li:nth-child(1)').mouseover(function(){
-                $('.revice-tabs > ul > li:nth-child(1) img').attr("src","images/revice/ico_user_b.png")
-            });
-            $('.revice-tabs > ul > li:nth-child(1)').mouseleave(function(){
-                $('.revice-tabs > ul > li:nth-child(1) img').attr("src","images/revice/ico_user.png");
-            });
-            
-            // $('.revice-tabs > ul > li:nth-child(2)').mouseover(function(){
-            //     $('.revice-tabs > ul > li:nth-child(2) img').attr("src","images/revice/ico_unit_b.png")
-            // });
-            // $('.revice-tabs > ul > li:nth-child(2)').mouseleave(function(){
-            //     $('.revice-tabs > ul > li:nth-child(2) img').attr("src","images/revice/ico_unit.png");
-            // });
-            
-            $('.revice-tabs > ul > li:nth-child(3)').mouseover(function(){
-                $('.revice-tabs > ul > li:nth-child(3) img').attr("src","images/revice/ico_company_b.png")
-            });
-            $('.revice-tabs > ul > li:nth-child(3)').mouseleave(function(){
-                $('.revice-tabs > ul > li:nth-child(3) img').attr("src","images/revice/ico_company.png");
-            });
-            
-            $('.revice-tabs > ul > li:nth-child(4)').mouseover(function(){
-                $('.revice-tabs > ul > li:nth-child(4) img').attr("src","images/revice/ico_added_b.png")
-            });
-            $('.revice-tabs > ul > li:nth-child(4)').mouseleave(function(){
-                $('.revice-tabs > ul > li:nth-child(4) img').attr("src","images/revice/ico_added.png");
-            });
-            
-            $('.revice-tabs > ul > li:nth-child(5)').mouseover(function(){
-                $('.revice-tabs > ul > li:nth-child(5) img').attr("src","images/revice/ico_chat_b.png")
-            });
-            $('.revice-tabs > ul > li:nth-child(5)').mouseleave(function(){
-                $('.revice-tabs > ul > li:nth-child(5) img').attr("src","images/revice/ico_chat.png");
-            });
-        })
     </script>
     
 </body>

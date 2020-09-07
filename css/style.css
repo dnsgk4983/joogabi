@@ -8,7 +8,9 @@
     src: url('../css/fonts/notokr-regular.eot?#iefix') format('embedded-opentype'),
     url('../css/fonts/notokr-regular.woff') format('woff'),
     url('../css/fonts/notokr-regular.woff2') format('woff2');
-  }
+}
+
+
   *{
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
@@ -246,7 +248,7 @@ section{
       height: 52px;
       border: 4px solid #3e5bc7;
       box-sizing: border-box;
-      text-indent: 18px;
+      padding-left: 18px;
   }
   .company-input input::placeholder{
       color: #bbbbbb;
@@ -998,7 +1000,7 @@ section{
     margin-bottom: 11px;
 }
 .no-user-item p{
-    font-size: 12px;
+    font-size: 11px;
     line-height: 17px;
     letter-spacing: -1px;
     color: #aeaeae;
@@ -1010,7 +1012,7 @@ section{
     background: #3e5bc7;
     color: #fff;
     border: none;
-    margin-top: 23px;
+    margin-top: 15px;
 }
 .no-user-register button img{
     margin-right: 7px;
@@ -1089,7 +1091,7 @@ section{
 
 /* find 페이지 */
 .find-page-wrapper{
-    height: 625px;
+    height: 504px;
 }
 .find-section{
     width: 1278px;
@@ -1222,9 +1224,7 @@ section{
 .agree-checkbox{
     margin-top: 12px;
 }
-.agree-checkbox input{
-    vertical-align: middle;
-}
+
 .agree-checkbox span{
     font-size: 14px;
     color: #878787;
@@ -1604,6 +1604,7 @@ section{
 }
 .trend-day-title p{
     font-size: 18px;
+    font-weight: 600;
     color: #303030;
 }
 .trend-line{
@@ -1628,7 +1629,7 @@ section{
     box-sizing: border-box;
     background: url('../images/trend-page/ico_saerch.png')no-repeat;
     background-position: 0 center;
-    text-indent: 24px;
+    padding-left: 24px;
 }
 .trend-search-line{
     width: 458px;
@@ -1721,7 +1722,7 @@ section{
     padding-top: 14px;
 }
 .trend-tabs > ul > li {
-    padding: 8px 5px;
+    padding: 8px 10px;
     margin-left: 4px;
     border-radius: 3px;
     background: #acacac;
@@ -1732,6 +1733,7 @@ section{
 }
 
 .trend-tabs > ul > li > a > i {
+    margin-left: 6px;
     color: #717171;
 }
 
@@ -1754,6 +1756,8 @@ section{
 }
 .trend-chart-title > p{
     color: #303030;
+    font-weight: 600;
+    margin-bottom: 6px;
     font-size: 13px;
 }
 .trend-chart-check{
@@ -1937,11 +1941,7 @@ section{
 .unit-area-tab{
     margin-top: 33px;
 }
-.unit-area-tab img{
-    width: 36px;
-    vertical-align: middle;
-    margin-right: 8px;
-}
+
 .unit-area-tab > ul {
     width: 1206px;
     margin: 0 auto;
@@ -1958,7 +1958,12 @@ section{
     box-sizing: border-box;
     cursor: pointer;
     color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
 .unit-area-tab > ul > li:last-child {
     border-right: 1px solid #939393;
 }
@@ -1968,6 +1973,10 @@ section{
     border-color: #3e5bc7;
     color: #fff;
 }
+.unit-area-tab > ul > li > img {
+    margin-right: 8px;
+
+}
 .unit-area-tab > ul:last-child > li {
     border-top: none;
 }
@@ -1975,13 +1984,13 @@ section{
 
 /* 단가표 영역 */
 .unit-table-wrap{
-    width: 1278px;
+    width: 1213px;
     height: 1316px;
     margin: 0 auto;
 }
 .unit-table-title{
-    padding-top: 53px;
-    padding-bottom: 22px;
+    margin-top: 53px;
+    margin-bottom: 22px;
 }
 .unit-table-title p{
     font-size: 14px;
@@ -1997,10 +2006,10 @@ section{
     justify-content: space-between;
 }
 .unit-table{
-    padding-top:22px;
+    margin-top:22px;
 }
 .unit-table-mg0{
-    padding-top: 0;
+    margin-top: 0;
 }
 .unit-table-item{
     width: 226px;
@@ -2113,8 +2122,8 @@ section{
     box-sizing: border-box;
 }
 .company-selecter{
-    padding-left: 36px;
-    padding-top: 18px;
+    margin-left: 36px;
+    margin-top: 18px;
 }
 .company-selecter input{
     margin-right: 8px;
@@ -2128,7 +2137,7 @@ section{
 }
 /* 업체리스트 테이블 */
 .company-list-wrap{
-    width: 1278px;
+    width: 1213px;
     height: auto;
     margin: 0 auto;
 }
@@ -2137,7 +2146,7 @@ section{
     justify-content: space-between;
 }
 .company-list-title{
-    padding: 53px 0 26px 0;
+    margin: 53px 0 26px 0;
 }
 .company-list-title p{
     font-size: 14px;
@@ -2198,17 +2207,6 @@ section{
     margin-bottom: 22px;
 }
 
-.unit-area-tab svg{
-    width: 36px;
-    margin-right: 8px;
-    vertical-align: middle;
-}
-.unit-area-tab svg .st0{
-    fill: #fff;
-    stroke: #fff;
-}
-
-
 /* 가격비교 페이지 */
 .compare-wrapper{
     height: 229px;
@@ -2228,9 +2226,10 @@ section{
     position: relative;
 }
 .compare-title{
-    padding-top: 26px;
+    margin-top: 26px;
     display: flex;
     justify-content: center;
+    align-items: baseline;
 }
 .compare-title p{
     font-size: 18px;
@@ -2242,7 +2241,7 @@ section{
 }
 .compare-title i{
     color: #999999;
-    font-size: 18px;
+    font-size: 25px;
 }
 .compare-selecter{
     margin-top: 32px;
@@ -2266,7 +2265,7 @@ section{
     position: absolute;
     width: 39px;
     height: 39px;
-    line-height: 39px;
+    line-height: 37px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -2279,10 +2278,10 @@ section{
 }
 .compare-search-icon img{
     margin-left: 8px;
-    margin-top: 10px;
+    margin-top: 9px;
 }
 .compare-close img{
-    margin-left: 11px;
+    margin-left: 10px;
 }
 /* 가격비교 선택된 영역 */
 .compare-selected{
@@ -2316,7 +2315,7 @@ section{
 }
 /* 가격비교 콘텐츠영역 */
 .compare-item-wrap{
-    width: 1278px;
+    width: 1219px;
     height: 1180px;
     margin: 0 auto;
 }
@@ -2350,6 +2349,10 @@ section{
     font-size: 13px;
     font-weight: 600;
     margin: 19px 0 11px 26px;
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .compare-chart-name p{
     color: #034ea2;
@@ -2376,6 +2379,12 @@ section{
 .compare-chart-company p{
     color: #878787;
 }
+.compare-chart-company img{
+    cursor: pointer;
+}
+.compare-chart-info > p > span{
+    font-weight: 600;
+}
 .compare-chart-info{
     width: 164px;
     height: 23px;
@@ -2399,6 +2408,7 @@ section{
     line-height: 143px;
     background: #bfbfbf;
     text-align: center;
+    cursor: pointer;
 }
 .compare-chart-prev p , .compare-chart-next p{
     font-size: 16px;
@@ -2445,6 +2455,7 @@ section{
     margin-bottom: 12px;
 }
 .compare-detail-search select{
+    display: block;
     width: 283px;
     height: 45px;
     border: 1px solid #dbdbdb;
@@ -2649,13 +2660,14 @@ section{
     padding-left: 21px;
     line-height: 20px;
 }
+
 .explain-item p:last-child{
     margin-top: 30px;
 }
 /* 업체정보 2번 페이지 테이블 영역*/
 .info-price-table-section{
     /* width: 1278px; */
-    height: 740px;
+    height: auto;
     margin: 0 auto;
 }
 .price-tab{
@@ -2689,6 +2701,10 @@ section{
 }
 .price-unit-price > p{
     text-align: left;
+}
+.price-unit-price > p > img{
+    vertical-align: middle;
+    margin-right: 3px;
 }
 .price-view{
     width: 127px;
@@ -2733,9 +2749,9 @@ section{
     border: none;
 }
 /* 업체정보 3번 페이지 */
-.info-event-table-section{
+/* .info-event-table-section{
     height: 690px;
-}
+} */
 /* 업체정보 4번 페이지 */
 .info-map-section{
     height: 616px;
@@ -2743,6 +2759,12 @@ section{
 .company-info-map-area{
     width: 1203px;
     height: 419px;
+    border: 1px solid #dde1e9;
+    box-sizing: border-box;
+    line-height: 419px;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
     margin: 0 auto;
 }
 .company-info-map-area img{
@@ -2751,8 +2773,7 @@ section{
 
 /* 게시판페이지 */
 .board-section{
-    /* width: 1278px; */
-    height: 940px;
+    height: auto;
     margin: 0 auto;
 }
 .free-board-section{
@@ -3258,8 +3279,13 @@ section{
     height: 1px;
     background: #bababa;
 }
+.withdrawal-wrapper{
+    width: 1094px;
+    height: auto;
+    margin: 0 auto;
+}
 .withdrawal-notice{
-    width: 1203px;
+    width: 1094px;
     height: auto;
     margin: 0 auto;
 }
@@ -3274,10 +3300,11 @@ section{
 }
 .withdrawal-notice > ul >li {
     font-size: 14.5px;
-    line-height: 22px;
+    line-height: 28px;
     color: #878787;
 }
 .withdrawal-notice > ul > li > ul {
+    
     margin-left: 9px;
 }
 .withdrawal-notice-check{
@@ -3288,13 +3315,13 @@ section{
     margin-right: 6px;
 }
 .withdrawal-info-line{
-    width: 1203px;
+    width: 1094px;
     height: 1px;
     background: #bababa;
     margin: 30px auto 33px;
 }
 .withdrawal-info{
-    width: 1203px;
+    width: 1094px;
     height: auto;
     margin: 0 auto;
 }
@@ -3311,7 +3338,7 @@ section{
 }
 .withdrawal-id p{
     width: 178px;
-    color: #878787;
+    color: #000000;
 }
 .withdrawal-id-box{
     margin-top: 25px;
@@ -3361,9 +3388,12 @@ section{
 }
 /* 회원탈퇴 완료 페이지 */
 .withdrawal-success-wrap{
-    width: 1203px;
+    width: 1094px;
     height: auto;
     margin: 0 auto;
+}
+.withdrawal-success-wrap .withdrawal-info-line{
+    width: 1094px;
 }
 .withdrawal-success-title{
     margin-top: 58px;
@@ -4039,15 +4069,12 @@ ul.tab-3 > li > p:nth-child(2){
 }
 
 /* 문의하기 게시판 페이지 */
-.inquire-board-section{
-    height: 1196px;
-}
+
 .inquire-board-wrap{
     width: 100%;
-    height: 913px;
+    height: auto;
 }
 .inquire-board-item{
-    /* width: 1203px; */
     height: auto;
     margin: 0 auto;
 }
@@ -4070,33 +4097,35 @@ ul.tab-3 > li > p:nth-child(2){
     width: 142px;
     height: 39px;
     line-height: 39px;
-    border-right:1px solid #dde1e9;
+    text-align: center;
     box-sizing: border-box;
 }
 .accordion-day{
     width: 190px;
     height: 39px;
     line-height: 39px;
-    border-right: 1px solid #dde1e9;
+    text-align: center;
     box-sizing: border-box;
 }
 .accordion-sortation{
     width: 148px;
     height: 39px;
     line-height: 39px;
-    border-right: 1px solid #dde1e9;
+    text-align: center;
     box-sizing: border-box;
 }
 .accordion-title{
     width: 567px;
     height: 39px;
     line-height: 39px;
-    border-right: 1px solid #dde1e9;
+    text-align: left;
+    text-indent: 36px;
     box-sizing: border-box;
 }
 .accordion-status{
     width: 156px;
     height: 39px;
+    text-align: center;
     line-height: 39px;
 }
 .accordion{
@@ -4116,25 +4145,27 @@ ul.tab-3 > li > p:nth-child(2){
 .accordion > p {
     color: #939393;
 }
-.accordion.success > .accordion-status > p{
+.accordion-container.success > article > .article-title > .accordion-status p{
     color: #3e5bc7;
     /* font-weight: 600; */
 }
-.accordion.active p{
+.accordion-container.active p{
     color: #3e5bc7;
     /* font-weight: 600; */
 }
-.panel{
+
+.free-board-panel-wrap{
     width: 100%;
     height: auto;
     background: #f9fafb;
     display: none;
-    overflow: hidden;
 }
 .panel-wrap{
     width: 1094px;
-    height: 221px;
+    height: auto;
     margin: 0 auto;
+    background: #f9fafb;
+    padding-bottom: 23px;
 }
 .panel-conts{
     display: flex;
@@ -4200,7 +4231,7 @@ ul.tab-3 > li > p:nth-child(2){
 }
 /* 자유게시판 아코디언 설정 영역 */
 .free-panel-wrap{
-    height: 375px;
+    height: auto;
 }
 .free-attach{
     display: flex;
@@ -4216,6 +4247,7 @@ ul.tab-3 > li > p:nth-child(2){
     width: 1026px;
     height: 45px;
     border: 1px solid #dbdbdb;
+    padding-left: 10px;
     box-sizing: border-box;
 }
 .panel-input > button{
@@ -4244,7 +4276,7 @@ ul.tab-3 > li > p:nth-child(2){
     margin-bottom: 16px;
 }
 .panel-others-wrap > button {
-    width: 37px;
+    width: 40px;
     height: 19px;
     font-size: 13px;
     color: #fff;
@@ -4328,3 +4360,53 @@ footer{
   color: #303030;
 }
 
+/* test accordion */
+#accordion{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.article-title{
+    width: 1203px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #dde1e9;
+    border-top: none;
+    cursor: pointer;
+}
+.article-title p {
+    font-weight: 300;
+}
+.article-title:hover p{
+    color: #3e5bc7;
+}
+.accordion-content{
+    width: 100%;
+    height: auto;
+    display: none;
+    padding-bottom: 23px;
+    background: #f9fafb;
+    transition: all 0s;
+}
+.accordion-wrap{
+    width: 1203px;
+    height: auto;
+    margin: 0 auto;
+}
+.notice-accordion-wrap{
+    width: 1094px;
+}
+.revice-accordion-wrap{
+    width: 1094px;
+}
+.accordion-wrap > .panel-admin{
+    margin-bottom: 23px;
+}
+.notice-accordion-wrap > .panel-admin {
+    margin-bottom: 0;
+    padding-bottom: 23px;
+}
+.free-board-accordion-wrap{
+    width: 1094px;
+}
