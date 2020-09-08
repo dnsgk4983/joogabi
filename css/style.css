@@ -3937,6 +3937,9 @@ ul.tab-3 > li > p:nth-child(2){
 .revice-added-company-section{
     height: 1673px;
 }
+.added-company-wrap{
+    width: 1203px;
+}
 
 /* 마이페이지 문의하기 */
 .inquire-section{
