@@ -2296,6 +2296,7 @@ section{
     line-height: 25px;
     background: #acacac;
     border-radius: 3px;
+    cursor: pointer;
 }
 .compare-selected > .selected-area{
     width: 51px;
@@ -2304,6 +2305,7 @@ section{
     background: #acacac;
     border-radius: 3px;
     margin-left: 4px;
+    cursor: pointer;
 }
 .compare-selected p{
     color: #fff;
