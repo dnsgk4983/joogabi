@@ -1425,8 +1425,8 @@ section{
 }
 .register-phone-wrap button{
     width: 68px;
-    height: 49px;
-    line-height: 49px;
+    height: 45px;
+    line-height: 45px;
     background: #878787;
     color: #fff;
     text-align: center;
@@ -3728,6 +3728,9 @@ ul.tab-3 > li > p:nth-child(2){
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+.write-attach-cont > img {
+    cursor: pointer;
+}
 .write-attach-cont p{
     font-size: 12px;
     color: #494949;
@@ -3739,6 +3742,7 @@ ul.tab-3 > li > p:nth-child(2){
     height: 17px;
     vertical-align: middle;
     margin-right: 4px;
+    
 }
 .write-manage-btn{
     margin-top: 34px;
@@ -4210,6 +4214,9 @@ ul.tab-3 > li > p:nth-child(2){
 }
 .panel-attach span{
     color: #939393;
+}
+.panel-input {
+    display: flex;
 }
 .attach-item-1{
     margin-bottom: 12px;

@@ -117,45 +117,45 @@ jQuery(function($)
 
     // 주요모델 슬라이드
     $('.condition-pagination li:nth-child(1)').click(function(){
-        $('.condition-conts').fadeOut();
-        $('.iphone-11pro-max').fadeIn();
-        $('.chart-wrap').fadeOut();
-        $('.iphone-11pro-wrap').fadeIn();
+        $('.condition-conts').fadeOut(0);
+        $('.iphone-11pro-max').fadeIn(0);
+        $('.chart-wrap').fadeOut(0);
+        $('.iphone-11pro-wrap').fadeIn(0);
     });
     $('.condition-pagination li:nth-child(2)').click(function(){
-        $('.condition-conts').fadeOut();
+        $('.condition-conts').fadeOut(0);
         $('.iphone-XS').css("display",'flex');
-        $('.iphone-XS').fadeIn();
-        $('.chart-wrap').fadeOut();
-        $('.iphone-XS-wrap').fadeIn();
+        $('.iphone-XS').fadeIn(0);
+        $('.chart-wrap').fadeOut(0);
+        $('.iphone-XS-wrap').fadeIn(0);
     });
     $('.condition-pagination li:nth-child(3)').click(function(){
-        $('.condition-conts').fadeOut();
+        $('.condition-conts').fadeOut(0);
         $('.galaxy-note-s20').css("display",'flex');
-        $('.galaxy-note-s20').fadeIn();
-        $('.chart-wrap').fadeOut();
-        $('.galaxy-note-S20-wrap').fadeIn();
+        $('.galaxy-note-s20').fadeIn(0);
+        $('.chart-wrap').fadeOut(0);
+        $('.galaxy-note-S20-wrap').fadeIn(0);
     });
     $('.condition-pagination li:nth-child(4)').click(function(){
-        $('.condition-conts').fadeOut();
+        $('.condition-conts').fadeOut(0);
         $('.galaxy-s9').css('display','flex');
-        $('.galaxy-s9').fadeIn();
-        $('.chart-wrap').fadeOut();
-        $('.galaxy-S9-wrap').fadeIn();
+        $('.galaxy-s9').fadeIn(0);
+        $('.chart-wrap').fadeOut(0);
+        $('.galaxy-S9-wrap').fadeIn(0);
     });
     $('.condition-pagination li:nth-child(5)').click(function(){
-        $('.condition-conts').fadeOut();
+        $('.condition-conts').fadeOut(0);
         $('.galaxy-s10').css('display','flex');
-        $('.galaxy-s10').fadeIn();
-        $('.chart-wrap').fadeOut();
-        $('.galaxy-S10-wrap').fadeIn();
+        $('.galaxy-s10').fadeIn(0);
+        $('.chart-wrap').fadeOut(0);
+        $('.galaxy-S10-wrap').fadeIn(0);
     });
     $('.condition-pagination li:nth-child(6)').click(function(){
-        $('.condition-conts').fadeOut();
+        $('.condition-conts').fadeOut(0);
         $('.iphone-SE').css('display','flex');
-        $('.iphone-SE').fadeIn();
-        $('.chart-wrap').fadeOut();
-        $('.iphone-SE-wrap').fadeIn();
+        $('.iphone-SE').fadeIn(0);
+        $('.chart-wrap').fadeOut(0);
+        $('.iphone-SE-wrap').fadeIn(0);
     });
 
 
