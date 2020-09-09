@@ -157,7 +157,8 @@ jQuery(function($)
         $('.chart-wrap').fadeOut(0);
         $('.iphone-SE-wrap').fadeIn(0);
     });
-
+    
+      
 
     // 마이페이지 단가표 관리 영역
     $(function(){

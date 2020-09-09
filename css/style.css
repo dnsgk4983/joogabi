@@ -2520,152 +2520,110 @@ section{
 
 /* 업체정보페이지 */
 .company-info-wrapper{
-    height: 257px;
-}
-.company-info-section{
-    height: 257px;
-}
-.info-section{
-    width: 1278px;
-    height: 217px;
+    width: 1203px;
+    height: auto;
+    margin: 0 auto;
     background: #fff;
-    border: 1px solid #dde1e9;
-    box-sizing: border-box;
-    margin: 0 auto;
-    margin-top: 18px;
 }
-.info-title{
-    font-size: 18px;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 27px;
-}
-.info-line{
-    width: 1220px;
-    height: 1px;
-    background: #dde1e9;
-    margin: 0 auto;
-    margin: 23px auto 33px;
-}
-.company-info-item-1{
+.cpi-title{
     display: flex;
+    margin-top: 81px;
     justify-content: center;
+}
+.color-grey{
+    font-size: 14.5px;
+    color: #a2a2a2;
+    margin-bottom: 10px;
+}
+.cpi-title > .diller{
+    width: 36px;
+    height: 22px;
+    line-height: 22px;
+}
+.cpi-title > .diller > p {
+    font-size: 15px;
+}
+.cpi-title > p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3e5bc7;
 }
 
-.company-info-item-2{
+.cpi-line{
+    width: 1203px;
+    height: 2px;
+    margin: 46px auto 55px;
+    background: #3e5bc7;
+}
+
+.cpi-item-wrap{
+    display: flex;
+    align-items: center;
+}
+.cpi-item > p {
+    font-size: 14px;
+    color: #696969;
+    font-weight: 500;
+}
+.cpi-image-wrap{
+    margin-right: 20px;
+}
+.cpi-item-wrap > .cpi-item{
     display: flex;
     justify-content: center;
-    margin-top: 32px;
-}
-.company-time{
-    display: flex;
-}
-.company-time > p {
-    font-size: 14.5px;
-    font-weight: 600;
-    width: 64px;
-}
-.company-address{
-    display: flex;
-    margin-left: 48px;
-}
-.company-address > p {
-    font-size: 14.5px;
-    font-weight: 600;
-    width: 64px;
-}
-.company-tell{
-    display: flex;
-}
-.company-tell > p{
-    font-size: 14.5px;
-    font-weight: 600;
-    width: 64px;
-}
-.company-talk{
-    display: flex;
-    margin-left: 48px;
-}
-.company-talk > p {
-    font-size: 14.5px;
-    font-weight: 600;
-    width: 64px;
-}
-.company-info-item-wrap{
-    display: flex;
-    width: 417px;
+    align-items: center;
+    width: 300px;
+    height: 56px;
     position: relative;
 }
-.company-info-item-wrap > p {
-    color: #939393;
-}
-.company-info-item-wrap::after{
-    position: absolute;
-    content: "";
-    left: 0;
-    right: 0;
-    width: 417px;
-    height: 1px;
-    bottom: -6px;
-    background: #878787;
-}
-.company-info-item-wrap img{
-    width: 18px;
-    height: 18px;
-    margin-right: 8px;
+.cpi-inner-line{
+    width: 1px;
+    height: 46px;
+    background: #a2a2a2;
 }
 
-.info-explain-section{
-    width: 1278px;
-    height: 398px;
+/* cpi-info-wrap */
+.cpi-info-wrap{
+    margin-top: 74px;
+}
+.cpi-info-tab{
+    width: 1203px;
+    height: 39px;
+    border-bottom: 1px solid #3e5bc7;
+    box-sizing: border-box;
     margin: 0 auto;
 }
-.explain-tabs > ul {
-    display: flex;
-    justify-content: center;
-    margin-top: 49px;
-    margin-bottom: 48px;
-}
-.explain-tabs > ul > li {
-    width: 175px;
+.cpi-info{
+    width: 300px;
     height: 39px;
-    line-height: 39px;
-    border: 1px solid #939393;
-    border-right: none;
-    text-align: center;
-}
-.explain-tabs > ul > li:last-child{
-    border-right: 1px solid #939393;
-}
-.explain-tabs > ul > li img{
-    vertical-align: -1px;
-    margin-left: 3px;
-}
-.explain-tabs > ul > li > a{
-    color: #939393;
-    font-size: 13px;
-}
-.explain-tabs > ul > li.active{
+    position: relative;
     background: #3e5bc7;
-    border: 1px solid #3e5bc7;
-}
-.explain-tabs > ul > li.active a{
+    line-height: 39px;
+    text-align: center;
     color: #fff;
+    font-size: 13px;
+    font-weight: 600;
 }
-.explain-item{
-    width: 1278px;
+.cpi-info-box{
+    width: 1203px;
     height: 208px;
     border: 1px solid #dde1e9;
     box-sizing: border-box;
-    margin: 0 auto;
-    padding-top: 20px;
-    padding-left: 21px;
-    line-height: 20px;
+    margin-top: 48px;
+    padding: 27px 0 0 26px;
+}
+.cpi-info-box p{
+    color: #696969;
+    font-size: 14px;
+    margin-bottom: 11px;
+}
+.cpi-info-top-box{
+    margin-bottom: 33px;
 }
 
-.explain-item p:last-child{
-    margin-top: 30px;
-}
+
+
+
 /* 업체정보 2번 페이지 테이블 영역*/
 .info-price-table-section{
     /* width: 1278px; */
