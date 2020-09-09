@@ -2620,8 +2620,20 @@ section{
 .cpi-info-top-box{
     margin-bottom: 33px;
 }
-
-
+.cpi-map-area{
+    width: 1203px;
+    height: 419px;
+    border: 1px solid #dde1e9;
+    margin-top: 48px;
+    line-height: 419px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 109px;
+}
+.cpi-info-wrap .page-num{
+    padding: 0;
+    margin: 83px 0 64px 0;
+}
 
 
 /* 업체정보 2번 페이지 테이블 영역*/
