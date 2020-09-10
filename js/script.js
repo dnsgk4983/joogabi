@@ -8,11 +8,6 @@ $(function(){
         $(this).css('background','#ffffff');
         $(this).children().css("color",'#000');
     });
-    var model=$(".condition-pagination > ul > li");
-    model.click(function(){ 
-    model.removeClass("on");
-    $(this).addClass("on");
-    });
     var board = $(".trend-board-tab > ul >li");
     board.click(function(){
       board.removeClass('active');
@@ -116,48 +111,104 @@ jQuery(function($)
 });
 
     // 주요모델 슬라이드
-    $('.condition-pagination li:nth-child(1)').click(function(){
+    $('.iphone-11pro-max > .condition-left > img').click(function(){
         $('.condition-conts').fadeOut(0);
-        $('.iphone-11pro-max').fadeIn(0);
-        $('.chart-wrap').fadeOut(0);
-        $('.iphone-11pro-wrap').fadeIn(0);
-    });
-    $('.condition-pagination li:nth-child(2)').click(function(){
-        $('.condition-conts').fadeOut(0);
-        $('.iphone-XS').css("display",'flex');
-        $('.iphone-XS').fadeIn(0);
-        $('.chart-wrap').fadeOut(0);
-        $('.iphone-XS-wrap').fadeIn(0);
-    });
-    $('.condition-pagination li:nth-child(3)').click(function(){
-        $('.condition-conts').fadeOut(0);
-        $('.galaxy-note-s20').css("display",'flex');
-        $('.galaxy-note-s20').fadeIn(0);
-        $('.chart-wrap').fadeOut(0);
-        $('.galaxy-note-S20-wrap').fadeIn(0);
-    });
-    $('.condition-pagination li:nth-child(4)').click(function(){
-        $('.condition-conts').fadeOut(0);
-        $('.galaxy-s9').css('display','flex');
-        $('.galaxy-s9').fadeIn(0);
-        $('.chart-wrap').fadeOut(0);
-        $('.galaxy-S9-wrap').fadeIn(0);
-    });
-    $('.condition-pagination li:nth-child(5)').click(function(){
-        $('.condition-conts').fadeOut(0);
-        $('.galaxy-s10').css('display','flex');
-        $('.galaxy-s10').fadeIn(0);
-        $('.chart-wrap').fadeOut(0);
-        $('.galaxy-S10-wrap').fadeIn(0);
-    });
-    $('.condition-pagination li:nth-child(6)').click(function(){
-        $('.condition-conts').fadeOut(0);
-        $('.iphone-SE').css('display','flex');
         $('.iphone-SE').fadeIn(0);
+        $('.iphone-SE').css('display','flex');
         $('.chart-wrap').fadeOut(0);
         $('.iphone-SE-wrap').fadeIn(0);
     });
+    $('.iphone-11pro-max > .condition-right > img').click(function(){
+      $('.condition-conts').fadeOut(0);
+      $('.iphone-XS').fadeIn(0);
+      $('.iphone-XS').css('display','flex');
+      $('.chart-wrap').fadeOut(0);
+      $('.iphone-XS-wrap').fadeIn(0);
+    });
+    // iphone-11pro-max
+
+    $('.iphone-XS > .condition-left > img').click(function(){
+      $('.condition-conts').fadeOut(0);
+      $('.iphone-11pro-max').fadeIn(0);
+      $('.iphone-11pro-max').css('display','flex');
+      $('.chart-wrap').fadeOut(0);
+      $('.iphone-11pro-wrap').fadeIn(0);
+    });
+    $('.iphone-XS > .condition-right > img').click(function(){
+      $('.condition-conts').fadeOut(0);
+      $('.galaxy-note-s20').fadeIn(0);
+      $('.galaxy-note-s20').css('display','flex');
+      $('.chart-wrap').fadeOut(0);
+      $('.galaxy-note-S20-wrap').fadeIn(0);
+    });
+
+    // iphone-XS
+
+    $('.galaxy-note-s20 > .condition-left > img').click(function(){
+      $('.condition-conts').fadeOut(0);
+      $('.iphone-XS').fadeIn(0);
+      $('.iphone-XS').css('display','flex');
+      $('.chart-wrap').fadeOut(0);
+      $('.iphone-XS-wrap').fadeIn(0);
+    });
+    $('.galaxy-note-s20 > .condition-right > img').click(function(){
+      $('.condition-conts').fadeOut(0);
+      $('.galaxy-s9').fadeIn(0);
+      $('.galaxy-s9').css('display','flex');
+      $('.chart-wrap').fadeOut(0);
+      $('.galaxy-S9-wrap').fadeIn(0);
+    });
     
+    // galaxy-note-s20
+
+    $('.galaxy-s9 > .condition-left > img').click(function(){
+      $('.condition-conts').fadeOut(0);
+      $('.galaxy-note-s20').fadeIn(0);
+      $('.galaxy-note-s20').css('display','flex');
+      $('.chart-wrap').fadeOut(0);
+      $('.galaxy-note-S20-wrap').fadeIn(0);
+    });
+    $('.galaxy-s9 > .condition-right > img').click(function(){
+      $('.condition-conts').fadeOut(0);
+      $('.galaxy-s10').fadeIn(0);
+      $('.galaxy-s10').css('display','flex');
+      $('.chart-wrap').fadeOut(0);
+      $('.galaxy-S10-wrap').fadeIn(0);
+    });
+
+    // galaxy-s9
+
+    $('.galaxy-s10 > .condition-left > img').click(function(){
+      $('.condition-conts').fadeOut(0);
+      $('.galaxy-s9').fadeIn(0);
+      $('.galaxy-s9').css('display','flex');
+      $('.chart-wrap').fadeOut(0);
+      $('.galaxy-S9-wrap').fadeIn(0);
+    });
+    $('.galaxy-s10 > .condition-right > img').click(function(){
+      $('.condition-conts').fadeOut(0);
+      $('.iphone-SE').fadeIn(0);
+      $('.iphone-SE').css('display','flex');
+      $('.chart-wrap').fadeOut(0);
+      $('.iphone-SE-wrap').fadeIn(0);
+    });
+
+    // galaxy-s10
+
+    $('.iphone-SE > .condition-left > img').click(function(){
+      $('.condition-conts').fadeOut(0);
+      $('.galaxy-s10').fadeIn(0);
+      $('.galaxy-s10').css('display','flex');
+      $('.chart-wrap').fadeOut(0);
+      $('.galaxy-S10-wrap').fadeIn(0);
+    });
+    $('.iphone-SE > .condition-right > img').click(function(){
+      $('.condition-conts').fadeOut(0);
+      $('.iphone-11pro-max').fadeIn(0);
+      $('.iphone-11pro-max').css('display','flex');
+      $('.chart-wrap').fadeOut(0);
+      $('.iphone-11pro-wrap').fadeIn(0);
+    });
       
 
     // 마이페이지 단가표 관리 영역
@@ -173,7 +224,6 @@ jQuery(function($)
         $('.tabcontent').removeClass('current');
         $(this).addClass('current');
         $('#' + activeTab).addClass('current');
-
       });
       $('ul.tab-2 li').on('click',function(e){
         var activeTab = $(this).attr('data-tab');
@@ -199,11 +249,58 @@ jQuery(function($)
         $(this).addClass('current');
         $('#' + activeTab).addClass('current');
     });
-
-
-
+    $("ul li.current").click(function(){
+      $(this).removeClass('current');
+    });
+    $('cpi-info-wrap .tabcontent.current').click(function(){
+      $(this).removeClass('current')
+    });
     
-  });
+
+    // 가격비교 페이지 영역
+    $('.compare-search-icon').click(function(){
+      $('.compare-search-icon').toggleClass('compare-close');
+      $('.compare-detail-search').slideToggle(0);
+    });
+
+    // 마이페이지 모달
+    $('.modal-close').click(function(){
+      $('.modal-wrapper').fadeOut(0);
+    });
+    // 회사관리자 모달
+    $('.md-cp-open').click(function(){
+      $('.modal-window').fadeOut(0);
+      $('.modal-company').fadeIn(0);
+    });
+    // 회사이름 입력모달
+    $('.modal-company > .md-cp-create button').click(function(){
+      $('.modal-company').fadeOut(0);
+      $('.md-suc').fadeIn(0);
+    });
+    $('.md-user-open').click(function(){
+      $('.modal-window').fadeOut(0);
+      $('.md-user').fadeIn(0);
+    });
+    // 스태프 페이지 모달
+    $('.stf-modal-wrapper .modal-close').click(function(){
+      $(".stf-modal-bg").fadeOut(0);
+      $(".stf-modal-wrapper").fadeOut(0);
+    });
+    $(".stf-del button").click(function(){
+      $('.stf-modal-bg').fadeIn(0);
+      $('.stf-modal-wrapper').fadeIn(0);
+      $('.stf-md-del-wrap').fadeIn(0);
+      $('.stf-md-code-wrap').fadeOut(0);
+    });
+    $('.stf-btn button:last-child').click(function(){
+      $(".stf-modal-bg").fadeIn(0);
+      $(".stf-modal-wrapper").fadeIn(0);
+      $('.stf-md-code-wrap').fadeIn(0);
+      $('.stf-md-del-wrap').fadeOut(0);
+    });
+});
+
+
   var acc = document.getElementsByClassName("accordion");
   var i;
 
@@ -248,3 +345,4 @@ $(function() {
   }
   var accordion = new Accordion($('.accordion-container'), false);
 });
+
