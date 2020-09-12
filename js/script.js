@@ -281,6 +281,11 @@ jQuery(function($)
       $('.modal-window').fadeOut(0);
       $('.md-user').fadeIn(0);
     });
+    // 합류완료 모달
+    $('.md-user > .md-cp-create button').click(function(){
+      $('.md-user').fadeOut(0);
+      $('.md-join').fadeIn(0);
+    })
     // 스태프 페이지 모달
     $('.stf-modal-wrapper .modal-close').click(function(){
       $(".stf-modal-bg").fadeOut(0);

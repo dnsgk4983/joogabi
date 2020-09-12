@@ -3442,8 +3442,10 @@ section{
 }
 .tab{
     display: flex;
-    justify-content: space-between;
     margin-top: 58px;
+}
+.tab > li {
+    margin-right: 50.6px;
 }
 .tab > li > .tab-wrap{
     width: 215px;
@@ -3472,8 +3474,10 @@ ul.tab > li > p:nth-child(2){
 
 .tab-2{
     display: flex;
-    justify-content: space-between;
     margin-top: 58px;
+}
+.tab-2 > li {
+    margin-right: 50.6px;
 }
 .tab-2 > li > .tab-wrap{
     width: 215px;
@@ -3502,8 +3506,10 @@ ul.tab-2 > li > p:nth-child(2){
 
 .tab-3{
     display: flex;
-    justify-content: space-between;
     margin-top: 58px;
+}
+.tab-3 > li {
+    margin-right: 50.6px;
 }
 .tab-3 > li > .tab-wrap{
     width: 215px;
@@ -4193,10 +4199,11 @@ ul.tab-3 > li > p:nth-child(2){
     line-height: 20px;
 }
 .panel-line{
-    width: 1155px;
+    width: 1148px;
     height: 1px;
     background: #bababa;
 }
+
 .panel-attach{
     margin-top: 18px;
     margin-bottom: 15px;
@@ -4403,10 +4410,10 @@ footer{
     margin: 0 auto;
 }
 .notice-accordion-wrap{
-    width: 1155px;
+    width: 1175px;
 }
 .revice-accordion-wrap{
-    width: 1155px;
+    width: 1160px;
 }
 .accordion-wrap > .panel-admin{
     margin-bottom: 23px;
@@ -4416,10 +4423,9 @@ footer{
     padding-bottom: 23px;
 }
 .free-board-accordion-wrap{
-    width: 1155px;
+    width: 1175px;
+    padding-right: 26px;
 }
-
-
 
 
 /* modal */
@@ -4469,7 +4475,6 @@ footer{
     font-size: 16px;
     color: #3e5bc7;
 }
-
 /* 2번 모달 */
 .modal-company{
     position: relative;
@@ -4563,6 +4568,27 @@ footer{
     margin-top: 10px;
     margin-left: 177px;
 }
+/* 5번 모달 */
+.md-join{
+    width: 666px;
+    height: 199px;
+    margin: 83px auto 0;
+    position: relative;
+    display: none;
+}
+.md-join-wrap{
+    width: 666px;
+    height: 199px;
+    background: #fff;
+    padding: 52px 0 0;
+    text-align: center;
+}
+.md-join-wrap > p {
+    margin-top: 18px;
+    color: #878787;
+    font-size: 14.5px;
+}
+
 
 /* 스태프페이지 */
 .stf-wrap{
@@ -4790,4 +4816,19 @@ footer{
     color: #fff;
     font-size: 14.5px;
     border-radius: 5px;
+}
+
+/* 0912 수정 */
+.notice-accordion .panel-line{
+    width: 1165px;
+}
+.notice-accordion .panel-conts > button{
+    margin-right: 10px;
+}
+
+.inquire-accordion .panel-line{
+    width: 1105px;
+}
+.inquire-accordion .panel-conts > button{
+    margin-right: 55px;
 }
