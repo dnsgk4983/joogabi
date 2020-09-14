@@ -19,35 +19,52 @@
         width: 1278px;
         height: 143px;
     }
-    .autoplay{
-        width: 1038px;
-        height: auto;
-        display: flex;
-    
+    .swiper-compare{
+      width: 1083px;
+      overflow: hidden;
+      height: auto;
     }
-    .autoplay > div > .slick-track{
-        display: flex;
-        height: 143px;
-    }
-    .slick-slide{
+
+    .swiper-compare .swiper-slide {
         width: 190px;
-        border-right: 1px solid #c7cbcf;
         padding: 0 14px 0 17px;
+        background: #fff;
+        border-right: 1px solid #c7cbcf;
+
+      /* Center slide text vertically */
+      
+      display: block;
     }
-    .slick-list.draggable{
-        overflow: hidden;
+    .swiper-compare .swiper-slide:last-child{
+        border-left: 1px solid #c7cbcf;
     }
-    .slick-prev.slick-arrow,
-    .slick-next.slick-arrow{
-        padding: 0%;
-        width: 103px;
-        background: #bfbfbf;
+    .swiper-compare > .swiper-wrapper{
+        position: relative;
+    }
+    .swiper-compare .swiper-button-prev::after,
+    .swiper-compare .swiper-button-next::after{
+        content: "";
+    }
+    .swiper-compare .swiper-button-prev{
+        /* position: rel; */
+        top: 22px;
+        left: 210px;
+        width: 27px;
         height: 143px;
-        line-height: 143px;
-        text-align: center;
-        border: none;
+        background: #bfbfbf;
         color: #fff;
     }
+    .swiper-compare .swiper-button-next{
+        position: relative;
+        top: 22px;
+        right: 0;
+        width: 27px;
+        height: 143px;
+        background: #bfbfbf;
+        color: #fff;
+    }
+
+    
 </style>
 
 <body>
@@ -116,6 +133,26 @@
     <section>
         <div class="main-wrapper compare-wrapper compare-2-wrapper">
             <div class="main-section compare-section compare-2-section">
+                <div class="widget">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                        </div>
+                        <!-- Add Pagination -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
                 <div class="pay-compare-section pay-compare-2-section">
                     <div class="compare-title">
                         <a href="#"><i class="fa fa-chevron-circle-left"></i></a>
@@ -200,45 +237,46 @@
                     <h3>아이폰 XS 128G</h3>
                     <p><span>▼</span> 8,230원</p>
                 </div>
-                <div class="autoplay">
-                    <div>
-                        <div class="compare-chart-company">
-                            <p>중가비 인터네셔널</p>
-                            <img src="images/compare/ico_search-single.png" alt="검색아이콘" onclick="location.href='company-info.html'">
+                <div class="swiper-compare">
+                    <div class="swiper-button-prev">◀</div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>중가비 인터네셔널</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘" onclick="location.href='company-info.html'">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
                         </div>
-                        <div class="compare-chart-info">
-                            <h3>중고</h3>
-                            <p><span>300,000 원</span></p>
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>토비 테크놀러지</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
                         </div>
-                        <div class="compare-chart-info">
-                            <h3>A급</h3>
-                            <p><span>270,000 원</span></p>
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>A-급</h3>
-                            <p><span>220,000 원</span></p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="compare-chart-company">
-                            <p>토비 테크놀러지</p>
-                            <img src="images/compare/ico_search-single.png" alt="검색아이콘">
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>중고</h3>
-                            <p><span>300,000 원</span></p>
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>A급</h3>
-                            <p><span>270,000 원</span></p>
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>A-급</h3>
-                            <p><span>220,000 원</span></p>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
+                        <div class="swiper-slide">
                             <div class="compare-chart-company">
                                 <p>다우 텔레컴</p>
                                 <img src="images/compare/ico_search-single.png" alt="검색아이콘">
@@ -256,9 +294,7 @@
                                 <p><span>220,000 원</span></p>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <div>
+                        <div class="swiper-slide">
                             <div class="compare-chart-company">
                                 <p>안암 정보통신</p>
                                 <img src="images/compare/ico_search-single.png" alt="검색아이콘">
@@ -276,9 +312,7 @@
                                 <p><span>220,000 원</span></p>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <div>
+                        <div class="swiper-slide">
                             <div class="compare-chart-company">
                                 <p>코리아 GMC</p>
                                 <img src="images/compare/ico_search-single.png" alt="검색아이콘">
@@ -296,9 +330,7 @@
                                 <p><span>220,000 원</span></p>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <div>
+                        <div class="swiper-slide">
                             <div class="compare-chart-company">
                                 <p>중가비 인터네셔널</p>
                                 <img src="images/compare/ico_search-single.png" alt="검색아이콘">
@@ -316,9 +348,7 @@
                                 <p><span>220,000 원</span></p>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <div>
+                        <div class="swiper-slide">
                             <div class="compare-chart-company">
                                 <p>토비 테크놀러지</p>
                                 <img src="images/compare/ico_search-single.png" alt="검색아이콘">
@@ -337,6 +367,9 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">▶</div>
+                    
                 </div>
             </div>
             <!-- 2번째 줄 -->
@@ -1174,16 +1207,39 @@
 
     
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src='js/script.js'></script>
+
+    
+
     <script type="text/javascript">
-        $(document).ready(function(){
-            $('.autoplay').slick({
-                slidesToShow: 5,
-                slidesToScroll: 1
-            });
-        });
+        var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        }
+    });
     </script>
+    <script type="text/javascript">
+        var swiper = new Swiper('.swiper-compare', {
+      slidesPerView: 5,
+      spaceBetween: 0,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: false,
+      navigation: {
+        nextEl: '.swiper-compare .swiper-button-next',
+        prevEl: '.swiper-compare .swiper-button-prev',
+      },
+    });
+    </script>
+    
 
     
 </body>
