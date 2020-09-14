@@ -88,6 +88,7 @@
   .user-name span{
       font-weight: 600;
       color: #3e5bc7;
+      cursor: pointer;
   }
   .user-line{
       width: 1px;
@@ -167,6 +168,7 @@
   }
   .menu > ul > li.active{
       background: #3e5bc7 !important;
+      /* border-right: #3e5bc7; */
   }
 
   .menu > ul > li.active > a{
@@ -201,8 +203,8 @@ section{
     width: 100%;
     max-width: 100%;
 }
-  section.main-wrapper{
-      
+  .main-wrapper{
+      width: 100%;
       height: 796px;
       /* position: relative; */
       background: #e9ecef;
@@ -254,7 +256,8 @@ section{
       color: #bbbbbb;
   }
   .company-input button{
-      width: 70px;
+      width: 72px;
+      margin-left: -2px;
       height: 52px;
       background: #3e5bc7;
       border: none;
@@ -756,7 +759,7 @@ section{
     color: #fff;
     left: -24px;
     top: 10px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     transform: rotate(-45deg);
 }
@@ -1588,7 +1591,8 @@ section{
 
 /* 트랜드페이지 */
 .trend-wrapper{
-    height: 1100px;
+    height: auto;
+    padding-bottom: 21px;
 }
 .trend-section{
     height: 311px;
@@ -1877,7 +1881,7 @@ section{
     width: 226px;
     justify-content: space-between;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 68px;
     margin-bottom: 105px;
 }
 .trend-board-count > ul > li > a{
@@ -2494,8 +2498,9 @@ section{
     padding-left: 11px;
 }
 .compare-detail-search button{
-    width: 68px;
+    width: 70px;
     height: 45px;
+    margin-left: -2px;
     background: #878787;
     line-height: 45px;
     text-align: center;
@@ -2986,7 +2991,7 @@ section{
     position: relative;
 }
 .revice-tabs > ul > li{
-    width: 255.6px;
+    width: 20%;
     height: auto;
     text-align: center;
     position: relative;
@@ -3137,6 +3142,12 @@ section{
     box-sizing: border-box;
     padding-left: 14px;
 }
+.revice-num-wrap{
+    display: flex;
+}
+.revice-number-wrap{
+    display: flex;
+}
 .revice-num-wrap input::placeholder{
     color: #000;
     font-weight: 600;
@@ -3145,7 +3156,8 @@ section{
     margin-right: 6px;
 }
 .revice-num button{
-    width: 68px;
+    width: 70px;
+    margin-left: -2px;
     height: 45px;
     background: #878787;
     border: none;
@@ -3781,52 +3793,55 @@ ul.tab-3 > li > p:nth-child(2){
     display: flex;
     align-items: baseline;
 }
-.cp-name{
+.cp-name > input{
     width: 542px;
     height: 45px;
     line-height: 45px;
     border: 1px solid #dbdbdb;
     box-sizing: border-box;
     margin-bottom: 15px;
+    padding-left: 15px;
 }
-.cp-name > p{
+.cp-name > input::placeholder{
     font-size: 14.5px;
     font-weight: 600;
-    margin-left: 15px;
+    color: #000;
 }
 .revice-company-area{
     display: flex;
     align-items: baseline;
 }
-.cp-area{
+.cp-area > input{
     width: 542px;
     height: 45px;
     line-height: 45px;
     border: 1px solid #dbdbdb;
     box-sizing: border-box;
     margin-bottom: 15px;
+    padding-left: 15px;
 }
-.cp-area > p {
+.cp-area > input::placeholder {
     font-size: 14.5px;
     font-weight: 600;
-    margin-left: 15px;
+    color: #000;
 }
 .revice-company-phone{
     display: flex;
     align-items: baseline;
 }
-.cp-phone{
+.cp-phone > input{
     width: 542px;
     height: 45px;
     line-height: 45px;
     border: 1px solid #dbdbdb;
     box-sizing: border-box;
     margin-bottom: 15px;
+    padding-left: 15px;
 }
-.cp-phone p{
+.cp-phone > input::placeholder{
     font-size: 14.5px;
     font-weight: 600;
-    margin-left: 15px;
+    color: #000;
 }
 .revice-company-phone > input{
     width: 543px;
@@ -3845,17 +3860,18 @@ ul.tab-3 > li > p:nth-child(2){
     display: flex;
     align-items: baseline;
 }
-.cp-talk{
+.cp-talk > input{
     width: 542px;
     height: 45px;
     line-height: 45px;
     border: 1px solid #dbdbdb;
     box-sizing: border-box;
+    padding-left: 15px;
 }
-.cp-talk > p {
-    margin-left: 15px;
+.cp-talk > input::placeholder {
     font-size: 14.5px;
     font-weight: 600;
+    color: #000;
 }
 
 .revice-company-line{
