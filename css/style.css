@@ -1213,7 +1213,7 @@ section{
 .find-password button{
     margin-top: 86px;
 }
-
+/* find area end */
 
 
 
@@ -1292,7 +1292,7 @@ section{
     font-weight: 600;
     color: #303030;
 }
-
+/* 회원가입 첫 페이지 끝 */
 
 /* 회원가입 페이지 1 */
 .register-page-wrapper{
@@ -1359,6 +1359,7 @@ section{
 .step.active h3{
     color: #303030
 }
+/* 회원가입 페이지 1 끝 */
 
 /* 회원가입 페이지 2 */
 .register-info-wrap{
@@ -1507,6 +1508,7 @@ section{
     border: 0;
     color: #fff;
 }
+/* 회원가입 페이지 2 끝 */
 
 /* 회원가입 페이지 3 */
 .register-success-wrapper{
@@ -1604,7 +1606,7 @@ section{
     color: #fff;
     font-size: 18px;
 }
-
+/* 회원가입 페이지 3 끝 */
 
 
 /* 트랜드페이지 */
@@ -1913,6 +1915,7 @@ section{
     color: #939393;
 }
 /* 트랜드 게시판 영역 끝 */
+/* 트랜드 영역 끝 */
 
 /* 단가표 게시판 영역 */
 .unit-wrapper{
@@ -2099,6 +2102,7 @@ section{
     display: flex;
     justify-content: space-between;
 }
+/* 단가표 게시판 섹션 끝 */
 .unit-view-table{
     width: 113px;
     height: 43px;
@@ -2146,6 +2150,10 @@ section{
 .page-num > ul > li.active > a {
     color: #000;
 }
+/* 단가표 게시판 끝 */
+
+
+
 /* 업체리스트 */
 .company-wrapper{
     height: 433px;
@@ -2175,7 +2183,7 @@ section{
 .company-selecter span{
     color: #878787;
 }
-/* 업체리스트 테이블 */
+/* 업체리스트 컨텐츠 영역 */
 .company-list-wrap{
     width: 1278px;
     height: auto;
@@ -2248,6 +2256,7 @@ section{
 .company-list-wrap .company-list-item-wrap:not(:last-child){
     margin-bottom: 22px;
 }
+/* 업체리스트 컨텐츠 영역 끝 */
 
 /* 가격비교 페이지 */
 .compare-wrapper{
@@ -2478,8 +2487,6 @@ section{
     border-right: none;
 }
 
-
-/* 가격비교 두번째 페이지 */
 .compare-2-wrapper{
     height: auto;
 }
@@ -2687,9 +2694,10 @@ section{
     padding: 0;
     margin: 83px 0 64px 0;
 }
+/* 업체정보페이지 끝 */
 
 
-/* 업체정보 2번 페이지 테이블 영역*/
+/* 공지사항 영역 */ 
 .info-price-table-section{
     /* width: 1278px; */
     height: auto;
@@ -2773,12 +2781,10 @@ section{
     background: #bfbfbf;
     border: none;
 }
-/* 업체정보 3번 페이지 */
-/* .info-event-table-section{
-    height: 690px;
-} */
 
-/* 게시판페이지 */
+/* 공지사항 영역 끝 */
+
+/* 고객센터 탭 영역 */
 .board-section{
     height: auto;
     margin: 0 auto;
@@ -2813,11 +2819,9 @@ section{
 .board-tabs > ul > li.active a {
     color: #fff;
 }
-.board-section table img{
-    vertical-align: middle;
-    margin-right: 5px;
-}
-/* 자유게시판 영역 */
+/* 고객센터 탭 영역 끝 */
+
+/* 자유게시판 글쓰기 영역 */
 .free-wrtie-section{
     width: 100%;
     height: 763px;
@@ -2946,6 +2950,7 @@ section{
     background: #bfbfbf;
     margin-left: 10px;
 }
+/* 자유게시판 영역 끝 */
 
 /* 정보수정 페이지 */
 .revice-info-section{
@@ -3284,6 +3289,7 @@ section{
 .revice-button button:last-child{
     background: #bfbfbf;
 }
+/* 회원정보 수정 페이지 끝 */
 
 /* 회원탈퇴 페이지 */
 .withdrawal-section{
@@ -3401,6 +3407,8 @@ section{
     margin-right: 10px;
     font-size: 14.5px;
 }
+/* 회원탈퇴 페이지 끝 */
+
 /* 회원탈퇴 완료 페이지 */
 .withdrawal-success-wrap{
     width: 1278px;
@@ -3438,6 +3446,8 @@ section{
     border: none;
     border-radius: 3px;
 }
+/* 회원탈퇴 완료 페이지 끝 */
+
 /* 단가표 관리 페이지 */
 .board-manage-section{
     height: auto;
@@ -3455,6 +3465,7 @@ section{
     height: auto;
     margin: 0 auto;
 }
+/* 단가표 관리 1번탭 */
 .tab{
     display: flex;
     margin-top: 58px;
@@ -3486,7 +3497,9 @@ ul.tab > li > p:nth-child(2){
 .tab > li.current > p {
     color: #3e5bc7;
 }
+/* 단가표 관리 1번탭 끝 */
 
+/* 단가표 관리 2번탭 */
 .tab-2{
     display: flex;
     margin-top: 58px;
@@ -3518,7 +3531,9 @@ ul.tab-2 > li > p:nth-child(2){
 .tab-2 > li.current > p {
     color: #3e5bc7;
 }
+/* 단가표 관리 2번탭 끝 */
 
+/* 단가표 관리 3번탭 */
 .tab-3{
     display: flex;
     margin-top: 58px;
@@ -3550,6 +3565,7 @@ ul.tab-3 > li > p:nth-child(2){
 .tab-3 > li.current > p {
     color: #3e5bc7;
 }
+/* 단가표관리 3번탭 끝 */
 
 .tabcontent{
     width: 100%;
@@ -3644,6 +3660,9 @@ ul.tab-3 > li > p:nth-child(2){
 .board-write-button button{
     background: #3e5bc7;
 }
+/* 정보수정 단가표 관리 페이지 끝 */
+
+
 /* 정보수정 단가표 글작성 페이지 */
 .board-manage-write-section{
     height: 1188px;
@@ -3778,7 +3797,7 @@ ul.tab-3 > li > p:nth-child(2){
 .write-manage-btn button:first-child{
     background: #3e5bc7;
 }
-
+/* 정보수정 단가표관리 글쓰기 끝 */
 
 
 /* 회사정보 수정 페이지 */
@@ -3962,10 +3981,11 @@ ul.tab-3 > li > p:nth-child(2){
     background: #3e5bc7;
     margin-right: 10px;
 }
+/* 회사정보 수정 페이지 끝 */
 
 /* 내가추가한업체 페이지 */
 .revice-added-company-section{
-    height: 1673px;
+    height: auto;
 }
 
 /* 마이페이지 문의하기 */
@@ -4097,6 +4117,7 @@ ul.tab-3 > li > p:nth-child(2){
     right: 0;
     bottom: -5px;
 }
+/* 문의하기 끝*/
 
 /* 문의하기 게시판 페이지 */
 
@@ -4263,6 +4284,7 @@ ul.tab-3 > li > p:nth-child(2){
     color: #fff;
     font-size: 13px;
 }
+/* 게시판 아코디언 컨텐츠 영역 끝 */
 /* 자유게시판 아코디언 설정 영역 */
 .free-panel-wrap{
     height: auto;
@@ -4323,6 +4345,8 @@ ul.tab-3 > li > p:nth-child(2){
     width: 146px;
     height: auto;
 }
+/* 자유게시판 아코디언 설정 영역 끝 */
+
 /* 푸터 */
 
 footer{
