@@ -2752,24 +2752,6 @@ section{
 /* .info-event-table-section{
     height: 690px;
 } */
-/* 업체정보 4번 페이지 */
-.info-map-section{
-    height: 616px;
-}
-.company-info-map-area{
-    width: 1203px;
-    height: 419px;
-    border: 1px solid #dde1e9;
-    box-sizing: border-box;
-    line-height: 419px;
-    font-size: 36px;
-    font-weight: 600;
-    text-align: center;
-    margin: 0 auto;
-}
-.company-info-map-area img{
-    width: 100%;
-}
 
 /* 게시판페이지 */
 .board-section{
@@ -4592,7 +4574,7 @@ footer{
 
 /* 스태프페이지 */
 .stf-wrap{
-    width: 1203px;
+    width: 1240px;
     height: auto;
     margin: 0 auto;
 }
