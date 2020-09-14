@@ -3418,6 +3418,7 @@ section{
     color: #fff;
     font-size: 14.5px;
     border: none;
+    border-radius: 3px;
 }
 /* 단가표 관리 페이지 */
 .board-manage-section{
