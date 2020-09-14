@@ -201,8 +201,8 @@ section{
     width: 100%;
     max-width: 100%;
 }
-  .main-wrapper{
-      width: 100%;
+  section.main-wrapper{
+      
       height: 796px;
       /* position: relative; */
       background: #e9ecef;
@@ -1713,6 +1713,7 @@ section{
     top: 4px;
     color: #939393;
     font-size: 21px;
+    cursor: pointer;
 }
 .trend-obj-info b{
     font-size: 13px;
@@ -2039,6 +2040,7 @@ section{
     position: absolute;
     top: 9px;
     right: 9px;
+    cursor: pointer;
 }
 .unit-table-info{
     padding-left: 21px;
@@ -2117,11 +2119,11 @@ section{
 }
 .page-num i {
     margin: 0 26px;
+    cursor: pointer;
 }
 .page-num > ul > li.active > a {
     color: #000;
 }
-
 /* 업체리스트 */
 .company-wrapper{
     height: 433px;
