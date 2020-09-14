@@ -2297,7 +2297,7 @@ section{
 .compare-selecter{
     margin-top: 32px;
     display: flex;
-    padding-left: 26px;
+    padding-left: 36px;
 }
 .compare-selecter p{
     font-weight: 600;
@@ -2790,7 +2790,7 @@ section{
     margin: 0 auto;
 }
 .free-board-section{
-    height: 1100px;
+    height: auto;
 }
 .board-tabs > ul {
     display: flex;
@@ -2829,12 +2829,12 @@ section{
 }
 .write-wrapper{
     width: 100%;
-    height: 615px;
+    height: auto;
     background: #f9fafb;
 }
 .write-wrap{
     width: 1278px;
-    height: 615px;
+    height: auto;
     margin: 0 auto;
 }
 .writer{
@@ -2904,6 +2904,7 @@ section{
     margin-top: 17px;
 }
 .file-3{
+    margin-bottom: 34px;
     position: relative;
 }
 .file-3::after{
@@ -4443,7 +4444,7 @@ footer{
     width: 100%;
     height: auto;
     display: none;
-    padding-bottom: 23px;
+    padding-bottom: 40px;
     background: #f9fafb;
     transition: all 0s;
 }
