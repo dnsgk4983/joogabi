@@ -82,6 +82,26 @@
         
         <div class="free-write-section revice-company-section">
             <div class="revice-info-wrap">
+                <div class="widget widget-1">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                        </div>
+                        <!-- Add Pagination -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
                 <div class="revice-info">
                     <p>안녕하세요!</p>
                     <div class="revice-user-info">
@@ -114,10 +134,10 @@
                                 <p>단가표 관리</p>
                             </a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="revice-company-info.html">
                                 <div class="image-wrap">
-                                    <img src="images/revice/ico_company_b.png" alt="회사정보 수정">
+                                    <img src="images/revice/ico_company.png" alt="회사정보 수정">
                                 </div>    
                                 <p>회사정보 수정</p>
                             </a>
@@ -269,8 +289,24 @@
 
     
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/jquery-ui.js"></script>
     <script src='js/script.js'></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+            var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            }
+        });
+    </script>
+
     <script type="text/javascript">
         $(function(){
             $('.revice-tabs > ul > li:nth-child(1)').mouseover(function(){
@@ -287,12 +323,12 @@
                 $('.revice-tabs > ul > li:nth-child(2) img').attr("src","images/revice/ico_unit.png");
             });
             
-            // $('.revice-tabs > ul > li:nth-child(3)').mouseover(function(){
-            //     $('.revice-tabs > ul > li:nth-child(3) img').attr("src","images/revice/ico_company_b.png")
-            // });
-            // $('.revice-tabs > ul > li:nth-child(3)').mouseleave(function(){
-            //     $('.revice-tabs > ul > li:nth-child(3) img').attr("src","images/revice/ico_company.png");
-            // });
+            $('.revice-tabs > ul > li:nth-child(3)').mouseover(function(){
+                $('.revice-tabs > ul > li:nth-child(3) img').attr("src","images/revice/ico_company_b.png")
+            });
+            $('.revice-tabs > ul > li:nth-child(3)').mouseleave(function(){
+                $('.revice-tabs > ul > li:nth-child(3) img').attr("src","images/revice/ico_company.png");
+            });
             
             $('.revice-tabs > ul > li:nth-child(4)').mouseover(function(){
                 $('.revice-tabs > ul > li:nth-child(4) img').attr("src","images/revice/ico_added_b.png")

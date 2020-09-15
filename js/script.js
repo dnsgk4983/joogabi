@@ -224,6 +224,7 @@ jQuery(function($)
         $('.tabcontent').removeClass('current');
         $(this).addClass('current');
         $('#' + activeTab).addClass('current');
+        // $('.current-bg').fadeIn(0);
       });
       $('ul.tab-2 li').on('click',function(e){
         var activeTab = $(this).attr('data-tab');
@@ -236,6 +237,7 @@ jQuery(function($)
         $('.tabcontent').removeClass('current');
         $(this).addClass('current');
         $('#' + activeTab).addClass('current');
+        // $('.current-bg').fadeOut(0);
       });
       $('ul.tab-3 li').on('click',function(e){
         var activeTab = $(this).attr('data-tab');
@@ -248,9 +250,11 @@ jQuery(function($)
         $('.tabcontent').removeClass('current');
         $(this).addClass('current');
         $('#' + activeTab).addClass('current');
+        // $('.current-bg').fadeOut(0);
     });
     $("ul li.current").click(function(){
       $(this).removeClass('current');
+      // $('.current-bg').fadeOut(0)
     });
     $('cpi-info-wrap .tabcontent.current').click(function(){
       $(this).removeClass('current')
@@ -351,3 +355,36 @@ $(function() {
   var accordion = new Accordion($('.accordion-container'), false);
 });
 
+
+$(function(){
+  $('.manage-tab-wrap > ul > li:nth-child(1)').click(function(){
+    $('.current-bg').fadeIn(0);
+  });
+  $('.manage-tab-wrap > ul > li:nth-child(2)').click(function(){
+    $('.current-bg').fadeIn(0);
+  });
+  $('.manage-tab-wrap > ul > li:nth-child(3)').click(function(){
+    $('.current-bg').fadeIn(0);
+  });
+  $('.manage-tab-wrap > ul > li:nth-child(4)').click(function(){
+    $('.current-bg').fadeIn(0);
+  });
+  $('.manage-tab-wrap > ul > li:nth-child(5)').click(function(){
+    $('.current-bg').fadeIn(0);
+  });
+  $('.manage-tab-wrap > ul > li:nth-child(12)').click(function(){
+    $('.current-bg').fadeOut(0);
+  });
+  $('.manage-tab-wrap > ul > li:nth-child(13)').click(function(){
+    $('.current-bg').fadeOut(0);
+  });
+  $('.manage-tab-wrap > ul > li:nth-child(14)').click(function(){
+    $('.current-bg').fadeOut(0);
+  });
+  $('.manage-tab-wrap > ul > li:nth-child(15)').click(function(){
+    $('.current-bg').fadeOut(0);
+  });
+  $('.manage-tab-wrap > ul > li:nth-child(16)').click(function(){
+    $('.current-bg').fadeOut(0);
+  });
+});

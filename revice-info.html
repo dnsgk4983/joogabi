@@ -82,6 +82,26 @@
         
         <div class="free-write-section revice-info-section">
             <div class="revice-info-wrap">
+                <div class="widget widget-1">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                        </div>
+                        <!-- Add Pagination -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
                 <div class="revice-info">
                     <p>안녕하세요!</p>
                     <div class="revice-user-info">
@@ -98,11 +118,11 @@
                 <div class="revice-tabs-line"></div>
                 <div class="revice-tabs">
                     <ul>
-                        <li class="active">
+                        <li>
                             
                             <a href="revice-info.html">
                                 <div class="image-wrap">
-                                    <img src="images/revice/ico_user_b.png" alt="유저아이콘">
+                                    <img src="images/revice/ico_user.png" alt="유저아이콘">
                                 </div>
                                 <p>회원정보 수정</p>
                             </a>
@@ -145,6 +165,7 @@
             <div class="withdrawal-line"></div>
             <div class="write-wrapper revice-info-wrapper">
                 <div class="revice-wrap">
+                    
                     <p>회원정보 수정</p>
                     <div class="revice-id">
                         <p>사용자 아이디</p>
@@ -280,15 +301,31 @@
 
     
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+
     <script src='js/script.js'></script>
     <script type="text/javascript">
+        var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        }
+    });
+    </script>
+    <script type="text/javascript">
         $(function(){
-            // $('.revice-tabs > ul > li:nth-child(1)').mouseover(function(){
-            //     $('.revice-tabs > ul > li:nth-child(1) img').attr("src","images/revice/ico_user.png")
-            // });
-            // $('.revice-tabs > ul > li:nth-child(1)').mouseleave(function(){
-            //     $('.revice-tabs > ul > li:nth-child(1) img').attr("src","images/revice/ico_user.png");
-            // });
+            $('.revice-tabs > ul > li:nth-child(1)').mouseover(function(){
+                $('.revice-tabs > ul > li:nth-child(1) img').attr("src","images/revice/ico_user_b.png")
+            });
+            $('.revice-tabs > ul > li:nth-child(1)').mouseleave(function(){
+                $('.revice-tabs > ul > li:nth-child(1) img').attr("src","images/revice/ico_user.png");
+            });
             
             $('.revice-tabs > ul > li:nth-child(2)').mouseover(function(){
                 $('.revice-tabs > ul > li:nth-child(2) img').attr("src","images/revice/ico_unit_b.png")

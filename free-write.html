@@ -93,6 +93,26 @@
             </div>
             <div class="write-wrapper">
                 <div class="write-wrap">
+                    <div class="widget">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                  <img src="images/register-page/register-banner.png" alt="위젯배너">
+                              </div>
+                              <div class="swiper-slide">
+                                  <img src="images/register-page/register-banner.png" alt="위젯배너">
+                              </div>
+                              <div class="swiper-slide">
+                                  <img src="images/register-page/register-banner.png" alt="위젯배너">
+                              </div>
+                              <div class="swiper-slide">
+                                  <img src="images/register-page/register-banner.png" alt="위젯배너">
+                              </div>
+                            </div>
+                            <!-- Add Pagination -->
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                     <div class="writer">
                         <div class="diller">
                             <p>딜러</p>
@@ -205,6 +225,21 @@
     
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src='js/script.js'></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+            var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            }
+        });
     </script>
     
 </body>

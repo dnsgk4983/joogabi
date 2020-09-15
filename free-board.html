@@ -81,6 +81,26 @@
     <section>
         
         <div class="board-section free-board-section">
+            <div class="widget widget-1">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <img src="images/register-page/register-banner.png" alt="위젯배너">
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="images/register-page/register-banner.png" alt="위젯배너">
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="images/register-page/register-banner.png" alt="위젯배너">
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="images/register-page/register-banner.png" alt="위젯배너">
+                      </div>
+                    </div>
+                    <!-- Add Pagination -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
             <div class="board-tabs">
                 <ul>
                     <li>
@@ -972,7 +992,22 @@
 
     
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src='js/script.js'></script>
+    <script type="text/javascript">
+            var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            }
+        });
     </script>
     
 </body>

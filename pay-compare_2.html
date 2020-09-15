@@ -8,6 +8,8 @@
 
     <!-- ==== swiper.css -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- ==== Owl Carousel.css -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <!-- ==== fontawesome.css -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- ==== style.css ==== -->
@@ -15,55 +17,9 @@
 </head>
 
 <style>
-    .compare-item{
-        width: 1278px;
-        height: 143px;
-    }
-    .swiper-compare{
-      width: 1083px;
-      overflow: hidden;
-      height: auto;
-    }
-
-    .swiper-compare .swiper-slide {
-        width: 190px;
-        padding: 0 14px 0 17px;
-        background: #fff;
-        border-right: 1px solid #c7cbcf;
-
-      /* Center slide text vertically */
-      
-      display: block;
-    }
-    .swiper-compare .swiper-slide:last-child{
-        border-left: 1px solid #c7cbcf;
-    }
-    .swiper-compare > .swiper-wrapper{
-        position: relative;
-    }
-    .swiper-compare .swiper-button-prev::after,
-    .swiper-compare .swiper-button-next::after{
-        content: "";
-    }
-    .swiper-compare .swiper-button-prev{
-        /* position: rel; */
-        top: 22px;
-        left: 210px;
-        width: 27px;
-        height: 143px;
-        background: #bfbfbf;
-        color: #fff;
-    }
-    .swiper-compare .swiper-button-next{
-        position: relative;
-        top: 22px;
-        right: 0;
-        width: 27px;
-        height: 143px;
-        background: #bfbfbf;
-        color: #fff;
-    }
-
+    
+    
+    
     
 </style>
 
@@ -237,8 +193,8 @@
                     <h3>아이폰 XS 128G</h3>
                     <p><span>▼</span> 8,230원</p>
                 </div>
-                <div class="swiper-compare">
-                    <div class="swiper-button-prev">◀</div>
+                <div class="swiper-button-prev">◀</div>
+                <div class="compare-swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="compare-chart-company">
@@ -367,10 +323,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next">▶</div>
-                    
                 </div>
+                <div class="swiper-button-next" aria-label="Next slide">▶</div>
             </div>
             <!-- 2번째 줄 -->
             <div class="compare-item">
@@ -379,45 +333,46 @@
                     <h3>프라다폰 64G</h3>
                     <p><span>▲</span> 2,240원</p>
                 </div>
-                <div class="autoplay">
-                    <div>
-                        <div class="compare-chart-company">
-                            <p>중가비 인터네셔널</p>
-                            <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                <div class="swiper-button-prev1">◀</div>
+                <div class="compare-1-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>중가비 인터네셔널</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘" onclick="location.href='company-info.html'">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
                         </div>
-                        <div class="compare-chart-info">
-                            <h3>중고</h3>
-                            <p><span>300,000 원</span></p>
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>토비 테크놀러지</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
                         </div>
-                        <div class="compare-chart-info">
-                            <h3>A급</h3>
-                            <p><span>270,000 원</span></p>
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>A-급</h3>
-                            <p><span>220,000 원</span></p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="compare-chart-company">
-                            <p>토비 테크놀러지</p>
-                            <img src="images/compare/ico_search-single.png" alt="검색아이콘">
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>중고</h3>
-                            <p><span>300,000 원</span></p>
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>A급</h3>
-                            <p><span>270,000 원</span></p>
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>A-급</h3>
-                            <p><span>220,000 원</span></p>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
+                        <div class="swiper-slide">
                             <div class="compare-chart-company">
                                 <p>다우 텔레컴</p>
                                 <img src="images/compare/ico_search-single.png" alt="검색아이콘">
@@ -435,9 +390,7 @@
                                 <p><span>220,000 원</span></p>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <div>
+                        <div class="swiper-slide">
                             <div class="compare-chart-company">
                                 <p>안암 정보통신</p>
                                 <img src="images/compare/ico_search-single.png" alt="검색아이콘">
@@ -455,9 +408,7 @@
                                 <p><span>220,000 원</span></p>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <div>
+                        <div class="swiper-slide">
                             <div class="compare-chart-company">
                                 <p>코리아 GMC</p>
                                 <img src="images/compare/ico_search-single.png" alt="검색아이콘">
@@ -475,9 +426,7 @@
                                 <p><span>220,000 원</span></p>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <div>
+                        <div class="swiper-slide">
                             <div class="compare-chart-company">
                                 <p>중가비 인터네셔널</p>
                                 <img src="images/compare/ico_search-single.png" alt="검색아이콘">
@@ -495,9 +444,7 @@
                                 <p><span>220,000 원</span></p>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <div>
+                        <div class="swiper-slide">
                             <div class="compare-chart-company">
                                 <p>토비 테크놀러지</p>
                                 <img src="images/compare/ico_search-single.png" alt="검색아이콘">
@@ -517,6 +464,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-next1" aria-label="Next slide">▶</div>
             </div>
             <!-- 3번째 줄 -->
             <div class="compare-item">
@@ -525,105 +473,10 @@
                     <h3>블랙라벨 128G</h3>
                     <p><span>▼</span> 28,230원</p>
                 </div>
-                <div class="autoplay">
-                    <div>
-                        <div class="compare-chart-company">
-                            <p>중가비 인터네셔널</p>
-                            <img src="images/compare/ico_search-single.png" alt="검색아이콘">
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>중고</h3>
-                            <p><span>300,000 원</span></p>
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>A급</h3>
-                            <p><span>270,000 원</span></p>
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>A-급</h3>
-                            <p><span>220,000 원</span></p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="compare-chart-company">
-                            <p>토비 테크놀러지</p>
-                            <img src="images/compare/ico_search-single.png" alt="검색아이콘">
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>중고</h3>
-                            <p><span>300,000 원</span></p>
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>A급</h3>
-                            <p><span>270,000 원</span></p>
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>A-급</h3>
-                            <p><span>220,000 원</span></p>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div class="compare-chart-company">
-                                <p>다우 텔레컴</p>
-                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>중고</h3>
-                                <p><span>300,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A급</h3>
-                                <p><span>270,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A-급</h3>
-                                <p><span>220,000 원</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div class="compare-chart-company">
-                                <p>안암 정보통신</p>
-                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>중고</h3>
-                                <p><span>300,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A급</h3>
-                                <p><span>270,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A-급</h3>
-                                <p><span>220,000 원</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div class="compare-chart-company">
-                                <p>코리아 GMC</p>
-                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>중고</h3>
-                                <p><span>300,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A급</h3>
-                                <p><span>270,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A-급</h3>
-                                <p><span>220,000 원</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
+                <div class="swiper-button-prev2">◀</div>
+                <div class="compare-2-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
                             <div class="compare-chart-company">
                                 <p>중가비 인터네셔널</p>
                                 <img src="images/compare/ico_search-single.png" alt="검색아이콘">
@@ -641,9 +494,97 @@
                                 <p><span>220,000 원</span></p>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <div>
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>토비 테크놀러지</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>다우 텔레컴</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>안암 정보통신</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>코리아 GMC</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>중가비 인터네셔널</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
                             <div class="compare-chart-company">
                                 <p>토비 테크놀러지</p>
                                 <img src="images/compare/ico_search-single.png" alt="검색아이콘">
@@ -663,6 +604,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-next2" aria-label="Next slide">▶</div>
             </div>
             <!-- 4번째 줄 -->
             <div class="compare-item">
@@ -671,105 +613,10 @@
                     <h3>갤럭시 노트 10 플러스 128G</h3>
                     <p><span>▲</span> 1,800원</p>
                 </div>
-                <div class="autoplay">
-                    <div>
-                        <div class="compare-chart-company">
-                            <p>중가비 인터네셔널</p>
-                            <img src="images/compare/ico_search-single.png" alt="검색아이콘">
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>중고</h3>
-                            <p><span>300,000 원</span></p>
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>A급</h3>
-                            <p><span>270,000 원</span></p>
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>A-급</h3>
-                            <p><span>220,000 원</span></p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="compare-chart-company">
-                            <p>토비 테크놀러지</p>
-                            <img src="images/compare/ico_search-single.png" alt="검색아이콘">
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>중고</h3>
-                            <p><span>300,000 원</span></p>
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>A급</h3>
-                            <p><span>270,000 원</span></p>
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>A-급</h3>
-                            <p><span>220,000 원</span></p>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div class="compare-chart-company">
-                                <p>다우 텔레컴</p>
-                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>중고</h3>
-                                <p><span>300,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A급</h3>
-                                <p><span>270,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A-급</h3>
-                                <p><span>220,000 원</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div class="compare-chart-company">
-                                <p>안암 정보통신</p>
-                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>중고</h3>
-                                <p><span>300,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A급</h3>
-                                <p><span>270,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A-급</h3>
-                                <p><span>220,000 원</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div class="compare-chart-company">
-                                <p>코리아 GMC</p>
-                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>중고</h3>
-                                <p><span>300,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A급</h3>
-                                <p><span>270,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A-급</h3>
-                                <p><span>220,000 원</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
+                <div class="swiper-button-prev3">◀</div>
+                <div class="compare-3-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
                             <div class="compare-chart-company">
                                 <p>중가비 인터네셔널</p>
                                 <img src="images/compare/ico_search-single.png" alt="검색아이콘">
@@ -787,9 +634,97 @@
                                 <p><span>220,000 원</span></p>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <div>
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>토비 테크놀러지</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>다우 텔레컴</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>안암 정보통신</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>코리아 GMC</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>중가비 인터네셔널</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
                             <div class="compare-chart-company">
                                 <p>토비 테크놀러지</p>
                                 <img src="images/compare/ico_search-single.png" alt="검색아이콘">
@@ -809,6 +744,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-next3" aria-label="Next slide">▶</div>
             </div>
             <!-- 5번째 줄 -->
             <div class="compare-item">
@@ -817,105 +753,10 @@
                     <h3>갤럭시 S20 플러스 128G</h3>
                     <p><span>▲</span> 6,200원</p>
                 </div>
-                <div class="autoplay">
-                    <div>
-                        <div class="compare-chart-company">
-                            <p>중가비 인터네셔널</p>
-                            <img src="images/compare/ico_search-single.png" alt="검색아이콘">
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>중고</h3>
-                            <p><span>300,000 원</span></p>
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>A급</h3>
-                            <p><span>270,000 원</span></p>
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>A-급</h3>
-                            <p><span>220,000 원</span></p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="compare-chart-company">
-                            <p>토비 테크놀러지</p>
-                            <img src="images/compare/ico_search-single.png" alt="검색아이콘">
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>중고</h3>
-                            <p><span>300,000 원</span></p>
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>A급</h3>
-                            <p><span>270,000 원</span></p>
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>A-급</h3>
-                            <p><span>220,000 원</span></p>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div class="compare-chart-company">
-                                <p>다우 텔레컴</p>
-                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>중고</h3>
-                                <p><span>300,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A급</h3>
-                                <p><span>270,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A-급</h3>
-                                <p><span>220,000 원</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div class="compare-chart-company">
-                                <p>안암 정보통신</p>
-                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>중고</h3>
-                                <p><span>300,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A급</h3>
-                                <p><span>270,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A-급</h3>
-                                <p><span>220,000 원</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div class="compare-chart-company">
-                                <p>코리아 GMC</p>
-                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>중고</h3>
-                                <p><span>300,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A급</h3>
-                                <p><span>270,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A-급</h3>
-                                <p><span>220,000 원</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
+                <div class="swiper-button-prev4">◀</div>
+                <div class="compare-4-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
                             <div class="compare-chart-company">
                                 <p>중가비 인터네셔널</p>
                                 <img src="images/compare/ico_search-single.png" alt="검색아이콘">
@@ -933,9 +774,97 @@
                                 <p><span>220,000 원</span></p>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <div>
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>토비 테크놀러지</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>다우 텔레컴</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>안암 정보통신</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>코리아 GMC</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>중가비 인터네셔널</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
                             <div class="compare-chart-company">
                                 <p>토비 테크놀러지</p>
                                 <img src="images/compare/ico_search-single.png" alt="검색아이콘">
@@ -955,6 +884,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-next4" aria-label="Next slide">▶</div>
             </div>
             <!-- 6번쨰 줄 -->
             <div class="compare-item compare-item-mg0">
@@ -963,105 +893,10 @@
                     <h3>아이폰 SE 128G</h3>
                     <p><span>▼</span> 18,230원</p>
                 </div>
-                <div class="autoplay">
-                    <div>
-                        <div class="compare-chart-company">
-                            <p>중가비 인터네셔널</p>
-                            <img src="images/compare/ico_search-single.png" alt="검색아이콘">
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>중고</h3>
-                            <p><span>300,000 원</span></p>
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>A급</h3>
-                            <p><span>270,000 원</span></p>
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>A-급</h3>
-                            <p><span>220,000 원</span></p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="compare-chart-company">
-                            <p>토비 테크놀러지</p>
-                            <img src="images/compare/ico_search-single.png" alt="검색아이콘">
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>중고</h3>
-                            <p><span>300,000 원</span></p>
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>A급</h3>
-                            <p><span>270,000 원</span></p>
-                        </div>
-                        <div class="compare-chart-info">
-                            <h3>A-급</h3>
-                            <p><span>220,000 원</span></p>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div class="compare-chart-company">
-                                <p>다우 텔레컴</p>
-                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>중고</h3>
-                                <p><span>300,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A급</h3>
-                                <p><span>270,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A-급</h3>
-                                <p><span>220,000 원</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div class="compare-chart-company">
-                                <p>안암 정보통신</p>
-                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>중고</h3>
-                                <p><span>300,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A급</h3>
-                                <p><span>270,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A-급</h3>
-                                <p><span>220,000 원</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div class="compare-chart-company">
-                                <p>코리아 GMC</p>
-                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>중고</h3>
-                                <p><span>300,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A급</h3>
-                                <p><span>270,000 원</span></p>
-                            </div>
-                            <div class="compare-chart-info">
-                                <h3>A-급</h3>
-                                <p><span>220,000 원</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
+                <div class="swiper-button-prev5">◀</div>
+                <div class="compare-5-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
                             <div class="compare-chart-company">
                                 <p>중가비 인터네셔널</p>
                                 <img src="images/compare/ico_search-single.png" alt="검색아이콘">
@@ -1079,9 +914,97 @@
                                 <p><span>220,000 원</span></p>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <div>
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>토비 테크놀러지</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>다우 텔레컴</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>안암 정보통신</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>코리아 GMC</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="compare-chart-company">
+                                <p>중가비 인터네셔널</p>
+                                <img src="images/compare/ico_search-single.png" alt="검색아이콘">
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>중고</h3>
+                                <p><span>300,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A급</h3>
+                                <p><span>270,000 원</span></p>
+                            </div>
+                            <div class="compare-chart-info">
+                                <h3>A-급</h3>
+                                <p><span>220,000 원</span></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
                             <div class="compare-chart-company">
                                 <p>토비 테크놀러지</p>
                                 <img src="images/compare/ico_search-single.png" alt="검색아이콘">
@@ -1101,6 +1024,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-next5" aria-label="Next slide">▶</div>
             </div>
 
             <div class="page-num">
@@ -1209,9 +1133,6 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src='js/script.js'></script>
-
-    
-
     <script type="text/javascript">
         var swiper = new Swiper('.swiper-container', {
         spaceBetween: 30,
@@ -1226,19 +1147,115 @@
         }
     });
     </script>
-    <script type="text/javascript">
-        var swiper = new Swiper('.swiper-compare', {
-      slidesPerView: 5,
-      spaceBetween: 0,
-      slidesPerGroup: 1,
-      loop: true,
-      loopFillGroupWithBlank: false,
-      navigation: {
-        nextEl: '.swiper-compare .swiper-button-next',
-        prevEl: '.swiper-compare .swiper-button-prev',
-      },
-    });
+    <!-- ==== Owl Carousel.js ==== -->
+    <script>
+        var swiper = new Swiper('.compare-swiper', {
+          slidesPerView: 5,
+          spaceBetween: 0,
+          slidesPerGroup: 1,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
     </script>
+
+    <script>
+        var swiper = new Swiper('.compare-1-swiper', {
+            slidesPerView: 5,
+            spaceBetween: 0,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next1',
+                prevEl: '.swiper-button-prev1',
+            },
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper('.compare-2-swiper', {
+            slidesPerView: 5,
+            spaceBetween: 0,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next2',
+                prevEl: '.swiper-button-prev2',
+            },
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper('.compare-3-swiper', {
+            slidesPerView: 5,
+            spaceBetween: 0,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next3',
+                prevEl: '.swiper-button-prev3',
+            },
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper('.compare-4-swiper', {
+            slidesPerView: 5,
+            spaceBetween: 0,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next4',
+                prevEl: '.swiper-button-prev4',
+            },
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper('.compare-5-swiper', {
+            slidesPerView: 5,
+            spaceBetween: 0,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next5',
+                prevEl: '.swiper-button-prev5',
+            },
+        });
+    </script>
+
     
 
     

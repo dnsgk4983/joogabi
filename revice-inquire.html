@@ -7,9 +7,11 @@
     <title>중가비</title>
 
 
-    <!-- ==== swiper.css -->
+    <!-- ==== swiper.css ==== -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <!-- ==== fontawesome.css -->
+    <!-- ==== Owl Carousel.css -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- ==== fontawesome.css ==== -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- ==== style.css ==== -->
     <link rel="stylesheet" href="css/style.css">
@@ -82,6 +84,26 @@
         
         <div class="free-write-section inquire-section">
             <div class="revice-info-wrap">
+                <div class="widget widget-1">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="images/widget-banner.png" alt="위젯배너">
+                          </div>
+                        </div>
+                        <!-- Add Pagination -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
                 <div class="revice-info">
                     <p>안녕하세요!</p>
                     <div class="revice-user-info">
@@ -130,10 +152,10 @@
                                 <p>내가 추가한 업체</p>
                             </a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="revice-inquire-board.html">
                                 <div class="image-wrap">
-                                    <img src="images/revice/ico_chat_b.png" alt="문의하기">
+                                    <img src="images/revice/ico_chat.png" alt="문의하기">
                                 </div>
                                 <p>문의하기</p>
                             </a>
@@ -258,10 +280,30 @@
     </footer>
     <!-- 메인 푸터 끝 --> 
 
-    
+    <!-- ==== jQuery ==== -->
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/jquery-ui.js"></script>
+    <!-- ==== script ==== -->
     <script src='js/script.js'></script>
+    <!-- ==== swiper.js ==== -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+            var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            }
+        });
+    </script>
+    <!-- ==== Owl Carousel.js ==== -->
+    <script src="js/owl.carousel.min.js"></script>
+
     <script type="text/javascript">
         $(function(){
             $('.revice-tabs > ul > li:nth-child(1)').mouseover(function(){

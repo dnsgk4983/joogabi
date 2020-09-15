@@ -737,13 +737,13 @@ section{
     color: #303030;
 }
 
-.new-company > ul {
+/* .new-company > ul {
     display: flex;
     margin-bottom: 20px;
 }
 .new-company > ul:last-child {
     margin-bottom: 50px;
-}
+} */
 
 .new-company > ul > li {
     width: 240px;
@@ -753,9 +753,9 @@ section{
     box-shadow: 0 0 3px rgba(0,0,0, .2);
     cursor: pointer;
 }
-.new-company > ul > li:not(:last-child){
+/* .new-company > ul > li:not(:last-child){
     margin-right: 20px;
-}
+} */
 
 .new-company-info{
     position: relative;
@@ -2030,6 +2030,7 @@ section{
     width: 1278px;
     height: auto;
     margin: 0 auto;
+    position: relative;
 }
 .unit-table-title{
     margin-top: 53px;
@@ -2044,7 +2045,7 @@ section{
     color: #364aba;
     font-weight: 800;
 }
-.unit-table{
+/* .unit-table{
     display: flex;
 }
 .unit-table{
@@ -2055,7 +2056,7 @@ section{
 }
 .unit-table > .unit-table-item:not(:last-child){
     margin-right: 26px;
-}
+} */
 .unit-table-item{
     width: 235px;
     height: 160px;
@@ -2192,12 +2193,12 @@ section{
     height: auto;
     margin: 0 auto;
 }
-.company-list-item-wrap{
+/* .company-list-item-wrap{
     display: flex;
-}
-.company-list-item-wrap > .company-list-item:not(:last-child){
+} */
+/* .company-list-item-wrap > .company-list-item:not(:last-child){
     margin-right: 30px;
-}
+} */
 .company-list-title{
     margin: 53px 0 26px 0;
 }
@@ -2401,7 +2402,7 @@ section{
 }
 .compare-chart-name{
     width: 240px;
-    height: 143px;
+    height: 147px;
     border: 1px solid #c7cbcf;
     border-right: none;
     box-sizing: border-box;
@@ -2433,7 +2434,9 @@ section{
 }
 .compare-chart-company{
     display: flex;
+    width: 185px;
     justify-content: space-between;
+    align-items: center;
     margin-top: 20px;
     margin-bottom: 18px;
 }
@@ -2441,13 +2444,15 @@ section{
     color: #878787;
 }
 .compare-chart-company img{
+    width: 13px;
+    height: 13px;
     cursor: pointer;
 }
 .compare-chart-info > p > span{
     font-weight: 600;
 }
 .compare-chart-info{
-    width: 164px;
+    width: 185px;
     height: 23px;
     display: flex;
     justify-content: space-between;
@@ -2587,6 +2592,7 @@ section{
     height: auto;
     margin: 0 auto;
     background: #fff;
+    position: relative;
 }
 .cpi-title{
     display: flex;
@@ -2613,6 +2619,7 @@ section{
 }
 
 .cpi-line{
+    position: relative;
     width: 1278px;
     height: 2px;
     margin: 46px auto 55px;
@@ -2692,7 +2699,7 @@ section{
     line-height: 419px;
     font-size: 20px;
     text-align: center;
-    margin: 48px auto 109px;
+    margin: 48px auto 15px;
 }
 .cpi-info-wrap .page-num{
     padding: 0;
@@ -2790,8 +2797,10 @@ section{
 
 /* 고객센터 탭 영역 */
 .board-section{
+    width: 1278px;
     height: auto;
     margin: 0 auto;
+    position: relative;
 }
 .free-board-section{
     height: auto;
@@ -2834,12 +2843,13 @@ section{
 .write-wrapper{
     width: 100%;
     height: auto;
-    background: #f9fafb;
+    background: #fafafc;
 }
 .write-wrap{
     width: 1278px;
     height: auto;
     margin: 0 auto;
+    position: relative;
 }
 .writer{
     padding-top: 24px;
@@ -2962,13 +2972,14 @@ section{
     height: 1023px;
 }
 .revice-info-wrapper{
-    height: 741px;
+    position: relative;
 }
 .revice-info-wrap{
     width: 1278px;
     height: 282px;
     margin: 0 auto;
     padding-top: 49px;
+    position: relative;
 }
 .revice-info{
     width: 1278px;
@@ -3078,6 +3089,7 @@ section{
     width: 1278px;
     height: auto;
     margin: 0 auto;
+    position: relative;
 }
 .revice-wrap > p{
     font-size: 14.5px;
@@ -3297,9 +3309,7 @@ section{
 /* 회원정보 수정 페이지 끝 */
 
 /* 회원탈퇴 페이지 */
-.withdrawal-section{
-    height: 916px;
-}
+
 .withdrawal-line{
     width: 100%;
     height: 1px;
@@ -3309,6 +3319,7 @@ section{
     width: 1278px;
     height: auto;
     margin: 0 auto;
+    position: relative;
 }
 .withdrawal-notice{
     width: 1278px;
@@ -3397,6 +3408,7 @@ section{
 }
 .withdrawal-button-wrap{
     margin-top: 42px;
+    margin-bottom: 134px;
 }
 .withdrawal-button-wrap button{
     width: 79px;
@@ -3419,6 +3431,7 @@ section{
     width: 1278px;
     height: auto;
     margin: 0 auto;
+    position: relative;
 }
 .withdrawal-success-wrap .withdrawal-info-line{
     width: 1278px;
@@ -3441,6 +3454,7 @@ section{
 }
 .withdrawal-success-button{
     margin-top: 33px;
+    margin-bottom: 134px;
 }
 .withdrawal-success-button button{
     width: 79px;
@@ -3463,19 +3477,20 @@ section{
 .manage-item-wrap{
     width: 100%;
     height: auto;
-    
 }
 .manage-tab-wrap{
     width: 1278px;
     height: auto;
     margin: 0 auto;
+    position: relative;
 }
 /* 단가표 관리 1번탭 */
 .tab{
-    display: flex;
+    /* display: flex; */
     margin-top: 58px;
 }
-.tab > li {
+.cpi-info-wrap .tab > li {
+    float: left;
     margin-right: 50.6px;
 }
 .tab > li > .tab-wrap{
@@ -3582,12 +3597,12 @@ ul.tab-3 > li > p:nth-child(2){
     width: 1278px;
     height: 409px;
     margin: 0 auto;
+    position: relative;
+    z-index: 999;
 }
 .tabcontent.current{
     display: block;
-}
-.tabcontent{
-    margin-top: 34px;
+    float: left;
 }
 .tab-title{
     padding-top: 25px;
@@ -3676,6 +3691,7 @@ ul.tab-3 > li > p:nth-child(2){
     width: 1094px;
     height: auto;
     margin: 0 auto;
+    position: relative;
 }
 .manage-write-title{
     margin-top: 58px;
@@ -3813,6 +3829,7 @@ ul.tab-3 > li > p:nth-child(2){
     width: 1278px;
     height: auto;
     margin: 0 auto;
+    position: relative;
 }
 .revice-company-info{
     margin-top: 58px;
@@ -4142,6 +4159,7 @@ ul.tab-3 > li > p:nth-child(2){
     display: flex;
     align-items: center;
     border: 1px solid #dde1e9;
+    position: relative;
     box-sizing: border-box;
     text-align: center;
     margin-top: 59px;
@@ -4893,4 +4911,296 @@ footer{
 }
 .inquire-accordion .panel-conts > button{
     margin-right: 55px;
+}
+
+
+/* 0914 수정사항 위에서부터 시작 */
+
+/* 메인페이지 뿌리는 영역 */
+.new-company > ul > li {
+    float: left;
+    margin-right: 19px;
+    margin-bottom: 19px;
+}
+.new-company > ul > li:nth-child(5n) {
+    margin-right: 0;
+}
+
+.clearfix{
+    clear: both;
+}
+
+/* 메인페이지 뿌리는 영역 끝 */
+
+/* 업체리스트 뿌리는 영역 */
+.company-list-item{
+    float: left;
+    margin-right: 18px;
+    margin-bottom: 18px;
+}
+.company-list-item-wrap > li:nth-child(5n){
+    margin-right: 0;
+}
+/* 업체리스트 뿌리는 영역 끝 */
+
+/* 업체정보 버튼 추가 */
+.company-info-wrapper .back-menu-btn{
+    width: 1278px;
+    margin: 0 auto 62px;
+    text-align: right;
+}
+
+/* 업체정보 버튼 추가 끝 */
+
+/* 공지사항 위젯위치 설정 */
+.board-section > .widget{
+    left: -191px;
+    top: 100px;
+}
+
+/* 자유게시판 글쓰기 위치설정 */
+.write-wrap > .widget {
+    top: 0;
+    left: -191px;
+}
+
+/* 단가표게시판 뿌리는 영역 */
+.unit-table-item {
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+.unit-table > li:nth-child(5n){
+    margin-right: 0;
+}
+
+/* 단가표게시판 뿌리는 영역*/
+ul.tab > li{
+    margin-bottom: 25px;
+}
+ul.tab > li:nth-child(5){
+    margin-right: 0;
+}
+.cpi-info-wrap ul.tab > li:nth-child(16){
+    margin-right: 0;
+}
+.tab-wrap{
+    width: 1278px;
+    margin: 0 auto;
+}
+.current-bg{
+    width: 100%;
+    height: 409px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 41.5%;
+    background: #f9fafb;
+}
+
+/* 업체정보페이지 배너 */
+
+.company-info-wrapper .widget{
+    top: -40px;
+}
+
+/* 내가 추가한 업체 배너 */
+
+.added-company-wrap .widget{
+    top: 0px;
+}
+.widget-1 .swiper-pagination > span{
+    background: #dbdbdb !important;
+}
+.widget-1 .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: #696969 !important;
+}
+
+
+
+/* 마이페이지 단가표관리 수정css */
+.manage-tab-wrap > ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.manage-tab-wrap > ul > li{
+    margin-right: 50.6px;
+}
+.board-manage-wrap .manage-tab-wrap > ul > li:nth-child(5n){
+    margin-right: 0;
+}
+.revice-info-wrap .widget{
+    top: 10px;
+}
+.revice-info-wrap .widget .swiper-pagination span{
+    margin: 9px 4px 0;
+}
+
+
+.compare-swiper{
+    display: flex;
+    width: 1038px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.swiper-button-prev, .swiper-button-next{
+    position: initial;
+    width: 27px;
+    height: 147px;
+    background: #bfbfbf;
+    color: #fff;
+    line-height: 147px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 0;
+}
+.compare-swiper .swiper-slide{
+    display: block;
+    width: 196.8px;
+    border: 1px solid #c7cbcf;
+    border-right: none;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.compare-item .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after,
+.compare-item .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after{
+    content: none;
+}
+
+/* 가격비교 2번쨰 줄 swiper*/
+
+.compare-1-swiper{
+    display: flex;
+    width: 1038px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.compare-1-swiper .swiper-slide{
+    display: block;
+    width: 196.8px;
+    border: 1px solid #c7cbcf;
+    border-right: none;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.swiper-button-prev1, .swiper-button-next1{
+    position: initial;
+    width: 27px;
+    height: 147px;
+    background: #bfbfbf;
+    color: #fff;
+    line-height: 147px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* 가격비교 3번째 줄 swiper  */
+.compare-2-swiper{
+    display: flex;
+    width: 1038px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.compare-2-swiper .swiper-slide{
+    display: block;
+    width: 196.8px;
+    border: 1px solid #c7cbcf;
+    border-right: none;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.swiper-button-prev2, .swiper-button-next2{
+    position: initial;
+    width: 27px;
+    height: 147px;
+    background: #bfbfbf;
+    color: #fff;
+    line-height: 147px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* 가격비교 4번째 줄 swiper  */
+.compare-3-swiper{
+    display: flex;
+    width: 1038px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.compare-3-swiper .swiper-slide{
+    display: block;
+    width: 196.8px;
+    border: 1px solid #c7cbcf;
+    border-right: none;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.swiper-button-prev3, .swiper-button-next3{
+    position: initial;
+    width: 27px;
+    height: 147px;
+    background: #bfbfbf;
+    color: #fff;
+    line-height: 147px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* 가격비교 5번째 줄 swiper  */
+.compare-4-swiper{
+    display: flex;
+    width: 1038px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.compare-4-swiper .swiper-slide{
+    display: block;
+    width: 196.8px;
+    border: 1px solid #c7cbcf;
+    border-right: none;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.swiper-button-prev4, .swiper-button-next4{
+    position: initial;
+    width: 27px;
+    height: 147px;
+    background: #bfbfbf;
+    color: #fff;
+    line-height: 147px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/* 가격비교 6번째 줄 swiper  */
+.compare-5-swiper{
+    display: flex;
+    width: 1038px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.compare-5-swiper .swiper-slide{
+    display: block;
+    width: 196.8px;
+    border: 1px solid #c7cbcf;
+    border-right: none;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.swiper-button-prev5, .swiper-button-next5{
+    position: initial;
+    width: 27px;
+    height: 147px;
+    background: #bfbfbf;
+    color: #fff;
+    line-height: 147px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
 }
