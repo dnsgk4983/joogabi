@@ -588,6 +588,7 @@ section{
 }
 .cd-wrap{
     display: flex;
+    align-items: flex-end;
     width: 251px;
 }
 .condition-left > img,
@@ -616,14 +617,9 @@ section{
     margin-top: 43px;
 }
 .model-info{
-    margin-top: 124px;
     margin-left: 40px;
 }
 .model-name{
-    width: 120px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 12px;
@@ -3691,7 +3687,7 @@ ul.tab-3 > li > p:nth-child(2){
     margin-bottom: 12px;
 }
 .manage-write-title > input{
-    width: 1094px;
+    width: 1278px;
     height: 45px;
     border: 1px solid #dbdbdb;
     box-sizing: border-box;
@@ -3710,7 +3706,7 @@ ul.tab-3 > li > p:nth-child(2){
     font-size: 14.5px;
 }
 .manage-write-text > textarea{
-    width: 1094px;
+    width: 1278px;
     height: 175px;
     border: 1px solid #dbdbdb;
     box-sizing: border-box;
@@ -3722,7 +3718,7 @@ ul.tab-3 > li > p:nth-child(2){
     color: #878787;
 }
 .manage-write-line{
-    width: 1094px;
+    width: 1278px;
     height: 1px;
     background: #918b8b;
     margin: 44px 0 45px;
