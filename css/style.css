@@ -620,6 +620,10 @@ section{
     margin-left: 40px;
 }
 .model-name{
+    width: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 12px;
@@ -1899,24 +1903,6 @@ section{
     cursor: pointer;
 }
 
-.trend-board-count > ul {
-    display: flex;
-    width: 226px;
-    justify-content: space-between;
-    margin: 0 auto;
-    margin-top: 68px;
-    margin-bottom: 105px;
-}
-.trend-board-count > ul > li > a{
-    color: #939393;
-}
-.trend-board-count > ul > li.on > a{
-    font-weight: 600;
-    color: #303030;
-}
-.trend-board-count > ul > a > i{
-    color: #939393;
-}
 /* 트랜드 게시판 영역 끝 */
 /* 트랜드 영역 끝 */
 
@@ -2402,7 +2388,7 @@ section{
 }
 .compare-chart-name{
     width: 240px;
-    height: 147px;
+    height: 143px;
     border: 1px solid #c7cbcf;
     border-right: none;
     box-sizing: border-box;
@@ -2434,10 +2420,9 @@ section{
 }
 .compare-chart-company{
     display: flex;
-    width: 185px;
+    width: 156px;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
     margin-bottom: 18px;
 }
 .compare-chart-company p{
@@ -2452,7 +2437,7 @@ section{
     font-weight: 600;
 }
 .compare-chart-info{
-    width: 185px;
+    width: 156px;
     height: 23px;
     display: flex;
     justify-content: space-between;
@@ -2504,6 +2489,7 @@ section{
 }
 .pay-compare-2-section{
     height: auto;
+    padding-bottom: 65px;
 }
 .compare-line{
     margin-top:41px;
@@ -2514,6 +2500,7 @@ section{
 }
 .compare-detail-search{
     display: none;
+    height: auto;
     margin-left: 36px;
     margin-top: 33px;
     padding-bottom: 40px;
@@ -2709,6 +2696,9 @@ section{
 
 
 /* 공지사항 영역 */ 
+.info-price-table{
+    position: relative;
+}
 .info-price-table-section{
     /* width: 1278px; */
     height: auto;
@@ -2719,6 +2709,7 @@ section{
     height: auto;
     margin: 0 auto;
     display: flex;
+    position: relative;
     align-items: center;
     border: 1px solid #dde1e9;
     box-sizing: border-box;
@@ -2797,7 +2788,7 @@ section{
 
 /* 고객센터 탭 영역 */
 .board-section{
-    width: 1278px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     position: relative;
@@ -3028,6 +3019,7 @@ section{
     justify-content: center;
     margin: 0;
     position: relative;
+    transition: all 3s;
 }
 .revice-tabs > ul > li{
     width: 20%;
@@ -3602,7 +3594,6 @@ ul.tab-3 > li > p:nth-child(2){
 }
 .tabcontent.current{
     display: block;
-    float: left;
 }
 .tab-title{
     padding-top: 25px;
@@ -3684,11 +3675,9 @@ ul.tab-3 > li > p:nth-child(2){
 
 
 /* 정보수정 단가표 글작성 페이지 */
-.board-manage-write-section{
-    height: 1188px;
-}
+
 .manage-write-item-wrap{
-    width: 1094px;
+    width: 1278px;
     height: auto;
     margin: 0 auto;
     position: relative;
@@ -3806,6 +3795,7 @@ ul.tab-3 > li > p:nth-child(2){
 }
 .write-manage-btn{
     margin-top: 34px;
+    margin-bottom: 134px;
 }
 .write-manage-btn button{
     width: 79px;
@@ -3822,9 +3812,7 @@ ul.tab-3 > li > p:nth-child(2){
 
 
 /* 회사정보 수정 페이지 */
-.revice-company-section{
-    height: 1402px;
-}
+
 .revice-company-wrap{
     width: 1278px;
     height: auto;
@@ -3989,13 +3977,16 @@ ul.tab-3 > li > p:nth-child(2){
     box-sizing: border-box;
     padding-left: 15px;
 }
+.cp-guide-btn {
+    margin-top: 34px;
+    margin-bottom: 134px;
+}
 .cp-guide-btn button{
     width: 79px;
     height: 27px;
     line-height: 24px;
     border: none;
     color: #fff;
-    margin-top: 34px;
     background: #bfbfbf;
     border-radius: 3px;
 }
@@ -4004,11 +3995,6 @@ ul.tab-3 > li > p:nth-child(2){
     margin-right: 10px;
 }
 /* 회사정보 수정 페이지 끝 */
-
-/* 내가추가한업체 페이지 */
-.revice-added-company-section{
-    height: auto;
-}
 
 /* 마이페이지 문의하기 */
 .inquire-section{
@@ -4143,10 +4129,10 @@ ul.tab-3 > li > p:nth-child(2){
 
 /* 문의하기 게시판 페이지 */
 
-.inquire-board-wrap{
+/* .inquire-board-wrap{
     width: 100%;
     height: auto;
-}
+} */
 .inquire-board-item{
     height: auto;
     margin: 0 auto;
@@ -4480,7 +4466,8 @@ footer{
     width: 100%;
     height: auto;
     display: none;
-    padding-bottom: 40px;
+    position: relative;
+    /* z-index: 99999; */
     background: #f9fafb;
     transition: all 0s;
 }
@@ -4953,9 +4940,9 @@ footer{
 /* 업체정보 버튼 추가 끝 */
 
 /* 공지사항 위젯위치 설정 */
-.board-section > .widget{
-    left: -191px;
-    top: 100px;
+.board-section .widget{
+    left: -195px;
+    top: 0px;
 }
 
 /* 자유게시판 글쓰기 위치설정 */
@@ -5009,10 +4996,10 @@ ul.tab > li:nth-child(5){
 .added-company-wrap .widget{
     top: 0px;
 }
-.widget-1 .swiper-pagination > span{
+.swiper-pagination > span{
     background: #dbdbdb !important;
 }
-.widget-1 .swiper-pagination-bullet.swiper-pagination-bullet-active{
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
     background: #696969 !important;
 }
 
@@ -5040,16 +5027,17 @@ ul.tab > li:nth-child(5){
 .compare-swiper{
     display: flex;
     width: 1038px;
+    height: 143px;
     margin: 0 auto;
     overflow: hidden;
 }
 .swiper-button-prev, .swiper-button-next{
     position: initial;
     width: 27px;
-    height: 147px;
+    height: 143px;
     background: #bfbfbf;
     color: #fff;
-    line-height: 147px;
+    line-height: 143px;
     display: block;
     text-align: center;
     cursor: pointer;
@@ -5057,11 +5045,9 @@ ul.tab > li:nth-child(5){
 }
 .compare-swiper .swiper-slide{
     display: block;
-    width: 196.8px;
     border: 1px solid #c7cbcf;
     border-right: none;
-    padding-left: 5px;
-    padding-bottom: 5px;
+    padding: 16px 11px 11px 20px;
 }
 .compare-item .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after,
 .compare-item .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after{
@@ -5073,24 +5059,23 @@ ul.tab > li:nth-child(5){
 .compare-1-swiper{
     display: flex;
     width: 1038px;
+    height: 143px;
     margin: 0 auto;
     overflow: hidden;
 }
 .compare-1-swiper .swiper-slide{
     display: block;
-    width: 196.8px;
     border: 1px solid #c7cbcf;
     border-right: none;
-    padding-left: 5px;
-    padding-bottom: 5px;
+    padding: 16px 11px 11px 20px;
 }
 .swiper-button-prev1, .swiper-button-next1{
     position: initial;
     width: 27px;
-    height: 147px;
+    height: 143px;
     background: #bfbfbf;
     color: #fff;
-    line-height: 147px;
+    line-height: 143px;
     display: block;
     text-align: center;
     cursor: pointer;
@@ -5098,26 +5083,25 @@ ul.tab > li:nth-child(5){
 
 /* 가격비교 3번째 줄 swiper  */
 .compare-2-swiper{
-    display: flex;
     width: 1038px;
+    height: 143px;
+    display: flex;
     margin: 0 auto;
     overflow: hidden;
 }
 .compare-2-swiper .swiper-slide{
     display: block;
-    width: 196.8px;
     border: 1px solid #c7cbcf;
     border-right: none;
-    padding-left: 5px;
-    padding-bottom: 5px;
+    padding: 16px 11px 11px 20px;
 }
 .swiper-button-prev2, .swiper-button-next2{
     position: initial;
     width: 27px;
-    height: 147px;
+    height: 143px;
     background: #bfbfbf;
     color: #fff;
-    line-height: 147px;
+    line-height: 143px;
     display: block;
     text-align: center;
     cursor: pointer;
@@ -5127,24 +5111,23 @@ ul.tab > li:nth-child(5){
 .compare-3-swiper{
     display: flex;
     width: 1038px;
+    height: 143px;
     margin: 0 auto;
     overflow: hidden;
 }
 .compare-3-swiper .swiper-slide{
     display: block;
-    width: 196.8px;
     border: 1px solid #c7cbcf;
     border-right: none;
-    padding-left: 5px;
-    padding-bottom: 5px;
+    padding: 16px 11px 11px 20px;
 }
 .swiper-button-prev3, .swiper-button-next3{
     position: initial;
     width: 27px;
-    height: 147px;
+    height: 143px;
     background: #bfbfbf;
     color: #fff;
-    line-height: 147px;
+    line-height: 143px;
     display: block;
     text-align: center;
     cursor: pointer;
@@ -5154,24 +5137,23 @@ ul.tab > li:nth-child(5){
 .compare-4-swiper{
     display: flex;
     width: 1038px;
+    height: 143px;
     margin: 0 auto;
     overflow: hidden;
 }
 .compare-4-swiper .swiper-slide{
     display: block;
-    width: 196.8px;
     border: 1px solid #c7cbcf;
     border-right: none;
-    padding-left: 5px;
-    padding-bottom: 5px;
+    padding: 16px 11px 11px 20px;
 }
 .swiper-button-prev4, .swiper-button-next4{
     position: initial;
     width: 27px;
-    height: 147px;
+    height: 143px;
     background: #bfbfbf;
     color: #fff;
-    line-height: 147px;
+    line-height: 143px;
     display: block;
     text-align: center;
     cursor: pointer;
@@ -5182,25 +5164,34 @@ ul.tab > li:nth-child(5){
 .compare-5-swiper{
     display: flex;
     width: 1038px;
+    height: 143px;
     margin: 0 auto;
     overflow: hidden;
 }
 .compare-5-swiper .swiper-slide{
     display: block;
-    width: 196.8px;
     border: 1px solid #c7cbcf;
     border-right: none;
-    padding-left: 5px;
-    padding-bottom: 5px;
+    padding: 16px 11px 11px 20px;
 }
 .swiper-button-prev5, .swiper-button-next5{
     position: initial;
     width: 27px;
-    height: 147px;
+    height: 143px;
     background: #bfbfbf;
     color: #fff;
-    line-height: 147px;
+    line-height: 143px;
     display: block;
     text-align: center;
     cursor: pointer;
+}
+.swiper-slide > .compare-chart-info:last-child{
+    margin-bottom: 0;
+}
+
+.compare-item-mg0 > .compare-chart-name img{
+    margin-top: 24px;
+}
+.model-name::before{
+    content: attr(title);
 }
