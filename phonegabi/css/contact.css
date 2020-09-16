@@ -1,0 +1,291 @@
+@import url('normalize.css');
+@import url('reset.css');
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../css/fonts/notokr-regular.eot');
+    src: url('../css/fonts/notokr-regular.eot?#iefix') format('embedded-opentype'),
+    url('../css/fonts/notokr-regular.woff') format('woff'),
+    url('../css/fonts/notokr-regular.woff2') format('woff2');
+  }
+  html{
+      width: 100%;
+  }
+  body{
+      font-family: 'Noto Sans KR';
+      font-size: 16px;
+  }
+
+  a{
+      text-decoration: none;
+  }
+  li{
+      list-style: none;
+  }
+  p{
+      font-size: 14px;
+  }
+  /* 상단 입력 부 */
+  .contact-wrap{
+      min-width: 280px;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 11px 0 10px;
+  }
+  .back-icon{
+      margin-left: 3px;
+      margin-top: 25px;
+  }
+  /* 계약서 작성 제목부분 */
+  .contact-title{
+      margin-top: 30px;
+  }
+  .contact-title h3{
+      font-size: 21px;
+      font-weight: 800;
+  }
+  .contact-title h3:first-child{
+      margin-bottom: 10px;
+  }
+  .contact-how{
+      margin: 29px 0;
+  }
+  .contact-how p{
+      font-size: 14px;
+  }
+  /* 계약서 작성 상단 입력부 */
+  .contact-item{
+    padding-bottom: 25px;
+    border-bottom: 1px solid #cccccc;
+  }
+  .contact-item p{
+      font-size: 14px;
+  }
+  .contact-item input{
+      width: 210px;
+      height: 47px;
+      background: #f7f7f9;
+      border: none;
+      border-radius: 3px;
+      padding: 0 11px 0 10px;
+      margin-bottom: 13px;
+  }
+  .contact-item input::placeholder{
+      color: #bfbfbf;
+  }
+  .contact-others input{
+      margin: 0;
+  }
+  .contact-day{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .contact-info{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .contact-number{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .contact-pay{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .contact-pay input::placeholder{
+      color: #000;
+      text-align: right;
+      opacity: 1;
+  }
+  .contact-company{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .contact-model{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contact-imei{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contact-others{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+/* 상단 입력 부분 끝 */
+
+  .contact-check{
+      min-width: 280px;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 11px 0 10px;
+    margin-top: 26px;
+}
+.contact-check input{
+    width: 210px;
+    height: 47px;
+    background: #f7f7f9;
+    border: none;
+    border-radius: 3px;
+    padding: 0 11px 0 10px;
+    margin-bottom: 13px;
+}
+.contact-check input::placeholder{
+    color: #bfbfbf;
+}
+    .contact-check h3{
+        font-size: 14px;
+    }
+    .contact-check h3>span{
+        color: #584bff;
+        font-weight: 600;
+    }
+    .check-not{
+        margin-bottom: 21px;
+    }
+    .own{
+        display: flex;
+        margin: 21px 0 24px 33px;
+    }
+    .own ul{
+        display: flex;
+    }
+    .own .check-yes{
+        cursor: pointer;
+    }
+    .own .check-no{
+        cursor: pointer;
+        margin-left: 38px;
+    }
+    .own p{
+        font-size: 15px;
+    }
+    .own i{
+        margin-right: 10px;
+        font-size: 21px;
+    }
+    .check-1 .own{
+        margin: 26px 0 27px 35px;
+    }
+
+    .active span{
+        color: #584bff;
+    }
+
+    .check-name{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .check-number{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .check-relation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+    .check-1{
+        border-bottom: 1px solid #cccccc;
+    }
+    .check-line{
+        margin-top: 23px;
+        border-bottom: 1px solid #cccccc;
+    }
+    .check-bank{
+        margin-top: 21px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .check-bank-address{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .check-bank-address input{
+        margin-bottom: 21px;
+    }
+    /* check-end */
+
+    /* sign */
+    .sign-wrap{
+        min-width: 280px;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 11px 0 10px;
+    }
+    .sign-title{
+        margin-top: 23px;
+    }
+    .sign-wrap input{
+        width: 210px;
+        height: 47px;
+        background: #f7f7f9;
+        border: none;
+        border-radius: 3px;
+        padding: 0 11px 0 10px;
+        margin-bottom: 13px;
+    }
+    .sign-wrap input::placeholder{
+        color: #bfbfbf;
+    }
+    .sign-day{
+        margin-top: 21px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sign-name{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .canvas-wrap{
+        width: 231px;
+        height: 88px;
+    }
+    #canvas{
+        background: #f7f7f9;
+        border-radius: 3px;
+    }
+    .sign-input{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sign-input p{
+        margin-top: 18px;
+        margin-bottom: 21px;
+    }
+  /* sign end */
+    .sign-btn{
+    width: 320px;
+    height: 55px;
+    margin: 0 auto;
+    margin-top: 43px;
+    margin-bottom: 19px;
+  }
+    .sign-btn button{
+        width: 320px;
+        height: 55px;
+        background: #584bff;
+        line-height: 55px;
+        color: #fff;
+        font-size: 17px;
+        border: none;
+        border-radius: 3px;
+        margin: 0 auto;
+    }
