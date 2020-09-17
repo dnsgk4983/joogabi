@@ -743,4 +743,7 @@ input:focus{
     .ft-conts.flex-box{
         flex-wrap: wrap;
     }
+    .p-list > ul > li > a{
+        font-size: .8em;
+    }
 }
