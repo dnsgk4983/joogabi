@@ -60,6 +60,9 @@ input:focus{
 .pd--36{
     padding: 0 36px;
 }
+.mg-0{
+    margin: 0;
+}
 .mg-t20{
     margin-top: 20px;
 }
@@ -104,6 +107,7 @@ input:focus{
     max-width: 640px;
     margin: 0 auto;
     background: #f1f1f1;
+    padding-bottom: 20px;
 }
 .content-inner{
     position: relative;
@@ -142,6 +146,7 @@ input:focus{
     background: url(../images/ico_search.png)no-repeat #3e5bc7;
     background-position: center;
     border: none;
+    margin-left: -1px;
 }
 .m-search > p {
     font-size: .95em;
@@ -282,8 +287,42 @@ input:focus{
 .p-list a > p:last-child{
     color: #939393;
 }
-/* 메인 차트영역 */
+/* 실시간 인기 검색모델 */
 .pop-md{
+    background: #fff;
+    padding-bottom: 20px;
+    padding-left: 36px;
+}
+.pop-md > p{
+    padding-top: 20px;
+    margin-bottom: 9px;
+    color: #939393;
+}
+.poprolling{
+    height: auto;
+    word-break: break-all;
+    padding: 0;
+}
+#popticker{
+    width: 100%;
+    height: 18px;
+    overflow: hidden;
+    position: relative;
+}
+#popticker > li{
+    position: relative;
+    align-items: center;
+    display: flex;
+    line-height: 18px;
+    height: 18px;
+}
+#popticker > li > a{
+    margin-right: .7em;
+    color: #3e5bc7;
+    /* font-size: 1.04em; */
+}
+/* 메인 차트영역 */
+.main-md{
     background: #fff;
 }
 .condition-title{
@@ -299,6 +338,10 @@ input:focus{
     justify-content: space-between;
     margin-top: 48px;
     padding-bottom: 42px;
+}
+.condition-left > img,
+.condition-right > img{
+    cursor: pointer;
 }
 .cd-wrap{
     display: flex;
@@ -376,13 +419,14 @@ input:focus{
     width: 49%;
     border: 1px solid #c7cbcf;
     box-sizing: border-box;
+    margin-bottom: .5238em;
 }
 .cp-title-wrap{
     padding: 15px;
     border-bottom: 1px solid #c7cbcf;
 }
 .cp-conts-title > p{
-    width: 130px;
+    width: 164px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -397,7 +441,12 @@ input:focus{
     color: #939393;
     font-size: 11px;
 }
+
+.ci-wrap{
+    width: 276px;
+}
 .cp-conts-info{
+    width: 100%;
     padding: .925em 15px;
 }
 .cp-conts-info > h3{
@@ -412,50 +461,70 @@ input:focus{
 .cp-conts-info > p {
     color: #939393;
     font-size: .92em;
-    height: 26px;
     margin-top: 11px;
     overflow: hidden;
     text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.2em;
+    height: 2.4em;
 }
-
 
 
 
 .diller{
-    padding: .238em;
+    width: 1.9em;
+    height: 16px;
+    line-height: 16px;
     background: #919dc7;
     border-radius: 3px;
+    margin-right: 2px;
 }
 .diller > p {
     font-size: 11px;
     color: #fff;
+    text-align: center;
 }
 
 .export{
-    padding: .238em;
+    width: 1.9em;
+    height: 16px;
+    line-height: 16px;
     background: #70768c;
     border-radius: 3px;
+    margin-right: 2px;
 }
 .export > p{
     color: #fff;
     font-size: 11px;
+    text-align: center;
 }
 .certification{
-    padding: .238em;
+    width: 1.9em;
+    height: 16px;
     background: #3e5bc7;
     border-radius: 3px;
+    margin-right: 2px;
+    line-height: 16px;
 }
 .certification > p {
     color: #fff;
     font-size: 11px;
+    text-align: center;
 }
 .deputy{
-    padding: .238em;
+    width: 3.63em;
+    height: 16px;
+    line-height: 16px;
     background: #b2b2b2;
     border-radius: 3px;
+    margin-right: 2px;
 }
 .deputy > p {
     font-size: 11px;
+    text-align: center;
     color: #fff;
 }
 
@@ -463,6 +532,53 @@ input:focus{
     display: flex;
     align-items: center;
 }
-.cp-conts-title > p {
-    margin-left: 3px;
+
+/* footer */
+#footer{
+    min-width:320px;
+    max-width: 640px;
+    margin: 0 auto;
+    height: auto;
+    background: #fff;
+}
+.ft-area{
+    margin: 3.143em 0;
+}
+.ft-logo{
+    text-align: center;
+}
+.ft-download{
+    height: 1.07em;
+    margin-top: 42px;
+    margin-bottom: 18px;
+    justify-content: center;
+}
+.ft-download img{
+    width: 0.982em;
+    height: 0.982em;
+    margin-right: 3px;
+}
+.ft-download > a{
+    color: #858585;
+}
+.ft-download > a > p{
+    font-size: 0.982em;
+}
+.ft-line{
+    width: 1px;
+    height: 1.07em;
+    margin: 1.05em;
+    background: #737373;
+}
+.ft-conts-wrap{
+    line-height: 0;
+    margin-bottom: -0.5em
+}
+.ft-conts p, .ft-conts a{
+    font-size: .84em;
+    color: #737373;
+}
+.ft-copy > p{
+    color: #000;
+    font-weight: 600;
 }

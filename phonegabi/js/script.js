@@ -109,6 +109,69 @@ jQuery(function($)
     ticker();
     
 });
+// 실시간 인기 검색 슬라이드
+jQuery(function($)
+{
+    var popticker = function()
+    {
+        timer = setTimeout(function(){
+            $('#popticker li:first').animate( {marginTop: '-18px'}, 500, function()
+            {
+                $(this).detach().appendTo('ul#popticker').removeAttr('style');
+            });
+            popticker();
+        }, 2000);         
+      };
+// 0번 이전 기능
+  
+
+
+  //2. 재생정지기능 시작, 아직 다음 기능과 연동은 안됨...그래서 3을 만듦
+  var autoplay = true;
+      $(document).on('click','.pause',function(){
+            if(autoplay==true){
+              clearTimeout(timer);
+              $(this).text('재생');
+              autoplay=false;
+            }else{
+              autoplay=true;
+              $(this).text('정지');
+              popticker();
+            }
+          }); // 재생정지기능 끝  
+  // 3. 재생정지 함수 시작. 2와 기능 동일함.
+    var poptickerpause = function()
+  {
+    $('#pause').click(function(){
+      $this = $(this);
+      if($this.text() == 'Pause'){
+        $this.text('Unpause');
+        clearTimeout(timer);
+      }
+      else {
+        popticker();
+        $this.text('Pause');
+      }
+    });
+   
+  };
+  poptickerpause();
+  //3 재생정지 함수 끝
+  //4 마우스를 올렸을 때 기능 정지
+  var poptickerover = function()
+  {
+    $('#popticker').mouseover(function(){
+      clearTimeout(timer);
+    });
+    $('#popticker').mouseout(function(){
+      popticker();
+    });  
+  };
+  poptickerover();
+  // 4 끝
+    popticker();
+    
+});
 
     // 주요모델 슬라이드
     $('.iphone-11pro-max > .condition-left > img').click(function(){
