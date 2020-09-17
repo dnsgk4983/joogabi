@@ -305,7 +305,7 @@ input:focus{
 }
 #popticker{
     width: 100%;
-    height: 13px;
+    height: 14px;
     overflow: hidden;
     position: relative;
 }
@@ -313,13 +313,17 @@ input:focus{
     position: relative;
     align-items: center;
     display: flex;
-    line-height: 13px;
-    height: 13px;
+    line-height: 14px;
+    height: auto;
 }
 #popticker > li > a{
+    width: 77px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     margin-right: .7em;
     color: #3e5bc7;
-    /* font-size: 1.04em; */
+    font-size: 1.04em;
 }
 /* 메인 차트영역 */
 .main-md{
@@ -691,6 +695,6 @@ input:focus{
         font-size: 13px;
     }
     .ft-line{
-        margin: 0 .95em;
+        margin: 0 .7em;
     }
 }
