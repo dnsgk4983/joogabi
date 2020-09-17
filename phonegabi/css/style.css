@@ -25,7 +25,10 @@ body{
     font-family: 'Noto Sans KR';
     font-size: 14px;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: visible !important;
+    -webkit-user-select:none;
+    -webkit-touch-callout:none;
+    -webkit-tab-highlight-color:rgba(255,255,255,0);
 }
 a{
     text-decoration: none;
@@ -692,6 +695,36 @@ input:focus{
     color: #000;
     margin-top: 8px;
     /* font-weight: 600; */
+}
+
+.btm-menu{
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    height: 5.9em;
+    position: fixed;
+    background: #fff;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999999;
+    -webkit-user-select:none;
+    -webkit-touch-callout:none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    overflow-y: visible !important;
+}
+.btm-menu > ul{
+    display: flex;
+}
+.btm-menu > ul > li{
+    width: 20%;
+    text-align: center;
+}
+.btm-menu > ul > li > img{
+    height: 25px;
+    display: block;
+    margin: 1.2em auto 15px;
 }
 
 
