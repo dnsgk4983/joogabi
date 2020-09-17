@@ -648,11 +648,11 @@ input:focus{
     margin: 0 auto;
     height: auto;
     background: #fff;
+    margin-bottom: 3.143em;
 }
-.ft-area{
-    margin: 3.143em 0;
-}
+
 .ft-logo{
+    padding-top: 3.143em;
     text-align: center;
 }
 .ft-download{
