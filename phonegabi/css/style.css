@@ -132,7 +132,7 @@ input:focus{
 .m-search > .flex-box > input{
     width: 90%;
     height: 50px;
-    border-radius: 3px solid #3e5bc7;
+    border: 3px solid #3e5bc7;
     box-sizing: border-box;
     padding-left: 10px;
 }
@@ -394,7 +394,7 @@ input:focus{
 .m-banner > a > img {
     width: 100%;
 }
-.m-banner > a > img:last-child{
+.m-banner > a:last-child > img{
     margin-top: 8px;
 }
 
@@ -533,6 +533,111 @@ input:focus{
     align-items: center;
 }
 
+/* 검색 후 페이지 */
+.search--section .m-search > .flex-box > input::placeholder{
+    color: #000000;
+}
+.result{
+    margin-top: 2.524em;
+}
+.r-title{
+    margin-bottom: 1.38em;
+}
+.r-title > p {
+    font-size: .95em;
+    color: #000;
+    font-weight: 600;
+}
+
+.r-conts > .col-30{ 
+    width: 30%;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.r-conts > .col-30 > img{
+    width: 30%;
+}
+.r-conts > .result-line{
+    width: 1px;
+    height: 20px;
+    background: #c6cad1;
+    margin: 0 2.5%;
+}
+
+.r-info{
+    text-align: left;
+    margin-left: 13px;
+}
+.r-info > p:first-child{
+    font-size: 10px;
+    color: #939393;
+}
+.r-info > p:last-child{
+    font-size: 15px;
+    color: #939393;
+}
+.r-info > p:last-child > span {
+    font-weight: 600;
+    color: #3e5bc7;
+    margin-right: 5px;
+}
+
+.r-to-list {
+    margin-left: 20px;
+}
+.r-to-list button{
+    background: #939393;
+    border-radius: 10px;
+    padding: 5px 6px 5px 18px;
+    border: none;
+    color: #fff;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.r-to-list > button > img {
+    width: 8%;
+    margin-left: 15px;
+}
+.r-to-list > p  {
+    margin-top: 0.59em;
+    color: #939393;
+    font-size: .845em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* footer */
 #footer{
     min-width:320px;
@@ -571,8 +676,10 @@ input:focus{
     background: #737373;
 }
 .ft-conts-wrap{
-    line-height: 0;
-    margin-bottom: -0.5em
+    line-height: 16px;
+}
+.ft-conts{
+    height: 16px;
 }
 .ft-conts p, .ft-conts a{
     font-size: .84em;
