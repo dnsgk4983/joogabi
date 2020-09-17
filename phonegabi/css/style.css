@@ -305,7 +305,7 @@ input:focus{
 }
 #popticker{
     width: 100%;
-    height: 18px;
+    height: 13px;
     overflow: hidden;
     position: relative;
 }
@@ -313,8 +313,8 @@ input:focus{
     position: relative;
     align-items: center;
     display: flex;
-    line-height: 18px;
-    height: 18px;
+    line-height: 13px;
+    height: 13px;
 }
 #popticker > li > a{
     margin-right: .7em;
@@ -584,9 +584,6 @@ input:focus{
     margin-right: 5px;
 }
 
-.r-to-list {
-    margin-left: 20px;
-}
 .r-to-list button{
     background: #939393;
     border-radius: 10px;
@@ -607,8 +604,6 @@ input:focus{
     color: #939393;
     font-size: .845em;
 }
-
-
 
 
 
@@ -672,7 +667,7 @@ input:focus{
 .ft-line{
     width: 1px;
     height: 1.07em;
-    margin: 1.05em;
+    margin: 0 1.05em;
     background: #737373;
 }
 .ft-conts-wrap{
@@ -688,4 +683,14 @@ input:focus{
 .ft-copy > p{
     color: #000;
     font-weight: 600;
+}
+
+
+@media(max-width:568px){
+    .r-info > p:last-child{
+        font-size: 13px;
+    }
+    .ft-line{
+        margin: 0 .95em;
+    }
 }

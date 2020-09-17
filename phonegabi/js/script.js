@@ -115,7 +115,7 @@ jQuery(function($)
     var popticker = function()
     {
         timer = setTimeout(function(){
-            $('#popticker li:first').animate( {marginTop: '-18px'}, 500, function()
+            $('#popticker li:first').animate( {marginTop: '-13px'}, 500, function()
             {
                 $(this).detach().appendTo('ul#popticker').removeAttr('style');
             });
