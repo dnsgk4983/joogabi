@@ -783,8 +783,18 @@ input:focus{
     font-weight: 600;
 }
 
-.rg-banner > img{
+.rg-banner{
+    padding-bottom: 20px;
+}
+.rg-banner img{
     width: 100%;
+    height: 100%;
+}
+.banner-wrap{
+    margin: 20px 0 0;
+}
+.banner-wrap > a:not(:first-child) img{
+    margin-top: 0.51em;
 }
 
 
@@ -874,19 +884,14 @@ input:focus{
 }
 
 @media (min-width:320px) and (max-width:530px){
-    .ft-download{
-        justify-content: end;
-        flex-wrap: wrap;
-    }
-    .ft-conts > .ft-line.none{
-        display: none;
-    }
     .ft-line{
         margin: 0 .35em;
     }
-
     .ft-conts.flex-box{
         flex-wrap: wrap;
+    }
+    .rg-question > p:last-child{
+        line-height: 20px;
     }
 
     .cp-conts-title{
