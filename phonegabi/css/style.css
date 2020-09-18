@@ -98,12 +98,11 @@ input:focus{
     position: relative;
     min-width: 320px;
     max-width: 640px;
-    height: 56px;
-    margin: 0 auto;
+    margin: 32px auto 20px;
     padding: 0 24px;
 }
 .logo img{
-    width: 40%;
+    width: 85px;
 }
 .menu{
     width: 30px;
@@ -831,6 +830,73 @@ input:focus{
     padding-bottom: 28px;
     margin-bottom: 0;
 }
+
+/* 회원가입 정보입력 페이지 */
+.rgi-t > .flex-box {
+    padding-bottom: 1.9em;
+}
+.rgi-t > .flex-box > p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.rgi-step.flex-box{
+    padding-top: 2.66em;
+    padding-bottom: 34px;
+    justify-content: space-between;
+}
+.flex-box.step{
+    align-items: flex-end;
+}
+.rgi-step > .step > img{
+    width: 1.4em;
+}
+.step-wrap{
+    margin-left: 13px;
+}
+.step-wrap > p{
+    color: #c7c7c7;
+}
+.onstep > .step-wrap > p{
+    color: #000;
+}
+.step-wrap > p:first-child{
+    font-size: .95em;
+    margin-bottom: .42em;
+}
+.step-wrap > p:last-child{
+    font-size: 1.14em;
+}
+.rgi-cond > p {
+    padding-top: 32px;
+    margin-bottom: 11px;
+}
+.cond-wrap{
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    padding: 16px 2em 0 1.02em;
+}
+pre{
+    white-space: pre-wrap;
+    font-size: .85714em;
+    line-height: 20px;
+}
+.rgi-checkbox{
+    color: #878787;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.rgi-checkbox > input{
+    vertical-align: -1px;
+    margin-right: 5px;
+}
+.rgi-line{
+    width: 100%;
+    height: 1px;
+    background: #dbdbdb;
+    margin: 3.33em 0 2.3em;
+}
+
+
 
 
 /* footer */
