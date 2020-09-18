@@ -98,8 +98,8 @@ input:focus{
     position: relative;
     min-width: 320px;
     max-width: 640px;
-    margin: 32px auto 20px;
-    padding: 0 24px;
+    margin: 0 auto;
+    padding: 32px 24px 20px;
 }
 .logo img{
     width: 85px;
@@ -869,6 +869,8 @@ input:focus{
 .rgi-cond > p {
     padding-top: 32px;
     margin-bottom: 11px;
+    font-size: 16px;
+    font-weight: 600;
 }
 .cond-wrap{
     border: 1px solid #dbdbdb;
@@ -895,8 +897,23 @@ pre{
     background: #dbdbdb;
     margin: 3.33em 0 2.3em;
 }
-
-
+.rgi-line2{
+    margin: 45px 0 33px;
+}
+.rgi-allcheck{
+    margin-top: 1.26em;
+}
+.rgi-allcheck > input{
+    color: #000;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.rgi-btn{
+    margin-top: 1.9em;
+}
+.rgi-btn > button{
+    margin-bottom: 2.02em;
+}
 
 
 /* footer */
@@ -1011,6 +1028,15 @@ pre{
     }
     .btm-menu > ul > li{
         font-size: .8em;
+    }
+    .rgi-step > .step > img{
+        width: 1em;
+    }
+    .step-wrap > p:first-child{
+        font-size: .5em;
+    }
+    .step-wrap > p:last-child{
+        font-size: .7em;
     }
 }
 @media(max-width:415px){
