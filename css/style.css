@@ -55,7 +55,10 @@
     border: none;
     border-radius: none;
   }
-
+  .flex-box{
+      display: flex;
+      align-items: center;
+  }
   /* 헤더 시작 */
   #header{
       width: 100%;
@@ -245,6 +248,10 @@ section{
   .company-input{
       display: flex;
       margin-left: 28px;
+  }
+  .company-input > form{
+      display: flex;
+      align-items: center;
   }
   .company-input input{
       width: 583px;
@@ -1618,12 +1625,15 @@ section{
     padding-bottom: 21px;
 }
 .trend-section{
-    height: 311px;
+    height: 247px;
     margin-bottom: 14px;
+    justify-content: end;
+    flex-direction: column;
 }
 .trend-top-wrap{
     width: 1278px;
-    height: 311px;
+    height: 160px;
+    padding: 40px 0;
     margin-top: 18px;
     background: #fff;
     border: 1px solid #dde1e9;
@@ -1664,7 +1674,7 @@ section{
 }
 .trend-search-input-wrap input{
     width: 458px;
-    height: 25px;
+    height: 36px;
     border: none;
     border-bottom: 1px solid #939393;
     box-sizing: border-box;
@@ -1753,14 +1763,10 @@ section{
     color: #939393;
 }
 
-.trend-tab-section{
-    width: 1278px;
-    height: auto;
-    margin: 0 auto;
-}
+
 .trend-tabs > ul {
     display: flex;
-    margin-left: 9px;
+    /* margin-left: 9px; */
     padding-top: 14px;
 }
 .trend-tabs > ul > li {
@@ -1768,6 +1774,9 @@ section{
     margin-left: 4px;
     border-radius: 3px;
     background: #acacac;
+}
+.trend-tabs > ul > li:first-child{
+    margin-left: 0;
 }
 .trend-tabs > ul > li > a{
     color: #fff;
@@ -1787,7 +1796,6 @@ section{
     border: 1px solid #dde1e9;
     box-sizing: border-box;
     margin: 0 auto;
-    margin-top: 44px;
 }
 .trend-chart-title{
     display: flex;
@@ -2281,8 +2289,8 @@ section{
     font-size: 25px;
 }
 .compare-selecter{
-    margin-top: 32px;
     display: flex;
+    align-items: center ;
     padding-left: 36px;
 }
 .compare-selecter p{
@@ -2499,7 +2507,6 @@ section{
     height: auto;
     margin-left: 36px;
     margin-top: 33px;
-    padding-bottom: 40px;
 }
 .detail-search-title{
     font-size: 14.5px;
@@ -2542,7 +2549,8 @@ section{
 }
 .detail-input input{
     width: 526px;
-    height: 31px;
+    /* height: 31px; */
+    height: 41px; /* 0918 수정 */
     background: url('../images/trend-page/ico_saerch.png')no-repeat;
     background-position: 0 center;
     border: none;
@@ -5190,4 +5198,76 @@ ul.tab > li:nth-child(5){
 }
 .model-name::before{
     content: attr(title);
+}
+
+
+
+/* 0918 추가영역 */
+.main-search-conts > .flex-box > p{
+    color: #000;
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 0;
+}
+.main-search-conts > .flex-box > a {
+    color: #fff;
+    background: #c6cad1;
+    padding: 3px 6px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    margin-right: 32px;
+}
+.main-search-conts > .flex-box > a img{
+    width: 6px;
+    height: 9px;
+    margin-left: 5px;
+}
+.main-search-conts > .flex-box.vw--list{
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.m-sc-wrap.flex-box{
+    justify-content: space-between;
+}
+.m-sc-wrap > p.n-search {
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-right: 30px;
+}
+
+.m-sc{
+    margin-left: 33px;
+    margin-top: 16px;
+}
+.m-sc-box img{
+    height: 29px;
+}
+.m-sc-box.flex-box{
+    align-items: flex-end;
+}
+
+.m-sc-line{
+    width: 1px;
+    height: 21px;
+    background: #c6cad1;
+    margin: 0 19px;
+}
+
+.m-sc-t{
+    margin-left: 12px;
+}
+.m-sc-t > p:first-child{
+    font-size: 12px;
+    margin: 0;
+}
+.m-sc-t > p:last-child{
+    margin: 0;
+    font-size: 14px;
+}
+
+.detail-input > button{
+    margin-left: -3px;
 }

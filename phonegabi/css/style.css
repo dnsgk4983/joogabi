@@ -888,7 +888,7 @@ pre{
     margin-top: 10px;
 }
 .rgi-checkbox > input{
-    vertical-align: -1px;
+    vertical-align: -2px;
     margin-right: 5px;
 }
 .rgi-line{
@@ -914,6 +914,13 @@ pre{
 .rgi-btn > button{
     margin-bottom: 2.02em;
 }
+.rgi-input-wrap > .rgi-cp > input{
+    background: url(../images/login/ico_company.png)no-repeat;
+    background-position: 13px center;
+}
+
+
+
 
 
 /* footer */

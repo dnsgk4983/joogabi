@@ -105,10 +105,45 @@
                 <div class="register-company">
                     <h2>전국 <span>35,299</span>개의 업체가 등록되어 있습니다</h2>
                     <div class="company-input">
-                        <input type="search" placeholder="찾으시는 단말기 모델을 검색해 보세요">
-                        <button type="button"><img src="images/ico_search.png" alt="검색아이콘"></button>
+                        <form autocomplete="on" action="">
+                            <input type="search" name="name" placeholder="찾으시는 단말기 모델을 검색해 보세요" autocomplete="tel">
+                            <button type="button"><img src="images/ico_search.png" alt="검색아이콘"></button>
+                        </form>
                     </div>
-                    <p>찾으시는 단말기 이름 또는 모델명을 입력해 주시면, 보다 빠르게 리스트를 생성할 수 있습니다.</p>
+                    <div class="main-search-conts">
+                        <div class="flex-box vw--list">
+                            <p>아이폰 11 PRO MAX</p>
+                            <a href="#">리스트 보러가기<span><img src="images/ico_white-right-arrow.png" alt="rightarrow"></span></a>
+                        </div>
+                        <div class="flex-box m-sc-wrap">
+                            <div class="flex-box m-sc">
+                                <div class="m-sc-box flex-box">
+                                    <img src="images/icon_upphone.png" alt="최대매입가">
+                                    <div class="m-sc-t">
+                                        <p>최대매입가</p>
+                                        <p><span>67.2</span>만원</p>
+                                    </div>
+                                </div>
+                                <div class="m-sc-line"></div>
+                                <div class="m-sc-box flex-box">
+                                    <img src="images/ico_downphone.png" alt="최저매입가">
+                                    <div class="m-sc-t">
+                                        <p>최저매입가</p>
+                                        <p><span>52.4</span>만원</p>
+                                    </div>
+                                </div>
+                                <div class="m-sc-line"></div>
+                                <div class="m-sc-box flex-box">
+                                    <img src="images/ico_cart.png" alt="매입업체">
+                                    <div class="m-sc-t">
+                                        <p>매입업체</p>
+                                        <p><span>12</span>개 업체</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="n-search">지금 검색하신 모델의 매입업체와 세부<br>리스트를 확인해 보세요!</p>
+                        </div>
+                    </div>
                 </div>
                 <!-- 검색 섹션 끝 -->
                 <!-- 신규 등록 단가표 -->
