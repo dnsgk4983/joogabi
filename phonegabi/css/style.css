@@ -877,10 +877,13 @@ input:focus{
     text-align: center;
     font-size: 0.95em;
 }
-.btm-menu > ul > li > img{
+.btm-menu > ul > li img{
     height: 25px;
     display: block;
     margin: 1.2em auto 15px;
+}
+.btm-menu > ul > li > a{
+    color: #6b6c6f;
 }
 
 @media (min-width:320px) and (max-width:530px){
