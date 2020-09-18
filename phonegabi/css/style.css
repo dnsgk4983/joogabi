@@ -803,21 +803,23 @@ input:focus{
     text-align: center;
 }
 .ft-download{
-    height: 1.07em;
     margin-top: 42px;
     margin-bottom: 18px;
     justify-content: center;
 }
 .ft-download img{
-    width: 0.982em;
-    height: 0.982em;
+    width: 15px;
+    height: 15px;
     margin-right: 3px;
+}
+.ft-download a:not(:last-child){
+    margin-bottom: 12px;
 }
 .ft-download > a{
     color: #858585;
 }
 .ft-download > a > p{
-    font-size: 0.982em;
+    font-size: 15px;
 }
 .ft-line{
     width: 1px;
@@ -828,16 +830,19 @@ input:focus{
 .ft-conts-wrap{
     line-height: 18px;
 }
-.ft-conts{
-    /* height: 16px; */
-}
 .ft-conts p, .ft-conts a{
-    font-size: .84em;
+    font-size: 15px;
     color: #737373;
+}
+.ft-conts > p:not(:last-child) {
+    margin-bottom: 8px;
+}
+.ft-conts.flex-box{
+    margin-top: 1.9em;
 }
 .ft-copy > p{
     color: #000;
-    margin-top: 8px;
+    margin-top: 30px;
 }
 
 .btm-menu{
@@ -869,26 +874,19 @@ input:focus{
 }
 
 @media (min-width:320px) and (max-width:530px){
-    .ft-download > a > p{
-        font-size: 0.78em;
+    .ft-download{
+        justify-content: end;
+        flex-wrap: wrap;
+    }
+    .ft-conts > .ft-line.none{
+        display: none;
     }
     .ft-line{
         margin: 0 .35em;
     }
-    .r-info > p:last-child{
-        font-size: 10px;
-    }
-    .ft-conts p, .ft-conts a{
-        font-size: .7em;
-    }
-    .ft-copy > p {
-        font-size: .9em;
-    }
+
     .ft-conts.flex-box{
         flex-wrap: wrap;
-    }
-    .p-list > ul > li > a{
-        font-size: .8em;
     }
 
     .cp-conts-title{
