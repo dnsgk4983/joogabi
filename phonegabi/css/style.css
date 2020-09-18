@@ -627,7 +627,7 @@ input:focus{
 
 /* 회원가입 페이지 영역 */
 .login-title { 
-    margin-top: 1.23em;
+    padding-top: 1.23em;
 }
 .login-title > p {
     font-size: 18px;
@@ -743,12 +743,49 @@ input:focus{
     border: none;
     border-radius: 3px;
     margin-bottom: 1.8em;
+    font-size: 1.18em;
+}
+.rg-btn > button > span > img{
+    width: 1.11em;
+    vertical-align: -3px;
+    margin-right: .34em;
 }
 
+.rg-others{
+    padding-top: 33px;
+    padding-bottom: 1.95em;
+}
 
+.others-wrap > p{
+    font-size: 1.04em;
+    color: #939393;
+}
+.others-wrap > p:last-child{
+    color: #000000;
+    margin-top: 9px;
+}
 
+.other-conts{
+    margin-top: 2.04em;
+}
+.ot-wrap > p {
+    font-size: 1.09em;
+}
+.ot-wrap > img{
+    margin-right: 9px;
+}
+.other-center{
+    margin-bottom: 1.02em;
+}
+.other-conts > .flex-box > p {
+    margin-left: 1.02em;
+    font-size: 1.1em;
+    font-weight: 600;
+}
 
-
+.rg-banner > img{
+    width: 100%;
+}
 
 
 /* footer */
