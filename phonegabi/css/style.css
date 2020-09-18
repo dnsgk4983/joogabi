@@ -82,6 +82,12 @@ input:focus{
     margin: 0 auto;
     min-height: 100%;
 }
+.container.bg-f1{
+    background: #f1f1f1;
+}
+.bg-white{
+    background: #fff;
+}
 .header--nav > .row{
     display: flex;
     justify-content: space-between;
@@ -163,6 +169,9 @@ input:focus{
 .flex-box{
     display: flex;
     align-items: center;
+}
+.text-center{
+    text-align: center;
 }
 /* 메인 공지사항 영역 */
 .content-notice{
@@ -617,10 +626,12 @@ input:focus{
 }
 
 /* 회원가입 페이지 영역 */
-
+.login-title { 
+    margin-top: 1.23em;
+}
 .login-title > p {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .lg-input{
@@ -671,19 +682,68 @@ input:focus{
     margin-bottom: 7px;
 }
 .lg-btn > .lg-btn-wrap:nth-child(2) > button{
-    background: #fff;
+    background: transparent;
     border: 1px solid #878787;
     color: #878787;
+    margin-bottom: 28px;
 }
 .lg-btn > .lg-btn-wrap img{
     width: 13px;
     margin-right: 5px;
 }
 
+.rg-section{
+    padding-top: 4.6em;
+}
 
+.rg-question > p:first-child{
+    font-size: 1.14em;
+    font-weight: 600;
+    margin-bottom: 0.605em;
+    color: #303030;
+}
+.rg-question > p:last-child{
+    font-size: 1.04em;
+    font-weight: 400;
+    color: #878787;
+}
 
+.rg-conts{
+    margin-top: 2.615em;
+    margin-bottom: 1.6em;
+}
+.rg-conts.flex-box{
+    justify-content: space-between;
+}
+.rg-conts img {
+    display: block;
+    margin: 0 auto 1.25em;
+    height: 30px;
+}
 
+.rg-li{
+    width: 156px;
+    height: auto;
+}
+.rg-li > p{
+    width: 96px;
+    margin:  auto;
+}
+.rg-line{
+    width: 1px;
+    height: 3em;
+    background: #dde1e9;
+}
 
+.rg-btn > button{
+    width: 100%;
+    height: 45px;
+    background: #3e5bc7;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 1.8em;
+}
 
 
 
@@ -750,12 +810,12 @@ input:focus{
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
     height: 5.9em;
     margin-top: -5.9em;
-    /* position: fixed; */
+    position: fixed;
     background: #fff;
-    /* left: 0; */
-    /* right: 0; */
-    /* bottom: 0; */
-    /* z-index: 50; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
 }
 .btm-menu > ul{
     display: flex;
