@@ -1036,7 +1036,10 @@ pre{
         font-size: .6em;
     }
     .step-wrap > p:last-child{
-        font-size: .8em;
+        font-size: .75em;
+    }
+    .step-wrap{
+        margin-left: 6px;
     }
 }
 @media(max-width:415px){
