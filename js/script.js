@@ -259,7 +259,6 @@ jQuery(function($)
     $('cpi-info-wrap .tabcontent.current').click(function(){
       $(this).removeClass('current')
     });
-    
 
     // 가격비교 페이지 영역
     $('.compare-search-icon').click(function(){
@@ -307,6 +306,16 @@ jQuery(function($)
       $('.stf-md-code-wrap').fadeIn(0);
       $('.stf-md-del-wrap').fadeOut(0);
     });
+});
+$(function(){
+  $('.tab-close').click(function(){
+    $('ul li').removeClass('current');
+    $('.tabcontent').removeClass('current');
+  });
+  $('.board-page-button .del').click(function(){
+    $('.board-page-button .all').css('display','inline');
+    $('.tab-wrap > a > input').css('display','block');
+  });
 });
 
 

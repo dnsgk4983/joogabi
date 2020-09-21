@@ -1010,6 +1010,37 @@ pre{
 .btm-menu > ul > li > a{
     color: #6b6c6f;
 }
+/* 회원가입 두번째페이지 */
+.rgi-conts{
+    padding-bottom: 16px;
+}
+.rgi-conts > p{
+    padding-top: 33px;
+    line-height: 24px;
+    color: #939393;
+}
+.lg-input.rgi-input-wrap{
+    margin: 0;
+    margin-top: 2.4em;
+}
+.lg-input.rgi-input-wrap input{
+    margin: 0;
+}
+.lg-input.rgi-input-wrap input::placeholder{
+    font-size: .95em;
+    color: #878787;
+}
+.lg-input.rgi-input-wrap > div > p{
+    margin-bottom: 1.1em;
+    font-size: .95em;
+    font-weight: 500;
+}
+.rgi-cp{
+    margin-top: 33px;
+}
+.rgi-write-section > p{
+    padding-top: 33px;
+}
 
 @media (min-width:320px) and (max-width:530px){
     .ft-line{

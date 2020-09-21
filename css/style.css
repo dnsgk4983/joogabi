@@ -3518,7 +3518,6 @@ ul.tab > li > p:nth-child(2){
 /* 단가표 관리 2번탭 */
 .tab-2{
     display: flex;
-    margin-top: 58px;
 }
 .tab-2 > li {
     margin-right: 50.6px;
@@ -3552,7 +3551,6 @@ ul.tab-2 > li > p:nth-child(2){
 /* 단가표 관리 3번탭 */
 .tab-3{
     display: flex;
-    margin-top: 58px;
 }
 .tab-3 > li {
     margin-right: 50.6px;
@@ -3602,7 +3600,18 @@ ul.tab-3 > li > p:nth-child(2){
 .tab-title{
     padding-top: 25px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+.tab-title-wrap{
+    display: flex;
+    align-items: center;
+}
+.tab-close{
+    cursor: pointer;
+}
+.tab-title-btn{
+    margin-left: 15px;
 }
 .tab-title button{
     width: 65px;
@@ -3612,7 +3621,6 @@ ul.tab-3 > li > p:nth-child(2){
     /* border-radius: 3px; */
     border: none;
     font-size: 13px;
-
 }
 .tab-title button:first-child{
     background: #3e5bc7;
@@ -4967,7 +4975,13 @@ footer{
 
 /* 단가표게시판 뿌리는 영역*/
 ul.tab > li{
-    margin-bottom: 25px;
+    margin-bottom: 34px;
+}
+ul.tab-2 > li{
+    margin-bottom: 34px;
+}
+ul.tab-3 > li{
+    margin-bottom: 34px;
 }
 ul.tab > li:nth-child(5){
     margin-right: 0;
@@ -5270,4 +5284,11 @@ ul.tab > li:nth-child(5){
 
 .detail-input > button{
     margin-left: -3px;
+}
+
+.board-page-button .all{
+    display: none;
+}
+.tab-wrap > a > input{
+    display: none;
 }
