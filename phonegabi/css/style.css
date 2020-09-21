@@ -1238,7 +1238,7 @@ pre{
     }
     .rgi-pur span{
         margin-right: 4px;
-        font-size: .8em;
+        font-size: .84em;
     }
     .wp-m{
         margin-top: 36px;
@@ -1254,5 +1254,8 @@ pre{
     }
     .rgi-phone > .flex-box > button{
         width: 15%;
+    }
+    .rgi-pur-ot > input.tb{
+        width: 56%;
     }
 }
