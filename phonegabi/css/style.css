@@ -1236,6 +1236,9 @@ pre{
     .step-wrap{
         margin-left: 6px;
     }
+    .rgi-pur span{
+        margin-right: 4px;
+    }
 }
 @media(max-width:415px){
     .ft-conts.flex-box>.ft-line:nth-child(6){
