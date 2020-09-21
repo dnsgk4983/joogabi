@@ -1110,7 +1110,7 @@ pre{
 }
 .wp-col{
     width: 50%;
-    margin-top: 36px;
+    margin-top: 30px;
 }
 .rgi-pur-ot > input.cb{
     width: 13px;
@@ -1199,6 +1199,13 @@ pre{
     margin-top: 18px;
 }
 
+/* 트렌드페이지 시작 */
+.header--nav >.row.pd-15{
+    padding: 15px 24px;
+}
+
+
+
 @media (min-width:320px) and (max-width:530px){
     .ft-line{
         margin: 0 .35em;
@@ -1241,7 +1248,7 @@ pre{
         font-size: .84em;
     }
     .wp-m{
-        margin-top: 36px;
+        margin-top: 30px;
     }
 }
 @media(max-width:415px){
@@ -1256,6 +1263,9 @@ pre{
         width: 15%;
     }
     .rgi-pur-ot > input.tb{
-        width: 56%;
+        width: 66%;
+        height: 30px;
+        border: none;
+        border-bottom: 1px solid #dbdbdb;
     }
 }
