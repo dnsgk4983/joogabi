@@ -62,6 +62,9 @@ input:focus{
     border: none;
     border-radius: none;
 }
+.col-30{
+    width: 30%;
+}
 .pd--24{
     padding: 0 24px;
 }
@@ -71,8 +74,17 @@ input:focus{
 .mg-0{
     margin: 0;
 }
+.mg-t13{
+    margin-top: .95em;
+}
 .mg-t20{
     margin-top: 20px;
+}
+.mg-t31{
+    margin-top: 31px;
+}
+.mg-b13{
+    margin-bottom: .95em;
 }
 /* header */
 #layout{
@@ -1015,6 +1027,7 @@ pre{
     padding-bottom: 16px;
 }
 .rgi-conts > p{
+    font-size: .95em;
     padding-top: 33px;
     line-height: 24px;
     color: #939393;
@@ -1040,7 +1053,98 @@ pre{
 }
 .rgi-write-section > p{
     padding-top: 33px;
+    font-size: .95em;
+    color: #939393;
+    line-height: 24px;
 }
+.rgi-write-section > .rgi-input-wrap{
+    margin-top: 1em;
+}
+.rgi-write-section .lg-password input.mg-b13{
+    margin-bottom: .95em;
+}
+.rgi-phone{
+    margin-top: 31px;
+}
+.rgi-phone > .flex-box > input{
+    width: 90%;
+    height: 45px;
+    background: url(../images/login/ico_phone.png)no-repeat;
+    background-size: 3%;
+    background-position: 12px center;
+}
+.rgi-phone > .flex-box > button{
+    width: 10%;
+    height: 45px;
+    background: #878787;
+    color: #fff;
+    border: none;
+    font-size: .95em;
+}
+
+.rgi-any > form > select{
+    width: 100%;
+    height: 45px;
+    border-color: #dbdbdb;
+    padding-left: 14px;
+    margin-bottom: 12px;
+}
+.rgi-any > form > select.mg0{
+    margin: 0;
+}
+
+.rgi-pur > .flex-box{
+    padding: 0 12px;
+    flex-wrap: wrap;
+}
+.rgi-pur > .flex-box > .col-30 > input{
+    width: 13px;
+    height: 13px;
+    border-radius: 3px;
+    vertical-align: -2px;
+}
+.rgi-pur span{
+    font-size: 14px;
+    color: #848484;
+    margin-left: 12px;
+}
+.wp-col{
+    margin-top: 36px;
+}
+.rgi-pur-ot > input.cb{
+    width: 13px;
+    height: 13px;
+    border-radius: 3px;
+    vertical-align: -2px;
+    margin-left: 12px;
+}
+.rgi-pur-ot span{
+    font-size: 14px;
+    color: #848484;
+    margin-left: 12px;
+    margin-right: 26px;
+}
+.rgi-pur-ot.flex-box{
+    /* justify-content: space-between; */
+    flex-wrap: nowrap;
+}
+.rgi-pur-ot > input.tb{
+    width: 85%;
+}
+.rgi-pur-nt button{
+    margin-top: 33px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 45px;
+    background: #3e5bc7;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
 
 @media (min-width:320px) and (max-width:530px){
     .ft-line{

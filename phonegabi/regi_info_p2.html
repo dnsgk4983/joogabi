@@ -74,21 +74,21 @@
                     <div class="lg-input rgi-input-wrap">
                         <div class="lg-password">
                             <p>비밀번호</p>
-                            <input type="password" placeholder="비밀번호를 입력해 주세요">
+                            <input type="password" placeholder="비밀번호를 입력해 주세요" class="mg-b13">
                             <input type="password" placeholder="비밀번호를 다시 입력해 주세요(재확인)">
                         </div>
                         <div class="rgi-phone">
                             <p>휴대전화 번호</p>
-                            <div class="flex-box">
+                            <div class="flex-box mg-b13">
                                 <input type="tel" placeholder="휴대번호를 입력해 주세요">
                                 <button type="submit">발송</button>
                             </div>
                             <div class="flex-box">
-                                <input type="tel" placeholder="휴대번호를 입력해 주세요">
+                                <input type="text" placeholder="인증번호를 입력해 주세요">
                                 <button type="submit">인증</button>
                             </div>
                         </div>
-                        <div class="rgi-any">
+                        <div class="rgi-any mg-t31">
                             <form action="">
                                 <select>
                                     <option value="1">회원구분 선택</option>
@@ -102,34 +102,35 @@
                                 </select>
                             </form>
                             <form action="">
-                                <select>
+                                <select class="mg0">
                                     <option value="1">가입경로 선택</option>
                                     <option value="2">가입경로 선택</option>
                                 </select>
                             </form>
                         </div>
-                        <div class="rgi-pur">
+                        <div class="rgi-pur mg-t31">
                             <p>이용목적</p>
                             <div class="row flex-box">
                                 <div class="col-30">
-                                    <input type="checkbox">업체정보확인
+                                    <input type="checkbox"><span>업체정보확인</span>
                                 </div>
                                 <div class="col-30">
-                                    <input type="checkbox">단가시세확인
+                                    <input type="checkbox"><span>단가시세확인</span>
                                 </div>
                                 <div class="col-30">
-                                    <input type="checkbox">업체정보확인
+                                    <input type="checkbox"><span>업체정보확인</span>
                                 </div>
-                                <div class="col-30">
-                                    <input type="checkbox">중고폰 판매 및 구매
+                                <div class="col-30 wp-col">
+                                    <input type="checkbox"><span>중고폰 판매 및 구매</span>
                                 </div>
                             </div>
-                            <div class="rgi-pur-ot flex-box">
-                                <input type="checkbox"><input type="text" placeholder="직접 입력해 주세요">
-                            </div>
-                            <div class="rgi-pur-nt">
-                                <button type="button">다음</button>
-                            </div>
+                        </div>
+                        <div class="rgi-pur-ot flex-box mg-t20">
+                            <input type="checkbox" class="cb"><span>기타</span>
+                            <input type="text" placeholder="직접 입력해 주세요" class="tb">
+                        </div>
+                        <div class="rgi-pur-nt">
+                            <button type="button">다음</button>
                         </div>
                     </div>
                 </div>
