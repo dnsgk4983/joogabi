@@ -1079,7 +1079,7 @@ pre{
     background: #878787;
     color: #fff;
     border: none;
-    font-size: .95em;
+    font-size: .85em;
 }
 
 .rgi-any > form > select{
@@ -1104,7 +1104,7 @@ pre{
     vertical-align: -2px;
 }
 .rgi-pur span{
-    font-size: 14px;
+    font-size: .95em;
     color: #848484;
     margin-left: 12px;
 }
@@ -1119,7 +1119,7 @@ pre{
     margin-left: 12px;
 }
 .rgi-pur-ot span{
-    font-size: 14px;
+    font-size: .95em;
     color: #848484;
     margin-left: 12px;
     margin-right: 26px;
@@ -1191,6 +1191,9 @@ pre{
 .rgs-conts > .rgi-pur-nt > button {
     margin-top: 33px;
     margin-bottom: 17px;
+}
+.rgs-gd-b{
+    margin-top: 18px;
 }
 
 @media (min-width:320px) and (max-width:530px){
