@@ -1109,6 +1109,7 @@ pre{
     margin-left: 12px;
 }
 .wp-col{
+    width: 50%;
     margin-top: 36px;
 }
 .rgi-pur-ot > input.cb{
@@ -1122,14 +1123,16 @@ pre{
     font-size: .95em;
     color: #848484;
     margin-left: 12px;
-    margin-right: 26px;
+    margin-right: 55px;
 }
 .rgi-pur-ot.flex-box{
     /* justify-content: space-between; */
     flex-wrap: nowrap;
 }
 .rgi-pur-ot > input.tb{
-    width: 85%;
+    width: 80%;
+    padding: 0;
+    padding-left: 15px;
 }
 .rgi-pur-nt button{
     margin-top: 33px;
