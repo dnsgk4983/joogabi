@@ -900,7 +900,7 @@ pre{
     margin-top: 10px;
 }
 .rgi-checkbox > input{
-    vertical-align: -2px;
+    vertical-align: -1px;
     margin-right: 5px;
 }
 .rgi-line{
@@ -1101,7 +1101,7 @@ pre{
     width: 13px;
     height: 13px;
     border-radius: 3px;
-    vertical-align: -2px;
+    vertical-align: -1px;
 }
 .rgi-pur span{
     font-size: .95em;
@@ -1116,7 +1116,7 @@ pre{
     width: 13px;
     height: 13px;
     border-radius: 3px;
-    vertical-align: -2px;
+    vertical-align: -1px;
     margin-left: 12px;
 }
 .rgi-pur-ot span{
@@ -1200,10 +1200,234 @@ pre{
 }
 
 /* 트렌드페이지 시작 */
+.container.bg-f1 > .pd--24 > .flex-box > p{
+    font-size: 18px;
+    font-weight: 600;
+}
 .header--nav >.row.pd-15{
     padding: 15px 24px;
 }
+.top-date{
+    margin-top: 45px;
+    padding-bottom: 15px;
+    justify-content: center;
+}
+.top-date > i {
+    font-size: 20px;
+    background: #999999;
+    border-radius: 100%;
+    color: #fff;
+    cursor: pointer;
+}
+.top-date-box{
+    margin: 0 50px;
+}
+.top-date-box p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.trend--section{
+    margin-top: 20px;
+    padding-bottom: 25px;
+}
+.search-box{
+    padding-top: 1.24em;
+}
+.search-box > input{
+    width: 85%;
+    height: 45px;
+    border: 3px solid #3e5bc7;
+    padding-left: 5px;
+}
+.search-box > input::placeholder{
+    font-size: 15px;
+    font-weight: 400;
+}
+.search-box > button{
+    width: 15%;
+    background: #325bc7;
+    height: 45px;
+    border: none;
+}
+.t-s-check{
+    padding: 0 0 0 10px;
+    margin-top: .95em;
+    margin-bottom: 33px;
+}
+.t-s-check > input{
+    margin-right: 6px;
+    vertical-align: -1px;
+}
+.t-s-check > input.r{
+    margin-left: 30px;
+}
+.t-s-check > span{
+    font-size: 1em;
+    color: #878787;
+}
 
+
+.bd-b1{
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    border-bottom: 1px solid #dbdbdb;
+}
+.bd-b1 img{
+    width: 1em;
+    vertical-align: middle;
+    margin-right: .4em;
+}
+.bd-b1 > .col-40 > p{
+    font-size: 15px;
+    color: #878787;
+}
+.bd-b1 > .col-40{
+    width: 40%;
+}
+.bd-b1.mg-0{
+    margin-bottom: 0;
+}
+.col-60{
+    width: 60%;
+}
+.col-60 > p{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.trend-item{
+    background: #3e5bc7;
+    width: 50%;
+    height: 50px;
+    padding: 3px;
+    margin-left: 10px;
+    position: relative;
+    margin-top: 20px;
+}
+.md-name{
+    font-size: .95em;
+    color: #fff;
+    line-height: 18px;
+    word-spacing: -3px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.t-close{
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    color: #3e5bc7;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.t-item-wrap{
+    margin-top: 17px;
+    margin-bottom: 45px;
+    margin-left: 10px;
+}
+.t-item-option{
+    width: 147px;
+    height: 30px;
+    background: #acacac;
+    border-radius: 3px;
+    line-height: 30px;
+    color: #fff;
+    font-size: .95em;
+    text-align: center;
+    margin-right: 5px;
+}
+.t-item-option > p > span{
+    margin-left: 10px;
+}
+.t-item-t{
+    padding-top: 25px;
+}
+.t-item-t > .main{
+    font-size: 18px;
+    font-weight: 600;
+}
+.t-item-t > .sub{
+    margin: 15px 0;
+    font-size: .95em;
+    color: #939393;
+}
+
+.line{
+    background: #dbdbdb;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 15px;
+}
+.t-c{
+    margin-right: 45px;
+    margin-bottom: 30px;
+}
+.t-c > input{
+    margin-right: 6px;
+    vertical-align: -1px;
+}
+
+.more-btn{
+    text-align: center;
+}
+.more-btn button{
+    border: none;
+    background: #dbdbdb;
+    color: #303030;
+    font-size: 1em;
+    border-radius: 5px;
+    width: 80%;
+    height: 45px;
+}
+.t-chart > #chartdiv{
+    height: 222px;
+}
+
+.md-slide{
+    margin-top: 20px;
+    justify-content: center;
+}
+.md-slide > p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #3e5bc7;
+    white-space: nowrap;
+}
+.md-slide > .prev-md,
+.md-slide > .next-md{
+    color: #848484;
+}
+.md-slide > i{
+    font-size: 20px;
+    color: #fff;
+    background: #999;
+    border-radius: 100%;
+    text-align: center;
+    margin: 0 60px 0 40px;
+}
+.ov-h{
+    overflow: hidden;
+}
+.md-table {
+    margin-top: 36px;
+}
+.md-table > table{
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #878787;
+    border-bottom: 1px solid #878787;
+}
+.md-table > table > thead > tr {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 2px solid #878787;
+}
 
 
 @media (min-width:320px) and (max-width:530px){

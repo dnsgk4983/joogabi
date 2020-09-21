@@ -7,7 +7,7 @@
     <!-- ==== swiper.css ==== -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- ==== XE icon.css ==== -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!-- ==== fontawesome ==== -->
     <link rel="stylesheet" href="css/fontawesome.css">
     <!-- ==== style.css ==== -->
@@ -29,16 +29,261 @@
     </header>
     <section>
         <div class="container bg-f1 pd-b20">
-            <div class="row pd--24 rgi-t bg-white">
+            <div class="row pd--24 bg-white">
                 <div class="flex-box">
                     <div class="b-tag"></div>
                     <p>트랜드</p>
                 </div>
-                <div class="top-date">
+                <div class="top-date flex-box">
+                    <i class="xi-angle-left-min"></i>
+                    <div class="top-date-box flex-box">
+                        <p><span class="year">2020</span>년&nbsp;</p>
+                        <p><span class="month">7</span>월&nbsp;</p>
+                        <p><span class="day">31</span>일</p>
+                        <p>(<span class="week">금</span>)</p>
+                    </div>
                     <i class="xi-angle-right-min"></i>
                 </div>
             </div>
-            
+            <div class="row pd--24 bg-white trend--section">
+                <div class="search-box flex-box">
+                    <input type="search">
+                    <button type="button">
+                        <img src="images/ico_search.png" alt="검색">
+                    </button>
+                </div>
+                <div class="t-s-check">
+                    <input type="checkbox"><span>최고/최저가제외</span>
+                    <input type="checkbox" class="r"><span>차감제외</span>
+                </div>
+                <div class="l-day flex-box bd-b1">
+                    <div class="col-40">
+                        <p><img src="images/ico_day.png" alt="출시일자">출시일자</p>
+                    </div>
+                    <div class="col-60">
+                        <p>2019년 4월 10일</p>
+                    </div>
+                </div>
+                <div class="l-pay flex-box bd-b1">
+                    <div class="col-40">
+                        <p><img src="images/ico_pay.png" alt="출시금액">출시금액</p>
+                    </div>
+                    <div class="col-60">
+                        <p>569,000원</p>
+                    </div>
+                </div>
+                <div class="l-avg flex-box bd-b1">
+                    <div class="col-40">
+                        <p><img src="images/ico_avg.png" alt="업체평균">현재금액(업체평균)</p>
+                    </div>
+                    <div class="col-60">
+                        <p>254,000원</p>
+                    </div>
+                </div>
+                <div class="l-remain flex-box bd-b1 mg-0">
+                    <div class="col-40">
+                        <p><img src="images/ico_remaining.png" alt="잔존율">잔존율</p>
+                    </div>
+                    <div class="col-60">
+                        <p>3.5%</p>
+                    </div>
+                </div>
+                <div class="trend-item">
+                    <div class="t-close">
+                        <i class="xi-close-thin"></i>
+                    </div>
+                    <p class="md-name">삼성 갤럭시 노트 10<br>SAMSUNG SM-N976N</p>
+                </div>
+            </div>
+            <div class="bg-f1 pd--24">
+                <div class="t-item-wrap flex-box">
+                    <div class="t-item-option">
+                        <p>갤럭시 노트 10 32G<span class="xi-close-thin"></span></p>
+                    </div>
+                    <div class="t-item-option">
+                        <p>갤럭시 노트 10 64G<span class="xi-close-thin"></span></p>
+                    </div>
+                    <div class="t-item-option">
+                        <p>갤럭시 노트 10 128G<span class="xi-close-thin"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container bg-f1 pd-b20">
+            <div class="trendwrap bg-white pd--24">
+                <div class="t-item-t">
+                    <p class="main">삼성 갤럭시 노트 10</p>
+                    <p class="sub">SAMSUNG SM-N976N</p>
+                </div>
+                <div class="line"></div>
+                <div class="t-check flex-box">
+                    <div class="t-c">
+                        <input type="checkbox"><span>일반거래가격</span>
+                    </div>
+                    <div class="t-c">
+                        <input type="checkbox"><span>자동확대잠금</span>
+                    </div>
+                    <div class="t-c">
+                        <input type="checkbox"><span>3개월단위보기</span>
+                    </div>
+                </div>
+                <div class="chart-area t-chart">
+                    <div id="chartdiv"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container bg-white ov-h pd--24">
+            <div class="md-slide flex-box">
+                <p class="prev-md">갤럭시 노트 10 32G</p>
+                <i class="xi-angle-left-min"></i>
+                <p class="my_model">갤럭시 노트 10 64G</p>
+                <i class="xi-angle-right-min"></i>
+                <p class="next-md">갤럭시 노트 10 128G</p>
+            </div>
+            <div class="md-table">
+                <table>
+                    <colgroup>
+                        <col width="25%">
+                        <col width="25%">
+                        <col width="25%">
+                        <col width="25%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>작성일</th>
+                            <th>모델명</th>
+                            <th>평균매입가(원)</th>
+                            <th>잔존율(%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>갤럭시 노트 10 64G</td>
+                            <td>665,3450</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>갤럭시 노트 10 64G</td>
+                            <td>665,3450</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>갤럭시 노트 10 64G</td>
+                            <td>665,3450</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>갤럭시 노트 10 64G</td>
+                            <td>665,3450</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>갤럭시 노트 10 64G</td>
+                            <td>665,3450</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>갤럭시 노트 10 64G</td>
+                            <td>665,3450</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>갤럭시 노트 10 64G</td>
+                            <td>665,3450</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>갤럭시 노트 10 64G</td>
+                            <td>665,3450</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>갤럭시 노트 10 64G</td>
+                            <td>665,3450</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>갤럭시 노트 10 64G</td>
+                            <td>665,3450</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>갤럭시 노트 10 64G</td>
+                            <td>665,3450</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>갤럭시 노트 10 64G</td>
+                            <td>665,3450</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>갤럭시 노트 10 64G</td>
+                            <td>665,3450</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>갤럭시 노트 10 64G</td>
+                            <td>665,3450</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>갤럭시 노트 10 64G</td>
+                            <td>665,3450</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>갤럭시 노트 10 64G</td>
+                            <td>665,3450</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>갤럭시 노트 10 64G</td>
+                            <td>665,3450</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>갤럭시 노트 10 64G</td>
+                            <td>665,3450</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>갤럭시 노트 10 64G</td>
+                            <td>665,3450</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>2020-01-14</td>
+                            <td>갤럭시 노트 10 64G</td>
+                            <td>665,3450</td>
+                            <td>65</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="more-btn">
+                <button type="button">더보기</button>
+            </div>
         </div>
     </section>
 
@@ -90,6 +335,11 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <!-- ==== swiper ==== -->
     <script src="js/swiper-bundle.min.js"></script>
+    <!-- ==== chart.js ==== -->
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="js/chart.js"></script>
     <!-- ==== main ==== -->
     <script src="js/script.js"></script>
 </html>
