@@ -62,8 +62,8 @@ input:focus{
     border: none;
     border-radius: none;
 }
-.col-30{
-    width: 30%;
+.col-50p{
+    width: 50%;
 }
 .pd--24{
     padding: 0 24px;
@@ -1238,10 +1238,21 @@ pre{
     }
     .rgi-pur span{
         margin-right: 4px;
+        font-size: .8em;
+    }
+    .wp-m{
+        margin-top: 36px;
     }
 }
 @media(max-width:415px){
     .ft-conts.flex-box>.ft-line:nth-child(6){
         display: none;
+    }
+    .rgi-phone > .flex-box > input{
+        background-size: 6%;
+        width: 85%;
+    }
+    .rgi-phone > .flex-box > button{
+        width: 15%;
     }
 }
