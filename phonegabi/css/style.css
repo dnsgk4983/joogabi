@@ -1143,8 +1143,55 @@ pre{
     font-size: 16px;
 }
 
-
-
+/* 회원기입 완료 페이지 */
+.rgs-conts > p{
+    font-size: .95em;
+    padding-top: 33px;
+    line-height: 24px;
+    color: #939393;
+}
+.rgs-title{
+    margin: 15px 0;
+}
+.rgs-title > p {
+    margin-bottom: 1.1em;
+    font-size: .95em;
+    font-weight: 500;
+}
+.rgs-box{
+    width: 100%;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    height: 45px;
+    line-height: 45px;
+}
+.rgs-box > p{
+    margin-left: 11px;
+    display: flex;
+    align-items: center;
+}
+.rgs-box > p > img{
+    margin-right: 11px;
+}
+.rgs-box > p > span{
+    margin-left: 11px;
+    font-weight: 600;
+}
+.rgs-id{
+    margin-bottom: 15px;
+}
+.rgs-guide > h3{
+    margin: 15px 0;
+}
+.rgs-guide > p{
+    font-size: .95em;
+    color: #939393;
+    line-height: 24px;
+}
+.rgs-conts > .rgi-pur-nt > button {
+    margin-top: 33px;
+    margin-bottom: 17px;
+}
 
 @media (min-width:320px) and (max-width:530px){
     .ft-line{
