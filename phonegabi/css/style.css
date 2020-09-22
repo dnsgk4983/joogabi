@@ -1226,6 +1226,12 @@ pre{
 .left-btn > img, .right-btn > img {
     height: 16px;
 }
+.left-btn{
+    margin-right: 4px;
+}
+.right-btn{
+    margin-left: 4px;
+}
 .top-date-box{
     margin: 0 50px;
 }
@@ -1517,17 +1523,17 @@ pre{
         font-size: .75em;
     }
     .md-list > ul > li p{
-        font-size: .75em;
+        font-size: .7em;
         color: #939393;
     }
     .md-name{
         font-size: .8em;
     }
     .col-25.wr-md{
-        width: 30%;
+        width: 35%;
     }
     .col-25.wr-re{
-        widows: 20%;
+        widows: 17%;
     }
     .top-date-box p{
         font-size: 1em;
@@ -1538,6 +1544,9 @@ pre{
     }
     .mw530-mg-t5{
         margin-top: 5px;
+    }
+    .search-box button > img{
+        width: 23px;
     }
 }
 @media(max-width:415px){
