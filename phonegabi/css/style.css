@@ -1612,6 +1612,19 @@ pre{
 .pd-b30{
     padding-bottom: 30px;
 }
+.unit--section > .search-box > input::placeholder{
+    font-size: .9em;
+}
+
+.cp-check-box{
+    margin-top: 1em;
+}
+.cp-check-box > input{
+    margin-right: 6px;
+}
+.cp-check-box > span{
+    margin-right: 40px;
+}
 
 @media (min-width:320px) and (max-width:530px){
     .ft-line{
@@ -1707,6 +1720,9 @@ pre{
         margin-left: 3px;
     }
     .unit-area > ul > li{
+        font-size: .8em;
+    }
+    .unit-sub > p{
         font-size: .8em;
     }
 }

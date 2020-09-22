@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중가비</title>
+    <!-- ==== swiper.css ==== -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- ==== XE icon.css ==== -->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- ==== fontawesome ==== -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- ==== style.css ==== -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header">
+        <div id="layout">
+                <div class="container header--nav">
+                    <div class="row pd-15">
+                        <div class="logo">
+                        <a href="#">
+                            <!-- <img src="images/logo.png" alt="로고"> -->
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container bg-f1 pd-b20">
+            <div class="row pd--24 bg-white">
+                <div class="flex-box">
+                    <div class="b-tag"></div>
+                    <p>단가표게시판</p>
+                </div>
+                <div class="top-date flex-box">
+                    <div class="left-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="top-date-box flex-box">
+                        <p><span class="year">2020</span>년&nbsp;</p>
+                        <p><span class="month">7</span>월&nbsp;</p>
+                        <p><span class="day">31</span>일</p>
+                        <p>(<span class="week">금</span>)</p>
+                    </div>
+                    <div class="right-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row pd--24 bg-white trend--section unit--section">
+                <div class="search-box flex-box">
+                    <input type="search" placeholder="업체명을 입력해 주세요">
+                    <button type="button">
+                        <img src="images/ico_search.png" alt="검색">
+                    </button>
+                </div>
+                <div class="comp-check">
+                    <div class="cp-check-box flex-box">
+                        <input type="checkbox"><span>전체업체</span>
+                        <input type="checkbox"><span>인증업체</span>
+                        <input type="checkbox"><span>딜러회원</span>
+                        <input type="checkbox"><span>대리/판매점</span>
+                        <input type="checkbox"><span>수출업체</span>
+                    </div>
+                </div>
+                <div class="unit-area">
+                    <ul class="flex-box">
+                        <li class="active">
+                            <img src="images/unit/icon1-1.png" alt="전체">
+                            전체</li>
+                        <li>
+                            <img src="images/unit/icon2.png" alt="서울">
+                            서울
+                        </li>
+                        <li>
+                            <img src="images/unit/icon3.png" alt="경기">
+                            경기
+                        </li>
+                        <li>
+                            <img src="images/unit/icon4.png" alt="인천">
+                            인천
+                        </li>
+                        <li>
+                            <img src="images/unit/icon5.png" alt="대전">
+                            대전
+                        </li>
+                        <li>
+                            <img src="images/unit/icon6.png" alt="대구">
+                            대구
+                        </li>
+                        <li>
+                            <img src="images/unit/icon7.png" alt="부산">
+                            부산
+                        </li>
+                        <li>
+                            <img src="images/unit/icon8.png" alt="광주">
+                            광주
+                        </li>
+                        <li>
+                            <img src="images/unit/icon9.png" alt="울산">
+                            울산
+                        </li>
+                        <li>
+                            <img src="images/unit/icon10.png" alt="세종">
+                            세종
+                        </li>
+                        <li>
+                            <img src="images/unit/icon11.png" alt="강원">
+                            강원
+                        </li>
+                        <li>
+                            <img src="images/unit/icon12.png" alt="충북">
+                            충북
+                        </li>
+                        <li>
+                            <img src="images/unit/icon13.png" alt="충남">
+                            충남
+                        </li>
+                        <li>
+                            <img src="images/unit/icon14.png" alt="전북">
+                            전북
+                        </li>
+                        <li>
+                            <img src="images/unit/icon15.png" alt="전남">
+                            전남
+                        </li>
+                        <li>
+                            <img src="images/unit/icon16.png" alt="경북">
+                            경북
+                        </li>
+                        <li>
+                            <img src="images/unit/icon17.png" alt="경남">
+                            경남
+                        </li>
+                        <li>
+                            <img src="images/unit/icon18.png" alt="제주">
+                            제주
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container bg-f1 pd-b20">
+            <div class="row pd--24 bg-white">
+                <div class="unit-list">
+                    <p>조건에 맞는 업체 <span id="ct">157</span> 건의 단가표가 있습니다.</p>
+                    <div class="cp-conts-wrap">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="cp-title-wrap">
+                                        <div class="cp-conts-title">
+                                            <div class="diller">
+                                                <p>딜러</p>
+                                            </div>
+                                            <p>코스타커뮤니케이션</p>
+                                        </div>
+                                        <div class="cp-conts-area">
+                                            <p>전국/서울</p>
+                                        </div>
+                                    </div>
+                                    <div class="ci-wrap">
+                                        <div class="cp-conts-info">
+                                            <h3>전국 최고가 매입중<br><span>초고속 업무처리!</span></h3>
+                                            <p>갤럭시, LG, 아이폰SE2 내수 저가폰 가개통 박스폰 대량으로 판매 가능합니다. 언제든 편하게 연락</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="cp-title-wrap">
+                                        <div class="cp-conts-title">
+                                            <div class="export">
+                                                <p>수출</p>
+                                            </div>
+                                            <p>하우스커뮤니케이션 코리아</p>
+                                        </div>
+                                        <div class="cp-conts-area">
+                                            <p>전국/서울</p>
+                                        </div>
+                                    </div>
+                                    <div class="cp-conts-info">
+                                        <h3>전국 최고가 매입중<br><span>초고속 업무처리!</span></h3>
+                                        <p>갤럭시, LG, 아이폰SE2 내수 저가폰 가개통 박스폰 대량으로 판매 가능</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="cp-title-wrap">
+                                        <div class="cp-conts-title">
+                                            <div class="flex-box">
+                                                <div class="certification">
+                                                    <p>인증</p>
+                                                </div>
+                                                <div class="deputy">
+                                                    <p>대리/판매</p>
+                                                </div>
+                                            </div>
+                                            <p>브리우스 텔레컴</p>
+                                        </div>
+                                        <div class="cp-conts-area">
+                                            <p>전국/서울</p>
+                                        </div>
+                                    </div>
+                                    <div class="cp-conts-info">
+                                        <h3>전국 최고가 매입중<br><span>초고속 업무처리!</span></h3>
+                                        <p>갤럭시, LG, 아이폰SE2 내수 저가폰 가개통 박스폰 대량으로 판매 가능</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="cp-title-wrap">
+                                        <div class="cp-conts-title">
+                                            <div class="flex-box">
+                                                <div class="certification">
+                                                    <p>인증</p>
+                                                </div>
+                                                <div class="export">
+                                                    <p>수출</p>
+                                                </div>
+                                            </div>
+                                            <p>메리다 에이츠</p>
+                                        </div>
+                                        <div class="cp-conts-area">
+                                            <p>전국/서울</p>
+                                        </div>
+                                    </div>
+                                    <div class="cp-conts-info">
+                                        <h3>전국 최고가 매입중<br><span>초고속 업무처리!</span></h3>
+                                        <p>갤럭시, LG, 아이폰SE2 내수 저가폰 가개통 박스폰 대량으로 판매 가능</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="cp-title-wrap">
+                                        <div class="cp-conts-title">
+                                            <div class="flex-box">
+                                                <div class="export">
+                                                    <p>수출</p>
+                                                </div>
+                                            </div>
+                                            <p>브리우스 텔레컴</p>
+                                        </div>
+                                        <div class="cp-conts-area">
+                                            <p>전국/서울</p>
+                                        </div>
+                                    </div>
+                                    <div class="cp-conts-info">
+                                        <h3>전국 최고가 매입중<br><span>초고속 업무처리!</span></h3>
+                                        <p>갤럭시, LG, 아이폰SE2 내수 저가폰 가개통 박스폰 대량으로 판매 가능</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="cp-title-wrap">
+                                        <div class="cp-conts-title">
+                                            <div class="flex-box">
+                                                <div class="diller">
+                                                    <p>딜러</p>
+                                                </div>
+                                            </div>
+                                            <p>메리다 에이츠</p>
+                                        </div>
+                                        <div class="cp-conts-area">
+                                            <p>전국/서울</p>
+                                        </div>
+                                    </div>
+                                    <div class="cp-conts-info">
+                                        <h3>전국 최고가 매입중<br><span>초고속 업무처리!</span></h3>
+                                        <p>갤럭시, LG, 아이폰SE2 내수 저가폰 가개통 박스폰 대량으로 판매 가능</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="cp-title-wrap">
+                                        <div class="cp-conts-title">
+                                            <div class="flex-box">
+                                                <div class="export">
+                                                    <p>수출</p>
+                                                </div>
+                                            </div>
+                                            <p>브리우스 텔레컴</p>
+                                        </div>
+                                        <div class="cp-conts-area">
+                                            <p>전국/서울</p>
+                                        </div>
+                                    </div>
+                                    <div class="cp-conts-info">
+                                        <h3>전국 최고가 매입중<br><span>초고속 업무처리!</span></h3>
+                                        <p>갤럭시, LG, 아이폰SE2 내수 저가폰 가개통 박스폰 대량으로 판매 가능</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="cp-title-wrap">
+                                        <div class="cp-conts-title">
+                                            <div class="flex-box">
+                                                <div class="diller">
+                                                    <p>딜러</p>
+                                                </div>
+                                            </div>
+                                            <p>메리다 에이츠</p>
+                                        </div>
+                                        <div class="cp-conts-area">
+                                            <p>전국/서울</p>
+                                        </div>
+                                    </div>
+                                    <div class="cp-conts-info">
+                                        <h3>전국 최고가 매입중<br><span>초고속 업무처리!</span></h3>
+                                        <p>갤럭시, LG, 아이폰SE2 내수 저가폰 가개통 박스폰 대량으로 판매 가능</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="cp-title-wrap">
+                                        <div class="cp-conts-title">
+                                            <div class="flex-box">
+                                                <div class="export">
+                                                    <p>수출</p>
+                                                </div>
+                                            </div>
+                                            <p>브리우스 텔레컴</p>
+                                        </div>
+                                        <div class="cp-conts-area">
+                                            <p>전국/서울</p>
+                                        </div>
+                                    </div>
+                                    <div class="cp-conts-info">
+                                        <h3>전국 최고가 매입중<br><span>초고속 업무처리!</span></h3>
+                                        <p>갤럭시, LG, 아이폰SE2 내수 저가폰 가개통 박스폰 대량으로 판매 가능</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="cp-title-wrap">
+                                        <div class="cp-conts-title">
+                                            <div class="flex-box">
+                                                <div class="diller">
+                                                    <p>딜러</p>
+                                                </div>
+                                            </div>
+                                            <p>메리다 에이츠</p>
+                                        </div>
+                                        <div class="cp-conts-area">
+                                            <p>전국/서울</p>
+                                        </div>
+                                    </div>
+                                    <div class="cp-conts-info">
+                                        <h3>전국 최고가 매입중<br><span>초고속 업무처리!</span></h3>
+                                        <p>갤럭시, LG, 아이폰SE2 내수 저가폰 가개통 박스폰 대량으로 판매 가능</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="more-btn pd-b30">
+                    <button type="button">더보기</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer">
+        <div class="ft-area pd--24">
+            <div class="ft-logo">
+                <img src="images/upstairs.png" alt="업스테어스">
+            </div>
+            <div class="ft-download">
+                <a href="#" class="ft-pcm flex-box">
+                    <img src="images/ico_down.png" alt="down">
+                    <p>중가비 PC매니저</p>
+                </a>
+                <a href="#" class="ft-mbm flex-box">
+                    <img src="images/ico_down.png" alt="down">
+                    <p>중가비 모바일 매니저</p>
+                </a>
+
+                <a href="#" class="ft-pgb flex-box">
+                    <img src="images/ico_down.png" alt="down">
+                    <p>폰가비</p>
+                </a>
+            </div>
+            <div class="ft-conts-wrap">
+                <div class="ft-conts">
+                    <p>법인명 : 업스테어스</p>
+                    <p>사업자 등록번호 : 139-87-01176</p>
+                    <p>대표자 : 장영석</p>
+                    <p>서울시 용산구 한강대로 54길 25, 4층 (한강로1가, 신승빌딩)</p>
+                </div>
+                <div class="ft-conts flex-box">
+                    <a href="#">회사소개</a>
+                    <div class="ft-line"></div>
+                    <a href="#">개인정보취급방침</a>
+                    <div class="ft-line"></div>
+                    <a href="#">이용정책</a>
+                    <div class="ft-line"></div>
+                    <a href="#">이메일무단수집거부</a>
+                </div>
+            </div>
+            <div class="ft-copy">
+                <p>Copyright © 2020 Upstairs.Inc All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+    <!-- ==== jQuery ==== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- ==== swiper ==== -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- ==== main ==== -->
+    <script src="js/script.js"></script>
+    <script rel="preload" src="js/unit.js"></script>
+</html>
