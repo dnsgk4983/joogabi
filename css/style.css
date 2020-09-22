@@ -3697,8 +3697,34 @@ ul.tab-3 > li > p:nth-child(2){
     margin: 0 auto;
     position: relative;
 }
-.manage-write-title{
+.manage-write-day{
     margin-top: 58px;
+}
+.manage-write-day > p {
+    font-size: 14.5px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+.selector {
+    width: 400px;
+    height: 45px;
+    border: 1px solid #dbdbdb;
+    padding-left: 10px;
+}
+.manage-write-day > input[type="checkbox"]{
+    margin-left: 15px;
+    margin-right: 5px;
+    vertical-align: -1px;
+}
+.manage-write-day span{
+    font-size: 14px;
+}
+.selector:active,
+.selector:visited,.selector:focus{
+    border: 1px solid #dbdbdb;
+}
+.manage-write-title{
+    margin-top: 43px;
 }
 .manage-write-title > p {
     font-weight: 600;

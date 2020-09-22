@@ -1477,10 +1477,55 @@ pre{
     font-weight: 600;
     color: #000;
 }
-[class*=" xi-"], [class^=xi-]{
-    font-family: 'xeicon';
-}
 
+
+
+/* 단가표 영역 */
+.unit-sub > p{
+    color: #bbbbbb;
+    margin-top: .9em;
+    margin-left: 10px;
+}
+.unit-area{
+    margin-top: 1.8em;
+}
+.unit-area > .flex-box{
+    flex-wrap: wrap;
+    text-align: center;
+}
+.unit-area > ul > li{
+    width: 25%;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #939393;
+    box-sizing: border-box;
+    border-right: none;
+    border-bottom: none;
+}
+.unit-area > ul > li.active{
+    background: #3e5bc7;
+    color: #fff;
+}
+.unit-area > ul > li > img{
+    width: 28px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.unit-area > ul > li:nth-child(4n){
+    border-right: 1px solid #939393;
+    box-sizing: border-box;
+}
+.unit-area > ul > li:nth-child(n+13):nth-child(-n+18){
+    border-bottom: 1px solid #939393;
+    box-sizing: border-box;
+}
+.unit-area > ul > li:nth-child(n+17):nth-child(-n+18){
+    border-top: none;
+}
+.unit-area > ul > li:last-child{
+    border: none;
+    border-left: 1px solid #939393;
+}
 
 @media (min-width:320px) and (max-width:530px){
     .ft-line{

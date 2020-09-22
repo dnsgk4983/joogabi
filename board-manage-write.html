@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- ==== fontawesome.css -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- ==== flatpickr.css ==== -->
+    <link rel="stylesheet" href="css/flatpickr.min.css">
     <!-- ==== style.css ==== -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -163,6 +165,10 @@
             </div>
             <div class="withdrawal-line"></div>
             <div class="manage-write-item-wrap">
+                <div class="manage-write-day">
+                    <p>작성일</p>
+                    <input class="selector" placeholder="날짜를 선택해 주세요"></input><input type="checkbox"><span>오늘 날짜로 변경</span>
+                </div>
                 <div class="manage-write-title">
                     <p>제목</p>
                     <input type="text" placeholder="제목을 입력해 주세요">
@@ -282,9 +288,11 @@
         </div>
     </footer>
     <!-- 메인 푸터 끝 --> 
+    
 
     
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/flatpickr.js"></script>
     <script src='js/script.js'></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script type="text/javascript">
@@ -300,6 +308,12 @@
                 el: '.swiper-pagination',
                 clickable: true,
             }
+        });
+    </script>
+    <script>
+        $(".selector").flatpickr({
+            enableTime: false,
+            dateFormat: "Y-m-d",
         });
     </script>
 </body>
