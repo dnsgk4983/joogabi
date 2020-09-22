@@ -1340,6 +1340,7 @@ pre{
 }
 
 .t-item-wrap{
+    flex-wrap: wrap;
     margin-top: 17px;
     margin-bottom: 45px;
     margin-left: 10px;
@@ -1527,6 +1528,16 @@ pre{
     }
     .col-25.wr-re{
         widows: 20%;
+    }
+    .top-date-box p{
+        font-size: 1em;
+    }
+    .t-item-option{
+        width: 123px;
+        font-size: .7em;
+    }
+    .mw530-mg-t5{
+        margin-top: 5px;
     }
 }
 @media(max-width:415px){
