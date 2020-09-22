@@ -65,6 +65,9 @@ input:focus{
 .col-50p{
     width: 50%;
 }
+.col-25{
+    width: 25%;
+}
 .pd--24{
     padding: 0 24px;
 }
@@ -1374,6 +1377,7 @@ pre{
 }
 
 .more-btn{
+    margin-top: 40px;
     text-align: center;
 }
 .more-btn button{
@@ -1410,23 +1414,36 @@ pre{
     border-radius: 100%;
     text-align: center;
     margin: 0 60px 0 40px;
+    cursor: pointer;
 }
 .ov-h{
     overflow: hidden;
 }
-.md-table {
+.md-list {
     margin-top: 36px;
 }
-.md-table > table{
-    width: 100%;
+.md-list > ul {
     text-align: center;
     border-top: 1px solid #878787;
     border-bottom: 1px solid #878787;
 }
-.md-table > table > thead > tr {
-    height: 35px;
-    line-height: 35px;
+.md-list > ul > li{
+    height: 36px;
+    border-bottom: 1px solid #878787;
+}
+.md-list > ul > li:last-child{
+    border: none;
+}
+.md-list > ul > li p{
+    font-size: .95em;
+    color: #939393;
+}
+.md-list > ul > li.md-list-fx{
     border-bottom: 2px solid #878787;
+}
+.md-list > ul > li.md-list-fx p{
+    font-weight: 600;
+    color: #000;
 }
 
 
@@ -1473,6 +1490,10 @@ pre{
     }
     .wp-m{
         margin-top: 30px;
+    }
+    .md-list > ul > li p{
+        font-size: .8em;
+        color: #939393;
     }
 }
 @media(max-width:415px){
