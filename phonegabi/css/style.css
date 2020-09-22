@@ -1693,12 +1693,18 @@ pre{
         padding: 0 12px;
     }
     .col-100.c-info.m-c-mid.pd--25{
-        padding: 0 12px;
+        padding: 16px 12px 20px;
     }
     .unit-area > ul > li > img {
         width: 24px;
         font-size: .95em;
         margin-right: 3px;
+    }
+    .m-c-top > .c-name{
+        font-size: .8em;
+    }
+    .c-right > img{
+        margin-left: 3px;
     }
 }
 @media(max-width:415px){
