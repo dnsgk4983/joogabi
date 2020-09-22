@@ -1729,6 +1729,12 @@ pre{
     .unit-sub > p{
         font-size: .8em;
     }
+    .cp-check-box > span{
+        margin-right: 56px;
+    }
+    .cp-check-box > input{
+        margin: 5px 6px 5px 0;
+    }
 }
 @media(max-width:415px){
     .ft-conts.flex-box>.ft-line:nth-child(6){
