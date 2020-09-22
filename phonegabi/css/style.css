@@ -1491,6 +1491,12 @@ pre{
     .wp-m{
         margin-top: 30px;
     }
+    .col-60 > p{
+        font-size: .75em;
+    }
+    .bd-b1 > .col-40 > p{
+        font-size: .75em;
+    }
     .md-list > ul > li p{
         font-size: .8em;
         color: #939393;
