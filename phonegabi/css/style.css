@@ -1367,6 +1367,9 @@ pre{
     height: 1px;
     margin-bottom: 15px;
 }
+.t-check.flex-box{
+    flex-wrap: wrap;
+}
 .t-c{
     margin-right: 45px;
     margin-bottom: 30px;
@@ -1503,6 +1506,9 @@ pre{
     .md-list > ul > li p{
         font-size: .8em;
         color: #939393;
+    }
+    .md-name{
+        font-size: .8em;
     }
 }
 @media(max-width:415px){

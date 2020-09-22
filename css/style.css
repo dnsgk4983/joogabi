@@ -3787,13 +3787,14 @@ ul.tab-3 > li > p:nth-child(2){
     display: flex;
 }
 .write-attach-cont {
+    position: relative;
     margin-right: 8px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 .write-attach-cont > img {
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .write-attach-cont p{
     font-size: 12px;
@@ -5294,4 +5295,13 @@ ul.tab > li:nth-child(5){
 }
 .tab-wrap > a > input{
     display: none;
+}
+
+
+/* 단가표 관리 닫기버튼 추가 0922 */
+.wr-close{
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
