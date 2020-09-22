@@ -1226,10 +1226,10 @@ pre{
 .left-btn > img, .right-btn > img {
     height: 16px;
 }
-.left-btn{
+.left-btn > img{
     margin-right: 4px;
 }
-.right-btn{
+.right-btn > img{
     margin-left: 4px;
 }
 .top-date-box{
@@ -1536,7 +1536,7 @@ pre{
         widows: 17%;
     }
     .top-date-box p{
-        font-size: 1em;
+        font-size: .95em;
     }
     .t-item-option{
         width: 123px;
