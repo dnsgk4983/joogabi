@@ -1215,12 +1215,16 @@ pre{
     padding-bottom: 15px;
     justify-content: center;
 }
-.top-date > i {
-    font-size: 20px;
-    background: #999999;
+.left-btn, .right-btn{
+    background: #999;
+    width: 24px;
+    height: 24px;
     border-radius: 100%;
-    color: #fff;
-    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+}
+.left-btn > img, .right-btn > img {
+    height: 16px;
 }
 .top-date-box{
     margin: 0 50px;
@@ -1323,10 +1327,16 @@ pre{
     border-radius: 100%;
     color: #3e5bc7;
     text-align: center;
-    line-height: 20px;
+    line-height: 22px;
     position: absolute;
     top: 5px;
     right: 5px;
+    cursor: pointer;
+}
+.t-close > img{
+    display: block;
+    margin: 5px auto 5px 5px;
+    width: .8em;
 }
 
 .t-item-wrap{
@@ -1345,8 +1355,10 @@ pre{
     text-align: center;
     margin-right: 5px;
 }
-.t-item-option > p > span{
+.t-item-option > p > span > img {
+    width: .8em;
     margin-left: 10px;
+    cursor: pointer;
 }
 .t-item-t{
     padding-top: 25px;
@@ -1389,7 +1401,7 @@ pre{
     color: #303030;
     font-size: 1em;
     border-radius: 5px;
-    width: 80%;
+    width: 100%;
     height: 45px;
 }
 .t-chart > #chartdiv{
@@ -1504,11 +1516,17 @@ pre{
         font-size: .75em;
     }
     .md-list > ul > li p{
-        font-size: .8em;
+        font-size: .75em;
         color: #939393;
     }
     .md-name{
         font-size: .8em;
+    }
+    .col-25.wr-md{
+        width: 30%;
+    }
+    .col-25.wr-re{
+        widows: 20%;
     }
 }
 @media(max-width:415px){
