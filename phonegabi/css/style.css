@@ -1445,6 +1445,9 @@ pre{
     font-weight: 600;
     color: #000;
 }
+[class*=" xi-"], [class^=xi-]{
+    font-family: 'xeicon';
+}
 
 
 @media (min-width:320px) and (max-width:530px){
