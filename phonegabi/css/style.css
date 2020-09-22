@@ -1539,7 +1539,7 @@ pre{
 }
 
 .unit-list{
-    margin-top: 27px;
+    padding-top: 27px;
 }
 .unit-list > p{
     font-size: .95em;
@@ -1688,6 +1688,17 @@ pre{
     }
     .search-box button > img{
         width: 23px;
+    }
+    .col-100.flex-side.pd--25{
+        padding: 0 12px;
+    }
+    .col-100.c-info.m-c-mid.pd--25{
+        padding: 0 12px;
+    }
+    .unit-area > ul > li > img {
+        width: 24px;
+        font-size: .95em;
+        margin-right: 3px;
     }
 }
 @media(max-width:415px){
