@@ -4562,6 +4562,7 @@ footer{
     top: 18px;
     right: 17px;
     cursor: pointer;
+    z-index: 999999;
 }
 .modal-box{
     display: block;
