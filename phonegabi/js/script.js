@@ -19,7 +19,7 @@ $(function(){
       $(this).addClass('on');
     });
     // 단가표게시판
-    var unitCount = $('.unit-area > ul > li');
+    var unitCount = $('.unit-area > ul > li:not(:last-child)');
     unitCount.click(function(){
       unitCount.removeClass('active');
       $(this).addClass('active');

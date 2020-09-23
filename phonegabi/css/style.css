@@ -95,6 +95,12 @@ input:focus{
 .mg-b13{
     margin-bottom: .95em;
 }
+.pt-13{
+    font-size: .95em;
+}
+.pt-14{
+    font-size: 1em;
+}
 /* header */
 #layout{
     width: 100%;
@@ -1625,6 +1631,38 @@ pre{
 }
 .cp-check-box > span{
     margin-right: 40px;
+}
+.compare--section{
+    margin-top: 3.2%;
+    position: relative;
+}
+.pc-pd{
+    padding-top: 4.6%;
+}
+.pc-checkbox{
+    margin-top: 3.05%;
+}
+.pc-checkbox > .flex-box > span{
+    color: #999999;
+    margin-left: 4.8%;
+}
+.compare--section > .comp-check{
+    padding-bottom: 6.8%;
+}
+.pc--slide{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cccccc;
+    text-align: center;
+    line-height: 30px;
+    background: #fff;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    cursor: pointer;
 }
 
 @media (min-width:320px) and (max-width:530px){

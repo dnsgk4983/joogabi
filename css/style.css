@@ -4743,6 +4743,7 @@ footer{
     font-weight: 600;
     font-size: 14px;
 }
+
 .stf-input{
     width: 67px;
     height: auto;
@@ -4777,6 +4778,17 @@ footer{
 .stf-set{
     width: 216px;
     height: auto;
+}
+.stf-set > select{
+    -moz-appearance:none; /* Firefox */ 
+    -webkit-appearance:none; /* Safari and Chrome */ 
+    appearance:none;
+    background: url(../images/ico_select_down.png)no-repeat;
+    background-position: 150px center;
+    width: 175px;
+    height: 30px;
+    padding-left: 10px;
+    color: #999999;
 }
 .stf-tb > ul > li.selected{
     background: #f6f8ff;
