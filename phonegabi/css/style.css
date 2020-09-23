@@ -1664,7 +1664,23 @@ pre{
     margin: 0 auto;
     cursor: pointer;
 }
+.pc--option{
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+.pc--option button{
+    padding: 5px;
+    background: #999999;
+    border-radius: 3px;
+    color: #fff;
+    border: none;
+}
+.pc--option button img{
+    width: 9px;
+    height: 9px;
+}
 
+.pc
 @media (min-width:320px) and (max-width:530px){
     .cp-conts-info > h3{
         font-size: .9em;
