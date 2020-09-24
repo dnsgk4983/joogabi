@@ -54,6 +54,11 @@ select{
 select::-ms-expand {
     display:none;
 }
+select:active,
+select:visited,
+select:focus{
+    outline: none;
+}
 
 input:active,
 input:visited,
@@ -1955,6 +1960,9 @@ pre{
     }
     .rating{
         padding: 1.5% 2%;
+    }
+    .comp-check .col-25{
+        width: 34%;
     }
 }
 @media(max-width:415px){
