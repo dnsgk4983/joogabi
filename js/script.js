@@ -443,8 +443,3 @@ $(function(){
     });
 });
 
-// 회사정보 수정
-var check = $("input[type='checkbox']");
-check.click(function(){
-	$(".exposurr p").toggle();
-});
