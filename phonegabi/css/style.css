@@ -1990,7 +1990,10 @@ pre{
     margin-right: 2.4%;
 }
 .m-tc-img a{
+    width: 80%;
+    text-overflow: ellipsis;
     color: #494949;
+    overflow: hidden;
 }
 .m-tab-2{
     margin-top: 0;
