@@ -51,7 +51,7 @@
             </div>
             <div class="row pd--24 bg-white compare--section">
                 <div class="comp-check">
-                    <p class="pc-pd pt-13">제조사별</p>
+                    <p class="pc-pd pt-13 pw-600">제조사별</p>
                     <div class="pc-checkbox flex-side">
                         <div class="flex-box col-25">
                             <input type="checkbox">
@@ -69,6 +69,50 @@
                             <input type="checkbox">
                             <span class="pt-14">기타</span>
                         </div>
+                    </div>
+                </div>
+                <div class="comp-op">
+                    <div class="comp-pd-i">
+                        <p class="pt-13 pw-600">상품 상세검색</p>
+                        <div class="comp-select flex-box">
+                            <select name="area" id="my_area">
+                                <option value="1">지역을 선택해 주세요</option>
+                                <option value="seoul">서울</option>
+                            </select>
+                            <button type="button" class="pt-14">
+                                추가
+                            </button>
+                        </div>
+                    </div>
+                    <div class="comp-sc-md">
+                        <p class="pt-13 pw-600">모델검색</p>
+                        <div class="comp-select">
+                            <select name="model" id="my_model">
+                                <option value="1">제조사를 선택해 주세요</option>
+                                <option value="samsung">삼성</option>
+                            </select>
+                            <select name="series" id="my_series">
+                                <option value="1">시리즈를 선택해 주세요</option>
+                                <option value="galaxy">갤럭시</option>
+                            </select>
+                            <select name="type" id="my_type">
+                                <option value="1">세부유형을 선택해 주세요</option>
+                                <option value="2">세부유형을 선택해 주세요</option>
+                            </select>
+                            <div class="space-select flex-box">
+                                <select name="space" id="my_space">
+                                    <option value="1">용량을 선택해 주세요</option>
+                                    <option value="2">256GB</option>
+                                </select>
+                                <button type="button">추가</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-box flex-box">
+                        <input type="search" placeholder="업체명을 입력해 주세요">
+                        <button type="button">
+                            <img src="images/ico_search.png" alt="검색">
+                        </button>
                     </div>
                 </div>
                 <div class="pc--slide">

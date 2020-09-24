@@ -118,7 +118,7 @@
                 <div class="revice-tabs-line"></div>
                 <div class="revice-tabs">
                     <ul>
-                        <li>
+                        <li class="r-if">
                             <a href="revice-info.html">
                                 <div class="image-wrap">
                                     <img src="images/revice/ico_user.png" alt="유저아이콘">
@@ -126,7 +126,7 @@
                                 <p>회원정보 수정</p>
                             </a>
                         </li>
-                        <li>
+                        <li class="r-dm">
                             <a href="board-manage.html">
                                 <div class="image-wrap">
                                     <img src="images/revice/ico_unit.png" alt="단가표 관리">
@@ -134,7 +134,7 @@
                                 <p>단가표 관리</p>
                             </a>
                         </li>
-                        <li>
+                        <li class="r-ci">
                             <a href="revice-company-info.html">
                                 <div class="image-wrap">
                                     <img src="images/revice/ico_company.png" alt="회사정보 수정">
@@ -142,7 +142,7 @@
                                 <p>회사정보 수정</p>
                             </a>
                         </li>
-                        <li>
+                        <li class="r-ac">
                             <a href="revice-added-company.html">
                                 <div class="image-wrap">
                                     <img src="images/revice/ico_added.png" alt="내가 추가한 업체">
@@ -150,7 +150,7 @@
                                 <p>내가 추가한 업체</p>
                             </a>
                         </li>
-                        <li>
+                        <li class="r-iq">
                             <a href="revice-inquire-board.html">
                                 <div class="image-wrap">
                                     <img src="images/revice/ico_chat.png" alt="문의하기">
@@ -168,29 +168,40 @@
                         <p>회사정보</p>
                     </div>
                     <div class="revice-company-info-wrap">
-                        <div class="revice-company-name">
+                        <div class="revice-company-name flex-base">
                             <p>업체명</p>
-                            <div class="cp-name">
+                            <div class="cp-name cp-input">
                                 <input type="text" placeholder="한국GMC글로벌">
                             </div>
                         </div>
-                        <div class="revice-company-area">
+                        <div class="revice-company-area flex-base">
                             <p>소재지</p>
-                            <div class="cp-area">
+                            <div class="cp-area cp-input">
                                 <input type="text" placeholder="서울시 금천구 디지털 1로 168 우림라이온스 벨리 C동 305호">
                             </div>
                         </div>
-                        <div class="revice-company-phone">
+                        <div class="revice-company-phone flex-base">
                             <p>연락처 / 업무시간</p>
-                            <div class="cp-phone">
+                            <div class="cp-phone cp-input">
                                 <input type="tel" placeholder="070-4195-0335">
                             </div>
-                            <input type="text" placeholder="업무시간을 설정해 주세요">
+                            <div class="cp-input cp-place-g cp-work">
+                                <input type="text" placeholder="업무시간을 설정해 주세요">
+                            </div>
                         </div>
-                        <div class="revice-company-talk">
+                        <div class="revice-company-talk flex-base">
                             <p>카카오톡</p>
-                            <div class="cp-talk">
+                            <div class="cp-talk cp-input">
                                 <input type="text" placeholder="korea_gmcgroup">
+                            </div>
+                        </div>
+                        <div class="cp-sortation flex-base">
+                            <p>업체구분</p>
+                            <div class="cp-input">
+                                <select name="" id="">
+                                    <option value="1">업체 유형을 선택해 주세요</option>
+                                    <option value="2">업체 유형을 선택해 주세요</option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -198,12 +209,12 @@
                     <div class="revice-company-intro">
                         <p>회사소개</p>
                     </div>
-                    <div class="revice-company-intro-wrap">
-                        <div class="cp-intro-title">
+                    <div class="revice-company-intro-wrap cp-input">
+                        <div class="cp-intro-title cp-input-p">
                             <p>소개제목</p>
                             <input type="text" placeholder="10자 이내로 작성해 주세요">
                         </div>
-                        <div class="cp-intro-item">
+                        <div class="cp-intro-item cp-input-p">
                             <p>소개내용</p>
                             <input type="text" placeholder="30자 이내로 작성해 주세요">
                         </div>

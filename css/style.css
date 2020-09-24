@@ -47,11 +47,21 @@
     background-position: right center;
   }
   select::-ms-expand { display:none; }
+  select:active,
+  select:visited,
+  select:focus{
+      outline: 0;
+  }
+  textarea:active,
+  textarea:visited,
+  textarea:focus{
+    outline: 0;
+  }
 
     input:active,
     input:visited,
     input:focus{
-        outline: none;
+    outline: none;
     border: none;
     border-radius: none;
   }
@@ -3014,7 +3024,7 @@ section{
     color: #a2a2a2;
 }
 .revice-tabs-line{
-    width: 1278px;
+    width: 1277px;
     margin: 0 auto;
     height: 2px;
     background: #3e5bc7;
@@ -3047,8 +3057,8 @@ section{
 .revice-tabs > ul > li.active::before{
     content: "";
     background: #3e5bc7;
-    width: 255.6px;
-    height: 3px;
+    width: 100%;
+    height: 2px;
     position: absolute;
     top: -28px;
     left: 0;
@@ -3876,16 +3886,13 @@ ul.tab-3 > li > p:nth-child(2){
     margin-left: 10px;
 }
 .revice-company-info-wrap > div > p {
-    width: 177px;
+    width: 175px;
     font-size: 14.5px;
     color: #878787;
     font-weight: 600;
 }
-.revice-company-name{
-    display: flex;
-    align-items: baseline;
-}
-.cp-name > input{
+
+.cp-input > input{
     width: 542px;
     height: 45px;
     line-height: 45px;
@@ -3894,77 +3901,16 @@ ul.tab-3 > li > p:nth-child(2){
     margin-bottom: 15px;
     padding-left: 15px;
 }
-.cp-name > input::placeholder{
+.cp-input > input::placeholder{
     font-size: 14.5px;
     font-weight: 600;
     color: #000;
 }
-.revice-company-area{
+.flex-base{
     display: flex;
     align-items: baseline;
 }
-.cp-area > input{
-    width: 542px;
-    height: 45px;
-    line-height: 45px;
-    border: 1px solid #dbdbdb;
-    box-sizing: border-box;
-    margin-bottom: 15px;
-    padding-left: 15px;
-}
-.cp-area > input::placeholder {
-    font-size: 14.5px;
-    font-weight: 600;
-    color: #000;
-}
-.revice-company-phone{
-    display: flex;
-    align-items: baseline;
-}
-.cp-phone > input{
-    width: 542px;
-    height: 45px;
-    line-height: 45px;
-    border: 1px solid #dbdbdb;
-    box-sizing: border-box;
-    margin-bottom: 15px;
-    padding-left: 15px;
-}
-.cp-phone > input::placeholder{
-    font-size: 14.5px;
-    font-weight: 600;
-    color: #000;
-}
-.revice-company-phone > input{
-    width: 543px;
-    height: 45px;
-    border: 1px solid #dbdbdb;
-    box-sizing: border-box;
-    padding-left: 15px;
-    margin-left: 6px;
-}
-.revice-company-phone > input::placeholder{
-    font-size: 14.5px;
-    color: #878787;
-    font-weight: 600;
-}
-.revice-company-talk{
-    display: flex;
-    align-items: baseline;
-}
-.cp-talk > input{
-    width: 542px;
-    height: 45px;
-    line-height: 45px;
-    border: 1px solid #dbdbdb;
-    box-sizing: border-box;
-    padding-left: 15px;
-}
-.cp-talk > input::placeholder {
-    font-size: 14.5px;
-    font-weight: 600;
-    color: #000;
-}
+
 
 .revice-company-line{
     width: 1278px;
@@ -3988,13 +3934,7 @@ ul.tab-3 > li > p:nth-child(2){
     color: #878787;
     font-weight: 600;
 }
-.revice-company-intro-wrap input{
-    width: 542px;
-    height: 45px;
-    border: 1px solid #dbdbdb;
-    box-sizing: border-box;
-    padding-left: 15px;
-}
+
 .revice-company-intro-wrap input::placeholder{
     font-size: 14.5px;
     color: #878787;
@@ -4513,6 +4453,7 @@ footer{
     /* z-index: 99999; */
     background: #f9fafb;
     transition: all 0s;
+    padding-bottom: 26px;
 }
 .accordion-wrap{
     width: 1203px;
@@ -5442,4 +5383,28 @@ ul.tab > li:nth-child(5){
     font-size: 14.5px;
     font-weight: 600;
     color: #000;
+}
+
+.cp-work{
+    margin-left: 6px;
+}
+.cp-place-g input::placeholder{
+    color: #878787;
+}
+.cp-input-p input{
+    width: 1090px;
+    height: 45px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+.cp-sortation > .cp-input > select{
+    width: 542px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    padding-left: 15px;
+    font-size: 14.5px;
+    color: #878787;
 }

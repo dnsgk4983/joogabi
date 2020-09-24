@@ -405,41 +405,41 @@ $(function(){
     $('.revice-tabs > ul > li').mouseleave(function(){
       $(this).removeClass('active');
     });
-    $('.revice-tabs > ul > li:nth-child(1)').mouseover(function(){
-        $('.revice-tabs > ul > li:nth-child(1) img').attr("src","images/revice/ico_user_b.png");
+    $('.revice-tabs > ul > li.r-if').mouseover(function(){
+        $('.revice-tabs > ul > li.r-if img').attr("src","images/revice/ico_user_b.png");
         // $('.revice-tabs > ul > li:nth-child(1)').addClass('active');
     });
-    $('.revice-tabs > ul > li:nth-child(1)').mouseleave(function(){
-        $('.revice-tabs > ul > li:nth-child(1) img').attr("src","images/revice/ico_user.png");
+    $('.revice-tabs > ul > li.r-if').mouseleave(function(){
+        $('.revice-tabs > ul > li.r-if img').attr("src","images/revice/ico_user.png");
         // $('.revice-tabs > ul > li:nth-child(1)').removeClass('active');
     });
     
-    $('.revice-tabs > ul > li:nth-child(2)').mouseover(function(){
-        $('.revice-tabs > ul > li:nth-child(2) img').attr("src","images/revice/ico_unit_b.png")
+    $('.revice-tabs > ul > li.r-dm').mouseover(function(){
+        $('.revice-tabs > ul > li.r-dm img').attr("src","images/revice/ico_unit_b.png")
     });
-    $('.revice-tabs > ul > li:nth-child(2)').mouseleave(function(){
-        $('.revice-tabs > ul > li:nth-child(2) img').attr("src","images/revice/ico_unit.png");
-    });
-    
-    $('.revice-tabs > ul > li:nth-child(3)').mouseover(function(){
-        $('.revice-tabs > ul > li:nth-child(3) img').attr("src","images/revice/ico_company_b.png")
-    });
-    $('.revice-tabs > ul > li:nth-child(3)').mouseleave(function(){
-        $('.revice-tabs > ul > li:nth-child(3) img').attr("src","images/revice/ico_company.png");
+    $('.revice-tabs > ul > li.r-dm').mouseleave(function(){
+        $('.revice-tabs > ul > li.r-dm img').attr("src","images/revice/ico_unit.png");
     });
     
-    $('.revice-tabs > ul > li:nth-child(4)').mouseover(function(){
-        $('.revice-tabs > ul > li:nth-child(4) img').attr("src","images/revice/ico_added_b.png")
+    $('.revice-tabs > ul > li.r-ci').mouseover(function(){
+        $('.revice-tabs > ul > li.r-ci img').attr("src","images/revice/ico_company_b.png")
     });
-    $('.revice-tabs > ul > li:nth-child(4)').mouseleave(function(){
-        $('.revice-tabs > ul > li:nth-child(4) img').attr("src","images/revice/ico_added.png");
+    $('.revice-tabs > ul > li.r-ci').mouseleave(function(){
+        $('.revice-tabs > ul > li.r-ci img').attr("src","images/revice/ico_company.png");
     });
     
-    $('.revice-tabs > ul > li:nth-child(5)').mouseover(function(){
-        $('.revice-tabs > ul > li:nth-child(5) img').attr("src","images/revice/ico_chat_b.png")
+    $('.revice-tabs > ul > li.r-ac').mouseover(function(){
+        $('.revice-tabs > ul > li.r-ac img').attr("src","images/revice/ico_added_b.png")
     });
-    $('.revice-tabs > ul > li:nth-child(5)').mouseleave(function(){
-        $('.revice-tabs > ul > li:nth-child(5) img').attr("src","images/revice/ico_chat.png");
+    $('.revice-tabs > ul > li.r-ac').mouseleave(function(){
+        $('.revice-tabs > ul > li.r-ac img').attr("src","images/revice/ico_added.png");
+    });
+    
+    $('.revice-tabs > ul > li.r-iq').mouseover(function(){
+        $('.revice-tabs > ul > li.r-iq img').attr("src","images/revice/ico_chat_b.png")
+    });
+    $('.revice-tabs > ul > li.r-iq').mouseleave(function(){
+        $('.revice-tabs > ul > li.r-iq img').attr("src","images/revice/ico_chat.png");
     });
 });
 
