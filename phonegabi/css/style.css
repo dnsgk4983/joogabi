@@ -172,10 +172,10 @@ input:focus{
     margin: 0 auto;
     padding: 32px 24px 20px;
 }
-.logo img{
+.m-logo img{
     width: 85px;
 }
-.menu{
+.m-menu{
     width: 30px;
     height: 30px;
     background: url(../images/ico_menu.png)no-repeat #3e5bc7;
@@ -183,7 +183,7 @@ input:focus{
     background-position: center;
     border-radius: 100%;
 }
-.menu > ul {
+.m-menu > ul {
     display: none;
 }
 /* section */
