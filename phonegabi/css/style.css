@@ -1953,6 +1953,9 @@ pre{
     .pc--list .col-20{
         width: 33%;
     }
+    .rating{
+        padding: 1.5% 2%;
+    }
 }
 @media(max-width:415px){
     .ft-conts.flex-box>.ft-line:nth-child(6){
