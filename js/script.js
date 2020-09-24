@@ -441,5 +441,12 @@ $(function(){
     $('.revice-tabs > ul > li.r-iq').mouseleave(function(){
         $('.revice-tabs > ul > li.r-iq img').attr("src","images/revice/ico_chat.png");
     });
+    
+    $('.revice-tabs > ul > li.r-stf').mouseover(function(){
+      $('.revice-tabs > ul > li.r-stf img').attr("src","images/revice/ico_staff_b.png")
+  });
+  $('.revice-tabs > ul > li.r-stf').mouseleave(function(){
+      $('.revice-tabs > ul > li.r-stf img').attr("src","images/revice/ico_staff.png");
+  });
 });
 
