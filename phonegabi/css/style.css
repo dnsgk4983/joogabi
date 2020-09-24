@@ -2144,6 +2144,10 @@ pre{
     .m-tab > li > .m-tab-box{
         height: 110px;
     }
+    .mobile-map{
+        height: 25em;
+        line-height: 25em;
+    }
 }
 @media(max-width:415px){
     .ft-conts.flex-box>.ft-line:nth-child(6){
@@ -2166,5 +2170,9 @@ pre{
 @media(max-width: 330px){
     .m-tab > li > .m-tab-box{
         height: 90px;
+    }
+    .mobile-map{
+        height: 20em;
+        line-height: 20em;
     }
 }
