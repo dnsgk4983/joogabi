@@ -1893,11 +1893,10 @@ pre{
     color: #696969;
 }
 .m-cp-info-wrap{
-    margin-top: 4.7%;
-    padding-bottom: 4.7%;
+    padding: 4.7% 24px;
 }
 .m-cp-info-unit{
-    margin-top: 3%;
+    padding-top: 3%;
 }
 .m-cp-info{
     margin-top: 3.1%;
@@ -1925,6 +1924,10 @@ pre{
 }
 .m-tab > li > p{
     color: #696969;
+    width: 90%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .m-tab-title{
     margin-top: 4%;
@@ -2116,6 +2119,12 @@ pre{
     }
     .comp-check .col-25{
         width: 34%;
+    }
+    .m-tab > li > p{
+        width: 90%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
 }
 @media(max-width:415px){
