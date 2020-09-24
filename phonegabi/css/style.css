@@ -76,8 +76,17 @@ input:focus{
 .col-25{
     width: 25%;
 }
+.col-30{
+    width: 30%;
+}
 .col-40{
     width: 40%;
+}
+.col-70{
+    width: 70%;
+}
+.col-80{
+    width: 80%;
 }
 .col-100{
     width: 100%;
@@ -87,6 +96,9 @@ input:focus{
 }
 .pd--25{
     padding: 0 25px;
+}
+.pdud--40{
+    padding: 1% 24px 6%;
 }
 .pd-b20{
     padding-bottom: 20px;
@@ -106,14 +118,29 @@ input:focus{
 .mg-b13{
     margin-bottom: .95em;
 }
+.pt-11{
+    font-size: .8em;
+}
 .pt-13{
     font-size: .95em;
+}
+.pt-13b{
+    font-size: .95em;
+    font-weight: 600;
 }
 .pt-14{
     font-size: 1em;
 }
 .pt-15{
     font-size: 1.1em;
+}
+.pt-15b{
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.pt-18b{
+    font-size: 1.3em;
+    font-weight: 600;
 }
 .pw-600{
     font-weight: 600;
@@ -417,11 +444,11 @@ input:focus{
 .condition-right > img{
     cursor: pointer;
 }
-.cd-wrap{
+.m-cd-wrap{
     display: flex;
     align-items: flex-end;
 }
-.model-info{
+.m-md-info{
     margin-left: 20px;
 }
 .model-name{
@@ -429,15 +456,15 @@ input:focus{
     font-weight: 600;
     margin-bottom: 14px;
 }
-.model-info > p {
+.m-md-info > p {
     font-size: .95em;
     margin-bottom: 11px;
     color: #939393;
 }
-.model-info > p > img{
+.m-md-info > p > img{
     margin-right: 5px;
 }
-.model-info > p:last-child{
+.m-md-info > p:last-child{
     margin-bottom: 0;
 }
 .iphone-XS, .galaxy-note-s20, .galaxy-s9, .galaxy-s10, .iphone-SE{
@@ -545,7 +572,7 @@ input:focus{
 
 
 
-.diller{
+.m-diller{
     width: 1.9em;
     height: 16px;
     line-height: 16px;
@@ -553,13 +580,13 @@ input:focus{
     border-radius: 3px;
     margin-right: 2px;
 }
-.diller > p {
+.m-diller > p {
     font-size: 11px;
     color: #fff;
     text-align: center;
 }
 
-.export{
+.m-export{
     width: 1.9em;
     height: 16px;
     line-height: 16px;
@@ -567,12 +594,12 @@ input:focus{
     border-radius: 3px;
     margin-right: 2px;
 }
-.export > p{
+.m-export > p{
     color: #fff;
     font-size: 11px;
     text-align: center;
 }
-.certification{
+.m-certification{
     width: 1.9em;
     height: 16px;
     background: #3e5bc7;
@@ -580,12 +607,12 @@ input:focus{
     margin-right: 2px;
     line-height: 16px;
 }
-.certification > p {
+.m-certification > p {
     color: #fff;
     font-size: 11px;
     text-align: center;
 }
-.deputy{
+.m-deputy{
     width: 3.63em;
     height: 16px;
     line-height: 16px;
@@ -593,7 +620,7 @@ input:focus{
     border-radius: 3px;
     margin-right: 2px;
 }
-.deputy > p {
+.m-deputy > p {
     font-size: 11px;
     text-align: center;
     color: #fff;
@@ -677,10 +704,10 @@ input:focus{
 }
 
 /* 회원가입 페이지 영역 */
-.login-title { 
+.lg-title { 
     padding-top: 1.23em;
 }
-.login-title > p {
+.lg-title > p {
     font-size: 18px;
     font-weight: 600;
 }
@@ -896,7 +923,7 @@ input:focus{
 .flex-box.step{
     align-items: flex-end;
 }
-.rgi-step > .step > img{
+.rgi-step > .m-step > img{
     width: 1.4em;
 }
 .step-wrap{
@@ -1119,14 +1146,14 @@ pre{
     font-size: .85em;
 }
 
-.rgi-any > form > select{
+.rgi-any > .rgi-any-wrap > select{
     width: 100%;
     height: 45px;
     border-color: #dbdbdb;
     padding-left: 14px;
     margin-bottom: 12px;
 }
-.rgi-any > form > select.mg0{
+.rgi-any > .rgi-any-wrap > select.mg0{
     margin: 0;
 }
 
@@ -1840,6 +1867,132 @@ pre{
 .comp-check.flex-box{
     flex-wrap: wrap;
 }
+/* 업체상세영역 */
+.cpi-line-wrap{
+    padding:  5.3% 24px 3%;
+}
+.cpi--line{
+    width: 100%;
+    height: 1px;
+    background: #dbdbdb;
+}
+.cpi--item-wrap{
+    padding-bottom: 3.8%;
+}
+.cpi--item img{
+    width: 1.4em;
+    margin-right: 9%;
+}
+.cpi--item{
+    margin-bottom: 1.7%;
+}
+.cpi--item > .col-20 > p{
+    color: #a2a2a2;
+}
+.cpi--item > .col-80 > p{
+    color: #696969;
+}
+.m-cp-info-wrap{
+    margin-top: 4.7%;
+    padding-bottom: 4.7%;
+}
+.m-cp-info-unit{
+    margin-top: 3%;
+}
+.m-cp-info{
+    margin-top: 3.1%;
+    border: 1px solid #dbdbdb;
+    padding: 3% 1.5%;
+    line-height: 1.6em;
+}
+.m-cp-info p{
+    color: #939393;
+}
+.m-tab{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    padding: 0 24px;
+}
+.m-tab > li{
+    width: 32%;
+}
+.m-tab > li > .m-tab-box{
+    background: #f1f1f1;
+    width: 100%;
+    height: 130px;
+}
+.m-tab > li > p{
+    color: #696969;
+}
+.m-tab-title{
+    margin-top: 4%;
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.m-tab > li.mg-b28{
+    margin-bottom: 4.5%;
+}
+.m-tc{
+    display: none;
+    background: #f9fafb;
+}
+.m-tc-wrap{
+    padding: 3.1% 24px;
+}
+.m-tc.current{
+    display: block;
+}
+.m-tc-line{
+    width: 100%;
+    height: 1px;
+    background: #dbdbdb;
+    margin: 2.2% 0;
+}
+.m-tt-sub{
+    line-height: 1.4em;
+}
+.m-tt-sub > p{
+    color: #939393;
+}
+.m-tc-btn{
+    margin: 3.4% 0 6.8%;
+}
+.m-tc-btn button{
+    background: #bfbfbf;
+    border-radius: 3px;
+    padding: .5em 1em;
+    color: #fff;
+    border: none;
+    font-size: .95em;
+    margin-right: .8%;
+}
+.m-tc-img{
+    margin-right: 1.4%;
+}
+.m-tc-img > img{
+    width: 100%;
+}
+.m-tc-imgs > .flex-box {
+    margin-top: 2%;
+}
+.m-tc-img > .flex-box{
+    margin-top: 4%;
+}
+.m-tc-img > .flex-box > img{
+    width: 1.1em;
+    margin-right: 2.4%;
+}
+.m-tc-img a{
+    color: #494949;
+}
+.m-tab-2{
+    margin-top: 0;
+    padding-top: 0;
+}
 
 @media (min-width:320px) and (max-width:530px){
     .cp-conts-info > h3{
@@ -1869,7 +2022,7 @@ pre{
     .btm-menu > ul > li{
         font-size: .8em;
     }
-    .rgi-step > .step > img{
+    .rgi-step > .m-step > img{
         width: 1em;
     }
     .step-wrap > p:first-child{

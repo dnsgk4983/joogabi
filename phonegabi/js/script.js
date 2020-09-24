@@ -1,13 +1,5 @@
 // 메뉴 호버 애니메이션
 $(function(){
-    $('.menu li:not(:nth-child(6))').mouseover(function(){
-        $(this).css('background','#3f5bc8');
-        $(this).children().css("color","#fff");
-    });
-    $('.menu li:not(:nth-child(6))').mouseleave(function(){
-        $(this).css('background','#ffffff');
-        $(this).children().css("color",'#000');
-    });
     var board = $(".trend-board-tab > ul >li");
     board.click(function(){
       board.removeClass('active');
@@ -24,7 +16,16 @@ $(function(){
       unitCount.removeClass('active');
       $(this).addClass('active');
     });
-});
+    $('.m-tab > li').on('click',function(e){
+      var mobiletab = $(this).attr('data-tab');
+        $(this).toggleClass("current");
+        $('ul.m-tab li').removeClass('current');
+        $('.m-tc').removeClass('current');
+        $(this).addClass('current');
+        $('#' + mobiletab).addClass('current');
+    })
+  });
+
 
 // 공지사항 롤링 애니메이션
 jQuery(function($)
