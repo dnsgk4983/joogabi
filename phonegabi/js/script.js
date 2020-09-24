@@ -274,49 +274,9 @@ jQuery(function($)
     });
 
     // 가격비교 페이지 영역
-    $('.compare-search-icon').click(function(){
-      $('.compare-search-icon').toggleClass('compare-close');
-      $('.compare-detail-search').slideToggle(0);
+    $('.pc--slide').click(function(){
+      $('.pc--slide').toggleClass('pc--slide-up');
+      $('.comp-op').slideToggle(0);
     });
 
-    // 마이페이지 모달
-    $('.modal-close').click(function(){
-      $('.modal-wrapper').fadeOut(0);
-    });
-    // 회사관리자 모달
-    $('.md-cp-open').click(function(){
-      $('.modal-window').fadeOut(0);
-      $('.modal-company').fadeIn(0);
-    });
-    // 회사이름 입력모달
-    $('.modal-company > .md-cp-create button').click(function(){
-      $('.modal-company').fadeOut(0);
-      $('.md-suc').fadeIn(0);
-    });
-    $('.md-user-open').click(function(){
-      $('.modal-window').fadeOut(0);
-      $('.md-user').fadeIn(0);
-    });
-    // 합류완료 모달
-    $('.md-user > .md-cp-create button').click(function(){
-      $('.md-user').fadeOut(0);
-      $('.md-join').fadeIn(0);
-    })
-    // 스태프 페이지 모달
-    $('.stf-modal-wrapper .modal-close').click(function(){
-      $(".stf-modal-bg").fadeOut(0);
-      $(".stf-modal-wrapper").fadeOut(0);
-    });
-    $(".stf-del button").click(function(){
-      $('.stf-modal-bg').fadeIn(0);
-      $('.stf-modal-wrapper').fadeIn(0);
-      $('.stf-md-del-wrap').fadeIn(0);
-      $('.stf-md-code-wrap').fadeOut(0);
-    });
-    $('.stf-btn button:last-child').click(function(){
-      $(".stf-modal-bg").fadeIn(0);
-      $(".stf-modal-wrapper").fadeIn(0);
-      $('.stf-md-code-wrap').fadeIn(0);
-      $('.stf-md-del-wrap').fadeOut(0);
-    });
 // 차트 영역

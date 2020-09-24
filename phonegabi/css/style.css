@@ -1641,9 +1641,6 @@ pre{
 .cp-check-box > input{
     margin-right: 6px;
 }
-.cp-check-box > span{
-    margin-right: 40px;
-}
 .compare--section{
     margin-top: 3.2%;
     position: relative;
@@ -1665,9 +1662,11 @@ pre{
     width: 30px;
     height: 30px;
     border: 1px solid #cccccc;
+    box-sizing: border-box;
     text-align: center;
     line-height: 30px;
-    background: #fff;
+    background: url(../images/ico_down_arrow.png)no-repeat #fff;
+    background-position: center 10px;
     border-radius: 100%;
     position: absolute;
     bottom: -15px;
@@ -1675,6 +1674,12 @@ pre{
     right: 0;
     margin: 0 auto;
     cursor: pointer;
+}
+.pc--slide.pc--slide-up{
+    background: url(../images/icon/ico_up_arrow.png)no-repeat #dedede;
+    background-size: 18px 11px;
+    background-position: center 9px;
+    border: 1px solid #dedede;
 }
 .pc--option{
     margin-top: 5%;
@@ -1790,6 +1795,8 @@ pre{
 
 .comp-op{
     margin-top: 4%;
+    padding-bottom: 7%;
+    display: none;
 }
 .comp-select select{
     width: 100%;
@@ -1824,6 +1831,9 @@ pre{
     margin-bottom: 0;
 }
 
+.comp-check.flex-box{
+    flex-wrap: wrap;
+}
 
 @media (min-width:320px) and (max-width:530px){
     .cp-conts-info > h3{
@@ -1926,9 +1936,6 @@ pre{
     }
     .unit-sub > p{
         font-size: .8em;
-    }
-    .cp-check-box > span{
-        margin-right: 56px;
     }
     .cp-check-box > input{
         margin: 5px 6px 5px 0;
