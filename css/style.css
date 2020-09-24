@@ -2190,6 +2190,8 @@ section{
     margin-right: 30px;
 } */
 .company-list-title{
+    display: flex;
+    justify-content: space-between;
     margin: 53px 0 26px 0;
 }
 .company-list-title p{
@@ -4019,10 +4021,9 @@ ul.tab-3 > li > p:nth-child(2){
     box-sizing: border-box;
     padding-left: 15px;
 }
-.cp-guide-btn {
-    margin-top: 34px;
-    margin-bottom: 134px;
-}
+/* .cp-guide-btn {
+    
+} */
 .cp-guide-btn button{
     width: 79px;
     height: 27px;
@@ -5343,4 +5344,102 @@ ul.tab > li:nth-child(5){
     position: absolute;
     top: 5px;
     right: 5px;
+}
+
+/* 0924 업체리스트 체크박스 추가 */
+.cpl-check-box > input{
+    margin-right: 7px;
+    vertical-align: -2px;
+}
+.cpl-check-box span{
+    color: #878787;
+}
+.cp-guide-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 34px;
+    margin-bottom: 134px;
+}
+
+.exposurr input[type="checkbox"] {
+    display: none;
+}
+  
+.label__on-off {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 68px;
+    height: 24px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+    background-color: #c4c4c4;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+  
+.label__on-off > * {
+    /* vertical-align: sub; */
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    font-size: 14px;
+}
+  
+.label__on-off .marble {
+    position: absolute;
+    /* top: 1px; */
+    right: 0px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #c4c4c4;
+}
+
+.label__on-off .on {
+    display: none;
+    padding-left: 32px;
+    line-height: 24px;
+}
+
+.label__on-off .off {
+    padding-left: 15px;
+    line-height: 25px;
+}
+
+.input__on-off:checked + .label__on-off {
+    background-color: #425cc7;
+}
+
+.input__on-off:checked + .label__on-off .on {
+    display: inline-block;
+}
+
+.input__on-off:checked + .label__on-off .off {
+    display: none;
+}
+
+.input__on-off:checked + .label__on-off .marble {
+    right: 44px;
+}
+
+.ex-checker{
+    display: block !important;
+    margin-left: 17px;
+    font-size: 14.5px;
+    font-weight: 600;
+    color: #000;
 }

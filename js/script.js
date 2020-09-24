@@ -442,3 +442,9 @@ $(function(){
         $('.revice-tabs > ul > li:nth-child(5) img').attr("src","images/revice/ico_chat.png");
     });
 });
+
+// 회사정보 수정
+var check = $("input[type='checkbox']");
+check.click(function(){
+	$(".exposurr p").toggle();
+});
