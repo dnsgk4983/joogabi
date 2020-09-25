@@ -2296,13 +2296,11 @@ pre{
     outline: 1px dotted #d2310e;
 }
 .nt-w-user{
-    margin-top: 3.1%;
+    margin-top: 1.2em;
 }
-.nt-w p.pt-13b:not(.nt-w-user > p.pt-13){
-    margin-top: 4.5%;
-}
-.nt-w p.pt-13b:not(.nt-w-user > p.pt-13){
-    margin-bottom: 2%;
+.nt-w-mg p.pt-13b{
+    margin-top: 1.8em;
+    margin-bottom: .95em;
 }
 .nt-w input{
     width: 85%;
