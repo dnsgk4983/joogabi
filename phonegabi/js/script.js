@@ -33,16 +33,16 @@ jQuery(function($)
     var ticker = function()
     {
         timer = setTimeout(function(){
-            $('#ticker li:first').animate( {marginTop: '-61px'}, 500, function()
+            $('#mticker li:first').animate( {marginTop: '-61px'}, 500, function()
             {
-                $(this).detach().appendTo('ul#ticker').removeAttr('style');
+                $(this).detach().appendTo('ul#mticker').removeAttr('style');
             });
             ticker();
         }, 2000);         
       };
 // 0번 이전 기능
       $(document).on('click','.prev',function(){
-        $('#ticker li:last').hide().prependTo($('#ticker')).slideDown();
+        $('#mticker li:last').hide().prependTo($('#mticker')).slideDown();
         clearTimeout(timer);
         ticker();
         if($('#pause').text() == 'Unpause'){
@@ -52,9 +52,9 @@ jQuery(function($)
   
 // 1. 클릭하면 다음 요소 보여주기... 클릭할 경우 setTimeout 을 clearTimeout 해줘야 하는데 어떻게 하지..
       $(document).on('click','.next',function(){
-            $('#ticker li:first').animate( {marginTop: '-61px'}, 400, function()
+            $('#mticker li:first').animate( {marginTop: '-61px'}, 400, function()
                     {
-                        $(this).detach().appendTo('ul#ticker').removeAttr('style');
+                        $(this).detach().appendTo('ul#mticker').removeAttr('style');
                     });
             clearTimeout(timer);
             ticker();
@@ -98,10 +98,10 @@ jQuery(function($)
   //4 마우스를 올렸을 때 기능 정지
   var tickerover = function()
   {
-    $('#ticker').mouseover(function(){
+    $('#mticker').mouseover(function(){
       clearTimeout(timer);
     });
-    $('#ticker').mouseout(function(){
+    $('#mticker').mouseout(function(){
       ticker();
     });  
   };
@@ -113,14 +113,14 @@ jQuery(function($)
 // 실시간 인기 검색 슬라이드
 jQuery(function($)
 {
-    var popticker = function()
+    var mpticker = function()
     {
         timer = setTimeout(function(){
-            $('#popticker li:first').animate( {marginTop: '-14px'}, 500, function()
+            $('#mpticker li:first').animate( {marginTop: '-14px'}, 500, function()
             {
-                $(this).detach().appendTo('ul#popticker').removeAttr('style');
+                $(this).detach().appendTo('ul#mpticker').removeAttr('style');
             });
-            popticker();
+            mpticker();
         }, 2000);         
       };
 // 0번 이전 기능
@@ -141,7 +141,7 @@ jQuery(function($)
             }
           }); // 재생정지기능 끝  
   // 3. 재생정지 함수 시작. 2와 기능 동일함.
-    var poptickerpause = function()
+    var mptickerpause = function()
   {
     $('#pause').click(function(){
       $this = $(this);
@@ -150,40 +150,40 @@ jQuery(function($)
         clearTimeout(timer);
       }
       else {
-        popticker();
+        mpticker();
         $this.text('Pause');
       }
     });
    
   };
-  poptickerpause();
+  mptickerpause();
   //3 재생정지 함수 끝
   //4 마우스를 올렸을 때 기능 정지
-  var poptickerover = function()
+  var mptickerover = function()
   {
-    $('#popticker').mouseover(function(){
+    $('#mpticker').mouseover(function(){
       clearTimeout(timer);
     });
-    $('#popticker').mouseout(function(){
-      popticker();
+    $('#mpticker').mouseout(function(){
+      mpticker();
     });  
   };
-  poptickerover();
+  mptickerover();
   // 4 끝
-    popticker();
+    mpticker();
     
 });
 
     // 주요모델 슬라이드
-    $('.iphone-11pro-max > .condition-left > img').click(function(){
-        $('.condition-conts').fadeOut(0);
+    $('.iphone-11pro-max > .cd-left > img').click(function(){
+        $('.cd-conts').fadeOut(0);
         $('.iphone-SE').fadeIn(0);
         $('.iphone-SE').css('display','flex');
         $('.chart-wrap').fadeOut(0);
         $('.iphone-SE-wrap').fadeIn(0);
     });
-    $('.iphone-11pro-max > .condition-right > img').click(function(){
-      $('.condition-conts').fadeOut(0);
+    $('.iphone-11pro-max > .cd-right > img').click(function(){
+      $('.cd-conts').fadeOut(0);
       $('.iphone-XS').fadeIn(0);
       $('.iphone-XS').css('display','flex');
       $('.chart-wrap').fadeOut(0);
@@ -191,15 +191,15 @@ jQuery(function($)
     });
     // iphone-11pro-max
 
-    $('.iphone-XS > .condition-left > img').click(function(){
-      $('.condition-conts').fadeOut(0);
+    $('.iphone-XS > .cd-left > img').click(function(){
+      $('.cd-conts').fadeOut(0);
       $('.iphone-11pro-max').fadeIn(0);
       $('.iphone-11pro-max').css('display','flex');
       $('.chart-wrap').fadeOut(0);
       $('.iphone-11pro-wrap').fadeIn(0);
     });
-    $('.iphone-XS > .condition-right > img').click(function(){
-      $('.condition-conts').fadeOut(0);
+    $('.iphone-XS > .cd-right > img').click(function(){
+      $('.cd-conts').fadeOut(0);
       $('.galaxy-note-s20').fadeIn(0);
       $('.galaxy-note-s20').css('display','flex');
       $('.chart-wrap').fadeOut(0);
@@ -208,15 +208,15 @@ jQuery(function($)
 
     // iphone-XS
 
-    $('.galaxy-note-s20 > .condition-left > img').click(function(){
-      $('.condition-conts').fadeOut(0);
+    $('.galaxy-note-s20 > .cd-left > img').click(function(){
+      $('.cd-conts').fadeOut(0);
       $('.iphone-XS').fadeIn(0);
       $('.iphone-XS').css('display','flex');
       $('.chart-wrap').fadeOut(0);
       $('.iphone-XS-wrap').fadeIn(0);
     });
-    $('.galaxy-note-s20 > .condition-right > img').click(function(){
-      $('.condition-conts').fadeOut(0);
+    $('.galaxy-note-s20 > .cd-right > img').click(function(){
+      $('.cd-conts').fadeOut(0);
       $('.galaxy-s9').fadeIn(0);
       $('.galaxy-s9').css('display','flex');
       $('.chart-wrap').fadeOut(0);
@@ -225,15 +225,15 @@ jQuery(function($)
     
     // galaxy-note-s20
 
-    $('.galaxy-s9 > .condition-left > img').click(function(){
-      $('.condition-conts').fadeOut(0);
+    $('.galaxy-s9 > .cd-left > img').click(function(){
+      $('.cd-conts').fadeOut(0);
       $('.galaxy-note-s20').fadeIn(0);
       $('.galaxy-note-s20').css('display','flex');
       $('.chart-wrap').fadeOut(0);
       $('.galaxy-note-S20-wrap').fadeIn(0);
     });
-    $('.galaxy-s9 > .condition-right > img').click(function(){
-      $('.condition-conts').fadeOut(0);
+    $('.galaxy-s9 > .cd-right > img').click(function(){
+      $('.cd-conts').fadeOut(0);
       $('.galaxy-s10').fadeIn(0);
       $('.galaxy-s10').css('display','flex');
       $('.chart-wrap').fadeOut(0);
@@ -242,15 +242,15 @@ jQuery(function($)
 
     // galaxy-s9
 
-    $('.galaxy-s10 > .condition-left > img').click(function(){
-      $('.condition-conts').fadeOut(0);
+    $('.galaxy-s10 > .cd-left > img').click(function(){
+      $('.cd-conts').fadeOut(0);
       $('.galaxy-s9').fadeIn(0);
       $('.galaxy-s9').css('display','flex');
       $('.chart-wrap').fadeOut(0);
       $('.galaxy-S9-wrap').fadeIn(0);
     });
-    $('.galaxy-s10 > .condition-right > img').click(function(){
-      $('.condition-conts').fadeOut(0);
+    $('.galaxy-s10 > .cd-right > img').click(function(){
+      $('.cd-conts').fadeOut(0);
       $('.iphone-SE').fadeIn(0);
       $('.iphone-SE').css('display','flex');
       $('.chart-wrap').fadeOut(0);
@@ -259,15 +259,15 @@ jQuery(function($)
 
     // galaxy-s10
 
-    $('.iphone-SE > .condition-left > img').click(function(){
-      $('.condition-conts').fadeOut(0);
+    $('.iphone-SE > .cd-left > img').click(function(){
+      $('.cd-conts').fadeOut(0);
       $('.galaxy-s10').fadeIn(0);
       $('.galaxy-s10').css('display','flex');
       $('.chart-wrap').fadeOut(0);
       $('.galaxy-S10-wrap').fadeIn(0);
     });
-    $('.iphone-SE > .condition-right > img').click(function(){
-      $('.condition-conts').fadeOut(0);
+    $('.iphone-SE > .cd-right > img').click(function(){
+      $('.cd-conts').fadeOut(0);
       $('.iphone-11pro-max').fadeIn(0);
       $('.iphone-11pro-max').css('display','flex');
       $('.chart-wrap').fadeOut(0);
@@ -280,4 +280,34 @@ jQuery(function($)
       $('.comp-op').slideToggle(0);
     });
 
-// 차트 영역
+$(function() {
+    var Accordion = function(el, multiple) {
+        this.el = el || {};
+        this.multiple = multiple || false;
+
+        // Variables privadas
+        var links = this.el.find('.link');
+        // Evento
+        links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+    }
+
+    Accordion.prototype.dropdown = function(e) {
+        var $el = e.data.el;
+            $this = $(this),
+            $next = $this.next();
+
+        $next.slideToggle();
+        $this.parent().toggleClass('open');
+
+        if (!e.data.multiple) {
+            $el.find('.if-sub').not($next).slideUp().parent().removeClass('open');
+        };
+    }   
+
+    var accordion = new Accordion($('#m-accordion'), false);
+});
+function numberMaxLength(e){
+  if(e.value.length > e.maxLength){
+    e.value = e.value.slice(0, e.maxLength);
+  }
+}
