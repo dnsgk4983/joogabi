@@ -2711,6 +2711,9 @@ pre{
     .nt-atc{
         margin-top: 6%;
     }
+    .my-usd-ck-wrap span{
+        font-size: .8em;
+    }
 }
 @media(max-width: 330px){
     .m-tab > li > .m-tab-box{
