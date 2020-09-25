@@ -2043,6 +2043,8 @@ pre{
     line-height: 45px;
 }
 .nt-tab > ul > li > a{
+    width: 100%;
+    display: block;
     color: #b8b8b8;
 }
 .nt-tab li.active{
@@ -2303,7 +2305,7 @@ pre{
     margin-bottom: .95em;
 }
 .nt-w input{
-    width: 85%;
+    width: 100%;
     height: 38px;
     border: 1px solid #dbdbdb;
     box-sizing: border-box;
@@ -2355,6 +2357,8 @@ pre{
 .nt-img > .flex-box > a{
     color: #494949;
     font-size: .8em;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .nt-w-btn{
     width: 29%;
@@ -2557,5 +2561,11 @@ pre{
     .mobile-map{
         height: 20em;
         line-height: 20em;
+    }
+    .nt-w input::placeholder{
+        font-size: .9em;
+    }
+    .nt-close > img{
+        width: 1em;
     }
 }
