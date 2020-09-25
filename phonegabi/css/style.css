@@ -2298,10 +2298,10 @@ pre{
 .nt-w-user{
     margin-top: 3.1%;
 }
-.nt-w p.pt-13b{
+.nt-w p.pt-13b:not(.nt-w-user > p.pt-13){
     margin-top: 4.5%;
 }
-.nt-w p.pt-13b{
+.nt-w p.pt-13b:not(.nt-w-user > p.pt-13){
     margin-bottom: 2%;
 }
 .nt-w input{
