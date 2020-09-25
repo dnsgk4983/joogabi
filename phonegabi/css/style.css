@@ -2395,6 +2395,24 @@ pre{
         border: none;
         border-bottom: 1px solid #dbdbdb;
     }
+    .nt-btn-wrap button {
+        width: 4.7em;
+        height: 1.5em;
+        background: #bfbfbf;
+        color: #fff;
+        font-size: .9em;
+        border: none;
+        border-radius: 3px;
+    }
+    .nt-atc-item > a > img{
+        margin-right: 2%;
+    }
+    .w-d{
+        margin-left: 4%;
+    }
+    .nt-cm-list > ul > li{
+        margin-top: 5%;
+    }
 }
 @media(max-width: 330px){
     .m-tab > li > .m-tab-box{
