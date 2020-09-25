@@ -173,12 +173,16 @@ textarea:focus{
 .container.bg-f1{
     background: #f1f1f1;
 }
+.bg-f1{
+    background: #f1f1f1;
+}
 .bg-white{
     background: #fff;
 }
 .header--nav > .row{
     display: flex;
     justify-content: space-between;
+    background: #fff;
     align-items: center;
     position: relative;
     min-width: 320px;
@@ -1188,9 +1192,8 @@ pre{
 }
 .wp-col{
     width: 50%;
-    margin-top: 30px;
 }
-.rgi-pur-ot > input.cb{
+.rgi-pur-ot input.cb{
     width: 13px;
     height: 13px;
     border-radius: 3px;
@@ -1203,12 +1206,15 @@ pre{
     margin-left: 12px;
     margin-right: 29px;
 }
+.wp-m, .wp-col{
+    margin-top: 30px;
+}
 .rgi-pur-ot.flex-box{
     /* justify-content: space-between; */
     flex-wrap: nowrap;
 }
-.rgi-pur-ot > input.tb{
-    width: 80%;
+.rgi-pur-ot input.tb{
+    width: 100%;
     padding: 0;
     padding-left: 15px;
 }
@@ -1839,6 +1845,11 @@ pre{
     height: .5em;
     margin-top: 3.2%;
 }
+.my-fix{
+    background: #f1f1f1;
+    width: 100%;
+    height: 20px;
+}
 .pc-md-item.pd-t18{
     padding-top: 1.3em;
 }
@@ -2378,6 +2389,150 @@ pre{
     padding-bottom: 5%;
 }
 
+/* 마이페이지 영역 */
+.mp-t-area > .pt-15{
+    color: #a2a2a2;
+}
+.mp-t-area > .flex-box{
+    margin-top: .9em;
+}
+.mp-t-area > .flex-box .pt-14{
+    color: #a2a2a2;
+    margin-left: .3em;
+}
+.my-menu{
+    display: flex;
+    padding: 0 24px;
+    text-align: center;
+    position: relative;
+}
+.my-menu::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #dbdbdb;
+    width: 100%;
+    height: 1px;
+
+}
+.my-menu > li{
+    width: 20%;
+    padding: 1em 0;
+    position: relative;
+}
+.my-menu > li > a{
+    font-size: .95em;
+    color: #696969;
+}
+.my-menu > li.active::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #3e5bc7;
+    width: 100%;
+    height: 4px;
+}
+.my-menu > li.active > a{
+    color: #3e5bc7;
+}
+.my-menu > li > a > img{
+    height: 2.14em;
+    margin: 0 auto 1em;
+    display: block;
+}
+
+.my-pg > .pt-15b{
+    margin: 2.5em 0 0;
+}
+.my-pg .pt-13{
+    margin: 1.8em 0 1.1em;
+}
+.my-pg input[type=text],
+.my-pg input[type=password],
+.my-pg select{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+.my-pg input::placeholder{
+    font-size: .95em;
+    color: #878787;
+}
+.my-id input::placeholder, .my-name input::placeholder{
+    color: #000;
+}
+.my-pw input{
+    padding-left: 45px !important;
+    background: url(../images/login/ico_password.png)no-repeat #fff;
+    background-position: 12px center;
+}
+.my-pw-1{
+    margin-bottom: .95em;
+}
+.my-ph input{
+    padding-left: 45px !important;
+    background: url(../images/login/ico_phone.png)no-repeat #fff;
+    background-position: 15px center;
+}
+.my-ph button{
+    width: 15%;
+    height: 45px;
+    background: #878787;
+    color: #fff;
+    font-size: .95em;
+    border: none;
+}
+.my-phn{
+    margin-bottom: .95em;
+}
+.ot-s-1, .ot-s-2{
+    margin-bottom: .95em;
+}
+.my-usd-ck-wrap{
+    flex-wrap: wrap;
+}
+.my-usd-ck-wrap input[type=checkbox]{
+    margin-right: .9em;
+    vertical-align: -2px;
+}
+.my-usd-ck-wrap > .col-30{
+    margin-bottom: 1.5em;
+}
+.my-usd-ck-wrap > .col-50.lc{
+    margin-bottom: 1em;
+}
+.my-btn-wrap{
+    margin-top: 3em;
+    padding-bottom: 1.8em;
+}
+.my-with{
+    width: 34%;
+}
+.my-with button{
+    width: 100%;
+    height: 45px;
+    background: #d0d0d0;
+    border: none;
+    color: #fff;
+    font-size: .95em;
+}
+.my-suc{
+    width: 65%;
+}
+.my-suc button{
+    width: 100%;
+    height: 45px;
+    background: #3e5bc7;
+    color: #fff;
+    border: none;
+    font-size: .95em;
+}
 @media (min-width:320px) and (max-width:530px){
     .cp-conts-info > h3{
         font-size: .9em;
@@ -2422,8 +2577,11 @@ pre{
         margin-right: 4px;
         font-size: .84em;
     }
-    .wp-m{
-        margin-top: 30px;
+    .rgi-pur-ot > .col-20{
+        width: 30%;
+    }
+    .rgi-pur-ot > .col-80{
+        width: 70%;
     }
     .col-60 > p{
         font-size: .75em;
