@@ -2412,6 +2412,9 @@ pre{
     .nt-cm-list > ul > li{
         margin-top: 5%;
     }
+    .nt-atc{
+        margin-top: 6%;
+    }
 }
 @media(max-width: 330px){
     .m-tab > li > .m-tab-box{
