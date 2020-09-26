@@ -2533,6 +2533,46 @@ pre{
     border: none;
     font-size: .95em;
 }
+
+.my-w-pw input{
+    background: #fff;
+    padding-left: 10px !important;
+}
+.my-with-g > ul{
+    color: #878787;
+    line-height: 1.6em;
+}
+.sub-g{
+    margin-left: 1em;
+}
+.my-with-ck input{
+    margin-right: 6px;
+    vertical-align: -1px;
+}
+.my-with-ck span{
+    color: #878787;
+}
+.ws-conts{
+    padding-bottom: 1.1em;
+    line-height: 1.6em;
+}
+.ws-btn-wrap{
+    margin-top: 4em;
+}
+.ws-btn-wrap .my-suc{
+    width: 100%;
+}
+.ws-btn-wrap button{
+    width: 100%;
+}
+.my-with-if{
+    color: #878787;
+}
+.my-with-if .ws-id{
+    margin-top: 1.4em;
+}
+
+
 @media (min-width:320px) and (max-width:530px){
     .cp-conts-info > h3{
         font-size: .9em;
