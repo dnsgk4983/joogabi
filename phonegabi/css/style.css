@@ -2402,7 +2402,7 @@ pre{
 }
 .my-menu{
     display: flex;
-    padding: 0 24px;
+    padding: 9.3% 24px 0;
     text-align: center;
     position: relative;
 }
@@ -2571,7 +2571,129 @@ pre{
 .my-with-if .ws-id{
     margin-top: 1.4em;
 }
+.c-g{
+    color: #a2a2a2;
+    margin-bottom: 10px;
+}
+.cp-name > span.pt-15{
+    color: #a2a2a2;
+    margin-left: 5px;
+    font-weight: lighter;
+}
+.mp--name{
+    padding-bottom: 3.4%;
+}
 
+.mp-title{
+    padding-top: 10%;
+}
+.m-tab-box > input[type='checkbox']{
+    margin: 10px;
+}
+.mp-btn-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.mp-btn-wrap button{
+    background: #d0d0d0;
+    color: #fff;
+    height: 3em;
+    border: none;
+}
+.mp-all button{
+    width: 95%;
+}
+.mp-del button{
+    width: 95%;
+}
+.mp-write button{
+    background: #3e5bc7;
+    width: 100%;
+}
+
+.mp-w-title{
+    padding-top: 7%;
+}
+.mp-w-conts > p,
+.mp-w-atc > p{
+    margin-top: 6%;
+    margin-bottom: 2%;
+}
+.mp-w-section input,
+.mp-w-section textarea{
+    padding-left: 10px;
+    border: 1px solid #dbdbdb;
+    width: 100%;
+}
+.mp-w-section input{
+    height: 3em;
+}
+.mp-w-section textarea{
+    height: 18em;
+    padding-top: 10px;
+}
+
+.mp-w-atc-itemwrap{
+    display: flex;
+    margin-top: 5%;
+}
+.mp-w-atc-wrap{
+    display: flex;
+    align-items: center;
+}
+.mp-w-atc-itemwrap > .col-30{
+    margin-right: 5px;
+}
+.mp-item-conts > img{
+    vertical-align: middle;
+    width: 1em;
+}
+.mp-w-atc-wrap input{
+    width: 85%;
+    height: 3em;
+}
+.mp-w-atc-wrap button{
+    width: 15%;
+    height: 3em;
+    border: none;
+    background: #878787;
+    color: #fff;
+}
+.mp-item-conts{
+    margin-top: 3%;
+}
+.mp-item-conts > a{
+    color: #494949;
+}
+.mp-item{
+    width: 100%;
+    height: 150px;
+    background: url(../images/icon/t-cc-img.png)no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.mp-ci{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+.mp-ci img{
+    width: 100%;
+}
+.mp-menu button{
+    width: 95%;
+}
+.mp-create button{
+    width: 100%;
+    background: #3e5bc7;
+}
+.mp-w-btn{
+    margin-top: 10%;
+}
 
 @media (min-width:320px) and (max-width:530px){
     .cp-conts-info > h3{
