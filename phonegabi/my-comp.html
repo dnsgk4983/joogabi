@@ -43,7 +43,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container bg-f1 mp-w-section">
+            <div class="container bg-f1 mc-section">
                 <div class="row bg-white">
                     <ul class="my-menu mg-t80">
                         <li>
@@ -52,15 +52,15 @@
                                 회원정보 수정
                             </a>
                         </li>
-                        <li class="active">
+                        <li class="">
                             <a href="#">
-                                <img src="images/menu/ico_unit_b.png" alt="단가표 관리">
+                                <img src="images/menu/ico_unit.png" alt="단가표 관리">
                                 단가표관리
                             </a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="#">
-                                <img src="images/menu/ico_company.png" alt="회사정보 수정">
+                                <img src="images/menu/ico_company_b.png" alt="회사정보 수정">
                                 회사정보 수정
                             </a>
                         </li>
@@ -78,61 +78,52 @@
                         </li>
                     </ul>
                 </div>
-                <div class="row bg-white mp-title">
+                <div class="row bg-white mc-title">
                     <div class="flex-box pd--24">
-                        <p class="pt-18b">단가표 등록</p>
+                        <p class="pt-18b">회사정보 수정</p>
                     </div>
                 </div>
-                <div class="row bg-white pd--24">
-                    <div class="mp-w-title">
-                        <p class="pt-13b">제목</p>
-                        <input type="text" placeholder="제목을 입력해 주세요">
+                <div class="row bg-white pd--24 mc-wrap">
+                    <div class="mc-name">
+                        <p class="pt-13">업체명</p>
+                        <input type="text" placeholder="한국GMC글로벌">
                     </div>
-                    <div class="mp-w-conts">
-                        <p class="pt-13b">내용</p>
-                        <textarea name="" id="" placeholder="내용을 입력해 주세요"></textarea>
+                    <div class="mc-area">
+                        <p class="pt-13 m">소재지</p>
+                        <input type="text" placeholder="서울시 금천구 디지털1로 168 우림라이온스빌 C동 205호">
                     </div>
-                    <div class="mp-w-atc">
-                        <p class="pt-13b">첨부파일</p>
-                        <div class="mp-w-atc-wrap">
-                            <input type="text" readonly placeholder="첨부파일은 최대 3mb이내로 등록해 주세요">
-                            <button type="submit">등록</button>
-                        </div>
+                    <div class="mc-tell">
+                        <p class="pt-13 m">연락처</p>
+                        <input type="tell" placeholder="010-3849-0335">
                     </div>
-                    <div class="row mp-w-atc-itemwrap">
-                        <div class="col-30">
-                            <div class="mp-item">
-                                <div class="mp-ci">
-                                    <img src="images/icon/ico_close_g.png" alt="close">
-                                </div>
-                            </div>
-                            <div class="mp-item-conts">
-                                <img src="images/icon/ico_attach.png" alt="attach">
-                                <a href="#" class="pt-13">20200114k_1.jpg</a>
-                            </div>
-                        </div>
-                        <div class="col-30">
-                            <div class="mp-item">
-                                <div class="mp-ci">
-                                    <img src="images/icon/ico_close_g.png" alt="close">
-                                </div>
-                            </div>
-                            <div class="mp-item-conts">
-                                <img src="images/icon/ico_attach.png" alt="attach">
-                                <a href="#" class="pt-13">20200114k_1.jpg</a>
-                            </div>
-                        </div>
-                        <div class="col-30">
-                            <div class="mp-item">
-                                <div class="mp-ci">
-                                    <img src="images/icon/ico_close_g.png" alt="close">
-                                </div>
-                            </div>
-                            <div class="mp-item-conts">
-                                <img src="images/icon/ico_attach.png" alt="attach">
-                                <a href="#" class="pt-13">20200114k_1.jpg</a>
-                            </div>
-                        </div>
+                    <div class="mc-time">
+                        <p class="pt-13 m">업무시간</p>
+                        <input type="text" placeholder="업무시간을 설정해 주세요">
+                    </div>
+                    <div class="mc-talk">
+                        <p class="pt-13 m">카카오톡</p>
+                        <input type="text" placeholder="korea_gmc_kakao">
+                    </div>
+                </div>
+                
+                <div class="row pd--24 bg-white mc-info">
+                    <div class="mc-line"></div>
+                    <div class="flex-box">
+                        <p class="pt-18b">회사소개</p>
+                    </div>
+                </div>
+                <div class="row bg-white pd--24 mc-i-wrap">
+                    <div class="mc-i-title">
+                        <p class="pt-13">소개제목</p>
+                        <input type="text" placeholder="10자 이내로 작성해 주세요">
+                    </div>
+                    <div class="mc-i-info">
+                        <p class="pt-13 m">소개내용</p>
+                        <textarea id="" name="" placeholder="30자 이내로 작성해 주세요"></textarea>
+                    </div>
+                    <div class="mc-i-conts">
+                        <p class="pt-13 m">회사안내</p>
+                        <input type="text" placeholder="내용을 입력해 주세요">
                     </div>
                 </div>
             </div>
@@ -140,12 +131,12 @@
                 <div class="mp-btn-wrap mp-w-btn">
                     <div class="col-40">
                         <div class="mp-menu">
-                            <button type="button">목록으로</button>
+                            <button type="button">취소</button>
                         </div>
                     </div>
                     <div class="col-60">
                         <div class="mp-create">
-                            <button type="button">게시</button>
+                            <button type="button">수정완료</button>
                         </div>
                     </div>
                 </div>
