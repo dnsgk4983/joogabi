@@ -2700,6 +2700,8 @@ pre{
     margin-top: 10%;
 }
 
+
+
 /* 웹_모바일_회사정보수정 페이지 */
 .mc-section input{
     width: 100%;
@@ -2707,6 +2709,7 @@ pre{
     border: 1px solid #dbdbdb;
     padding-left: 10px;
     margin-top: 3%;
+    text-overflow: ellipsis;
 }
 .mc-section input::placeholder{
     font-size: 1em;
@@ -2746,6 +2749,72 @@ pre{
 }
 .mc-i-wrap input::placeholder{
     color: #878787;
+}
+
+/* 웹_모바일_내가추가한업체 영역 */
+.mc-t-wrap > .pt-13{
+    margin-top: 4.75%;
+}
+.m-b{
+    color: #3e5bc7;
+    font-weight: bold;
+}
+.ma-list{
+    margin-top: 3.5%;
+}
+.ma-list > li{
+    border: 1px solid #c7cbcf;
+    border-bottom: none;
+}
+.ma-list > li:not(:last-child){
+    margin-bottom: 4%;
+}
+.ma-list .pd--14{
+    padding: 14px;
+}
+.ma-top{
+    border-bottom: 1px solid #c7cbcf;
+}
+.ma-top img{
+    width: 1em;
+    margin-left: 1%;
+}
+.ma-cp-t{
+    width: 140px;
+    margin-left: 2%;
+}
+.ma-rg-wrap{
+    width: 63px;
+}
+.ma-rg-wrap > p{
+    color: #939393;
+}
+.ma-rg-wrap > img{
+    margin-left: 5%;
+    /* cursor: pointer; */
+}
+
+.ma-mid{
+    line-height: 1.4em;
+}
+.ma-mid span{
+    color: #3e5bc7;
+}
+.ma-mid p.pt-12{
+    width: 95%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #939393;
+}
+
+.ma-btm button{
+    width: 100%;
+    height: 3em;
+    border: none;
+    background: #c9c9c9;
+    color: #fff;
+    font-size: .95em;
 }
 
 @media (min-width:320px) and (max-width:530px){
