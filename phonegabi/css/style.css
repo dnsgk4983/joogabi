@@ -2203,7 +2203,7 @@ pre{
 .nt-atc-item > a > span{
     color: #939393;
 }
-.nt-atc-item > a > img {
+.nt-atc-item img {
     width: 1.1em;
     margin-right: 1%;
     vertical-align: -2px;
@@ -2815,6 +2815,20 @@ pre{
     background: #c9c9c9;
     color: #fff;
     font-size: .95em;
+}
+/* 웹_모바일_서비스_문의하기 영역 */
+.mi-width{
+    width: 250px;
+}
+.mi-wrap button{
+    border: none;
+    color: #fff;
+    background: #bfbfbf;
+    border-radius: 2px;
+    padding: .5em .8em;
+}
+.mi-line{
+    margin-top: 3.8%;
 }
 
 @media (min-width:320px) and (max-width:530px){
