@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- ==== fontawesome.css -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- <script type="text/javascript" src="js/lib/jquery.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.autocomplete.css">
     <!-- ==== style.css ==== -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -104,7 +107,22 @@
                     <div class="trend-search">
                         <div class="trend-search-input">
                             <div class="trend-search-input-wrap">
-                                <input type="search" placeholder="갤럭시 노트 10">
+
+
+                                <script>
+                                    var availableTags = [
+                                                        '갤럭시 노트 10 플러스',
+                                                        '갤럭시 노트 9 헤지스 리미티드 에디션',
+                                                        '삼성전자 갤럭시 S8 레드 에디션',
+                                                        '삼성전자 갤럭시 노트 3 PRO',
+                                                        '삼성전자 갤럭시 노트 2 와콤 펜 한정판',
+                                                        '삼성전자 갤럭시 S7'
+                                                    ];
+                                </script>
+
+                                <form action="" name="form1" method="post">
+                                    <input type="text" placeholder="갤럭시 노트 10" id="searchbox" autocomplete="off">
+                                </form>
                             </div>
                             <div class="trend-search-checkbox">
                                 <div class="trend-search-decept">
@@ -368,6 +386,10 @@
     
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.js"></script>
+    <script type='text/javascript' src='js/lib/jquery.bgiframe.min.js'></script>
+    <script type='text/javascript' src='js/lib/jquery.ajaxQueue.js'></script>
+    <script type='text/javascript' src='js/jquery-autocomplete.js'></script>
     <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
     <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
     <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
@@ -387,6 +409,16 @@
             el: '.swiper-pagination',
             clickable: true,
         }
+    });
+    </script>
+
+    
+    <script>
+    $(document).ready(function() {
+        $("#searchbox").autocomplete(availableTags,{ 
+            matchContains: true,
+            selectFirst: false
+        });
     });
     </script>
     
