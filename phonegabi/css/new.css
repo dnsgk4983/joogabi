@@ -49,7 +49,7 @@ button:focus{
 }
 .flex-box{
     display: flex;
-    align-content: center;
+    align-items: center;
 }
 .flex-side{
     display: flex;
@@ -351,7 +351,6 @@ ul.ntc-tab li.active a{
     font-size: .7em;
     color: #939393;
     margin-left: 5px;
-    vertical-align: 3px;
 }
 .nt-cm-wrap .cm{
     font-size: .7em;
@@ -397,18 +396,19 @@ ul.ntc-tab li.active a{
     justify-content: center;
 }
 .ft-download img{
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     margin-right: 3px;
 }
 .ft-download a:not(:last-child){
     margin-bottom: 12px;
 }
 .ft-download > a{
+    font-size: .86em;
     color: #858585;
 }
 .ft-download > a > p{
-    font-size: .95em;
+    font-size: 1em;
 }
 .ft-line{
     width: 1px;
@@ -420,7 +420,7 @@ ul.ntc-tab li.active a{
     line-height: 18px;
 }
 .ft-conts p, .ft-conts a{
-    font-size: .95em;
+    font-size: .86em;
     color: #737373;
 }
 .ft-conts > p:not(:last-child) {
@@ -431,5 +431,6 @@ ul.ntc-tab li.active a{
 }
 .ft-copy > p{
     color: #000;
+    font-size: .86em;
     margin-top: 30px;
 }
