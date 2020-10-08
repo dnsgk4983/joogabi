@@ -47,6 +47,35 @@ button:focus{
 .pd-b32{
     padding-bottom: 32px;
 }
+
+.pt-10{
+    font-size: .7em;
+}
+.pt-10b{
+    font-size: .7em;
+    font-weight: 600;
+}
+.pt-12{
+    font-size: .86em;
+}
+.pt-12b{
+    font-size: .86em;
+    font-weight: 600;
+}
+.pt-13{
+    font-size: .95em;
+}
+.pt-13b{
+    font-size: .95em;
+    font-weight: 600;
+}
+.pt-14{
+    font-size: 1em;
+}
+.pt-14b{
+    font-size: 1em;
+    font-weight: 600;
+}
 .flex-box{
     display: flex;
     align-items: center;
@@ -55,6 +84,12 @@ button:focus{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+input{
+    padding-left: 10px;
+}
+input:active, input:visited, input:focus{
+    outline: none;
 }
 
 /* 새로운 css */
@@ -71,11 +106,18 @@ button:focus{
 .bg-white{
     background: #fff;
 }
+.m-logo img{
+    width: 57px;
+    height: 18px;
+}
 .b-tag{
     width: 5px;
     height: 12px;
     background: #3e5bc7;
     margin-right: 4px;
+}
+.header--nav{
+    position: relative;
 }
 .header--nav > .flex-side > .flex-box p{
     font-size: 1em;
@@ -92,7 +134,33 @@ button:focus{
     height: 2em;
 }
 .header--menu{
+    position: absolute;
+    right: 30px;
+    text-align: right;
+    z-index: 99999;
+    margin-top: 30px;
     display: none;
+}
+.header--menu > li{
+    margin: 20px 0;
+}
+.header--menu > li > a{
+    color: #303030;
+    font-size: .95em;
+    font-weight: 600;
+    transition: all .3s;
+}
+.header--menu > li > a:hover{
+    color: #3e5bc7;
+}
+.white-fix{
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    margin-top: 24px;
+    width: 100%;
+    height: 20px;
+    background: #fff;
 }
 .bug-fix{
     min-width: 320px;
@@ -123,7 +191,128 @@ button:focus{
     color: #fff;
     font-size: .7em;
 }
+/* 웹_모바일_메인페이지 */
+.blue{
+    color: #3e5bc7;
+}
+.m-search{
+    margin-top: 24px;
+}
+.m-search > input{
+    width: 85%;
+    height: 31px;
+    border: 3px solid #3e5bc7;
+    padding-left: 10px;
+}
+.m-search > button{
+    width: 15%;
+    height: 31px;
+    background: url(../images/ico_search.png)no-repeat #3e5bc7;
+    background-position: center;
+    border: none;
+}
+.m-search > input::placeholder{
+    font-size: .95em;
+    color: #bbbbbb;
+}
+.m-sub{
+    width: 80%;
+    padding-left: 10px;
+    line-height: 17px;
+    margin-top: 6px;
+    margin-bottom: 24px;
+    color: #bbbbbb;
+}
 
+.notice{
+    width: 100%;
+    height: 61px;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+}
+.m-rr{
+    position: relative;
+    width: 90%;
+    height: auto;
+    word-break: break-all;
+    padding: 0;
+}
+.m-rr li{
+    position: relative;
+    height: 61px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 0 30px;
+    line-height: 18px;
+}
+.m-rr > li > a {
+    color: #303030;
+    font-weight: 500;
+  }
+  .m-rr > li > a span{
+      color: #939393;
+  }
+  .m-rr > li > a > p{
+    width: 90%;
+    font-size: .95em;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.m-rr > li > a > p:first-child{
+    color: #939393;
+    font-size: .7em;
+}
+.m-arrow{
+    position: absolute;
+    width: 10%;
+    height: 61px;
+    top: 0;
+    right: 0px;
+    border-left: 1px solid #c6cad1;
+}
+.m-up-arrow{
+    width: 64px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-bottom: 1px solid #c6cad1;
+    cursor: pointer;
+}
+.m-down-arrow{
+    width: 64px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hack{
+    max-width: 640px;
+    min-width: 320px;
+    width: 100%;
+    height: 20px;
+    margin: 0 auto;
+    background: #f1f1f1;
+}
+
+.mu-list > li > a{
+    color: #000;
+}
+.mu-list > li > a > span{
+    color: #939393;
+}
+.mu-list > li > a > .flex-side > p {
+    color: #939393;
+}
+
+
+
+/* 웹_모바일_공지사항 */
 ul.ntc-tab{
     justify-content: center;
     padding: 15px 0 9px;
@@ -352,7 +541,7 @@ ul.ntc-tab li.active a{
     font-size: .7em;
     font-weight: 600;
 }
-.nt-cm-cp > .day{
+.nt-cm-cpb > .day{
     font-size: .7em;
     color: #939393;
     margin-left: 5px;
@@ -411,6 +600,7 @@ ul.ntc-tab li.active a{
     margin-bottom: 12px;
 }
 .ft-download > a{
+    width: 130px;
     font-size: .86em;
     color: #858585;
 }
@@ -424,7 +614,7 @@ ul.ntc-tab li.active a{
     background: #737373;
 }
 .ft-conts-wrap{
-    line-height: 18px;
+    line-height: 17px;
 }
 .ft-conts p, .ft-conts a{
     font-size: .86em;

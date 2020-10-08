@@ -33,12 +33,12 @@ jQuery(function($)
     var ticker = function()
     {
         timer = setTimeout(function(){
-            $('#mticker li:first').animate( {marginTop: '-61px'}, 500, function()
+            $('#mticker li:first').animate( {marginTop: '-61px'}, 1500, function()
             {
                 $(this).detach().appendTo('ul#mticker').removeAttr('style');
             });
             ticker();
-        }, 2000);         
+        }, 5000);         
       };
 // 0번 이전 기능
       $(document).on('click','.prev',function(){
@@ -52,7 +52,7 @@ jQuery(function($)
   
 // 1. 클릭하면 다음 요소 보여주기... 클릭할 경우 setTimeout 을 clearTimeout 해줘야 하는데 어떻게 하지..
       $(document).on('click','.next',function(){
-            $('#mticker li:first').animate( {marginTop: '-61px'}, 400, function()
+            $('#mticker li:first').animate( {marginTop: '-61px'}, 1400, function()
                     {
                         $(this).detach().appendTo('ul#mticker').removeAttr('style');
                     });
@@ -311,6 +311,11 @@ function numberMaxLength(e){
     e.value = e.value.slice(0, e.maxLength);
   }
 }
+$(function(){
+  $('.m-menu').on('click',function(){
+    $('.header--menu').slideToggle();
+  });
+});
 
 
 (function($){
