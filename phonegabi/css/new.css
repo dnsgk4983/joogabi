@@ -298,7 +298,11 @@ ul.ntc-tab li.active a{
     margin-bottom: 7px;
 }
 .nt-atc-item a{
+    color: #303030;
     font-size: .7em;
+}
+.nt-atc-item .size{
+    color: #d9d9d9;
 }
 .nt-cp-gree{
     margin-top: 20px;
@@ -359,6 +363,7 @@ ul.ntc-tab li.active a{
 
 .nt-btm{
     margin-top: 45px;
+    margin-bottom: 50px;
 }
 .nt-btm-btn{
     width: 49%;
