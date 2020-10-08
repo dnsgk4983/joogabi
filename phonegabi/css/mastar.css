@@ -292,7 +292,7 @@ input:active, input:visited, input:focus{
     width: 10%;
     height: 61px;
     top: 0;
-    right: 0px;
+    right: 17px;
     border-left: 1px solid #c6cad1;
 }
 .m-up-arrow{
@@ -472,7 +472,7 @@ input:active, input:visited, input:focus{
 }
 
 .m-ncp{
-    margin: 30px 0;
+    margin: 30px 0 0;
 }
 .ncp-sub p{color: #939393; margin-top: 5px;}
 .ncp-list{
@@ -518,6 +518,57 @@ input:active, input:visited, input:focus{
     color: #939393;
     margin-top: 6px;
     line-height: 17px;
+}
+/* 웹_모바일_검색화면 */
+.m-sch-conts{
+    justify-content: space-between;
+}
+.m-sch-item.col-30{
+    width: 30%;
+}
+.m-sch-item img{
+    width: 30%;
+    margin-right: 14px;
+}
+.sch-line{
+    width: 1px;
+    height: 20px;
+    background: #c6cad1;
+    margin: 0 15px;
+}
+.m-sch-wrap{
+    padding: 0 40px;
+}
+.m-sch p{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.m-sch-item > .flex-box{
+    justify-content: center;
+}
+.sch-item{
+    line-height: 17px;
+}
+
+.sch-vw{
+    margin-top: 30px;
+    width: 140px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 30px;
+    background: #939393;
+    cursor: pointer;
+}
+.sch-vw a{
+    color: #fff;
+    font-weight: 600;
+    font-size: .86em;
+}
+.sch-vw img{
+    /* width: 30%; */
 }
 
 /* 웹_모바일_공지사항 */
