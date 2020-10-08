@@ -218,11 +218,17 @@ ul.ntc-tab li.active a{
 .link > .flex-box p{
     font-weight: 400;
 }
+.link > .flex-side{
+    margin-bottom: 17px;
+}
+.p-n{
+    font-size: .7em;
+}
 .p-n > .w-d{
     margin-left: 12px;
 }
 .w-u{
-    margin-top: 10px;
+    font-size: .7em;
     margin-right: 30px;
     color: #aeaeae;
 }
@@ -294,6 +300,7 @@ ul.ntc-tab li.active a{
 }
 .nt-cp-gree > p {
     color: #939393;
+    font-size: .7em;
     line-height: 1.4em;
 }
 .nt-comment{
