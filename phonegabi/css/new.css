@@ -434,13 +434,13 @@ ul.ntc-tab li.active a{
     font-weight: 600;
 }
 .ft-conts > p:not(:last-child) {
-    margin-bottom: 8px;
+    margin-bottom: 2px;
 }
 .ft-conts.flex-box{
-    margin-top: 1.9em;
+    margin-top: 2px;
 }
 .ft-copy > p{
     color: #000;
-    font-size: .86em;
+    font-size: .7em;
     margin-top: 30px;
 }
