@@ -12,9 +12,13 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- <script type="text/javascript" src="js/lib/jquery.js"></script> -->
-    <link rel="stylesheet" type="text/css" href="css/jquery.autocomplete.css">
     <!-- ==== style.css ==== -->
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="jquery/lib/jquery.js"></script>
+    <script type='text/javascript' src='jquery/lib/jquery.bgiframe.min.js'></script>
+    <script type='text/javascript' src='jquery/lib/jquery.ajaxQueue.js'></script>
+    <script type='text/javascript' src='jquery/jquery.autocomplete.js'></script>
+    <link rel="stylesheet" type="text/css" href="jquery/jquery.autocomplete.css" />
 </head>
 
 <body>
@@ -99,7 +103,6 @@
                               <img src="images/widget-banner.png" alt="위젯배너">
                           </div>
                         </div>
-                        <!-- Add Pagination -->
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -121,8 +124,17 @@
                                 </script>
 
                                 <form action="" name="form1" method="post">
-                                    <input type="text" placeholder="갤럭시 노트 10" id="searchbox" autocomplete="off">
+                                    <input type="search" placeholder="갤럭시 노트 10" id="searchbox">
                                 </form>
+
+                                <script>
+                                    $(document).ready(function() {
+                                        $("#searchbox").autocomplete(availableTags,{ 
+                                            matchContains: true,
+                                            selectFirst: false
+                                        });
+                                    });
+                                </script>
                             </div>
                             <div class="trend-search-checkbox">
                                 <div class="trend-search-decept">
@@ -396,6 +408,23 @@
     <script src="js/chart.js"></script>
     <script src='js/script.js'></script>
     
+    <div class="ac_results dis-none">
+        <div class="ac_line"></div>
+        <div class="ac_conts">
+            <div class="flex-side">
+                <p>최근 검색한 모델</p>
+                <p>전체삭제</p>
+            </div>
+            <div class="flex-side">
+                <p>삼성 갤럭시 S6</p>
+                <img src="images/ico_close.png" alt="닫기">
+            </div>
+            <div class="flex-side">
+                <p>애플 아이폰 XS 64GB</p>
+                <img src="images/ico_close.png" alt="닫기">
+            </div>
+        </div>
+    </div>
 
     <script type="text/javascript">
         var swiper = new Swiper('.swiper-container', {
@@ -409,16 +438,6 @@
             el: '.swiper-pagination',
             clickable: true,
         }
-    });
-    </script>
-
-    
-    <script>
-    $(document).ready(function() {
-        $("#searchbox").autocomplete(availableTags,{ 
-            matchContains: true,
-            selectFirst: false
-        });
     });
     </script>
     

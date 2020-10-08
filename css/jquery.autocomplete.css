@@ -16,6 +16,9 @@
 
 .ac_results li {
 	margin: 0px;
+	background: url(../images/ico_trend_search.png)no-repeat !important;
+	background-size: 14px !important;
+	background-position: left center !important;
 	padding: 2px 5px;
 	cursor: default;
 	display: block;
@@ -35,14 +38,14 @@
 }
 
 .ac_loading {
-	background: white url('indicator.gif') right center no-repeat;
+	/* background: white url('indicator.gif') right center no-repeat; */
 }
 
 .ac_odd {
-	background-color: #eee;
+	/* background-color: #eee; */
 }
 
 .ac_over {
-	background-color: #0A246A;
+	/* background-color: #0A246A; */
 	color: white;
 }

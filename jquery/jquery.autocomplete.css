@@ -1,11 +1,12 @@
 .ac_results {
+	width: 459px !important;
+	height: 300px;
 	padding: 0px;
-	border: 1px solid black;
+	border: 1px solid #e9ecef;
 	background-color: white;
 	overflow: hidden;
 	z-index: 99999;
 }
-
 .ac_results ul {
 	width: 100%;
 	list-style-position: outside;
@@ -16,7 +17,9 @@
 
 .ac_results li {
 	margin: 0px;
-	padding: 2px 5px;
+	padding: 10px 25px;
+	background: url(../images/ico_trend_search.png)no-repeat;
+	background-position: 5px center;
 	cursor: default;
 	display: block;
 	/* 
@@ -33,16 +36,19 @@
 	line-height: 16px;
 	overflow: hidden;
 }
+.ac_results li:hover{
+	color: #939393 !important;
+}
 
 .ac_loading {
 	background: white url('indicator.gif') right center no-repeat;
 }
 
 .ac_odd {
-	background-color: #eee;
+	/* background-color: #eee; */
 }
 
 .ac_over {
-	background-color: #0A246A;
-	color: white;
+	/* background-color: #0A246A; */
+	color: #939393;
 }

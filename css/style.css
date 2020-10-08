@@ -69,6 +69,11 @@
       display: flex;
       align-items: center;
   }
+  .flex-side{
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+  }
   /* 헤더 시작 */
   #header{
       width: 100%;
@@ -1687,6 +1692,7 @@ section{
     height: 36px;
     border: none;
     border-bottom: 1px solid #939393;
+    color: #939393;
     box-sizing: border-box;
     background: url('../images/trend-page/ico_saerch.png')no-repeat;
     background-position: 0 center;
@@ -5407,4 +5413,7 @@ ul.tab > li:nth-child(5){
     padding-left: 15px;
     font-size: 14.5px;
     color: #878787;
+}
+.dis-none{
+    display: none;
 }
