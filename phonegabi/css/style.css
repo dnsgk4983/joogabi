@@ -103,10 +103,10 @@ textarea:focus{
     width: 100%;
 }
 .pd--24{
-    padding: 0 24px;
+    padding: 0 32px;
 }
 .pd--25{
-    padding: 0 25px;
+    padding: 0 36px;
 }
 .pdud--40{
     padding: 1% 24px 6%;
@@ -121,7 +121,7 @@ textarea:focus{
     margin-top: .95em;
 }
 .mg-t20{
-    margin-top: 20px;
+    margin-top: 36px;
 }
 .mg-t31{
     margin-top: 31px;
@@ -322,7 +322,7 @@ textarea:focus{
     width: 10%;
     height: 61px;
     top: 0;
-    right: 17px;
+    right: 0px;
     border-left: 1px solid #c6cad1;
 }
 .m-up-arrow{
