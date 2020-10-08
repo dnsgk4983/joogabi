@@ -228,6 +228,7 @@ ul.ntc-tab li.active a{
 }
 .nt-title{
     width: 75%;
+    height: 16px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
