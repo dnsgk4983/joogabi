@@ -318,15 +318,15 @@ ul.ntc-tab li.active a{
 }
 .nt-comment > input{
     width: 85%;
+    height: 31px;
     border: 1px solid #dbdbdb;
-    padding: 10px 10px;
 }
 .nt-comment > input::placeholder{
     font-size: .7em;
 }
 .nt-comment > button{
     width: 15%;
-    padding: 10px;
+    height: 31px;
     border: none;
     background: #878787;
     color: #fff;
