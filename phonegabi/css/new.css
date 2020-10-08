@@ -95,6 +95,9 @@ button:focus{
     display: none;
 }
 .bug-fix{
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
     margin-top: 24px;
     width: 100%;
     height:20px;
@@ -219,7 +222,7 @@ ul.ntc-tab li.active a{
     font-weight: 400;
 }
 .link > .flex-side{
-    margin-bottom: 17px;
+    margin-bottom: 8px;
 }
 .p-n{
     font-size: .7em;
@@ -301,7 +304,7 @@ ul.ntc-tab li.active a{
 .nt-cp-gree > p {
     color: #939393;
     font-size: .7em;
-    line-height: 1.4em;
+    line-height: 17px;
 }
 .nt-comment{
     margin-top: 30px;
