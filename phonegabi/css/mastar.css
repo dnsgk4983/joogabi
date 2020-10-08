@@ -459,6 +459,9 @@ input:active, input:visited, input:focus{
 .mb-banner{
     padding: 30px 0;
 }
+.mb-banner img{
+    width: 100%;
+}
 .vh-100{
     min-width: 320px;
     max-width: 640px;
@@ -469,7 +472,7 @@ input:active, input:visited, input:focus{
 }
 
 .m-ncp{
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 .ncp-sub p{color: #939393; margin-top: 5px;}
 .ncp-list{
