@@ -57,7 +57,7 @@ button:focus{
     justify-content: space-between;
 }
 
-/* 공지사항페이지 새로운 css */
+/* 새로운 css */
 #header{
     padding: 24px 0 0;
     position: relative;
@@ -103,6 +103,27 @@ button:focus{
     height:20px;
     background: #f1f1f1;
 }
+.m-diller{
+    padding: 3px 5px;
+    background: #919dc7;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+.m-diller p{
+    color: #fff;
+    font-size: .7em;
+}
+.m-certification{
+    padding: 3px 5px;
+    background: #3e5bc7;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+.m-certification p{
+    color: #fff;
+    font-size: .7em;
+}
+
 ul.ntc-tab{
     justify-content: center;
     padding: 15px 0 9px;
@@ -243,26 +264,6 @@ ul.ntc-tab li.active a{
     white-space: nowrap;
 }
 
-.m-diller{
-    padding: 3px 5px;
-    background: #919dc7;
-    border-radius: 3px;
-    margin-right: 5px;
-}
-.m-diller p{
-    color: #fff;
-    font-size: .7em;
-}
-.m-certification{
-    padding: 3px 5px;
-    background: #3e5bc7;
-    border-radius: 3px;
-    margin-right: 5px;
-}
-.m-certification p{
-    color: #fff;
-    font-size: .7em;
-}
 .nt-cp-wrap{
     padding: 15px 30px 12px;
 }
@@ -427,6 +428,10 @@ ul.ntc-tab li.active a{
 .ft-conts p, .ft-conts a{
     font-size: .86em;
     color: #737373;
+}
+.ft-conts a{
+    font-size: .7em;
+    font-weight: 600;
 }
 .ft-conts > p:not(:last-child) {
     margin-bottom: 8px;
