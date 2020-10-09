@@ -6,368 +6,389 @@
     <title>중가비</title>
     <!-- ==== swiper.css ==== -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <!-- ==== XE icon.css ==== -->
-    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!-- ==== fontawesome ==== -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- ==== style.css ==== -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mastar.css">
 </head>
 <body>
     <header id="header">
         <div id="layout">
-                <div class="container header--nav">
-                    <div class="row pd-15">
-                        <div class="m-logo">
-                        <a href="#">
-                            <!-- <img src="images/logo.png" alt="로고"> -->
-                        </a> 
+            <div class="container bg-white header--nav">
+                <div class="row pd--30 flex-side">
+                    <div class="my--ui">
+                        <p class="pt-13">안녕하세요!</p>
+                        <div class="flex-box">
+                            <div class="flex-box">
+                                <div class="m-certification">
+                                    <p>인증</p>
+                                </div>
+                                <div class="m-export">
+                                    <p>수출</p>
+                                </div>
+                            </div>
+                            <p class="pt-13b">코스타커뮤니케이션<span class="pt-13"> 회원님</span></p>
+                        </div>
+                    </div>
+                    <div class="m-menu">
+                        <ul class="header--menu">
+                            <li><a href="m-compare.html">가격비교</a></li>
+                            <li><a href="m-trend.html">트랜드</a></li>
+                            <li><a href="m-unit.html">단가표게시판</a></li>
+                            <li><a href="m-comp-list.html">업체리스트</a></li>
+                            <li><a href="m-notice.html">고객센터</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <section>
-        <div class="container bg-f1 pd-b20 mp-w-wrapper">
-            <div class="row pd--24 bg-white">
-                <div class="cpi--name mp--name">
-                    <p class="pt-15 c-g">안녕하세요!</p>
-                    <div class="flex-box">
-                        <div class="m-certification">
-                            <p>인증</p>
-                        </div>
-                        <div class="m-export">
-                            <p>수출</p>
-                        </div>
-                        <p class="pt-15b cp-name">코스타커뮤니케이션<span class="pt-15">회원님</span></p>
-                    </div>
-                </div>
+        <div class="container bg-white mm-wrap">
+            <div class="row bg-white">
+                <ul class="my-menu">
+                    <li>
+                        <a href="my-user.html">
+                            <img src="images/menu/ico_user.png" alt="회원정보 수정">
+                            회원정보 수정
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="my-price.html">
+                            <img src="images/menu/ico_unit.png" alt="단가표 관리">
+                            단가표관리
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="my-comp.html">
+                            <img src="images/menu/ico_company.png" alt="회사정보 수정">
+                            회사정보 수정
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="my-add.html">
+                            <img src="images/menu/ico_added.png" alt="내가 추가한 업체">
+                            내가 추가한 업체
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="my-inquire.html">
+                            <img src="images/menu/ico_chat_b.png" alt="문의하기">
+                            문의하기
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="container bg-f1 mc-section">
-                <div class="row bg-white">
-                    <ul class="my-menu mg-t80">
+            <div class="row">
+                <div class="nt-list mi-list">
+                    <p class="pt-13b pd--30">문의하기</p>
+                    <ul id="m-accordion" class="m-accordion">
                         <li>
-                            <a href="my-user.html">
-                                <img src="images/menu/ico_user.png" alt="회원정보 수정">
-                                회원정보 수정
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="my-price.html">
-                                <img src="images/menu/ico_unit.png" alt="단가표 관리">
-                                단가표관리
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="my-comp.html">
-                                <img src="images/menu/ico_company.png" alt="회사정보 수정">
-                                회사정보 수정
-                            </a>
-                        </li>
-                        <li class="active">
-                            <a href="my-add.html">
-                                <img src="images/menu/ico_added_b.png" alt="내가 추가한 업체">
-                                내가 추가한 업체
-                            </a>
+                            <div class="link">
+                                <div class="flex-side">
+                                    <p class="p-n">019<span class="w-d">2020-01-14 16:00 [제품등록요청]</span></p>
+                                    <p class="w-u">처리중</p>
+                                </div>
+                                <p class="nt-title pt-12">
+                                    분실조회 충전 부탁 드립니다.
+                                </p>
+                                <i class="fa fa-chevron-up"></i>
+                            </div>
+                            <div class="if-sub">
+                                <div class="nt-cp-wrap flex-side pd--30">
+                                    <div class="mi-conts flex-box">
+                                        <p class="pt-10">아이폰 11 256G 도 등록 부탁드립니다!<br>분실조회 충전도 300,000정도 함께 부탁드립니다! <코나컴퍼니>로 입금완료!</p>
+                                    </div>
+                                </div>
+                                <div class="nt-atc-line"></div>
+                                <div class="nt-atc flex-side pd--30">
+                                    <div class="mi-atc">
+                                        <div class="nt-atc-item nt-mg">
+                                            <a href="#" class="pt-13">
+                                                <img src="images/icon/ico_attach.png" src="첨부파일 아이콘">handol_sys_costsheet.ppt<span class="size"> [542kb]</span>
+                                            </a>
+                                        </div>
+                                        <div class="nt-atc-item">
+                                            <a href="#" class="pt-13 nt-pd0 nt-mg">
+                                                <img src="images/icon/ico_attach.png" src="첨부파일 아이콘">bust_crack.ppt<span class="size"> [232kb]</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <button type="button">삭제하기</button>
+                                </div>
+                                <div class="nt-cp-gree pd--30">
+                                    <p class="pt-13">
+                                        안녕하세요! 코나 컴퍼니 입니다!<br>
+                                        단말기 단가표 디자인, 고민하지 마시고, 첨부파일 PPT다운로드 받아서 작성해 보세요!<br>
+                                        처음 작성할때 어렵지만 한번 작성해 놓으면 수정하면서 깔끔하게 만들 수 있습니다!<br>
+                                        다만 하단에 <코나 컴퍼니> 카피라이트는 빼지말고 수정해 주세요!
+                                    </p>
+                                </div>
+                                <div class="nt-comment pd--30 flex-box">
+                                    <input type="text" placeholder="댓글(최대 50자이내)" maxlength="50" oninput="numberMaxLength(this);">
+                                    <button type="submit">작성</button>
+                                </div>
+                                <div class="nt-cm-list pd--30">
+                                    <ul>
+                                        <li>
+                                            <div class="nt-wrap">
+                                                <div class="nt-cm-wrap">
+                                                    <p class="nt-cm-cpb pt-12b">중가비통신<span class="day">2020-01-15 12:33</span></p>
+                                                    <p class="cm">정말좋은자료 너무 감사드립니다! 코나컴퍼니 자료 나올때마다 기대가 됩니다!</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="nt-wrap flex-side flex-base">
+                                                <div class="nt-cm-wrap">
+                                                    <p class="nt-cm-cpb pt-12b">코나컴퍼니<span class="day">2020-01-15 12:33</span></p>
+                                                    <p class="cm">항상 이용해 주셔서 감사드려요!</p>
+                                                </div>
+                                                <button type="button">삭제</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            <a href="my-inquire.html">
-                                <img src="images/menu/ico_chat.png" alt="문의하기">
-                                문의하기
-                            </a>
+                            <div class="link">
+                                <div class="flex-side">
+                                    <p class="p-n">019<span class="w-d">2020-01-14 16:00 [제품등록요청]</span></p>
+                                    <p class="w-u">처리중</p>
+                                </div>
+                                <p class="nt-title pt-12">
+                                    분실조회 충전 부탁 드립니다.
+                                </p>
+                                <i class="fa fa-chevron-up"></i>
+                            </div>
+                            <div class="if-sub">
+                                <div class="nt-cp-wrap flex-side pd--30">
+                                    <div class="nt-cp-name flex-box">
+                                        <div class="flex-box">
+                                            <div class="m-certification">
+                                                <p>인증</p>
+                                            </div>
+                                            <div class="m-diller">
+                                                <p>딜러</p>
+                                            </div>
+                                        </div>
+                                        <p class="pt-13b">코나컴퍼니</p>
+                                    </div>
+                                    <div class="nt-cp-btn flex-box">
+                                        <div class="nt-btn-wrap"><button type="button">수정하기</button></div>
+                                        <div class="nt-btn-wrap"><button type="button" class="rv">삭제하기</button></div>
+                                    </div>
+                                </div>
+                                <div class="nt-atc-line"></div>
+                                <div class="nt-atc pd--30">
+                                    <div class="nt-atc-item nt-mg">
+                                        <a href="#" class="pt-13">
+                                            <img src="images/icon/ico_attach.png" src="첨부파일 아이콘">handol_sys_costsheet.ppt<span class="size"> [542kb]</span>
+                                        </a>
+                                    </div>
+                                    <div class="nt-atc-item">
+                                        <a href="#" class="pt-13 nt-pd0 nt-mg">
+                                            <img src="images/icon/ico_attach.png" src="첨부파일 아이콘">bust_crack.ppt<span class="size"> [232kb]</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="nt-cp-gree pd--30">
+                                    <p class="pt-13">
+                                        안녕하세요! 코나 컴퍼니 입니다!<br>
+                                        단말기 단가표 디자인, 고민하지 마시고, 첨부파일 PPT다운로드 받아서 작성해 보세요!<br>
+                                        처음 작성할때 어렵지만 한번 작성해 놓으면 수정하면서 깔끔하게 만들 수 있습니다!<br>
+                                        다만 하단에 <코나 컴퍼니> 카피라이트는 빼지말고 수정해 주세요!
+                                    </p>
+                                </div>
+                                <div class="nt-comment pd--30 flex-box">
+                                    <input type="text" placeholder="댓글(최대 50자이내)" maxlength="50" oninput="numberMaxLength(this);">
+                                    <button type="submit">작성</button>
+                                </div>
+                                <div class="nt-cm-list pd--30">
+                                    <ul>
+                                        <li>
+                                            <div class="nt-wrap">
+                                                <div class="nt-cm-wrap">
+                                                    <p class="nt-cm-cpb pt-12b">중가비통신<span class="day">2020-01-15 12:33</span></p>
+                                                    <p class="cm">정말좋은자료 너무 감사드립니다! 코나컴퍼니 자료 나올때마다 기대가 됩니다!</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="nt-wrap flex-side flex-base">
+                                                <div class="nt-cm-wrap">
+                                                    <p class="nt-cm-cpb pt-12b">코나컴퍼니<span class="day">2020-01-15 12:33</span></p>
+                                                    <p class="cm">항상 이용해 주셔서 감사드려요!</p>
+                                                </div>
+                                                <button type="button">삭제</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="link">
+                                <div class="flex-side">
+                                    <p class="p-n">019<span class="w-d">2020-01-14 16:00 [제품등록요청]</span></p>
+                                    <p class="w-u">처리중</p>
+                                </div>
+                                <p class="nt-title pt-12">
+                                    분실조회 충전 부탁 드립니다.
+                                </p>
+                                <i class="fa fa-chevron-up"></i>
+                            </div>
+                            <div class="if-sub">
+                                <div class="nt-cp-wrap flex-side pd--30">
+                                    <div class="nt-cp-name flex-box">
+                                        <div class="flex-box">
+                                            <div class="m-certification">
+                                                <p>인증</p>
+                                            </div>
+                                            <div class="m-diller">
+                                                <p>딜러</p>
+                                            </div>
+                                        </div>
+                                        <p class="pt-13b">코나컴퍼니</p>
+                                    </div>
+                                    <div class="nt-cp-btn flex-box">
+                                        <div class="nt-btn-wrap"><button type="button">수정하기</button></div>
+                                        <div class="nt-btn-wrap"><button type="button" class="rv">삭제하기</button></div>
+                                    </div>
+                                </div>
+                                <div class="nt-atc-line"></div>
+                                <div class="nt-atc pd--30">
+                                    <div class="nt-atc-item nt-mg">
+                                        <a href="#" class="pt-13">
+                                            <img src="images/icon/ico_attach.png" src="첨부파일 아이콘">handol_sys_costsheet.ppt<span class="size"> [542kb]</span>
+                                        </a>
+                                    </div>
+                                    <div class="nt-atc-item">
+                                        <a href="#" class="pt-13 nt-pd0 nt-mg">
+                                            <img src="images/icon/ico_attach.png" src="첨부파일 아이콘">bust_crack.ppt<span class="size"> [232kb]</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="nt-cp-gree pd--30">
+                                    <p class="pt-13">
+                                        안녕하세요! 코나 컴퍼니 입니다!<br>
+                                        단말기 단가표 디자인, 고민하지 마시고, 첨부파일 PPT다운로드 받아서 작성해 보세요!<br>
+                                        처음 작성할때 어렵지만 한번 작성해 놓으면 수정하면서 깔끔하게 만들 수 있습니다!<br>
+                                        다만 하단에 <코나 컴퍼니> 카피라이트는 빼지말고 수정해 주세요!
+                                    </p>
+                                </div>
+                                <div class="nt-comment pd--30 flex-box">
+                                    <input type="text" placeholder="댓글(최대 50자이내)" maxlength="50" oninput="numberMaxLength(this);">
+                                    <button type="submit">작성</button>
+                                </div>
+                                <div class="nt-cm-list pd--30">
+                                    <ul>
+                                        <li>
+                                            <div class="nt-wrap">
+                                                <div class="nt-cm-wrap">
+                                                    <p class="nt-cm-cpb pt-12b">중가비통신<span class="day">2020-01-15 12:33</span></p>
+                                                    <p class="cm">정말좋은자료 너무 감사드립니다! 코나컴퍼니 자료 나올때마다 기대가 됩니다!</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="nt-wrap flex-side flex-base">
+                                                <div class="nt-cm-wrap">
+                                                    <p class="nt-cm-cpb pt-12b">코나컴퍼니<span class="day">2020-01-15 12:33</span></p>
+                                                    <p class="cm">항상 이용해 주셔서 감사드려요!</p>
+                                                </div>
+                                                <button type="button">삭제</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="link">
+                                <div class="flex-side">
+                                    <p class="p-n">019<span class="w-d">2020-01-14 16:00 [제품등록요청]</span></p>
+                                    <p class="w-u">처리중</p>
+                                </div>
+                                <p class="nt-title pt-12">
+                                    분실조회 충전 부탁 드립니다.
+                                </p>
+                                <i class="fa fa-chevron-up"></i>
+                            </div>
+                            <div class="if-sub">
+                                <div class="nt-cp-wrap flex-side pd--30">
+                                    <div class="nt-cp-name flex-box">
+                                        <div class="flex-box">
+                                            <div class="m-certification">
+                                                <p>인증</p>
+                                            </div>
+                                            <div class="m-diller">
+                                                <p>딜러</p>
+                                            </div>
+                                        </div>
+                                        <p class="pt-13b">코나컴퍼니</p>
+                                    </div>
+                                    <div class="nt-cp-btn flex-box">
+                                        <div class="nt-btn-wrap"><button type="button">수정하기</button></div>
+                                        <div class="nt-btn-wrap"><button type="button" class="rv">삭제하기</button></div>
+                                    </div>
+                                </div>
+                                <div class="nt-atc-line"></div>
+                                <div class="nt-atc pd--30">
+                                    <div class="nt-atc-item nt-mg">
+                                        <a href="#" class="pt-13">
+                                            <img src="images/icon/ico_attach.png" src="첨부파일 아이콘">handol_sys_costsheet.ppt<span class="size"> [542kb]</span>
+                                        </a>
+                                    </div>
+                                    <div class="nt-atc-item">
+                                        <a href="#" class="pt-13 nt-pd0 nt-mg">
+                                            <img src="images/icon/ico_attach.png" src="첨부파일 아이콘">bust_crack.ppt<span class="size"> [232kb]</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="nt-cp-gree pd--30">
+                                    <p class="pt-13">
+                                        안녕하세요! 코나 컴퍼니 입니다!<br>
+                                        단말기 단가표 디자인, 고민하지 마시고, 첨부파일 PPT다운로드 받아서 작성해 보세요!<br>
+                                        처음 작성할때 어렵지만 한번 작성해 놓으면 수정하면서 깔끔하게 만들 수 있습니다!<br>
+                                        다만 하단에 <코나 컴퍼니> 카피라이트는 빼지말고 수정해 주세요!
+                                    </p>
+                                </div>
+                                <div class="nt-comment pd--30 flex-box">
+                                    <input type="text" placeholder="댓글(최대 50자이내)" maxlength="50" oninput="numberMaxLength(this);">
+                                    <button type="submit">작성</button>
+                                </div>
+                                <div class="nt-cm-list pd--30">
+                                    <ul>
+                                        <li>
+                                            <div class="nt-wrap">
+                                                <div class="nt-cm-wrap">
+                                                    <p class="nt-cm-cpb pt-12b">중가비통신<span class="day">2020-01-15 12:33</span></p>
+                                                    <p class="cm">정말좋은자료 너무 감사드립니다! 코나컴퍼니 자료 나올때마다 기대가 됩니다!</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="nt-wrap flex-side flex-base">
+                                                <div class="nt-cm-wrap">
+                                                    <p class="nt-cm-cpb pt-12b">코나컴퍼니<span class="day">2020-01-15 12:33</span></p>
+                                                    <p class="cm">항상 이용해 주셔서 감사드려요!</p>
+                                                </div>
+                                                <button type="button">삭제</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
                     </ul>
-                </div>
-                <div class="row bg-white mc-title">
-                    <div class="nt-list">
-                        <ul id="m-accordion" class="m-accordion">
-                            <li>
-                                <div class="link">
-                                    <div class="flex-box">
-                                        <p class="p-n pt-13">019<span class="w-d pt-13">2020-01-14 16:00 [제품등록요청]</span></p>
-                                        <p class="w-u pt-13">처리중</p>
-                                    </div>
-                                    <p class="nt-title pt-15">
-                                        분실조회 충전 부탁 드립니다.
-                                    </p>
-                                    <i class="fa fa-chevron-up"></i>
-                                </div>
-                                <div class="if-sub">
-                                    <div class="nt-cp-wrap mi-wrap pd--24">
-                                        <p class="pt-12">
-                                            아이폰 11 256G 도 등록 부탁드립니다!<br>분실조회 충전도 300,000정도 함께 부탁드립니다! <코나컴퍼니>로 입금완료!
-                                        </p>
-                                    </div>
-                                    <div class="nt-atc-line"></div>
-                                    <div class="nt-atc pd--24">
-                                        <div class="mi-wrap flex-side">
-                                            <div class="nt-atc-item nt-mg mi-width">
-                                                <a href="#" class="pt-13">
-                                                    <img src="images/icon/ico_attach.png" src="첨부파일 아이콘"> handol_sys_costsheet.ppt<span class="size"> [542kb]</span>
-                                                </a>
-                                            </div>
-                                            <button type="button">삭제하기</button>
-                                        </div>
-                                        <div class="nt-atc-item">
-                                            <a href="#" class="pt-13 nt-pd0 nt-mg">
-                                                <img src="images/icon/ico_attach.png" src="첨부파일 아이콘">bust_crack.ppt<span class="size"> [232kb]</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="nt-atc-line mi-line"></div>
-                                    <div class="nt-cm-list pd--24">
-                                        <ul>
-                                            <li>
-                                                <div class="nt-wrap">
-                                                    <div class="nt-cm-wrap">
-                                                        <p class="nt-cm-cp pt-13b">중가비통신<span class="day pt-12">2020-01-15 12:33</span></p>
-                                                        <p class="cm pt-13">요청하신 단말기<아이폰11 256G>등록 및 분실조회 충전해 드렸습니다 감사합니다!</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="link">
-                                    <div class="flex-box">
-                                        <p class="p-n pt-13">019<span class="w-d pt-13">2020-01-14 16:00 [제품등록요청]</span></p>
-                                        <p class="w-u pt-13">관리자</p>
-                                    </div>
-                                    <p class="nt-title pt-15">
-                                        분실조회 충전 부탁 드립니다.
-                                    </p>
-                                    <i class="fa fa-chevron-up"></i>
-                                </div>
-                                <div class="if-sub">
-                                    <div class="nt-cp-wrap mi-wrap flex-side pd--24">
-                                        <div class="nt-cp-name flex-box">
-                                            <div class="flex-box">
-                                                <div class="m-certification">
-                                                    <p>인증</p>
-                                                </div>
-                                                <div class="m-diller">
-                                                    <p>딜러</p>
-                                                </div>
-                                            </div>
-                                            <p class="pt-13b">코나컴퍼니</p>
-                                        </div>
-                                        <div class="nt-cp-btn flex-box">
-                                            <div class="nt-btn-wrap"><button type="button">수정하기</button></div>
-                                            <div class="nt-btn-wrap"><button type="button" class="rv">삭제하기</button></div>
-                                        </div>
-                                    </div>
-                                    <div class="nt-atc-line"></div>
-                                    <div class="nt-atc pd--24">
-                                        <div class="nt-atc-item nt-mg">
-                                            <a href="#" class="pt-13">
-                                                <img src="images/icon/ico_attach.png" src="첨부파일 아이콘">handol_sys_costsheet.ppt<span class="size"> [542kb]</span>
-                                            </a>
-                                        </div>
-                                        <div class="nt-atc-item">
-                                            <a href="#" class="pt-13 nt-pd0 nt-mg">
-                                                <img src="images/icon/ico_attach.png" src="첨부파일 아이콘">bust_crack.ppt<span class="size"> [232kb]</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="nt-cp-gree pd--24">
-                                        <p class="pt-13">
-                                            안녕하세요! 코나 컴퍼니 입니다!<br>
-                                            단말기 단가표 디자인, 고민하지 마시고, 첨부파일 PPT다운로드 받아서 작성해 보세요!<br>
-                                            처음 작성할때 어렵지만 한번 작성해 놓으면 수정하면서 깔끔하게 만들 수 있습니다!<br>
-                                            다만 하단에 <코나 컴퍼니> 카피라이트는 빼지말고 수정해 주세요!
-                                        </p>
-                                    </div>
-                                    <div class="nt-comment pd--24 flex-box">
-                                        <input type="text" placeholder="댓글(최대 50자이내)" maxlength="50" oninput="numberMaxLength(this);">
-                                        <button type="submit">작성</button>
-                                    </div>
-                                    <div class="nt-cm-list pd--24">
-                                        <ul>
-                                            <li>
-                                                <div class="nt-wrap">
-                                                    <div class="nt-cm-wrap">
-                                                        <p class="nt-cm-cp pt-13b">중가비통신<span class="day pt-12">2020-01-15 12:33</span></p>
-                                                        <p class="cm pt-13">요청하신 단말기<아이폰11 256G>등록 및 분실조회 충전해 드렸습니다 감사합니다!</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="nt-wrap flex-side flex-base">
-                                                    <div class="nt-cm-wrap">
-                                                        <p class="nt-cm-cp pt-13b">코나컴퍼니<span class="day pt-12">2020-01-15 12:33</span></p>
-                                                        <p class="cm pt-13">항상 이용해 주셔서 감사드려요!</p>
-                                                    </div>
-                                                    <button type="button">삭제</button>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="link">
-                                    <div class="flex-box">
-                                        <p class="p-n pt-13">019<span class="w-d pt-13">2020-01-14 16:00 [제품등록요청]</span></p>
-                                        <p class="w-u pt-13">관리자</p>
-                                    </div>
-                                    <p class="nt-title pt-15">
-                                        분실조회 충전 부탁 드립니다.
-                                    </p>
-                                    <i class="fa fa-chevron-up"></i>
-                                </div>
-                                <div class="if-sub">
-                                    <div class="nt-cp-wrap mi-wrap flex-side pd--24">
-                                        <div class="nt-cp-name flex-box">
-                                            <div class="flex-box">
-                                                <div class="m-certification">
-                                                    <p>인증</p>
-                                                </div>
-                                                <div class="m-diller">
-                                                    <p>딜러</p>
-                                                </div>
-                                            </div>
-                                            <p class="pt-13b">코나컴퍼니</p>
-                                        </div>
-                                        <div class="nt-cp-btn flex-box">
-                                            <div class="nt-btn-wrap"><button type="button">수정하기</button></div>
-                                            <div class="nt-btn-wrap"><button type="button" class="rv">삭제하기</button></div>
-                                        </div>
-                                    </div>
-                                    <div class="nt-atc-line"></div>
-                                    <div class="nt-atc pd--24">
-                                        <div class="nt-atc-item nt-mg">
-                                            <a href="#" class="pt-13">
-                                                <img src="images/icon/ico_attach.png" src="첨부파일 아이콘">handol_sys_costsheet.ppt<span class="size"> [542kb]</span>
-                                            </a>
-                                        </div>
-                                        <div class="nt-atc-item">
-                                            <a href="#" class="pt-13 nt-pd0 nt-mg">
-                                                <img src="images/icon/ico_attach.png" src="첨부파일 아이콘">bust_crack.ppt<span class="size"> [232kb]</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="nt-cp-gree pd--24">
-                                        <p class="pt-13">
-                                            안녕하세요! 코나 컴퍼니 입니다!<br>
-                                            단말기 단가표 디자인, 고민하지 마시고, 첨부파일 PPT다운로드 받아서 작성해 보세요!<br>
-                                            처음 작성할때 어렵지만 한번 작성해 놓으면 수정하면서 깔끔하게 만들 수 있습니다!<br>
-                                            다만 하단에 <코나 컴퍼니> 카피라이트는 빼지말고 수정해 주세요!
-                                        </p>
-                                    </div>
-                                    <div class="nt-comment pd--24 flex-box">
-                                        <input type="text" placeholder="댓글(최대 50자이내)" maxlength="50" oninput="numberMaxLength(this);">
-                                        <button type="submit">작성</button>
-                                    </div>
-                                    <div class="nt-cm-list pd--24">
-                                        <ul>
-                                            <li>
-                                                <div class="nt-wrap">
-                                                    <div class="nt-cm-wrap">
-                                                        <p class="nt-cm-cp pt-13b">중가비통신<span class="day pt-12">2020-01-15 12:33</span></p>
-                                                        <p class="cm pt-13">요청하신 단말기<아이폰11 256G>등록 및 분실조회 충전해 드렸습니다 감사합니다!</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="nt-wrap flex-side flex-base">
-                                                    <div class="nt-cm-wrap">
-                                                        <p class="nt-cm-cp pt-13b">코나컴퍼니<span class="day pt-12">2020-01-15 12:33</span></p>
-                                                        <p class="cm pt-13">항상 이용해 주셔서 감사드려요!</p>
-                                                    </div>
-                                                    <button type="button">삭제</button>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="link">
-                                    <div class="flex-box">
-                                        <p class="p-n pt-13">019<span class="w-d pt-13">2020-01-14 16:00 [제품등록요청]</span></p>
-                                        <p class="w-u pt-13">관리자</p>
-                                    </div>
-                                    <p class="nt-title pt-15">
-                                        분실조회 충전 부탁 드립니다.
-                                    </p>
-                                    <i class="fa fa-chevron-up"></i>
-                                </div>
-                                <div class="if-sub">
-                                    <div class="nt-cp-wrap mi-wrap flex-side pd--24">
-                                        <div class="nt-cp-name flex-box">
-                                            <div class="flex-box">
-                                                <div class="m-certification">
-                                                    <p>인증</p>
-                                                </div>
-                                                <div class="m-diller">
-                                                    <p>딜러</p>
-                                                </div>
-                                            </div>
-                                            <p class="pt-13b">코나컴퍼니</p>
-                                        </div>
-                                        <div class="nt-cp-btn flex-box">
-                                            <div class="nt-btn-wrap"><button type="button">수정하기</button></div>
-                                            <div class="nt-btn-wrap"><button type="button" class="rv">삭제하기</button></div>
-                                        </div>
-                                    </div>
-                                    <div class="nt-atc-line"></div>
-                                    <div class="nt-atc pd--24">
-                                        <div class="nt-atc-item nt-mg">
-                                            <a href="#" class="pt-13">
-                                                <img src="images/icon/ico_attach.png" src="첨부파일 아이콘">handol_sys_costsheet.ppt<span class="size"> [542kb]</span>
-                                            </a>
-                                        </div>
-                                        <div class="nt-atc-item">
-                                            <a href="#" class="pt-13 nt-pd0 nt-mg">
-                                                <img src="images/icon/ico_attach.png" src="첨부파일 아이콘">bust_crack.ppt<span class="size"> [232kb]</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="nt-cp-gree pd--24">
-                                        <p class="pt-13">
-                                            안녕하세요! 코나 컴퍼니 입니다!<br>
-                                            단말기 단가표 디자인, 고민하지 마시고, 첨부파일 PPT다운로드 받아서 작성해 보세요!<br>
-                                            처음 작성할때 어렵지만 한번 작성해 놓으면 수정하면서 깔끔하게 만들 수 있습니다!<br>
-                                            다만 하단에 <코나 컴퍼니> 카피라이트는 빼지말고 수정해 주세요!
-                                        </p>
-                                    </div>
-                                    <div class="nt-comment pd--24 flex-box">
-                                        <input type="text" placeholder="댓글(최대 50자이내)" maxlength="50" oninput="numberMaxLength(this);">
-                                        <button type="submit">작성</button>
-                                    </div>
-                                    <div class="nt-cm-list pd--24">
-                                        <ul>
-                                            <li>
-                                                <div class="nt-wrap">
-                                                    <div class="nt-cm-wrap">
-                                                        <p class="nt-cm-cp pt-13b">중가비통신<span class="day pt-12">2020-01-15 12:33</span></p>
-                                                        <p class="cm pt-13">요청하신 단말기<아이폰11 256G>등록 및 분실조회 충전해 드렸습니다 감사합니다!</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="nt-wrap flex-side flex-base">
-                                                    <div class="nt-cm-wrap">
-                                                        <p class="nt-cm-cp pt-13b">코나컴퍼니<span class="day pt-12">2020-01-15 12:33</span></p>
-                                                        <p class="cm pt-13">항상 이용해 주셔서 감사드려요!</p>
-                                                    </div>
-                                                    <button type="button">삭제</button>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="nt-btm pd--24 flex-side">
-                            <div class="nt-btm-btn more-btn">
-                                <button type="button">더보기</button>
-                            </div>
-                            <div class="nt-btm-btn more-btn nt-btn-b">
-                                <button type="button" onclick="location.href='m-free-w.html'">글쓰기</button>
-                            </div>
+                    <div class="nt-btm pd--30 flex-side">
+                        <div class="nt-btm-btn more-btn">
+                            <button type="button">더보기</button>
+                        </div>
+                        <div class="nt-btm-btn nt-btn-b">
+                            <button type="button" onclick="location.href='m-notice-w.html'">글쓰기</button>
                         </div>
                     </div>
                 </div>
@@ -375,7 +396,7 @@
         </div>
     </section>
     <footer id="footer">
-        <div class="ft-area pd--24">
+        <div class="ft-area pd--30">
             <div class="ft-logo">
                 <img src="images/upstairs.png" alt="업스테어스">
             </div>
@@ -402,8 +423,6 @@
                     <p>서울시 용산구 한강대로 54길 25, 4층 (한강로1가, 신승빌딩)</p>
                 </div>
                 <div class="ft-conts flex-box">
-                    <a href="#">회사소개</a>
-                    <div class="ft-line"></div>
                     <a href="#">개인정보취급방침</a>
                     <div class="ft-line"></div>
                     <a href="#">이용정책</a>
