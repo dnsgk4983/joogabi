@@ -1,12 +1,7 @@
 // 메뉴 호버 애니메이션
 $(function(){
-    $('.menu li:not(:nth-child(6))').mouseover(function(){
-        $(this).css('background','#3f5bc8');
-        $(this).children().css("color","#fff");
-    });
-    $('.menu li:not(:nth-child(6))').mouseleave(function(){
-        $(this).css('background','#ffffff');
-        $(this).children().css("color",'#000');
+    $('.menu li:not(:nth-child(6))').hover(function(){
+        $(this).toggleClass('active');
     });
     var board = $(".trend-board-tab > ul >li");
     board.click(function(){
